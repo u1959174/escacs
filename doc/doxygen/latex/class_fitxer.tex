@@ -1,0 +1,147 @@
+\hypertarget{class_fitxer}{}\doxysection{Referència de la Classe Fitxer}
+\label{class_fitxer}\index{Fitxer@{Fitxer}}
+
+
+Realitza tota la lectura de qualevol fitxer.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fitxer_ad1fc872f02b71f3e297b25bfa6aa5ab6}{Fitxer}} (String \mbox{\hyperlink{class_fitxer_a8c7bf0d9463e1ad9197fa3d1e0f61152}{nom}}, boolean llegir)  throws I\+O\+Exception
+\item 
+String \mbox{\hyperlink{class_fitxer_a128be4683044394586dedd41a86ba532}{Llegir}} ()  throws I\+O\+Exception
+\item 
+void \mbox{\hyperlink{class_fitxer_aa9f53139823e88b634f596cb12208f38}{Escriure}} (String \mbox{\hyperlink{class_fitxer_aa00985ca01ca467aa9dfb79280482e0b}{contingut}})  throws I\+O\+Exception
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Públics}
+\begin{DoxyCompactItemize}
+\item 
+final String \mbox{\hyperlink{class_fitxer_a8c7bf0d9463e1ad9197fa3d1e0f61152}{nom}}
+\item 
+String \mbox{\hyperlink{class_fitxer_aa00985ca01ca467aa9dfb79280482e0b}{contingut}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_fitxer_ae49b73dbee04c40b10a25d1467646de2}{escriure\+Fitxer}} (String fitxer, String \mbox{\hyperlink{class_fitxer_aa00985ca01ca467aa9dfb79280482e0b}{contingut}})  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{class_fitxer_ae6d805ac92c235003294bbb4fbb5439f}{llegir\+Fitxer}} (String fitxer)  throws I\+O\+Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Realitza tota la lectura de qualevol fitxer. 
+
+\begin{DoxyAuthor}{Autor}
+Eloi Quintana Ferrer 
+
+u1963141 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_fitxer_ad1fc872f02b71f3e297b25bfa6aa5ab6}\label{class_fitxer_ad1fc872f02b71f3e297b25bfa6aa5ab6}} 
+\index{Fitxer@{Fitxer}!Fitxer@{Fitxer}}
+\index{Fitxer@{Fitxer}!Fitxer@{Fitxer}}
+\doxysubsubsection{\texorpdfstring{Fitxer()}{Fitxer()}}
+{\footnotesize\ttfamily Fitxer.\+Fitxer (\begin{DoxyParamCaption}\item[{String}]{nom,  }\item[{boolean}]{llegir }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}ha inicialitzat el fitxer 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em nom} & ruta del fitxer a llegir \\
+\hline
+{\em llegir} & true si s\textquotesingle{}ha de llegir el fitxer, false altrament \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+String contingut del fitxer 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_fitxer_aa9f53139823e88b634f596cb12208f38}\label{class_fitxer_aa9f53139823e88b634f596cb12208f38}} 
+\index{Fitxer@{Fitxer}!Escriure@{Escriure}}
+\index{Escriure@{Escriure}!Fitxer@{Fitxer}}
+\doxysubsubsection{\texorpdfstring{Escriure()}{Escriure()}}
+{\footnotesize\ttfamily void Fitxer.\+Escriure (\begin{DoxyParamCaption}\item[{String}]{contingut }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxyPrecond}{Precondició}
+contingut != \char`\"{}\char`\"{} @\+Post s\textquotesingle{}ha escrit al fitxer el contingut passat 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em contingut} & contingut a guardar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fitxer_ae49b73dbee04c40b10a25d1467646de2}\label{class_fitxer_ae49b73dbee04c40b10a25d1467646de2}} 
+\index{Fitxer@{Fitxer}!escriureFitxer@{escriureFitxer}}
+\index{escriureFitxer@{escriureFitxer}!Fitxer@{Fitxer}}
+\doxysubsubsection{\texorpdfstring{escriureFitxer()}{escriureFitxer()}}
+{\footnotesize\ttfamily void Fitxer.\+escriure\+Fitxer (\begin{DoxyParamCaption}\item[{String}]{fitxer,  }\item[{String}]{contingut }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+fitxer != null @\+Post Reescriu/\+Crea un fitxer amb contingut del parametre 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em fitxer} & Nom del fitxer a obtenir. \\
+\hline
+{\em contingut} & Nom del fitxer a obtenir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fitxer_a128be4683044394586dedd41a86ba532}\label{class_fitxer_a128be4683044394586dedd41a86ba532}} 
+\index{Fitxer@{Fitxer}!Llegir@{Llegir}}
+\index{Llegir@{Llegir}!Fitxer@{Fitxer}}
+\doxysubsubsection{\texorpdfstring{Llegir()}{Llegir()}}
+{\footnotesize\ttfamily String Fitxer.\+Llegir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}ha realitzat la lectura del fitxer 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+String contingut del fitxer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fitxer_ae6d805ac92c235003294bbb4fbb5439f}\label{class_fitxer_ae6d805ac92c235003294bbb4fbb5439f}} 
+\index{Fitxer@{Fitxer}!llegirFitxer@{llegirFitxer}}
+\index{llegirFitxer@{llegirFitxer}!Fitxer@{Fitxer}}
+\doxysubsubsection{\texorpdfstring{llegirFitxer()}{llegirFitxer()}}
+{\footnotesize\ttfamily static String Fitxer.\+llegir\+Fitxer (\begin{DoxyParamCaption}\item[{String}]{fitxer }\end{DoxyParamCaption}) throws I\+O\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+fitxer != null @\+Post Retorna el fitxer demanat en format String. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em fitxer} & Nom del fitxer a obtenir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+String \+: Contingut del fitxer 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_fitxer_aa00985ca01ca467aa9dfb79280482e0b}\label{class_fitxer_aa00985ca01ca467aa9dfb79280482e0b}} 
+\index{Fitxer@{Fitxer}!contingut@{contingut}}
+\index{contingut@{contingut}!Fitxer@{Fitxer}}
+\doxysubsubsection{\texorpdfstring{contingut}{contingut}}
+{\footnotesize\ttfamily String Fitxer.\+contingut}
+
+Indica el contingut del fitxer \mbox{\Hypertarget{class_fitxer_a8c7bf0d9463e1ad9197fa3d1e0f61152}\label{class_fitxer_a8c7bf0d9463e1ad9197fa3d1e0f61152}} 
+\index{Fitxer@{Fitxer}!nom@{nom}}
+\index{nom@{nom}!Fitxer@{Fitxer}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily final String Fitxer.\+nom}
+
+Indica la ruta del fitxer en questio 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_fitxer_8java}{Fitxer.\+java}}\end{DoxyCompactItemize}

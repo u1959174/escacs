@@ -1,0 +1,12 @@
+{
+  "coneixements": [
+    "../dataset/partides_completes/j1.json",
+	"../dataset/partides_completes/j2.json",
+	"../dataset/partides_completes/j3.json",
+	"../dataset/partides_completes/j4.json",
+	"../dataset/partides_completes/j5.json",
+	"../dataset/partides_completes/j6.json",
+	"../dataset/partides_completes/j7.json",
+	"../dataset/partides_completes/j8.json"
+  ]
+}

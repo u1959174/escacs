@@ -1,0 +1,158 @@
+.TH "Fitxer" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Fitxer \- Realitza tota la lectura de qualevol fitxer\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBFitxer\fP (String \fBnom\fP, boolean llegir)  throws IOException"
+.br
+.ti -1c
+.RI "String \fBLlegir\fP ()  throws IOException"
+.br
+.ti -1c
+.RI "void \fBEscriure\fP (String \fBcontingut\fP)  throws IOException"
+.br
+.in -1c
+.SS "Atributs Públics"
+
+.in +1c
+.ti -1c
+.RI "final String \fBnom\fP"
+.br
+.ti -1c
+.RI "String \fBcontingut\fP"
+.br
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "void \fBescriureFitxer\fP (String fitxer, String \fBcontingut\fP)  throws IOException "
+.br
+.in -1c
+.SS "Mètodes Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static String \fBllegirFitxer\fP (String fitxer)  throws IOException "
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Realitza tota la lectura de qualevol fitxer\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Eloi Quintana Ferrer 
+.PP
+u1963141 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Fitxer\&.Fitxer (String nom, boolean llegir) throws IOException"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'ha inicialitzat el fitxer 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInom\fP ruta del fitxer a llegir 
+.br
+\fIllegir\fP true si s'ha de llegir el fitxer, false altrament 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+String contingut del fitxer 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "void Fitxer\&.Escriure (String contingut) throws IOException"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+contingut != '' @Post s'ha escrit al fitxer el contingut passat 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcontingut\fP contingut a guardar 
+.RE
+.PP
+
+.SS "void Fitxer\&.escriureFitxer (String fitxer, String contingut) throws IOException\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+fitxer != null @Post Reescriu/Crea un fitxer amb contingut del parametre 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfitxer\fP Nom del fitxer a obtenir\&. 
+.br
+\fIcontingut\fP Nom del fitxer a obtenir\&. 
+.RE
+.PP
+
+.SS "String Fitxer\&.Llegir () throws IOException"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'ha realitzat la lectura del fitxer 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+String contingut del fitxer 
+.RE
+.PP
+
+.SS "static String Fitxer\&.llegirFitxer (String fitxer) throws IOException\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+fitxer != null @Post Retorna el fitxer demanat en format String\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfitxer\fP Nom del fitxer a obtenir\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+String : Contingut del fitxer 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "String Fitxer\&.contingut"
+Indica el contingut del fitxer 
+.SS "final String Fitxer\&.nom"
+Indica la ruta del fitxer en questio 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

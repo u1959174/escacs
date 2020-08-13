@@ -1,0 +1,769 @@
+\hypertarget{class_partida}{}\doxysection{Referència de la Classe Partida}
+\label{class_partida}\index{Partida@{Partida}}
+
+
+Motor de el conjunt de \mbox{\hyperlink{class_escacs}{Escacs}}. Gestiona les jugades, el tauler, les peces. Executa també les jugades.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_partida_abd176d333d00742880da45fcf8c85e38}{Partida}} (\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_a2d4fb7fd2d91dc7c64fc1ca9b1e1194c}{t}}, Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ \mbox{\hyperlink{class_partida_acdc3efc1902bc7673d0bfc416cfeb8fd}{tipus}}, Array\+List$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$ j, int \mbox{\hyperlink{class_partida_a2fe23a5d12e258dadf56ce569d9e8cc6}{max\+Inaccio}}, int \mbox{\hyperlink{class_partida_a1c916571fa05667e4ba4329ed1912f3c}{max\+Escacs}})  throws ExcepcioG
+\item 
+\mbox{\hyperlink{class_partida_a343c19f2d229b763c45477a20cc22647}{Partida}} (\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_a2d4fb7fd2d91dc7c64fc1ca9b1e1194c}{t}}, Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ \mbox{\hyperlink{class_partida_acdc3efc1902bc7673d0bfc416cfeb8fd}{tipus}}, int \mbox{\hyperlink{class_partida_a2fe23a5d12e258dadf56ce569d9e8cc6}{max\+Inaccio}}, int \mbox{\hyperlink{class_partida_a1c916571fa05667e4ba4329ed1912f3c}{max\+Escacs}})  throws ExcepcioG
+\item 
+boolean \mbox{\hyperlink{class_partida_a7750bc040285966d17a31115a2974e9e}{acabada}} ()
+\item 
+void \mbox{\hyperlink{class_partida_a92e785a94a34c38e77d73f15230946ca}{canviar\+Torn}} (\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_partida_a9449a95a4b9b9eb3b60744b4a7a85fe0}{torn}})
+\item 
+void \mbox{\hyperlink{class_partida_a4e5197bb5ae8bc0a833bf48db6f24f5a}{comprobar\+Jugada}} (\mbox{\hyperlink{class_jugada}{Jugada}} j)  throws ExcepcioG
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_partida_a325bbae76da5d73f9ba35b4b2a5174de}{crear\+Jugada}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti)  throws ExcepcioG
+\item 
+void \mbox{\hyperlink{class_partida_a3e90b33d9c8522b8217ae6d3232e7159}{desfer\+Jugada}} ()
+\item 
+\mbox{\hyperlink{class_pair}{Pair}}$<$ Integer, Integer $>$ \mbox{\hyperlink{class_partida_aa316e0ebfbdd331a4a13044dc805be58}{dimensions}} ()
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_aa9aa36160559e3dbf4bea9288bd657ff}{fer\+Jugada}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti)  throws ExcepcioG
+\item 
+boolean \mbox{\hyperlink{class_partida_a2d16d0d2d2c2cd81fb566e3f1326b066}{fer\+Jugada}} (\mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}} resultat)  throws ExcepcioG
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_partida_a9fad82d4fa3646f5edf77197b51a1729}{guanyador}} ()
+\item 
+void \mbox{\hyperlink{class_partida_a69f32f46909b7d58dcf60d83d470a213}{modificar\+Ruta\+Fitxer\+Regles}} (String \mbox{\hyperlink{class_partida_aa93aaefc087031f52f5fd074af8e4c3b}{ruta\+Fitxer\+Regles}})
+\item 
+Collection$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$ \mbox{\hyperlink{class_partida_ae71c857d26809a5216a73ed006933ffb}{obtenir\+Jugades}} ()
+\item 
+Collection$<$ \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ \mbox{\hyperlink{class_partida_a08f2b847c4e55d87eea36b3047f91e8f}{obtenir\+Noms\+Tipus\+Peca}} ()
+\item 
+\mbox{\hyperlink{enum_resultat_partida}{Resultat\+Partida}} \mbox{\hyperlink{class_partida_a6d465d393be07fd13405b774e174f11c}{obtenir\+Resultat\+Partida}} ()
+\item 
+\mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}} \mbox{\hyperlink{class_partida_a89a003c51e82699d6970a20f6eda7f35}{obtenir\+Resultat\+Partida\+Detall}} ()
+\item 
+String \mbox{\hyperlink{class_partida_a0241f7aec43c0f56bc242544396d05ee}{obtenir\+Ruta\+Fitxer\+Regles}} ()
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_ac5078c7c38c86fa622ce9511a0b27259}{obtenir\+Tauler}} ()
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_a4e1f47ee720b816f483ba0a8814ebb95}{obtenir\+Tauler\+Inicial}} ()
+\item 
+boolean \mbox{\hyperlink{class_partida_a13d230e7f6588a0f60c4cc2ac3556f36}{pot\+Continuar}} ()
+\item 
+int \mbox{\hyperlink{class_partida_abe3128c5cfc1173e969db4a7a30b948c}{pot\+Desfer\+Jugada}} ()
+\item 
+int \mbox{\hyperlink{class_partida_a7ac69a2c88f5fab1ab1cc92d2e996811}{pot\+Refer\+Jugada}} ()
+\item 
+void \mbox{\hyperlink{class_partida_a415cb8450adcad1e177b01e4870da731}{realitzar\+Jugada}} (\mbox{\hyperlink{class_peca}{Peca}} tmp\+Origen, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ a)  throws ExcepcioG
+\item 
+void \mbox{\hyperlink{class_partida_a7994d595113a872963b33f2b9d4d59d8}{refer\+Jugada}} ()
+\item 
+String \mbox{\hyperlink{class_partida_ac60276370247f2e51e9ffe07cb21977a}{tauler}} ()
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_partida_a4d5733cabd31532ba2bd72d00c6b6451}{torn}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_partida_ad2773bc5c1580303babfd34ad2014cad}{realitzar\+Jugada}} (\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_ac60276370247f2e51e9ffe07cb21977a}{tauler}}, \mbox{\hyperlink{class_peca}{Peca}} tmp\+Origen, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ a, \mbox{\hyperlink{class_contadors}{Contadors}} cont, \mbox{\hyperlink{enum_color}{Color}} tornE)  throws ExcepcioG
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_partida_a8d87fd59dbf543cbfa5b72d76fa66d2d}{acabar\+Partida}} (\mbox{\hyperlink{enum_resultat_partida}{Resultat\+Partida}} \mbox{\hyperlink{class_partida_a0e51ebc8f0d0d28cf0b63abb03a694ee}{resultat\+Final}}, \mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}} \mbox{\hyperlink{class_partida_a432b326d7d9153985f41d0fc45a38500}{resultat\+Final\+Detall}}, \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_partida_a0f8270dcd9f4ec3d4542da7840d249b3}{guanyador}})
+\item 
+void \mbox{\hyperlink{class_partida_a44250f4d56506464e69ae51c7cad62db}{afegir\+Jugada}} (\mbox{\hyperlink{class_jugada}{Jugada}} j, Integer pos)  throws ExcepcioG
+\item 
+void \mbox{\hyperlink{class_partida_a7c26df2b7a3a95049813c10ece4aba4b}{carregar\+Jugada}} (int pos)
+\item 
+void \mbox{\hyperlink{class_partida_a4695b58c5e5ebcac0ba284293982851e}{comprobar\+Jugada}} (\mbox{\hyperlink{class_jugada}{Jugada}} j, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} tipus\+Peca\+Promocio)  throws ExcepcioG
+\item 
+void \mbox{\hyperlink{class_partida_aa4134ce7321653cd343956d3761b533c}{desfer\+Jugada\+Final}} ()
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_a1b8ead92044ff11376d0167b890c93bb}{fer\+Jugada}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti, Integer posicio, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} peca\+Promocio)  throws ExcepcioG
+\item 
+void \mbox{\hyperlink{class_partida_aaf1596dcca3686a0f35cd845cc6b5f84}{realitzar\+Jugades}} (Array\+List$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$ j)  throws Excepcio\+G 
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_partida_a212e844414e42354f10a3c386ce26cf0}{eliminar\+Peces}} (Array\+List$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{class_peca}{Peca}} $>$$>$ mig, \mbox{\hyperlink{class_tauler}{Tauler}} tau, \mbox{\hyperlink{class_contadors}{Contadors}} cont, \mbox{\hyperlink{enum_color}{Color}} tornE)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_partida_adaa31fc95ee1a802308cb6d36fb53f26}{acabada}}
+\item 
+\mbox{\hyperlink{class_contadors}{Contadors}} \mbox{\hyperlink{class_partida_ac629b43c9ce6f012cefd71318c0c7b27}{contador}}
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_partida_a0f8270dcd9f4ec3d4542da7840d249b3}{guanyador}}
+\item 
+int \mbox{\hyperlink{class_partida_a3d8288c527063f572ffb19431dc5b863}{jugada\+Actual}} = 0
+\item 
+int \mbox{\hyperlink{class_partida_a6f2dfae84386bd455d6d58ca4ce69b3f}{jugada\+Final}} = 0
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$ \mbox{\hyperlink{class_partida_a65fce93efff1e64d593afeb1d6a791c2}{jugades}}
+\item 
+int \mbox{\hyperlink{class_partida_a1c916571fa05667e4ba4329ed1912f3c}{max\+Escacs}}
+\item 
+int \mbox{\hyperlink{class_partida_a2fe23a5d12e258dadf56ce569d9e8cc6}{max\+Inaccio}}
+\item 
+\mbox{\hyperlink{enum_resultat_partida}{Resultat\+Partida}} \mbox{\hyperlink{class_partida_a0e51ebc8f0d0d28cf0b63abb03a694ee}{resultat\+Final}}
+\item 
+\mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}} \mbox{\hyperlink{class_partida_a432b326d7d9153985f41d0fc45a38500}{resultat\+Final\+Detall}}
+\item 
+String \mbox{\hyperlink{class_partida_aa93aaefc087031f52f5fd074af8e4c3b}{ruta\+Fitxer\+Regles}}
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_partida_a2d4fb7fd2d91dc7c64fc1ca9b1e1194c}{t}}
+\item 
+Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ \mbox{\hyperlink{class_partida_acdc3efc1902bc7673d0bfc416cfeb8fd}{tipus}}
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_partida_a9449a95a4b9b9eb3b60744b4a7a85fe0}{torn}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Motor de el conjunt de \mbox{\hyperlink{class_escacs}{Escacs}}. Gestiona les jugades, el tauler, les peces. Executa també les jugades. 
+
+\begin{DoxyNote}{Nota}
+Motor del Joc. ../projecte-\/2020-\/a4/dataset/jugades.json 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Autor}
+Eloi Quintana Ferrer 
+
+u1963141 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_partida_abd176d333d00742880da45fcf8c85e38}\label{class_partida_abd176d333d00742880da45fcf8c85e38}} 
+\index{Partida@{Partida}!Partida@{Partida}}
+\index{Partida@{Partida}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{Partida()}{Partida()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Partida.\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{t,  }\item[{Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$}]{tipus,  }\item[{Array\+List$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$}]{j,  }\item[{int}]{max\+Inaccio,  }\item[{int}]{max\+Escacs }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPostcond}{Postcondició}
+Crea la partida, executa totes les jugades passades. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em t} & Objecte tauler \\
+\hline
+{\em tipus} & Un hashmap on String es el nom del tipus\+Peca. \\
+\hline
+{\em Array} & de jugades, aquestes però s\textquotesingle{}han d\textquotesingle{}afegir i comprovar per a la partida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+La partida ha estat començada. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_partida_a343c19f2d229b763c45477a20cc22647}\label{class_partida_a343c19f2d229b763c45477a20cc22647}} 
+\index{Partida@{Partida}!Partida@{Partida}}
+\index{Partida@{Partida}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{Partida()}{Partida()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Partida.\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{t,  }\item[{Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$}]{tipus,  }\item[{int}]{max\+Inaccio,  }\item[{int}]{max\+Escacs }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPostcond}{Postcondició}
+Crea una partida inicial. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em t} & Objecte tauler \\
+\hline
+{\em tipus} & Un hashmap on String es el nom del tipus\+Peca i tipus\+Peca. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+La partida esta inicialitzada nova. 
+\end{DoxyNote}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_partida_a7750bc040285966d17a31115a2974e9e}\label{class_partida_a7750bc040285966d17a31115a2974e9e}} 
+\index{Partida@{Partida}!acabada@{acabada}}
+\index{acabada@{acabada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{acabada()}{acabada()}}
+{\footnotesize\ttfamily boolean Partida.\+acabada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+ha retornat un bolea de l\textquotesingle{}atribut acabada. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+acabada, cert si la partida esta acabada, fals altrament. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a8d87fd59dbf543cbfa5b72d76fa66d2d}\label{class_partida_a8d87fd59dbf543cbfa5b72d76fa66d2d}} 
+\index{Partida@{Partida}!acabarPartida@{acabarPartida}}
+\index{acabarPartida@{acabarPartida}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{acabarPartida()}{acabarPartida()}}
+{\footnotesize\ttfamily void Partida.\+acabar\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_resultat_partida}{Resultat\+Partida}}}]{resultat\+Final,  }\item[{\mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}}}]{resultat\+Final\+Detall,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{guanyador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+partida no acabada 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha marcat la partida com acabada i es guarda el guanyador 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_partida_a44250f4d56506464e69ae51c7cad62db}\label{class_partida_a44250f4d56506464e69ae51c7cad62db}} 
+\index{Partida@{Partida}!afegirJugada@{afegirJugada}}
+\index{afegirJugada@{afegirJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{afegirJugada()}{afegirJugada()}}
+{\footnotesize\ttfamily void Partida.\+afegir\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugada}{Jugada}}}]{j,  }\item[{Integer}]{pos }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+j != null @\+Post s\textquotesingle{}ha afegit la jugada a la llista de jugades a una posicio donada o no 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em j} & \mbox{\hyperlink{class_jugada}{Jugada}} afegir. \\
+\hline
+{\em pos} & \mbox{\hyperlink{class_posicio}{Posicio}} de la jugada a fegir, null per afegir al final \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_a92e785a94a34c38e77d73f15230946ca}\label{class_partida_a92e785a94a34c38e77d73f15230946ca}} 
+\index{Partida@{Partida}!canviarTorn@{canviarTorn}}
+\index{canviarTorn@{canviarTorn}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{canviarTorn()}{canviarTorn()}}
+{\footnotesize\ttfamily void Partida.\+canviar\+Torn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{torn }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}ha canviat el color del torn 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_partida_a7c26df2b7a3a95049813c10ece4aba4b}\label{class_partida_a7c26df2b7a3a95049813c10ece4aba4b}} 
+\index{Partida@{Partida}!carregarJugada@{carregarJugada}}
+\index{carregarJugada@{carregarJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{carregarJugada()}{carregarJugada()}}
+{\footnotesize\ttfamily void Partida.\+carregar\+Jugada (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+pos ha d\textquotesingle{}estar dins el size de jugades 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha carregat a la partida en joc la jugada previament introduïda. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos} & posicio de l\textquotesingle{}array que s\textquotesingle{}agafara la jugada a aplicar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_a4e5197bb5ae8bc0a833bf48db6f24f5a}\label{class_partida_a4e5197bb5ae8bc0a833bf48db6f24f5a}} 
+\index{Partida@{Partida}!comprobarJugada@{comprobarJugada}}
+\index{comprobarJugada@{comprobarJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{comprobarJugada()}{comprobarJugada()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Partida.\+comprobar\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugada}{Jugada}}}]{j }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPrecond}{Precondició}
+j != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha comprobat al jugada j 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em j} & \mbox{\hyperlink{class_jugada}{Jugada}} a analitzar \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & si la jugada no es vàlida \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_partida_a4695b58c5e5ebcac0ba284293982851e}\label{class_partida_a4695b58c5e5ebcac0ba284293982851e}} 
+\index{Partida@{Partida}!comprobarJugada@{comprobarJugada}}
+\index{comprobarJugada@{comprobarJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{comprobarJugada()}{comprobarJugada()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Partida.\+comprobar\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugada}{Jugada}}}]{j,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{tipus\+Peca\+Promocio }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+j != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha comprobat(escac,..i mat, contadors..) i aplicat una jugada. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em j} & \mbox{\hyperlink{class_jugada}{Jugada}} a analitzar \\
+\hline
+{\em tipus\+Peca\+Promocio} & Tipus de peca a promocionar amb la peca desti. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_partida_a325bbae76da5d73f9ba35b4b2a5174de}\label{class_partida_a325bbae76da5d73f9ba35b4b2a5174de}} 
+\index{Partida@{Partida}!crearJugada@{crearJugada}}
+\index{crearJugada@{crearJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{crearJugada()}{crearJugada()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Partida.\+crear\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Es crea una jugada. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em desti} & posicio destí per a crear la jugada. \\
+\hline
+{\em origen} & Posico d\textquotesingle{}origen per crear la jugada. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & si la jugada és invalida. \\
+\hline
+\end{DoxyExceptions}
+Mirem que la peca desti no sigui del mateix color ni invulnerable\mbox{\Hypertarget{class_partida_a3e90b33d9c8522b8217ae6d3232e7159}\label{class_partida_a3e90b33d9c8522b8217ae6d3232e7159}} 
+\index{Partida@{Partida}!desferJugada@{desferJugada}}
+\index{desferJugada@{desferJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{desferJugada()}{desferJugada()}}
+{\footnotesize\ttfamily void Partida.\+desfer\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha una jugada per desfer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}ha desfet la jugada actual. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_partida_aa4134ce7321653cd343956d3761b533c}\label{class_partida_aa4134ce7321653cd343956d3761b533c}} 
+\index{Partida@{Partida}!desferJugadaFinal@{desferJugadaFinal}}
+\index{desferJugadaFinal@{desferJugadaFinal}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{desferJugadaFinal()}{desferJugadaFinal()}}
+{\footnotesize\ttfamily void Partida.\+desfer\+Jugada\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha una jugada per desfer @\+Post Desfà la jugada actual, i si a mes aquesta son taules acceptades desfa 2 jugades. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_partida_aa316e0ebfbdd331a4a13044dc805be58}\label{class_partida_aa316e0ebfbdd331a4a13044dc805be58}} 
+\index{Partida@{Partida}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{dimensions()}{dimensions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pair}{Pair}}$<$Integer,Integer$>$ Partida.\+dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+\+: t != null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+\+: retorna l\textquotesingle{}atribut dimensions del tauler actual. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+\+: Un pair amb les dimensions del tauler first-\/$>$columnes, seccond-\/$>$files. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a212e844414e42354f10a3c386ce26cf0}\label{class_partida_a212e844414e42354f10a3c386ce26cf0}} 
+\index{Partida@{Partida}!eliminarPeces@{eliminarPeces}}
+\index{eliminarPeces@{eliminarPeces}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{eliminarPeces()}{eliminarPeces()}}
+{\footnotesize\ttfamily static void Partida.\+eliminar\+Peces (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{class_peca}{Peca}} $>$$>$}]{mig,  }\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{tau,  }\item[{\mbox{\hyperlink{class_contadors}{Contadors}}}]{cont,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{tornE }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+s\textquotesingle{}han eliminat les peces del tauler donades i s\textquotesingle{}ha posat el contador d\textquotesingle{}inaccio a 0. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em mig} & conte el conjunt de peces i posicions a eliminar del tauler. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_aa9aa36160559e3dbf4bea9288bd657ff}\label{class_partida_aa9aa36160559e3dbf4bea9288bd657ff}} 
+\index{Partida@{Partida}!ferJugada@{ferJugada}}
+\index{ferJugada@{ferJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{ferJugada()}{ferJugada()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Partida.\+fer\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPrecond}{Precondició}
+origen != null @\+Post s\textquotesingle{}ha creat una jugada i s\textquotesingle{}ha guardart a la llista de jugades 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em origen} & posició d\textquotesingle{}origen des d\textquotesingle{}on es vol moure una peça \\
+\hline
+{\em desti} & posició d\textquotesingle{}origen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_a1b8ead92044ff11376d0167b890c93bb}\label{class_partida_a1b8ead92044ff11376d0167b890c93bb}} 
+\index{Partida@{Partida}!ferJugada@{ferJugada}}
+\index{ferJugada@{ferJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{ferJugada()}{ferJugada()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Partida.\+fer\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti,  }\item[{Integer}]{posicio,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca\+Promocio }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+posicio és vàlida, i origen != null @\+Post es cra una jugada i es guarda a la posicó de l\textquotesingle{}array de jugades donada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em origen} & posició d\textquotesingle{}origen des d\textquotesingle{}on es vol moure una peça \\
+\hline
+{\em desti} & posició d\textquotesingle{}origen \\
+\hline
+{\em posicio} & posició on es guardara la jugada al l\textquotesingle{}array de jugades. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_a2d16d0d2d2c2cd81fb566e3f1326b066}\label{class_partida_a2d16d0d2d2c2cd81fb566e3f1326b066}} 
+\index{Partida@{Partida}!ferJugada@{ferJugada}}
+\index{ferJugada@{ferJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{ferJugada()}{ferJugada()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily boolean Partida.\+fer\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}}}]{resultat }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPrecond}{Precondició}
+resultat != null @\+Post s\textquotesingle{}exectua una jugada especial donat un resultat de jugada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em resultat} & conte el resultat que tindra la jugada que es crea. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_a9fad82d4fa3646f5edf77197b51a1729}\label{class_partida_a9fad82d4fa3646f5edf77197b51a1729}} 
+\index{Partida@{Partida}!guanyador@{guanyador}}
+\index{guanyador@{guanyador}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{guanyador()}{guanyador()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Partida.\+guanyador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post Retorna el \mbox{\hyperlink{enum_color}{Color}} del jugador del torn actual 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+Blanques si color Blanc, Negres si color Negre. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a69f32f46909b7d58dcf60d83d470a213}\label{class_partida_a69f32f46909b7d58dcf60d83d470a213}} 
+\index{Partida@{Partida}!modificarRutaFitxerRegles@{modificarRutaFitxerRegles}}
+\index{modificarRutaFitxerRegles@{modificarRutaFitxerRegles}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{modificarRutaFitxerRegles()}{modificarRutaFitxerRegles()}}
+{\footnotesize\ttfamily void Partida.\+modificar\+Ruta\+Fitxer\+Regles (\begin{DoxyParamCaption}\item[{String}]{ruta\+Fitxer\+Regles }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em ruta\+Fitxer\+Regles} & string que conte la nova ruta del fitxer de regles. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_ae71c857d26809a5216a73ed006933ffb}\label{class_partida_ae71c857d26809a5216a73ed006933ffb}} 
+\index{Partida@{Partida}!obtenirJugades@{obtenirJugades}}
+\index{obtenirJugades@{obtenirJugades}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{obtenirJugades()}{obtenirJugades()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_jugada}{Jugada}}$>$ Partida.\+obtenir\+Jugades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+\+: -\/ 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+retorna una col·leccio de les jugades realitzades al llarg de la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a08f2b847c4e55d87eea36b3047f91e8f}\label{class_partida_a08f2b847c4e55d87eea36b3047f91e8f}} 
+\index{Partida@{Partida}!obtenirNomsTipusPeca@{obtenirNomsTipusPeca}}
+\index{obtenirNomsTipusPeca@{obtenirNomsTipusPeca}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{obtenirNomsTipusPeca()}{obtenirNomsTipusPeca()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}$>$ Partida.\+obtenir\+Noms\+Tipus\+Peca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+\+: -\/ 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+\+: retorna una coleccio de tots els noms dels tipus de peca que tenim carregats. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a6d465d393be07fd13405b774e174f11c}\label{class_partida_a6d465d393be07fd13405b774e174f11c}} 
+\index{Partida@{Partida}!obtenirResultatPartida@{obtenirResultatPartida}}
+\index{obtenirResultatPartida@{obtenirResultatPartida}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{obtenirResultatPartida()}{obtenirResultatPartida()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_resultat_partida}{Resultat\+Partida}} Partida.\+obtenir\+Resultat\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+\+: -\/ 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+\+: retorna el resultat de la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a89a003c51e82699d6970a20f6eda7f35}\label{class_partida_a89a003c51e82699d6970a20f6eda7f35}} 
+\index{Partida@{Partida}!obtenirResultatPartidaDetall@{obtenirResultatPartidaDetall}}
+\index{obtenirResultatPartidaDetall@{obtenirResultatPartidaDetall}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{obtenirResultatPartidaDetall()}{obtenirResultatPartidaDetall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}} Partida.\+obtenir\+Resultat\+Partida\+Detall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el resultat de la partida en detall 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+resultat\+Final\+Detall, un tipus de \mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a0241f7aec43c0f56bc242544396d05ee}\label{class_partida_a0241f7aec43c0f56bc242544396d05ee}} 
+\index{Partida@{Partida}!obtenirRutaFitxerRegles@{obtenirRutaFitxerRegles}}
+\index{obtenirRutaFitxerRegles@{obtenirRutaFitxerRegles}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{obtenirRutaFitxerRegles()}{obtenirRutaFitxerRegles()}}
+{\footnotesize\ttfamily String Partida.\+obtenir\+Ruta\+Fitxer\+Regles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+ruta del fitxer de regles 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_ac5078c7c38c86fa622ce9511a0b27259}\label{class_partida_ac5078c7c38c86fa622ce9511a0b27259}} 
+\index{Partida@{Partida}!obtenirTauler@{obtenirTauler}}
+\index{obtenirTauler@{obtenirTauler}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{obtenirTauler()}{obtenirTauler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Partida.\+obtenir\+Tauler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+el tauler actual 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post ha realizat el retorn 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_partida_a4e1f47ee720b816f483ba0a8814ebb95}\label{class_partida_a4e1f47ee720b816f483ba0a8814ebb95}} 
+\index{Partida@{Partida}!obtenirTaulerInicial@{obtenirTaulerInicial}}
+\index{obtenirTaulerInicial@{obtenirTaulerInicial}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{obtenirTaulerInicial()}{obtenirTaulerInicial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Partida.\+obtenir\+Tauler\+Inicial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+existeix el tauler inicial @\+Post ha retornat el tauler inicial 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+el tauler inicial 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a13d230e7f6588a0f60c4cc2ac3556f36}\label{class_partida_a13d230e7f6588a0f60c4cc2ac3556f36}} 
+\index{Partida@{Partida}!potContinuar@{potContinuar}}
+\index{potContinuar@{potContinuar}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{potContinuar()}{potContinuar()}}
+{\footnotesize\ttfamily boolean Partida.\+pot\+Continuar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post indica si la partida pot continuar 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+true si una partida pot continuar, false altrament 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_abe3128c5cfc1173e969db4a7a30b948c}\label{class_partida_abe3128c5cfc1173e969db4a7a30b948c}} 
+\index{Partida@{Partida}!potDesferJugada@{potDesferJugada}}
+\index{potDesferJugada@{potDesferJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{potDesferJugada()}{potDesferJugada()}}
+{\footnotesize\ttfamily int Partida.\+pot\+Desfer\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+realitza el calcul de jugades x desfer 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+nombre de jugades per desfer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a7ac69a2c88f5fab1ab1cc92d2e996811}\label{class_partida_a7ac69a2c88f5fab1ab1cc92d2e996811}} 
+\index{Partida@{Partida}!potReferJugada@{potReferJugada}}
+\index{potReferJugada@{potReferJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{potReferJugada()}{potReferJugada()}}
+{\footnotesize\ttfamily int Partida.\+pot\+Refer\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post calcula el nombre de jugada que pot refer 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+nombre de jugades disponibles per refer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a415cb8450adcad1e177b01e4870da731}\label{class_partida_a415cb8450adcad1e177b01e4870da731}} 
+\index{Partida@{Partida}!realitzarJugada@{realitzarJugada}}
+\index{realitzarJugada@{realitzarJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{realitzarJugada()}{realitzarJugada()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Partida.\+realitzar\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{tmp\+Origen,  }\item[{\mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$}]{a }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPrecond}{Precondició}
+j no esta buit 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+donat els parametres s\textquotesingle{}ha classificat la jugada i s\textquotesingle{}ha gestionat el tauler. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em tmp\+Origen} & peca d\textquotesingle{}origen \\
+\hline
+{\em a} & pair de posicio i moviment del desti \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & @comment metode que crida el metode estatic de partida però amb les dades de la partida actual. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_partida_ad2773bc5c1580303babfd34ad2014cad}\label{class_partida_ad2773bc5c1580303babfd34ad2014cad}} 
+\index{Partida@{Partida}!realitzarJugada@{realitzarJugada}}
+\index{realitzarJugada@{realitzarJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{realitzarJugada()}{realitzarJugada()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Partida.\+realitzar\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{tauler,  }\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{tmp\+Origen,  }\item[{\mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$}]{a,  }\item[{\mbox{\hyperlink{class_contadors}{Contadors}}}]{cont,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{tornE }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+cap dels elements es null 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+donat els parametres s\textquotesingle{}ha classificat la jugada i s\textquotesingle{}ha gestionat el tauler. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em tauler} & tauler a realitzar la jugada \\
+\hline
+{\em tmp\+Origen} & peca d\textquotesingle{}origen \\
+\hline
+{\em a} & pair de posicio i moviment \\
+\hline
+{\em cont} & objecte contadors \\
+\hline
+{\em tornE} & torn actual del que realitza la jugada \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & \\
+\hline
+\end{DoxyExceptions}
+Mirem que la peca desti no sigui del mateix color ni invulnerable
+
+Mirem que la peca desti no sigui del mateix color ni invulnerable\mbox{\Hypertarget{class_partida_aaf1596dcca3686a0f35cd845cc6b5f84}\label{class_partida_aaf1596dcca3686a0f35cd845cc6b5f84}} 
+\index{Partida@{Partida}!realitzarJugades@{realitzarJugades}}
+\index{realitzarJugades@{realitzarJugades}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{realitzarJugades()}{realitzarJugades()}}
+{\footnotesize\ttfamily void Partida.\+realitzar\+Jugades (\begin{DoxyParamCaption}\item[{Array\+List$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$}]{j }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+j no esta buit, el color dels tiradors de les jugades son correctes(no es tindras en compte) @\+Post donat un conjunt de jugades, s\textquotesingle{}executa cada una per ordre ascendent. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em j} & conte el conjunt de jugades a executar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_partida_a7994d595113a872963b33f2b9d4d59d8}\label{class_partida_a7994d595113a872963b33f2b9d4d59d8}} 
+\index{Partida@{Partida}!referJugada@{referJugada}}
+\index{referJugada@{referJugada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{referJugada()}{referJugada()}}
+{\footnotesize\ttfamily void Partida.\+refer\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha una jugada per refer. @\+Post Torna a fer la jugada següent. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_partida_ac60276370247f2e51e9ffe07cb21977a}\label{class_partida_ac60276370247f2e51e9ffe07cb21977a}} 
+\index{Partida@{Partida}!tauler@{tauler}}
+\index{tauler@{tauler}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{tauler()}{tauler()}}
+{\footnotesize\ttfamily String Partida.\+tauler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+obte el tauler actual en format text. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+El tauler en format String. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_partida_a4d5733cabd31532ba2bd72d00c6b6451}\label{class_partida_a4d5733cabd31532ba2bd72d00c6b6451}} 
+\index{Partida@{Partida}!torn@{torn}}
+\index{torn@{torn}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{torn()}{torn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Partida.\+torn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el \mbox{\hyperlink{enum_color}{Color}} del jugador del torn actual 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Blanques si color Blanc, Negres si color Negre. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_partida_adaa31fc95ee1a802308cb6d36fb53f26}\label{class_partida_adaa31fc95ee1a802308cb6d36fb53f26}} 
+\index{Partida@{Partida}!acabada@{acabada}}
+\index{acabada@{acabada}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{acabada}{acabada}}
+{\footnotesize\ttfamily boolean Partida.\+acabada\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica si la partida esta acabada o no. \mbox{\Hypertarget{class_partida_ac629b43c9ce6f012cefd71318c0c7b27}\label{class_partida_ac629b43c9ce6f012cefd71318c0c7b27}} 
+\index{Partida@{Partida}!contador@{contador}}
+\index{contador@{contador}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{contador}{contador}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_contadors}{Contadors}} Partida.\+contador\hspace{0.3cm}{\ttfamily [private]}}
+
+Cotnadors de escacs i inaccio per a cada color. \mbox{\Hypertarget{class_partida_a0f8270dcd9f4ec3d4542da7840d249b3}\label{class_partida_a0f8270dcd9f4ec3d4542da7840d249b3}} 
+\index{Partida@{Partida}!guanyador@{guanyador}}
+\index{guanyador@{guanyador}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{guanyador}{guanyador}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Partida.\+guanyador\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica el color de quin jugador és el guanyador. \mbox{\Hypertarget{class_partida_a3d8288c527063f572ffb19431dc5b863}\label{class_partida_a3d8288c527063f572ffb19431dc5b863}} 
+\index{Partida@{Partida}!jugadaActual@{jugadaActual}}
+\index{jugadaActual@{jugadaActual}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{jugadaActual}{jugadaActual}}
+{\footnotesize\ttfamily int Partida.\+jugada\+Actual = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica la posició de la jugada actual de l\textquotesingle{}Array de les jugades. \mbox{\Hypertarget{class_partida_a6f2dfae84386bd455d6d58ca4ce69b3f}\label{class_partida_a6f2dfae84386bd455d6d58ca4ce69b3f}} 
+\index{Partida@{Partida}!jugadaFinal@{jugadaFinal}}
+\index{jugadaFinal@{jugadaFinal}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{jugadaFinal}{jugadaFinal}}
+{\footnotesize\ttfamily int Partida.\+jugada\+Final = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica la posició de la jugada en la qual es pot recuperar realitzant un refer. \mbox{\Hypertarget{class_partida_a65fce93efff1e64d593afeb1d6a791c2}\label{class_partida_a65fce93efff1e64d593afeb1d6a791c2}} 
+\index{Partida@{Partida}!jugades@{jugades}}
+\index{jugades@{jugades}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{jugades}{jugades}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_jugada}{Jugada}}$>$ Partida.\+jugades\hspace{0.3cm}{\ttfamily [private]}}
+
+índex de les jugades realitzades. \mbox{\Hypertarget{class_partida_a1c916571fa05667e4ba4329ed1912f3c}\label{class_partida_a1c916571fa05667e4ba4329ed1912f3c}} 
+\index{Partida@{Partida}!maxEscacs@{maxEscacs}}
+\index{maxEscacs@{maxEscacs}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{maxEscacs}{maxEscacs}}
+{\footnotesize\ttfamily int Partida.\+max\+Escacs\hspace{0.3cm}{\ttfamily [private]}}
+
+Nombre màxim de escacs seguits. \mbox{\Hypertarget{class_partida_a2fe23a5d12e258dadf56ce569d9e8cc6}\label{class_partida_a2fe23a5d12e258dadf56ce569d9e8cc6}} 
+\index{Partida@{Partida}!maxInaccio@{maxInaccio}}
+\index{maxInaccio@{maxInaccio}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{maxInaccio}{maxInaccio}}
+{\footnotesize\ttfamily int Partida.\+max\+Inaccio\hspace{0.3cm}{\ttfamily [private]}}
+
+Nombre màxim de jugades en inacció. \mbox{\Hypertarget{class_partida_a0e51ebc8f0d0d28cf0b63abb03a694ee}\label{class_partida_a0e51ebc8f0d0d28cf0b63abb03a694ee}} 
+\index{Partida@{Partida}!resultatFinal@{resultatFinal}}
+\index{resultatFinal@{resultatFinal}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{resultatFinal}{resultatFinal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_resultat_partida}{Resultat\+Partida}} Partida.\+resultat\+Final\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica el resultat final de la partida. \mbox{\Hypertarget{class_partida_a432b326d7d9153985f41d0fc45a38500}\label{class_partida_a432b326d7d9153985f41d0fc45a38500}} 
+\index{Partida@{Partida}!resultatFinalDetall@{resultatFinalDetall}}
+\index{resultatFinalDetall@{resultatFinalDetall}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{resultatFinalDetall}{resultatFinalDetall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_resultat_jugada}{Resultat\+Jugada}} Partida.\+resultat\+Final\+Detall\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica el resultat final de la partida en detall. \mbox{\Hypertarget{class_partida_aa93aaefc087031f52f5fd074af8e4c3b}\label{class_partida_aa93aaefc087031f52f5fd074af8e4c3b}} 
+\index{Partida@{Partida}!rutaFitxerRegles@{rutaFitxerRegles}}
+\index{rutaFitxerRegles@{rutaFitxerRegles}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{rutaFitxerRegles}{rutaFitxerRegles}}
+{\footnotesize\ttfamily String Partida.\+ruta\+Fitxer\+Regles\hspace{0.3cm}{\ttfamily [private]}}
+
+Ruta completa del fitxer de regles de la partida \mbox{\Hypertarget{class_partida_a2d4fb7fd2d91dc7c64fc1ca9b1e1194c}\label{class_partida_a2d4fb7fd2d91dc7c64fc1ca9b1e1194c}} 
+\index{Partida@{Partida}!t@{t}}
+\index{t@{t}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Partida.\+t\hspace{0.3cm}{\ttfamily [private]}}
+
+Guarda la classe \mbox{\hyperlink{class_tauler}{Tauler}} que s\textquotesingle{}esta utilitzant actualment. \mbox{\Hypertarget{class_partida_acdc3efc1902bc7673d0bfc416cfeb8fd}\label{class_partida_acdc3efc1902bc7673d0bfc416cfeb8fd}} 
+\index{Partida@{Partida}!tipus@{tipus}}
+\index{tipus@{tipus}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{tipus}{tipus}}
+{\footnotesize\ttfamily Hash\+Map$<$String,\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}$>$ Partida.\+tipus\hspace{0.3cm}{\ttfamily [private]}}
+
+Index dels tipus de peces que tenim. \mbox{\Hypertarget{class_partida_a9449a95a4b9b9eb3b60744b4a7a85fe0}\label{class_partida_a9449a95a4b9b9eb3b60744b4a7a85fe0}} 
+\index{Partida@{Partida}!torn@{torn}}
+\index{torn@{torn}!Partida@{Partida}}
+\doxysubsubsection{\texorpdfstring{torn}{torn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Partida.\+torn\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica el torn actual de la partida 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_partida_8java}{Partida.\+java}}\end{DoxyCompactItemize}

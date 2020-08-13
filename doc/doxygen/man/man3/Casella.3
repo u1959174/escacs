@@ -1,0 +1,99 @@
+.TH "Casella" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Casella \- Una casella d'un \fBTauler\fP\&. Classe contenidora\&. Pot contenir una Peça\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBCasella\fP ()"
+.br
+.ti -1c
+.RI "void \fBagafaPeca\fP (\fBPeca\fP novaPeca)"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBtePeca\fP ()"
+.br
+.ti -1c
+.RI "void \fBtreuPeca\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "\fBPeca\fP \fBpeca\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Una casella d'un \fBTauler\fP\&. Classe contenidora\&. Pot contenir una Peça\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Casella\&.Casella ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea una casella buida(sense cap peça)\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "void Casella\&.agafaPeca (\fBPeca\fP novaPeca)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+La casella ara conté la peça\&. Si hi havia una peça prèviament ha quedat sobreescrita\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInovaPeca\fP Peça que s'afegirà\&. 
+.RE
+.PP
+
+.SS "\fBPeca\fP Casella\&.tePeca ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la peça que conté la casella\&. En cas de no contenir cap peça retorna null\&. 
+.RE
+.PP
+
+.SS "void Casella\&.treuPeca ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha eliminat la peça de la casella si n'hi havia, altrament no s'ha modificat\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "\fBPeca\fP Casella\&.peca\fC [private]\fP"
+Peça que conté la casella\&. Per defecte una casella no té cap peça i aquest paràmetre serà = null\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

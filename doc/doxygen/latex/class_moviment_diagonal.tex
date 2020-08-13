@@ -1,0 +1,283 @@
+\hypertarget{class_moviment_diagonal}{}\doxysection{Referència de la Classe Moviment\+Diagonal}
+\label{class_moviment_diagonal}\index{MovimentDiagonal@{MovimentDiagonal}}
+
+
+Implementació de \mbox{\hyperlink{interface_moviment}{Moviment}} per \mbox{\hyperlink{class_moviment_diagonal}{Moviment\+Diagonal}}.  
+
+
+Diagrama d\textquotesingle{}Herència per a Moviment\+Diagonal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_moviment_diagonal}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+Integer \mbox{\hyperlink{class_moviment_diagonal_a0a92a47ababac4a2a1b28d983ec2ce03}{diguem\+Saltar}} ()
+\begin{DoxyCompactList}\small\item\em Diu el valor de saltar. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_moviment_diagonal_ab0ba3d659c8061035db92588431ad021}{Moviment\+Diagonal}} (String a, String b, String c, String d, boolean \mbox{\hyperlink{class_moviment_diagonal_a0611acf0cb6da3b439bcee7a16e09c4b}{inicial}})  throws Illegal\+Argument\+Exception 
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_diagonal_a459151fcdc867b172826b59c9a791cfc}{es\+Moviment}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti, boolean primer, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} peca\+\_\+final, boolean peca\+\_\+mig, boolean exacte)
+\begin{DoxyCompactList}\small\item\em Comprova si un desplaçament és el \mbox{\hyperlink{interface_moviment}{Moviment}}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_diagonal_adc51066a091bcaed0925d648365ba01c}{equals}} (\mbox{\hyperlink{class_moviment_diagonal}{Moviment\+Diagonal}} mov)
+\item 
+String \mbox{\hyperlink{class_moviment_diagonal_a5ec833b802ec4136dc5aaa18279980fc}{diguemA}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre A. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_moviment_diagonal_aee3acd20d0f1f1f73e1c2583b176d5ab}{diguemB}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre B. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_diagonal_a9ac8ea29ef5a8b52298b01e706942c2d}{es\+Enroc}} ()
+\begin{DoxyCompactList}\small\item\em Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_moviment_diagonal_aa68741756f543adc9ed6a1f809c9a57b}{traduir\+AB}} (String a, String b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_moviment_diagonal_a0611acf0cb6da3b439bcee7a16e09c4b}{inicial}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{interface_moviment}{Moviment}} diagonal d\textquotesingle{}una peça. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_diagonal_a772c718364c872b4789483b138fd4db9}{distancia}}
+\begin{DoxyCompactList}\small\item\em Indica el límit de dstància del moviment, 0 si és infinit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_diagonal_a241959072f4eb76a0ba09b6b5e180a1e}{sentit}}
+\begin{DoxyCompactList}\small\item\em Indica la direcció el sentit del moviment. 1 positiu, -\/1 negatiu i 0 en ambdos sentits respecte la A. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_diagonal_a151a1fb3245547bb3a0482be992d3755}{dreta}}
+\begin{DoxyCompactList}\small\item\em Cert si la diagonal és dreta, fals és esquerra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_diagonal_af746e9c7789d25da3cf9ffd9015381c0}{saltar}}
+\begin{DoxyCompactList}\small\item\em 0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_diagonal_a397dc7ad09135fd6e4bc68440dbd47b9}{matar}}
+\begin{DoxyCompactList}\small\item\em 0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Implementació de \mbox{\hyperlink{interface_moviment}{Moviment}} per \mbox{\hyperlink{class_moviment_diagonal}{Moviment\+Diagonal}}. 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_moviment_diagonal_ab0ba3d659c8061035db92588431ad021}\label{class_moviment_diagonal_ab0ba3d659c8061035db92588431ad021}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!MovimentDiagonal@{MovimentDiagonal}}
+\index{MovimentDiagonal@{MovimentDiagonal}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{MovimentDiagonal()}{MovimentDiagonal()}}
+{\footnotesize\ttfamily Moviment\+Diagonal.\+Moviment\+Diagonal (\begin{DoxyParamCaption}\item[{String}]{a,  }\item[{String}]{b,  }\item[{String}]{c,  }\item[{String}]{d,  }\item[{boolean}]{inicial }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception}
+
+
+
+Constructor. 
+
+\begin{DoxyPrecond}{Precondició}
+c i d són enters 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em a} & Component A. \\
+\hline
+{\em b} & Component B. \\
+\hline
+{\em c} & Component C. \\
+\hline
+{\em d} & Component D. \\
+\hline
+{\em inicial} & Indica si el moviment és inicial. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+Crea un moviment de tipus diagonal. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & Quan no es compleix la pre. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_moviment_diagonal_a5ec833b802ec4136dc5aaa18279980fc}\label{class_moviment_diagonal_a5ec833b802ec4136dc5aaa18279980fc}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!diguemA@{diguemA}}
+\index{diguemA@{diguemA}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{diguemA()}{diguemA()}}
+{\footnotesize\ttfamily String Moviment\+Diagonal.\+diguemA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre A. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre A traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_aa11bb0c771e4be8571289a962bebf699}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_diagonal_aee3acd20d0f1f1f73e1c2583b176d5ab}\label{class_moviment_diagonal_aee3acd20d0f1f1f73e1c2583b176d5ab}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!diguemB@{diguemB}}
+\index{diguemB@{diguemB}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{diguemB()}{diguemB()}}
+{\footnotesize\ttfamily String Moviment\+Diagonal.\+diguemB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre B. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre B traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_ae4894ae266575c53390205fc3abbc900}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_diagonal_a0a92a47ababac4a2a1b28d983ec2ce03}\label{class_moviment_diagonal_a0a92a47ababac4a2a1b28d983ec2ce03}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!diguemSaltar@{diguemSaltar}}
+\index{diguemSaltar@{diguemSaltar}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{diguemSaltar()}{diguemSaltar()}}
+{\footnotesize\ttfamily Integer Moviment\+Diagonal.\+diguem\+Saltar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu el valor de saltar. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l\textquotesingle{}atribut. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_a6588478cb741e56193ffb19b9726c08a}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_diagonal_adc51066a091bcaed0925d648365ba01c}\label{class_moviment_diagonal_adc51066a091bcaed0925d648365ba01c}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!equals@{equals}}
+\index{equals@{equals}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean Moviment\+Diagonal.\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_moviment_diagonal}{Moviment\+Diagonal}}}]{mov }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_moviment_diagonal_a9ac8ea29ef5a8b52298b01e706942c2d}\label{class_moviment_diagonal_a9ac8ea29ef5a8b52298b01e706942c2d}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!esEnroc@{esEnroc}}
+\index{esEnroc@{esEnroc}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{esEnroc()}{esEnroc()}}
+{\footnotesize\ttfamily boolean Moviment\+Diagonal.\+es\+Enroc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. 
+
+\begin{DoxyReturn}{Retorna}
+Cert si el \mbox{\hyperlink{interface_moviment}{Moviment}} és enroc, fals altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_ad5a855ea234d8abc00995b64f7dab7b0}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_diagonal_a459151fcdc867b172826b59c9a791cfc}\label{class_moviment_diagonal_a459151fcdc867b172826b59c9a791cfc}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!esMoviment@{esMoviment}}
+\index{esMoviment@{esMoviment}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{esMoviment()}{esMoviment()}}
+{\footnotesize\ttfamily boolean Moviment\+Diagonal.\+es\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti,  }\item[{boolean}]{primer,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca\+\_\+final,  }\item[{boolean}]{peca\+\_\+mig,  }\item[{boolean}]{exacte }\end{DoxyParamCaption})}
+
+
+
+Comprova si un desplaçament és el \mbox{\hyperlink{interface_moviment}{Moviment}}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em origen} & Posició d\textquotesingle{}origen. \\
+\hline
+{\em desti} & Posició destí. \\
+\hline
+{\em primer} & Indica si el el moviment és el primer de la partida. \\
+\hline
+{\em peca\+\_\+final} & Referència al tipus de peça de la posició destí. \\
+\hline
+{\em peca\+\_\+mig} & Indica si hi ha alguna peça en la trajectòria. \\
+\hline
+{\em exacte} & Demanar si la distància ha de ser exacte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna cert si amb origen-\/desti és compleix el moviment, fals altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_a3abb68f0684eb7005abbc3de06a9130e}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_diagonal_aa68741756f543adc9ed6a1f809c9a57b}\label{class_moviment_diagonal_aa68741756f543adc9ed6a1f809c9a57b}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!traduirAB@{traduirAB}}
+\index{traduirAB@{traduirAB}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{traduirAB()}{traduirAB()}}
+{\footnotesize\ttfamily boolean Moviment\+Diagonal.\+traduir\+AB (\begin{DoxyParamCaption}\item[{String}]{a,  }\item[{String}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_moviment_diagonal_a772c718364c872b4789483b138fd4db9}\label{class_moviment_diagonal_a772c718364c872b4789483b138fd4db9}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!distancia@{distancia}}
+\index{distancia@{distancia}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{distancia}{distancia}}
+{\footnotesize\ttfamily int Moviment\+Diagonal.\+distancia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica el límit de dstància del moviment, 0 si és infinit. 
+
+\mbox{\Hypertarget{class_moviment_diagonal_a151a1fb3245547bb3a0482be992d3755}\label{class_moviment_diagonal_a151a1fb3245547bb3a0482be992d3755}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!dreta@{dreta}}
+\index{dreta@{dreta}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{dreta}{dreta}}
+{\footnotesize\ttfamily boolean Moviment\+Diagonal.\+dreta\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cert si la diagonal és dreta, fals és esquerra. 
+
+\mbox{\Hypertarget{class_moviment_diagonal_a0611acf0cb6da3b439bcee7a16e09c4b}\label{class_moviment_diagonal_a0611acf0cb6da3b439bcee7a16e09c4b}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!inicial@{inicial}}
+\index{inicial@{inicial}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{inicial}{inicial}}
+{\footnotesize\ttfamily boolean Moviment\+Diagonal.\+inicial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{interface_moviment}{Moviment}} diagonal d\textquotesingle{}una peça. 
+
+Indica si el moviment és exclusivament inicial \mbox{\Hypertarget{class_moviment_diagonal_a397dc7ad09135fd6e4bc68440dbd47b9}\label{class_moviment_diagonal_a397dc7ad09135fd6e4bc68440dbd47b9}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!matar@{matar}}
+\index{matar@{matar}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{matar}{matar}}
+{\footnotesize\ttfamily int Moviment\+Diagonal.\+matar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment 
+
+\mbox{\Hypertarget{class_moviment_diagonal_af746e9c7789d25da3cf9ffd9015381c0}\label{class_moviment_diagonal_af746e9c7789d25da3cf9ffd9015381c0}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!saltar@{saltar}}
+\index{saltar@{saltar}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{saltar}{saltar}}
+{\footnotesize\ttfamily int Moviment\+Diagonal.\+saltar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades 
+
+\mbox{\Hypertarget{class_moviment_diagonal_a241959072f4eb76a0ba09b6b5e180a1e}\label{class_moviment_diagonal_a241959072f4eb76a0ba09b6b5e180a1e}} 
+\index{MovimentDiagonal@{MovimentDiagonal}!sentit@{sentit}}
+\index{sentit@{sentit}!MovimentDiagonal@{MovimentDiagonal}}
+\doxysubsubsection{\texorpdfstring{sentit}{sentit}}
+{\footnotesize\ttfamily int Moviment\+Diagonal.\+sentit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica la direcció el sentit del moviment. 1 positiu, -\/1 negatiu i 0 en ambdos sentits respecte la A. 
+
+\begin{DoxyNote}{Nota}
+També pot ser 0 si el moviment és d\textquotesingle{}una distància determinada. 
+\end{DoxyNote}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_moviment_diagonal_8java}{Moviment\+Diagonal.\+java}}\end{DoxyCompactItemize}

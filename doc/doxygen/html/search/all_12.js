@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['t_320',['t',['../class_jugada.html#aca2e62c9ffd42258e0a04bb0761c3602',1,'Jugada.t()'],['../class_partida.html#a2d4fb7fd2d91dc7c64fc1ca9b1e1194c',1,'Partida.t()']]],
+  ['tauler_321',['Tauler',['../class_tauler.html',1,'Tauler'],['../class_tauler.html#a57081367230c4308c407028df10b3b7d',1,'Tauler.Tauler()'],['../class_min_i_max_paralel.html#af130c1021e3b411bfd2dcd0cdf646b2a',1,'MinIMaxParalel.tauler()'],['../class_min_i_max_sequencial.html#a0fff0dae2acd5e87a7e077795b9ea7ff',1,'MinIMaxSequencial.tauler()'],['../class_peca.html#a5857bfa5e0807aef7263a4ef14a79e7b',1,'Peca.tauler()'],['../class_partida.html#ac60276370247f2e51e9ffe07cb21977a',1,'Partida.tauler()']]],
+  ['tauler_2ejava_322',['Tauler.java',['../_tauler_8java.html',1,'']]],
+  ['tauler_5factual_323',['tauler_actual',['../class_joc_grafic.html#aae0dd7902c5c9baae78186a584036386',1,'JocGrafic']]],
+  ['tauleramenacesblanques_324',['taulerAmenacesBlanques',['../class_tauler.html#a0f77c6752c10bf587b5fe98a9a6a26c0',1,'Tauler']]],
+  ['tauleramenacesnegres_325',['taulerAmenacesNegres',['../class_tauler.html#a5b7917d0e6c026da0c7ffa03ec482385',1,'Tauler']]],
+  ['taulespendentsacceptacio_326',['taulesPendentsAcceptacio',['../class_c_p_u.html#a3021e77d97bb778ba77dc39d9476402d',1,'CPU.taulesPendentsAcceptacio()'],['../class_huma.html#a47ef54883394e732c8b9d4c256405dc6',1,'Huma.taulesPendentsAcceptacio()']]],
+  ['tenspeca_327',['tensPeca',['../class_tauler.html#af70c17a5d0601fd35cb944ca66ff4e50',1,'Tauler']]],
+  ['tepeca_328',['tePeca',['../class_casella.html#a24b8621270eb2e7cdab01518040831d2',1,'Casella']]],
+  ['tipus_329',['tipus',['../class_partida.html#acdc3efc1902bc7673d0bfc416cfeb8fd',1,'Partida.tipus()'],['../class_peca.html#a3b34a3bfa792d42d1cc82384328eece6',1,'Peca.tipus()']]],
+  ['tipusdisponibles_330',['tipusDisponibles',['../class_escacs.html#a42eb1beed8133a57ce216fd8019cb7d5',1,'Escacs.tipusDisponibles()'],['../class_joc_grafic.html#a606c36721db5ee16b3ce018d2cb98788',1,'JocGrafic.tipusDisponibles()'],['../class_joc_text.html#a9959f81537a12e2a3a47ec580b837c8e',1,'JocText.tipusDisponibles()']]],
+  ['tipusexcepciog_331',['TipusExcepcioG',['../enum_tipus_excepcio_g.html',1,'']]],
+  ['tipusexcepciog_2ejava_332',['TipusExcepcioG.java',['../_tipus_excepcio_g_8java.html',1,'']]],
+  ['tipuspeca_333',['TipusPeca',['../class_tipus_peca.html',1,'TipusPeca'],['../class_peca.html#a968694ad378099d2a76336b56dc8249d',1,'Peca.tipusPeca()'],['../class_tipus_peca.html#a050d02a5cdec93dc7d9c18ce1b5ad814',1,'TipusPeca.TipusPeca()']]],
+  ['tipuspeca_2ejava_334',['TipusPeca.java',['../_tipus_peca_8java.html',1,'']]],
+  ['tirador_335',['tirador',['../class_jugada.html#ab2ebf4b066f2e296f9f42951d08a86ff',1,'Jugada']]],
+  ['torn_336',['torn',['../class_joc_text.html#a26b9dbdd61ac27d15b25858b5833c878',1,'JocText.torn()'],['../class_partida.html#a9449a95a4b9b9eb3b60744b4a7a85fe0',1,'Partida.torn()'],['../class_partida.html#a4d5733cabd31532ba2bd72d00c6b6451',1,'Partida.torn()']]],
+  ['tostring_337',['toString',['../enum_color.html#a4121291206b205d1cec85be71d2ff51f',1,'Color.toString()'],['../enum_estat_tauler.html#a0210e763a15f3dd58901c2b525df5ea8',1,'EstatTauler.toString()'],['../enum_resultat_jugada.html#a8cb0e4855301e53ccd01dcd02dfd004b',1,'ResultatJugada.toString()'],['../enum_resultat_partida.html#a703bf157d11134357fa20b96a86272ab',1,'ResultatPartida.toString()'],['../enum_tipus_excepcio_g.html#a51303a4a841305fa09f2e49a2467f182',1,'TipusExcepcioG.toString()'],['../class_c_p_u.html#a27bf52c9f2742f842818d3698c17049d',1,'CPU.toString()'],['../class_huma.html#a1fbcdca8f998d75953bb65386abc2f1a',1,'Huma.toString()'],['../interface_jugador.html#a69e46d6ddf4397e9325d4cdec5bb4253',1,'Jugador.toString()'],['../class_pair.html#a347fbaf5bd8f99f5f43713c3b7520fa5',1,'Pair.toString()'],['../class_peca.html#a11565c29623525d7f65e3493a6ff0b6d',1,'Peca.toString()'],['../class_posicio.html#aa150553319e5f09a7de09f7d0065b290',1,'Posicio.toString()'],['../class_tauler.html#accc9eac98f175247fc448dcd1adcea97',1,'Tauler.toString()'],['../class_tipus_peca.html#ab199b95419418482c4d8ac904d13dd81',1,'TipusPeca.toString()']]],
+  ['traduirab_338',['traduirAB',['../class_moviment_diagonal.html#aa68741756f543adc9ed6a1f809c9a57b',1,'MovimentDiagonal']]],
+  ['traduiraob_339',['traduirAoB',['../class_moviment_rectilini.html#ab1f1a42cb9f92b0fb4ca02a0df594395',1,'MovimentRectilini']]],
+  ['traduirmoviment_340',['traduirMoviment',['../class_json.html#ac705607a03d0ad6a400b6a5a59d95091',1,'Json']]],
+  ['traduirparametre_341',['traduirParametre',['../interface_moviment.html#aeabfb5074e36e25754a23ef8a51ad6bc',1,'Moviment']]],
+  ['treupeca_342',['treuPeca',['../class_casella.html#a09c237b8b3c4adc0f6c64b537b32de9e',1,'Casella']]]
+];

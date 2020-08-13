@@ -1,0 +1,316 @@
+\hypertarget{class_moviment_rectilini}{}\doxysection{Referència de la Classe Moviment\+Rectilini}
+\label{class_moviment_rectilini}\index{MovimentRectilini@{MovimentRectilini}}
+
+
+Implementació de \mbox{\hyperlink{interface_moviment}{Moviment}} per \mbox{\hyperlink{class_moviment_rectilini}{Moviment\+Rectilini}}.  
+
+
+Diagrama d\textquotesingle{}Herència per a Moviment\+Rectilini\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_moviment_rectilini}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+Integer \mbox{\hyperlink{class_moviment_rectilini_a8e4e42a10220f4d58c08d7c1c299bfa3}{diguem\+Saltar}} ()
+\begin{DoxyCompactList}\small\item\em Diu el valor de saltar. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_ac96be9ff2ee3a189693bdbf6922d8f5d}{diguem\+Horitzontal}} ()
+\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_a4559df568305a19bb584f22493f6cee3}{diguem\+Inicial}} ()
+\item 
+int \mbox{\hyperlink{class_moviment_rectilini_adb69fc1ceaa405b4017955afe4235344}{diguem\+Matar}} ()
+\item 
+\mbox{\hyperlink{class_moviment_rectilini_a4a06c7a07c59d1dcaa700d9a9e6d8232}{Moviment\+Rectilini}} (String a, String b, String c, String d, boolean \mbox{\hyperlink{class_moviment_rectilini_ac9b6e2191d0d436c760d6807400152a2}{inicial}})  throws Illegal\+Argument\+Exception 
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_a53e85fd3c14da58235de44da825b57ce}{es\+Moviment}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti, boolean primer, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} peca\+\_\+final, boolean peca\+\_\+mig, boolean exacte)
+\begin{DoxyCompactList}\small\item\em Comprova si un desplaçament és el \mbox{\hyperlink{interface_moviment}{Moviment}}. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_a1e2c5a24abb200639146926b384de582}{equals}} (\mbox{\hyperlink{class_moviment_rectilini}{Moviment\+Rectilini}} mov)
+\item 
+String \mbox{\hyperlink{class_moviment_rectilini_aa39d4e0b4fb96f7f83ae7453be6a2179}{diguemA}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre A. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_moviment_rectilini_a84fecf9785089fbd0771414fdaf31c6b}{diguemB}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre B. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_a0431d239b11f73c3b210c8868fada6da}{es\+Enroc}} ()
+\begin{DoxyCompactList}\small\item\em Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_ab1f1a42cb9f92b0fb4ca02a0df594395}{traduir\+AoB}} (String s)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_ac9b6e2191d0d436c760d6807400152a2}{inicial}}
+\begin{DoxyCompactList}\small\item\em Indica si el moviment és exclusivament inicial. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_rectilini_ac094c2b4e2d9c3f99f458fa68ade20fc}{distancia}}
+\begin{DoxyCompactList}\small\item\em Indica el límit de dstància del moviment, 0 si és infinit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_rectilini_a78d67a92c478527c8ac0eb364d087f0a}{sentit}}
+\begin{DoxyCompactList}\small\item\em Indica la direcció el sentit del moviment. 1 positiu, -\/1 negatiu i 0 en ambdos sentits. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_rectilini_a1f13fe62d19ced8d15f9ebe9e4382151}{horitzontal}}
+\begin{DoxyCompactList}\small\item\em Cert si el moviment és horitzontal, fals si és vertical. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_rectilini_a279c7d1ae05b2cd9246e87e2d28be95b}{saltar}}
+\begin{DoxyCompactList}\small\item\em 0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_moviment_rectilini_a67b692b3c272d0118649562db0bce498}{matar}}
+\begin{DoxyCompactList}\small\item\em 0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Implementació de \mbox{\hyperlink{interface_moviment}{Moviment}} per \mbox{\hyperlink{class_moviment_rectilini}{Moviment\+Rectilini}}. 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_moviment_rectilini_a4a06c7a07c59d1dcaa700d9a9e6d8232}\label{class_moviment_rectilini_a4a06c7a07c59d1dcaa700d9a9e6d8232}} 
+\index{MovimentRectilini@{MovimentRectilini}!MovimentRectilini@{MovimentRectilini}}
+\index{MovimentRectilini@{MovimentRectilini}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{MovimentRectilini()}{MovimentRectilini()}}
+{\footnotesize\ttfamily Moviment\+Rectilini.\+Moviment\+Rectilini (\begin{DoxyParamCaption}\item[{String}]{a,  }\item[{String}]{b,  }\item[{String}]{c,  }\item[{String}]{d,  }\item[{boolean}]{inicial }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception}
+
+
+
+Constructor. 
+
+\begin{DoxyPrecond}{Precondició}
+c i d són enters 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em a} & Component A. \\
+\hline
+{\em b} & Component B. \\
+\hline
+{\em c} & Component C. \\
+\hline
+{\em d} & Component D. \\
+\hline
+{\em inicial} & Indica si el moviment és inicial. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+Crea un moviment de tipus rectilini. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & quan no es compleix la pre. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_moviment_rectilini_aa39d4e0b4fb96f7f83ae7453be6a2179}\label{class_moviment_rectilini_aa39d4e0b4fb96f7f83ae7453be6a2179}} 
+\index{MovimentRectilini@{MovimentRectilini}!diguemA@{diguemA}}
+\index{diguemA@{diguemA}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{diguemA()}{diguemA()}}
+{\footnotesize\ttfamily String Moviment\+Rectilini.\+diguemA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre A. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre A traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_aa11bb0c771e4be8571289a962bebf699}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_rectilini_a84fecf9785089fbd0771414fdaf31c6b}\label{class_moviment_rectilini_a84fecf9785089fbd0771414fdaf31c6b}} 
+\index{MovimentRectilini@{MovimentRectilini}!diguemB@{diguemB}}
+\index{diguemB@{diguemB}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{diguemB()}{diguemB()}}
+{\footnotesize\ttfamily String Moviment\+Rectilini.\+diguemB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre B. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre B traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_ae4894ae266575c53390205fc3abbc900}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_rectilini_ac96be9ff2ee3a189693bdbf6922d8f5d}\label{class_moviment_rectilini_ac96be9ff2ee3a189693bdbf6922d8f5d}} 
+\index{MovimentRectilini@{MovimentRectilini}!diguemHoritzontal@{diguemHoritzontal}}
+\index{diguemHoritzontal@{diguemHoritzontal}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{diguemHoritzontal()}{diguemHoritzontal()}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+diguem\+Horitzontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Cert si és horitzontal, fals altrament. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moviment_rectilini_a4559df568305a19bb584f22493f6cee3}\label{class_moviment_rectilini_a4559df568305a19bb584f22493f6cee3}} 
+\index{MovimentRectilini@{MovimentRectilini}!diguemInicial@{diguemInicial}}
+\index{diguemInicial@{diguemInicial}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{diguemInicial()}{diguemInicial()}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+diguem\+Inicial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Cert si el moviment és inicial, fals altrament. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moviment_rectilini_adb69fc1ceaa405b4017955afe4235344}\label{class_moviment_rectilini_adb69fc1ceaa405b4017955afe4235344}} 
+\index{MovimentRectilini@{MovimentRectilini}!diguemMatar@{diguemMatar}}
+\index{diguemMatar@{diguemMatar}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{diguemMatar()}{diguemMatar()}}
+{\footnotesize\ttfamily int Moviment\+Rectilini.\+diguem\+Matar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna matar. 0 si no pot, 1 si pot i 2 si ha. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_moviment_rectilini_a8e4e42a10220f4d58c08d7c1c299bfa3}\label{class_moviment_rectilini_a8e4e42a10220f4d58c08d7c1c299bfa3}} 
+\index{MovimentRectilini@{MovimentRectilini}!diguemSaltar@{diguemSaltar}}
+\index{diguemSaltar@{diguemSaltar}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{diguemSaltar()}{diguemSaltar()}}
+{\footnotesize\ttfamily Integer Moviment\+Rectilini.\+diguem\+Saltar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu el valor de saltar. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l\textquotesingle{}atribut. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_a6588478cb741e56193ffb19b9726c08a}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_rectilini_a1e2c5a24abb200639146926b384de582}\label{class_moviment_rectilini_a1e2c5a24abb200639146926b384de582}} 
+\index{MovimentRectilini@{MovimentRectilini}!equals@{equals}}
+\index{equals@{equals}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_moviment_rectilini}{Moviment\+Rectilini}}}]{mov }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_moviment_rectilini_a0431d239b11f73c3b210c8868fada6da}\label{class_moviment_rectilini_a0431d239b11f73c3b210c8868fada6da}} 
+\index{MovimentRectilini@{MovimentRectilini}!esEnroc@{esEnroc}}
+\index{esEnroc@{esEnroc}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{esEnroc()}{esEnroc()}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+es\+Enroc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. 
+
+\begin{DoxyReturn}{Retorna}
+Cert si el \mbox{\hyperlink{interface_moviment}{Moviment}} és enroc, fals altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_ad5a855ea234d8abc00995b64f7dab7b0}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_rectilini_a53e85fd3c14da58235de44da825b57ce}\label{class_moviment_rectilini_a53e85fd3c14da58235de44da825b57ce}} 
+\index{MovimentRectilini@{MovimentRectilini}!esMoviment@{esMoviment}}
+\index{esMoviment@{esMoviment}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{esMoviment()}{esMoviment()}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+es\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti,  }\item[{boolean}]{primer,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca\+\_\+final,  }\item[{boolean}]{peca\+\_\+mig,  }\item[{boolean}]{exacte }\end{DoxyParamCaption})}
+
+
+
+Comprova si un desplaçament és el \mbox{\hyperlink{interface_moviment}{Moviment}}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em origen} & Posició d\textquotesingle{}origen. \\
+\hline
+{\em desti} & Posició destí. \\
+\hline
+{\em primer} & Indica si el el moviment és el primer de la partida. \\
+\hline
+{\em peca\+\_\+final} & Referència al tipus de peça de la posició destí. \\
+\hline
+{\em peca\+\_\+mig} & Indica si hi ha alguna peça en la trajectòria. \\
+\hline
+{\em exacte} & Demanar si la distància ha de ser exacte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna cert si amb origen-\/desti és compleix el moviment, fals altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_a3abb68f0684eb7005abbc3de06a9130e}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_rectilini_ab1f1a42cb9f92b0fb4ca02a0df594395}\label{class_moviment_rectilini_ab1f1a42cb9f92b0fb4ca02a0df594395}} 
+\index{MovimentRectilini@{MovimentRectilini}!traduirAoB@{traduirAoB}}
+\index{traduirAoB@{traduirAoB}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{traduirAoB()}{traduirAoB()}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+traduir\+AoB (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_moviment_rectilini_ac094c2b4e2d9c3f99f458fa68ade20fc}\label{class_moviment_rectilini_ac094c2b4e2d9c3f99f458fa68ade20fc}} 
+\index{MovimentRectilini@{MovimentRectilini}!distancia@{distancia}}
+\index{distancia@{distancia}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{distancia}{distancia}}
+{\footnotesize\ttfamily int Moviment\+Rectilini.\+distancia\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica el límit de dstància del moviment, 0 si és infinit. 
+
+\mbox{\Hypertarget{class_moviment_rectilini_a1f13fe62d19ced8d15f9ebe9e4382151}\label{class_moviment_rectilini_a1f13fe62d19ced8d15f9ebe9e4382151}} 
+\index{MovimentRectilini@{MovimentRectilini}!horitzontal@{horitzontal}}
+\index{horitzontal@{horitzontal}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{horitzontal}{horitzontal}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+horitzontal\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cert si el moviment és horitzontal, fals si és vertical. 
+
+\mbox{\Hypertarget{class_moviment_rectilini_ac9b6e2191d0d436c760d6807400152a2}\label{class_moviment_rectilini_ac9b6e2191d0d436c760d6807400152a2}} 
+\index{MovimentRectilini@{MovimentRectilini}!inicial@{inicial}}
+\index{inicial@{inicial}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{inicial}{inicial}}
+{\footnotesize\ttfamily boolean Moviment\+Rectilini.\+inicial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica si el moviment és exclusivament inicial. 
+
+\mbox{\Hypertarget{class_moviment_rectilini_a67b692b3c272d0118649562db0bce498}\label{class_moviment_rectilini_a67b692b3c272d0118649562db0bce498}} 
+\index{MovimentRectilini@{MovimentRectilini}!matar@{matar}}
+\index{matar@{matar}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{matar}{matar}}
+{\footnotesize\ttfamily int Moviment\+Rectilini.\+matar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment 
+
+\mbox{\Hypertarget{class_moviment_rectilini_a279c7d1ae05b2cd9246e87e2d28be95b}\label{class_moviment_rectilini_a279c7d1ae05b2cd9246e87e2d28be95b}} 
+\index{MovimentRectilini@{MovimentRectilini}!saltar@{saltar}}
+\index{saltar@{saltar}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{saltar}{saltar}}
+{\footnotesize\ttfamily int Moviment\+Rectilini.\+saltar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades 
+
+\mbox{\Hypertarget{class_moviment_rectilini_a78d67a92c478527c8ac0eb364d087f0a}\label{class_moviment_rectilini_a78d67a92c478527c8ac0eb364d087f0a}} 
+\index{MovimentRectilini@{MovimentRectilini}!sentit@{sentit}}
+\index{sentit@{sentit}!MovimentRectilini@{MovimentRectilini}}
+\doxysubsubsection{\texorpdfstring{sentit}{sentit}}
+{\footnotesize\ttfamily int Moviment\+Rectilini.\+sentit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica la direcció el sentit del moviment. 1 positiu, -\/1 negatiu i 0 en ambdos sentits. 
+
+\begin{DoxyNote}{Nota}
+També pot ser 0 si el moviment és d\textquotesingle{}una distància determinada. 
+\end{DoxyNote}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_moviment_rectilini_8java}{Moviment\+Rectilini.\+java}}\end{DoxyCompactItemize}

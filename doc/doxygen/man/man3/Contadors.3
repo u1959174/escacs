@@ -1,0 +1,218 @@
+.TH "Contadors" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Contadors \- Gestiona els dos contadors per a cada color\&. Innacció i \fBEscacs\fP seguits\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBContadors\fP ()"
+.br
+.ti -1c
+.RI "\fBContadors\fP (int \fBcontadorInaccioBlanques\fP, int \fBcontadorInaccioNegres\fP, int \fBcontadorEscacBlanques\fP, int \fBcontadorEscacNegres\fP)"
+.br
+.ti -1c
+.RI "void \fBmodificarContadorEscac\fP (int val, \fBColor\fP col)"
+.br
+.ti -1c
+.RI "void \fBmodificarContadorInaccio\fP (int val, \fBColor\fP col)"
+.br
+.ti -1c
+.RI "int \fBobtenirContadorEscac\fP (\fBColor\fP col)"
+.br
+.ti -1c
+.RI "int \fBobtenirContadorInaccio\fP (\fBColor\fP col)"
+.br
+.ti -1c
+.RI "void \fBposarAZeroContadorEscac\fP (\fBColor\fP col)"
+.br
+.ti -1c
+.RI "void \fBposarAZeroContadorInaccio\fP (\fBColor\fP col)"
+.br
+.ti -1c
+.RI "\fBContadors\fP \fBdeepCopy\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "int \fBcontadorInaccioBlanques\fP"
+.br
+.ti -1c
+.RI "int \fBcontadorInaccioNegres\fP"
+.br
+.ti -1c
+.RI "int \fBcontadorEscacBlanques\fP"
+.br
+.ti -1c
+.RI "int \fBcontadorEscacNegres\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Gestiona els dos contadors per a cada color\&. Innacció i \fBEscacs\fP seguits\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Eloi Quintana 
+.PP
+u1963141 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Contadors\&.Contadors ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post S'han assignat els valors dels contadors ls valor 0; 
+.RE
+.PP
+
+.SS "Contadors\&.Contadors (int contadorInaccioBlanques, int contadorInaccioNegres, int contadorEscacBlanques, int contadorEscacNegres)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post S'han assignat els valors dels contadors als valors dels parametres; 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "\fBContadors\fP Contadors\&.deepCopy ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'ha realitzat una còpia de valors de l'objecte 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+retorna un nou objecte amb copia realitzada\&. 
+.RE
+.PP
+
+.SS "void Contadors\&.modificarContadorEscac (int val, \fBColor\fP col)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El color es Blanques o Negres @Post S'ha sumat/restat el valor d'entrada de Escac 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIval\fP Valor en la operació\&. 
+.br
+\fIcol\fP \fBColor\fP on s'aplicarà l'operació 
+.RE
+.PP
+
+.SS "void Contadors\&.modificarContadorInaccio (int val, \fBColor\fP col)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El color es Blanques o Negres @Post S'ha sumat/restat el valor d'entrada de Inacció 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIval\fP Valor en la operació\&. 
+.br
+\fIcol\fP \fBColor\fP on s'aplicarà l'operació 
+.RE
+.PP
+
+.SS "int Contadors\&.obtenirContadorEscac (\fBColor\fP col)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El color es Blanques o Negres @Post s'ha retornat el valor del contador de Escac del color donat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+enter del contador seleccionat\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcol\fP \fBColor\fP on s'aplicarà l'operació 
+.RE
+.PP
+
+.SS "int Contadors\&.obtenirContadorInaccio (\fBColor\fP col)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El color es Blanques o Negres @Post s'ha retornat el valor del contador d'inaccio del color donat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+enter del contador seleccionat\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcol\fP \fBColor\fP on s'aplicarà l'operació 
+.RE
+.PP
+
+.SS "void Contadors\&.posarAZeroContadorEscac (\fBColor\fP col)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El color es Blanques o Negres @Post s'ha posat a valor 0 el contador d'escac del color donat\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcol\fP \fBColor\fP on s'aplicarà l'operació 
+.RE
+.PP
+
+.SS "void Contadors\&.posarAZeroContadorInaccio (\fBColor\fP col)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El color es Blanques o Negres @Post s'ha posat a valor 0 el contador d'inaccio del color donat\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcol\fP \fBColor\fP on s'aplicarà l'operació 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "int Contadors\&.contadorEscacBlanques\fC [private]\fP"
+Contador de \fBEscacs\fP de \fBJugador\fP Blanc 
+.SS "int Contadors\&.contadorEscacNegres\fC [private]\fP"
+Contador de Enrocs de \fBJugador\fP Negre 
+.SS "int Contadors\&.contadorInaccioBlanques\fC [private]\fP"
+Contador de Inaccio de \fBJugador\fP Blanc 
+.SS "int Contadors\&.contadorInaccioNegres\fC [private]\fP"
+Contador de Inaccio de \fBJugador\fP Negre 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

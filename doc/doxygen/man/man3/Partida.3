@@ -1,0 +1,833 @@
+.TH "Partida" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Partida \- Motor de el conjunt de \fBEscacs\fP\&. Gestiona les jugades, el tauler, les peces\&. Executa també les jugades\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBPartida\fP (\fBTauler\fP \fBt\fP, HashMap< String, \fBTipusPeca\fP > \fBtipus\fP, ArrayList< \fBJugada\fP > j, int \fBmaxInaccio\fP, int \fBmaxEscacs\fP)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "\fBPartida\fP (\fBTauler\fP \fBt\fP, HashMap< String, \fBTipusPeca\fP > \fBtipus\fP, int \fBmaxInaccio\fP, int \fBmaxEscacs\fP)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "boolean \fBacabada\fP ()"
+.br
+.ti -1c
+.RI "void \fBcanviarTorn\fP (\fBColor\fP \fBtorn\fP)"
+.br
+.ti -1c
+.RI "void \fBcomprobarJugada\fP (\fBJugada\fP j)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBcrearJugada\fP (\fBPosicio\fP origen, \fBPosicio\fP desti)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "void \fBdesferJugada\fP ()"
+.br
+.ti -1c
+.RI "\fBPair\fP< Integer, Integer > \fBdimensions\fP ()"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBferJugada\fP (\fBPosicio\fP origen, \fBPosicio\fP desti)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "boolean \fBferJugada\fP (\fBResultatJugada\fP resultat)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBguanyador\fP ()"
+.br
+.ti -1c
+.RI "void \fBmodificarRutaFitxerRegles\fP (String \fBrutaFitxerRegles\fP)"
+.br
+.ti -1c
+.RI "Collection< \fBJugada\fP > \fBobtenirJugades\fP ()"
+.br
+.ti -1c
+.RI "Collection< \fBTipusPeca\fP > \fBobtenirNomsTipusPeca\fP ()"
+.br
+.ti -1c
+.RI "\fBResultatPartida\fP \fBobtenirResultatPartida\fP ()"
+.br
+.ti -1c
+.RI "\fBResultatJugada\fP \fBobtenirResultatPartidaDetall\fP ()"
+.br
+.ti -1c
+.RI "String \fBobtenirRutaFitxerRegles\fP ()"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBobtenirTauler\fP ()"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBobtenirTaulerInicial\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBpotContinuar\fP ()"
+.br
+.ti -1c
+.RI "int \fBpotDesferJugada\fP ()"
+.br
+.ti -1c
+.RI "int \fBpotReferJugada\fP ()"
+.br
+.ti -1c
+.RI "void \fBrealitzarJugada\fP (\fBPeca\fP tmpOrigen, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > a)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "void \fBreferJugada\fP ()"
+.br
+.ti -1c
+.RI "String \fBtauler\fP ()"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBtorn\fP ()"
+.br
+.in -1c
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static void \fBrealitzarJugada\fP (\fBTauler\fP \fBtauler\fP, \fBPeca\fP tmpOrigen, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > a, \fBContadors\fP cont, \fBColor\fP tornE)  throws ExcepcioG"
+.br
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "void \fBacabarPartida\fP (\fBResultatPartida\fP \fBresultatFinal\fP, \fBResultatJugada\fP \fBresultatFinalDetall\fP, \fBColor\fP \fBguanyador\fP)"
+.br
+.ti -1c
+.RI "void \fBafegirJugada\fP (\fBJugada\fP j, Integer pos)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "void \fBcarregarJugada\fP (int pos)"
+.br
+.ti -1c
+.RI "void \fBcomprobarJugada\fP (\fBJugada\fP j, \fBTipusPeca\fP tipusPecaPromocio)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "void \fBdesferJugadaFinal\fP ()"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBferJugada\fP (\fBPosicio\fP origen, \fBPosicio\fP desti, Integer posicio, \fBTipusPeca\fP pecaPromocio)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "void \fBrealitzarJugades\fP (ArrayList< \fBJugada\fP > j)  throws ExcepcioG "
+.br
+.in -1c
+.SS "Mètodes Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static void \fBeliminarPeces\fP (ArrayList< \fBPair\fP< \fBPosicio\fP, \fBPeca\fP >> mig, \fBTauler\fP tau, \fBContadors\fP cont, \fBColor\fP tornE)"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBacabada\fP"
+.br
+.ti -1c
+.RI "\fBContadors\fP \fBcontador\fP"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBguanyador\fP"
+.br
+.ti -1c
+.RI "int \fBjugadaActual\fP = 0"
+.br
+.ti -1c
+.RI "int \fBjugadaFinal\fP = 0"
+.br
+.ti -1c
+.RI "ArrayList< \fBJugada\fP > \fBjugades\fP"
+.br
+.ti -1c
+.RI "int \fBmaxEscacs\fP"
+.br
+.ti -1c
+.RI "int \fBmaxInaccio\fP"
+.br
+.ti -1c
+.RI "\fBResultatPartida\fP \fBresultatFinal\fP"
+.br
+.ti -1c
+.RI "\fBResultatJugada\fP \fBresultatFinalDetall\fP"
+.br
+.ti -1c
+.RI "String \fBrutaFitxerRegles\fP"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBt\fP"
+.br
+.ti -1c
+.RI "HashMap< String, \fBTipusPeca\fP > \fBtipus\fP"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBtorn\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Motor de el conjunt de \fBEscacs\fP\&. Gestiona les jugades, el tauler, les peces\&. Executa també les jugades\&. 
+
+
+.PP
+\fBNota\fP
+.RS 4
+Motor del Joc\&. \&.\&./projecte-2020-a4/dataset/jugades\&.json 
+.RE
+.PP
+\fBAutor\fP
+.RS 4
+Eloi Quintana Ferrer 
+.PP
+u1963141 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Partida\&.Partida (\fBTauler\fP t, HashMap< String, \fBTipusPeca\fP > tipus, ArrayList< \fBJugada\fP > j, int maxInaccio, int maxEscacs) throws \fBExcepcioG\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea la partida, executa totes les jugades passades\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIt\fP Objecte tauler 
+.br
+\fItipus\fP Un hashmap on String es el nom del tipusPeca\&. 
+.br
+\fIArray\fP de jugades, aquestes però s'han d'afegir i comprovar per a la partida\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+La partida ha estat començada\&. 
+.RE
+.PP
+
+.SS "Partida\&.Partida (\fBTauler\fP t, HashMap< String, \fBTipusPeca\fP > tipus, int maxInaccio, int maxEscacs) throws \fBExcepcioG\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea una partida inicial\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIt\fP Objecte tauler 
+.br
+\fItipus\fP Un hashmap on String es el nom del tipusPeca i tipusPeca\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+La partida esta inicialitzada nova\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "boolean Partida\&.acabada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+ha retornat un bolea de l'atribut acabada\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+acabada, cert si la partida esta acabada, fals altrament\&. 
+.RE
+.PP
+
+.SS "void Partida\&.acabarPartida (\fBResultatPartida\fP resultatFinal, \fBResultatJugada\fP resultatFinalDetall, \fBColor\fP guanyador)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+partida no acabada 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+s'ha marcat la partida com acabada i es guarda el guanyador 
+.RE
+.PP
+
+.SS "void Partida\&.afegirJugada (\fBJugada\fP j, Integer pos) throws \fBExcepcioG\fP\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+j != null @Post s'ha afegit la jugada a la llista de jugades a una posicio donada o no 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIj\fP \fBJugada\fP afegir\&. 
+.br
+\fIpos\fP \fBPosicio\fP de la jugada a fegir, null per afegir al final 
+.RE
+.PP
+
+.SS "void Partida\&.canviarTorn (\fBColor\fP torn)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'ha canviat el color del torn 
+.RE
+.PP
+
+.SS "void Partida\&.carregarJugada (int pos)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+pos ha d'estar dins el size de jugades 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha carregat a la partida en joc la jugada previament introduïda\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpos\fP posicio de l'array que s'agafara la jugada a aplicar\&. 
+.RE
+.PP
+
+.SS "void Partida\&.comprobarJugada (\fBJugada\fP j) throws \fBExcepcioG\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+j != null 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+s'ha comprobat al jugada j 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIj\fP \fBJugada\fP a analitzar 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fI\fBExcepcioG\fP\fP si la jugada no es vàlida 
+.RE
+.PP
+
+.SS "void Partida\&.comprobarJugada (\fBJugada\fP j, \fBTipusPeca\fP tipusPecaPromocio) throws \fBExcepcioG\fP\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+j != null 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+s'ha comprobat(escac,\&.\&.i mat, contadors\&.\&.) i aplicat una jugada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIj\fP \fBJugada\fP a analitzar 
+.br
+\fItipusPecaPromocio\fP Tipus de peca a promocionar amb la peca desti\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fI\fBExcepcioG\fP\fP 
+.RE
+.PP
+
+.SS "\fBJugada\fP Partida\&.crearJugada (\fBPosicio\fP origen, \fBPosicio\fP desti) throws \fBExcepcioG\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Es crea una jugada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIdesti\fP posicio destí per a crear la jugada\&. 
+.br
+\fIorigen\fP Posico d'origen per crear la jugada\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fI\fBExcepcioG\fP\fP si la jugada és invalida\&. 
+.RE
+.PP
+Mirem que la peca desti no sigui del mateix color ni invulnerable
+.SS "void Partida\&.desferJugada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha una jugada per desfer 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+s'ha desfet la jugada actual\&. 
+.RE
+.PP
+
+.SS "void Partida\&.desferJugadaFinal ()\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha una jugada per desfer @Post Desfà la jugada actual, i si a mes aquesta son taules acceptades desfa 2 jugades\&. 
+.RE
+.PP
+
+.SS "\fBPair\fP<Integer,Integer> Partida\&.dimensions ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+: t != null 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+: retorna l'atribut dimensions del tauler actual\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+: Un pair amb les dimensions del tauler first->columnes, seccond->files\&. 
+.RE
+.PP
+
+.SS "static void Partida\&.eliminarPeces (ArrayList< \fBPair\fP< \fBPosicio\fP, \fBPeca\fP >> mig, \fBTauler\fP tau, \fBContadors\fP cont, \fBColor\fP tornE)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+s'han eliminat les peces del tauler donades i s'ha posat el contador d'inaccio a 0\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImig\fP conte el conjunt de peces i posicions a eliminar del tauler\&. 
+.RE
+.PP
+
+.SS "\fBTauler\fP Partida\&.ferJugada (\fBPosicio\fP origen, \fBPosicio\fP desti) throws \fBExcepcioG\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+origen != null @Post s'ha creat una jugada i s'ha guardart a la llista de jugades 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP posició d'origen des d'on es vol moure una peça 
+.br
+\fIdesti\fP posició d'origen 
+.RE
+.PP
+
+.SS "\fBTauler\fP Partida\&.ferJugada (\fBPosicio\fP origen, \fBPosicio\fP desti, Integer posicio, \fBTipusPeca\fP pecaPromocio) throws \fBExcepcioG\fP\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+posicio és vàlida, i origen != null @Post es cra una jugada i es guarda a la posicó de l'array de jugades donada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP posició d'origen des d'on es vol moure una peça 
+.br
+\fIdesti\fP posició d'origen 
+.br
+\fIposicio\fP posició on es guardara la jugada al l'array de jugades\&. 
+.RE
+.PP
+
+.SS "boolean Partida\&.ferJugada (\fBResultatJugada\fP resultat) throws \fBExcepcioG\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+resultat != null @Post s'exectua una jugada especial donat un resultat de jugada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIresultat\fP conte el resultat que tindra la jugada que es crea\&. 
+.RE
+.PP
+
+.SS "\fBColor\fP Partida\&.guanyador ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post Retorna el \fBColor\fP del jugador del torn actual 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Blanques si color Blanc, Negres si color Negre\&. 
+.RE
+.PP
+
+.SS "void Partida\&.modificarRutaFitxerRegles (String rutaFitxerRegles)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIrutaFitxerRegles\fP string que conte la nova ruta del fitxer de regles\&. 
+.RE
+.PP
+
+.SS "Collection<\fBJugada\fP> Partida\&.obtenirJugades ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+: - 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+retorna una col·leccio de les jugades realitzades al llarg de la partida\&. 
+.RE
+.PP
+
+.SS "Collection<\fBTipusPeca\fP> Partida\&.obtenirNomsTipusPeca ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+: - 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+: retorna una coleccio de tots els noms dels tipus de peca que tenim carregats\&. 
+.RE
+.PP
+
+.SS "\fBResultatPartida\fP Partida\&.obtenirResultatPartida ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+: - 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+: retorna el resultat de la partida\&. 
+.RE
+.PP
+
+.SS "\fBResultatJugada\fP Partida\&.obtenirResultatPartidaDetall ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Retorna el resultat de la partida en detall 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+resultatFinalDetall, un tipus de \fBResultatJugada\fP 
+.RE
+.PP
+
+.SS "String Partida\&.obtenirRutaFitxerRegles ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+ruta del fitxer de regles 
+.RE
+.PP
+
+.SS "\fBTauler\fP Partida\&.obtenirTauler ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+el tauler actual 
+.RE
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post ha realizat el retorn 
+.RE
+.PP
+
+.SS "\fBTauler\fP Partida\&.obtenirTaulerInicial ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+existeix el tauler inicial @Post ha retornat el tauler inicial 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+el tauler inicial 
+.RE
+.PP
+
+.SS "boolean Partida\&.potContinuar ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post indica si la partida pot continuar 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true si una partida pot continuar, false altrament 
+.RE
+.PP
+
+.SS "int Partida\&.potDesferJugada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+realitza el calcul de jugades x desfer 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+nombre de jugades per desfer\&. 
+.RE
+.PP
+
+.SS "int Partida\&.potReferJugada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post calcula el nombre de jugada que pot refer 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+nombre de jugades disponibles per refer 
+.RE
+.PP
+
+.SS "void Partida\&.realitzarJugada (\fBPeca\fP tmpOrigen, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > a) throws \fBExcepcioG\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+j no esta buit 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+donat els parametres s'ha classificat la jugada i s'ha gestionat el tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItmpOrigen\fP peca d'origen 
+.br
+\fIa\fP pair de posicio i moviment del desti 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fI\fBExcepcioG\fP\fP @comment metode que crida el metode estatic de partida però amb les dades de la partida actual\&. 
+.RE
+.PP
+
+.SS "static void Partida\&.realitzarJugada (\fBTauler\fP tauler, \fBPeca\fP tmpOrigen, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > a, \fBContadors\fP cont, \fBColor\fP tornE) throws \fBExcepcioG\fP\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+cap dels elements es null 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+donat els parametres s'ha classificat la jugada i s'ha gestionat el tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItauler\fP tauler a realitzar la jugada 
+.br
+\fItmpOrigen\fP peca d'origen 
+.br
+\fIa\fP pair de posicio i moviment 
+.br
+\fIcont\fP objecte contadors 
+.br
+\fItornE\fP torn actual del que realitza la jugada 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fI\fBExcepcioG\fP\fP 
+.RE
+.PP
+Mirem que la peca desti no sigui del mateix color ni invulnerable
+.PP
+Mirem que la peca desti no sigui del mateix color ni invulnerable
+.SS "void Partida\&.realitzarJugades (ArrayList< \fBJugada\fP > j) throws \fBExcepcioG\fP\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+j no esta buit, el color dels tiradors de les jugades son correctes(no es tindras en compte) @Post donat un conjunt de jugades, s'executa cada una per ordre ascendent\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIj\fP conte el conjunt de jugades a executar\&. 
+.RE
+.PP
+
+.SS "void Partida\&.referJugada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha una jugada per refer\&. @Post Torna a fer la jugada següent\&. 
+.RE
+.PP
+
+.SS "String Partida\&.tauler ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+obte el tauler actual en format text\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El tauler en format String\&. 
+.RE
+.PP
+
+.SS "\fBColor\fP Partida\&.torn ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Retorna el \fBColor\fP del jugador del torn actual 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Blanques si color Blanc, Negres si color Negre\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "boolean Partida\&.acabada\fC [private]\fP"
+Indica si la partida esta acabada o no\&. 
+.SS "\fBContadors\fP Partida\&.contador\fC [private]\fP"
+Cotnadors de escacs i inaccio per a cada color\&. 
+.SS "\fBColor\fP Partida\&.guanyador\fC [private]\fP"
+Indica el color de quin jugador és el guanyador\&. 
+.SS "int Partida\&.jugadaActual = 0\fC [private]\fP"
+Indica la posició de la jugada actual de l'Array de les jugades\&. 
+.SS "int Partida\&.jugadaFinal = 0\fC [private]\fP"
+Indica la posició de la jugada en la qual es pot recuperar realitzant un refer\&. 
+.SS "ArrayList<\fBJugada\fP> Partida\&.jugades\fC [private]\fP"
+índex de les jugades realitzades\&. 
+.SS "int Partida\&.maxEscacs\fC [private]\fP"
+Nombre màxim de escacs seguits\&. 
+.SS "int Partida\&.maxInaccio\fC [private]\fP"
+Nombre màxim de jugades en inacció\&. 
+.SS "\fBResultatPartida\fP Partida\&.resultatFinal\fC [private]\fP"
+Indica el resultat final de la partida\&. 
+.SS "\fBResultatJugada\fP Partida\&.resultatFinalDetall\fC [private]\fP"
+Indica el resultat final de la partida en detall\&. 
+.SS "String Partida\&.rutaFitxerRegles\fC [private]\fP"
+Ruta completa del fitxer de regles de la partida 
+.SS "\fBTauler\fP Partida\&.t\fC [private]\fP"
+Guarda la classe \fBTauler\fP que s'esta utilitzant actualment\&. 
+.SS "HashMap<String,\fBTipusPeca\fP> Partida\&.tipus\fC [private]\fP"
+Index dels tipus de peces que tenim\&. 
+.SS "\fBColor\fP Partida\&.torn\fC [private]\fP"
+Indica el torn actual de la partida 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

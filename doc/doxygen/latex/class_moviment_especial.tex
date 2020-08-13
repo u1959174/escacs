@@ -1,0 +1,199 @@
+\hypertarget{class_moviment_especial}{}\doxysection{Referència de la Classe Moviment\+Especial}
+\label{class_moviment_especial}\index{MovimentEspecial@{MovimentEspecial}}
+
+
+Implementació de \mbox{\hyperlink{interface_moviment}{Moviment}} per \mbox{\hyperlink{class_moviment_especial}{Moviment\+Especial}} (enroc rectilini).  
+
+
+Diagrama d\textquotesingle{}Herència per a Moviment\+Especial\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_moviment_especial}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_moviment_especial_ade3242c457a1ae326c8e26fb04a80671}{Moviment\+Especial}} (boolean \mbox{\hyperlink{class_moviment_especial_ae750f17d6af486baf2c00ebb34f87b22}{quiets}}, boolean \mbox{\hyperlink{class_moviment_especial_a07d18e746f46032afbd45c42d12bc65f}{buit}}, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_moviment_especial_a25f5824db2a07256cf6cecd7e11bd76e}{peca}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_especial_af866470e13623bc9aa5fba5a9c5ef850}{es\+Moviment}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti, boolean primer, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} peca\+\_\+final, boolean peca\+\_\+mig, boolean exacte)
+\item 
+boolean \mbox{\hyperlink{class_moviment_especial_ad512a7dd1bf1648739e1fa426c05de46}{equals}} (\mbox{\hyperlink{class_moviment_especial}{Moviment\+Especial}} mov)
+\item 
+String \mbox{\hyperlink{class_moviment_especial_a793e4e6b559500bf95bc2330591543ab}{diguemA}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre A. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_moviment_especial_a7199eea7bce035df35b7c84b375a904a}{diguemB}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre B. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{class_moviment_especial_abba5c46b90a2d10ccbf6e65b36f8bfd3}{diguem\+Saltar}} ()
+\begin{DoxyCompactList}\small\item\em Diu el valor de saltar. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_especial_a56d6256100230dab753e0a78d8609a2e}{es\+Enroc}} ()
+\begin{DoxyCompactList}\small\item\em Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_moviment_especial_ae750f17d6af486baf2c00ebb34f87b22}{quiets}}
+\begin{DoxyCompactList}\small\item\em Indica si s\textquotesingle{}ha de fer amb les peces no mogudes. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_moviment_especial_a07d18e746f46032afbd45c42d12bc65f}{buit}}
+\begin{DoxyCompactList}\small\item\em Indica si l\textquotesingle{}espai entre les dues peces no ha d\textquotesingle{}estar ocupa per cap altra. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_moviment_especial_a25f5824db2a07256cf6cecd7e11bd76e}{peca}}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}altra peça amb la que es fa l\textquotesingle{}enroc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Implementació de \mbox{\hyperlink{interface_moviment}{Moviment}} per \mbox{\hyperlink{class_moviment_especial}{Moviment\+Especial}} (enroc rectilini). 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_moviment_especial_ade3242c457a1ae326c8e26fb04a80671}\label{class_moviment_especial_ade3242c457a1ae326c8e26fb04a80671}} 
+\index{MovimentEspecial@{MovimentEspecial}!MovimentEspecial@{MovimentEspecial}}
+\index{MovimentEspecial@{MovimentEspecial}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{MovimentEspecial()}{MovimentEspecial()}}
+{\footnotesize\ttfamily Moviment\+Especial.\+Moviment\+Especial (\begin{DoxyParamCaption}\item[{boolean}]{quiets,  }\item[{boolean}]{buit,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em quiets} & Peces han d\textquotesingle{}estar quietes. \\
+\hline
+{\em buit} & Espai buit entre peces. \\
+\hline
+{\em peca} & \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} de l\textquotesingle{}altra peca. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+Crea un moviment de tipus especial, l\textquotesingle{}enroc. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_moviment_especial_a793e4e6b559500bf95bc2330591543ab}\label{class_moviment_especial_a793e4e6b559500bf95bc2330591543ab}} 
+\index{MovimentEspecial@{MovimentEspecial}!diguemA@{diguemA}}
+\index{diguemA@{diguemA}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{diguemA()}{diguemA()}}
+{\footnotesize\ttfamily String Moviment\+Especial.\+diguemA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre A. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre A traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_aa11bb0c771e4be8571289a962bebf699}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_especial_a7199eea7bce035df35b7c84b375a904a}\label{class_moviment_especial_a7199eea7bce035df35b7c84b375a904a}} 
+\index{MovimentEspecial@{MovimentEspecial}!diguemB@{diguemB}}
+\index{diguemB@{diguemB}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{diguemB()}{diguemB()}}
+{\footnotesize\ttfamily String Moviment\+Especial.\+diguemB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre B. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre B traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_ae4894ae266575c53390205fc3abbc900}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_especial_abba5c46b90a2d10ccbf6e65b36f8bfd3}\label{class_moviment_especial_abba5c46b90a2d10ccbf6e65b36f8bfd3}} 
+\index{MovimentEspecial@{MovimentEspecial}!diguemSaltar@{diguemSaltar}}
+\index{diguemSaltar@{diguemSaltar}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{diguemSaltar()}{diguemSaltar()}}
+{\footnotesize\ttfamily Integer Moviment\+Especial.\+diguem\+Saltar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu el valor de saltar. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l\textquotesingle{}atribut. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_a6588478cb741e56193ffb19b9726c08a}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_especial_ad512a7dd1bf1648739e1fa426c05de46}\label{class_moviment_especial_ad512a7dd1bf1648739e1fa426c05de46}} 
+\index{MovimentEspecial@{MovimentEspecial}!equals@{equals}}
+\index{equals@{equals}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean Moviment\+Especial.\+equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_moviment_especial}{Moviment\+Especial}}}]{mov }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_moviment_especial_a56d6256100230dab753e0a78d8609a2e}\label{class_moviment_especial_a56d6256100230dab753e0a78d8609a2e}} 
+\index{MovimentEspecial@{MovimentEspecial}!esEnroc@{esEnroc}}
+\index{esEnroc@{esEnroc}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{esEnroc()}{esEnroc()}}
+{\footnotesize\ttfamily boolean Moviment\+Especial.\+es\+Enroc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. 
+
+\begin{DoxyReturn}{Retorna}
+Cert si el \mbox{\hyperlink{interface_moviment}{Moviment}} és enroc, fals altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_ad5a855ea234d8abc00995b64f7dab7b0}{Moviment}}.
+
+\mbox{\Hypertarget{class_moviment_especial_af866470e13623bc9aa5fba5a9c5ef850}\label{class_moviment_especial_af866470e13623bc9aa5fba5a9c5ef850}} 
+\index{MovimentEspecial@{MovimentEspecial}!esMoviment@{esMoviment}}
+\index{esMoviment@{esMoviment}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{esMoviment()}{esMoviment()}}
+{\footnotesize\ttfamily boolean Moviment\+Especial.\+es\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti,  }\item[{boolean}]{primer,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca\+\_\+final,  }\item[{boolean}]{peca\+\_\+mig,  }\item[{boolean}]{exacte }\end{DoxyParamCaption})}
+
+@\+Pre El tipus de peça amb la que es vol fer l\textquotesingle{}intercanvi és compatible. 
+
+Reimplementat de \mbox{\hyperlink{interface_moviment_a3abb68f0684eb7005abbc3de06a9130e}{Moviment}}.
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_moviment_especial_a07d18e746f46032afbd45c42d12bc65f}\label{class_moviment_especial_a07d18e746f46032afbd45c42d12bc65f}} 
+\index{MovimentEspecial@{MovimentEspecial}!buit@{buit}}
+\index{buit@{buit}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{buit}{buit}}
+{\footnotesize\ttfamily boolean Moviment\+Especial.\+buit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica si l\textquotesingle{}espai entre les dues peces no ha d\textquotesingle{}estar ocupa per cap altra. 
+
+\mbox{\Hypertarget{class_moviment_especial_a25f5824db2a07256cf6cecd7e11bd76e}\label{class_moviment_especial_a25f5824db2a07256cf6cecd7e11bd76e}} 
+\index{MovimentEspecial@{MovimentEspecial}!peca@{peca}}
+\index{peca@{peca}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{peca}{peca}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Moviment\+Especial.\+peca\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+L\textquotesingle{}altra peça amb la que es fa l\textquotesingle{}enroc. 
+
+\mbox{\Hypertarget{class_moviment_especial_ae750f17d6af486baf2c00ebb34f87b22}\label{class_moviment_especial_ae750f17d6af486baf2c00ebb34f87b22}} 
+\index{MovimentEspecial@{MovimentEspecial}!quiets@{quiets}}
+\index{quiets@{quiets}!MovimentEspecial@{MovimentEspecial}}
+\doxysubsubsection{\texorpdfstring{quiets}{quiets}}
+{\footnotesize\ttfamily boolean Moviment\+Especial.\+quiets\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica si s\textquotesingle{}ha de fer amb les peces no mogudes. 
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_moviment_especial_8java}{Moviment\+Especial.\+java}}\end{DoxyCompactItemize}

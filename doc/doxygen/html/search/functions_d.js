@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['obteniracabada_567',['obtenirAcabada',['../class_jugada.html#a24667253f959389e5340aa1904437dfa',1,'Jugada']]],
+  ['obtenircolor_568',['obtenirColor',['../enum_color.html#a5577eb38e18b8708f4319302a405a4f6',1,'Color']]],
+  ['obtenircontadorescac_569',['obtenirContadorEscac',['../class_contadors.html#ab6e18187b58ae7ca8bca61f4f3da16d8',1,'Contadors']]],
+  ['obtenircontadorinaccio_570',['obtenirContadorInaccio',['../class_contadors.html#af760e41082d094dcefd296b499ef11fa',1,'Contadors']]],
+  ['obtenircontadors_571',['obtenirContadors',['../class_jugada.html#a89763c99bcff269b8467bac2401cd3ba',1,'Jugada']]],
+  ['obtenirdesti_572',['obtenirDesti',['../class_jugada.html#a2395c963a8e6febde2ec8ad758c61a03',1,'Jugada']]],
+  ['obtenirguanyador_573',['obtenirGuanyador',['../class_jugada.html#aa55dea6b6c7558e54b8dc7731fd31bf4',1,'Jugada']]],
+  ['obtenirjugades_574',['obtenirJugades',['../class_partida.html#ae71c857d26809a5216a73ed006933ffb',1,'Partida']]],
+  ['obtenirnomstipuspeca_575',['obtenirNomsTipusPeca',['../class_partida.html#a08f2b847c4e55d87eea36b3047f91e8f',1,'Partida']]],
+  ['obtenirorigen_576',['obtenirOrigen',['../class_jugada.html#a5346a17ad90d0329177c712003aefeac',1,'Jugada']]],
+  ['obtenirpecadesti_577',['obtenirPecaDesti',['../class_jugada.html#ad0b9a829a550adc67323011eebb59928',1,'Jugada']]],
+  ['obtenirpecaorigen_578',['obtenirPecaOrigen',['../class_jugada.html#af844b339b8e5c6435d6b070aa3e55cb7',1,'Jugada']]],
+  ['obtenirpecapromocionada_579',['obtenirPecaPromocionada',['../class_jugada.html#a08d5b1bf387cd1feea8d0f81692ba99a',1,'Jugada']]],
+  ['obtenirresultat_580',['obtenirResultat',['../enum_resultat_partida.html#a3345e2b5868433dbf5f960ea53bb8fa6',1,'ResultatPartida']]],
+  ['obtenirresultatpartida_581',['obtenirResultatPartida',['../class_jugada.html#a939711454486a0f8f64a7659ac24b6fd',1,'Jugada.obtenirResultatPartida()'],['../class_partida.html#a6d465d393be07fd13405b774e174f11c',1,'Partida.obtenirResultatPartida()']]],
+  ['obtenirresultatpartidadetall_582',['obtenirResultatPartidaDetall',['../class_partida.html#a89a003c51e82699d6970a20f6eda7f35',1,'Partida']]],
+  ['obtenirresultatsjugada_583',['obtenirResultatsJugada',['../class_jugada.html#a9863059e514334d51e6d841f664df91b',1,'Jugada']]],
+  ['obtenirrutafitxerregles_584',['obtenirRutaFitxerRegles',['../class_partida.html#a0241f7aec43c0f56bc242544396d05ee',1,'Partida']]],
+  ['obtenirtauler_585',['obtenirTauler',['../class_escacs.html#a88bbb13a3a19045cf43f09464781f9b3',1,'Escacs.obtenirTauler()'],['../class_joc_grafic.html#a9267f5a044c27aec957c676a1061c027',1,'JocGrafic.obtenirTauler()'],['../class_joc_text.html#ae8ce3613f2dc2e38421519c9188c6896',1,'JocText.obtenirTauler()'],['../class_jugada.html#af3094a53eaa1dfe2bc690bf844113405',1,'Jugada.obtenirTauler()'],['../class_partida.html#ac5078c7c38c86fa622ce9511a0b27259',1,'Partida.obtenirTauler()']]],
+  ['obtenirtaulerinicial_586',['obtenirTaulerInicial',['../class_partida.html#a4e1f47ee720b816f483ba0a8814ebb95',1,'Partida']]],
+  ['obtenirtirador_587',['obtenirTirador',['../class_jugada.html#aa1a76be4fadd6e74b4f51f3ded593909',1,'Jugada']]],
+  ['oldx_588',['oldX',['../class_peca_grafica.html#a1f327f256aa2ac2f356f0dc47ec8db6f',1,'PecaGrafica']]],
+  ['oldy_589',['oldY',['../class_peca_grafica.html#a2904b78701e090a0cce05f0b5d9e43ee',1,'PecaGrafica']]],
+  ['onestic_590',['onEstic',['../class_peca.html#a45fe6a849e21dc4beee42e18f8ba1a7b',1,'Peca']]]
+];

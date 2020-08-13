@@ -1,0 +1,80 @@
+\hypertarget{interface_min_i_max}{}\doxysection{Referència de la Classe Min\+I\+Max}
+\label{interface_min_i_max}\index{MinIMax@{MinIMax}}
+
+
+Interfície que coné els mètodes que implementa l\textquotesingle{}algoritme \mbox{\hyperlink{interface_min_i_max}{Min\+I\+Max}} adaptat al joc dels escacs.  
+
+
+Diagrama d\textquotesingle{}Herència per a Min\+I\+Max\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_min_i_max}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{interface_min_i_max_a31f376d9ae0cfce143eef4a6282fe0b6}{calcular\+Millor\+Jugada}} ()
+\item 
+default boolean \mbox{\hyperlink{interface_min_i_max_a34b1975f4e3c0fd02d659ca6f5bccf56}{fer\+I\+Validar\+Jugada}} (\mbox{\hyperlink{class_tauler}{Tauler}} tauler\+Amb\+Aquesta\+Jugada, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$$>$ jugada\+Act, \mbox{\hyperlink{enum_color}{Color}} color\+Que\+Mou)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Interfície que coné els mètodes que implementa l\textquotesingle{}algoritme \mbox{\hyperlink{interface_min_i_max}{Min\+I\+Max}} adaptat al joc dels escacs. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{interface_min_i_max_a31f376d9ae0cfce143eef4a6282fe0b6}\label{interface_min_i_max_a31f376d9ae0cfce143eef4a6282fe0b6}} 
+\index{MinIMax@{MinIMax}!calcularMillorJugada@{calcularMillorJugada}}
+\index{calcularMillorJugada@{calcularMillorJugada}!MinIMax@{MinIMax}}
+\doxysubsubsection{\texorpdfstring{calcularMillorJugada()}{calcularMillorJugada()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Min\+I\+Max.\+calcular\+Millor\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha com a mínim una jugada vàlida a fer. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Que\+Mou} & \mbox{\hyperlink{enum_color}{Color}} del qual es calcularà la millor jugada possible \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+La millor jugada calculada amb aquest algoritme i el tauler actual del joc. La jugada és vàlida segons les regles d\textquotesingle{}aquest joc. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_min_i_max_paralel_a54e186601966cf85563a7dd05acc17e1}{Min\+I\+Max\+Paralel}} i \mbox{\hyperlink{class_min_i_max_sequencial_a599c03ba4619b91e5f0bbb20f49abd68}{Min\+I\+Max\+Sequencial}}.
+
+\mbox{\Hypertarget{interface_min_i_max_a34b1975f4e3c0fd02d659ca6f5bccf56}\label{interface_min_i_max_a34b1975f4e3c0fd02d659ca6f5bccf56}} 
+\index{MinIMax@{MinIMax}!ferIValidarJugada@{ferIValidarJugada}}
+\index{ferIValidarJugada@{ferIValidarJugada}!MinIMax@{MinIMax}}
+\doxysubsubsection{\texorpdfstring{ferIValidarJugada()}{ferIValidarJugada()}}
+{\footnotesize\ttfamily default boolean Min\+I\+Max.\+fer\+I\+Validar\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{tauler\+Amb\+Aquesta\+Jugada,  }\item[{\mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$$>$}]{jugada\+Act,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Que\+Mou }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em tauler\+Amb\+Aquesta\+Jugada} & \mbox{\hyperlink{class_tauler}{Tauler}} sobre el que se li aplicara la jugada. \\
+\hline
+{\em jugada\+Act} & \mbox{\hyperlink{class_jugada}{Jugada}} que s\textquotesingle{}aplicarà al tauler. \mbox{\hyperlink{class_pair}{Pair}}$<$Peca\+Que\+Mou,\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}} destí, \mbox{\hyperlink{interface_moviment}{Moviment}} aplicat per anar a desti$>$$>$ \\
+\hline
+{\em color\+Que\+Mou} & \mbox{\hyperlink{enum_color}{Color}} que fa el moviment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si la jugada que s\textquotesingle{}ha fet es vàlida o no 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondició}
+La jugada s\textquotesingle{}ha aplicat al tauler si aquesta era vàlida. Altrament no es garanteix aquesta aplicació. 
+\end{DoxyPostcond}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_min_i_max_8java}{Min\+I\+Max.\+java}}\end{DoxyCompactItemize}

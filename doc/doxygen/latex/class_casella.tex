@@ -1,0 +1,94 @@
+\hypertarget{class_casella}{}\doxysection{Referència de la Classe Casella}
+\label{class_casella}\index{Casella@{Casella}}
+
+
+Una casella d\textquotesingle{}un \mbox{\hyperlink{class_tauler}{Tauler}}. Classe contenidora. Pot contenir una Peça.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_casella_a626d956309843b669c189a7dd1a90a02}{Casella}} ()
+\item 
+void \mbox{\hyperlink{class_casella_aeebab81f6b23722a97f888cb5a7977a0}{agafa\+Peca}} (\mbox{\hyperlink{class_peca}{Peca}} nova\+Peca)
+\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_casella_a24b8621270eb2e7cdab01518040831d2}{te\+Peca}} ()
+\item 
+void \mbox{\hyperlink{class_casella_a09c237b8b3c4adc0f6c64b537b32de9e}{treu\+Peca}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_casella_a05bc15463f79cf49bc8bf9ee7eb78e5d}{peca}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Una casella d\textquotesingle{}un \mbox{\hyperlink{class_tauler}{Tauler}}. Classe contenidora. Pot contenir una Peça. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_casella_a626d956309843b669c189a7dd1a90a02}\label{class_casella_a626d956309843b669c189a7dd1a90a02}} 
+\index{Casella@{Casella}!Casella@{Casella}}
+\index{Casella@{Casella}!Casella@{Casella}}
+\doxysubsubsection{\texorpdfstring{Casella()}{Casella()}}
+{\footnotesize\ttfamily Casella.\+Casella (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+Crea una casella buida(sense cap peça). 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_casella_aeebab81f6b23722a97f888cb5a7977a0}\label{class_casella_aeebab81f6b23722a97f888cb5a7977a0}} 
+\index{Casella@{Casella}!agafaPeca@{agafaPeca}}
+\index{agafaPeca@{agafaPeca}!Casella@{Casella}}
+\doxysubsubsection{\texorpdfstring{agafaPeca()}{agafaPeca()}}
+{\footnotesize\ttfamily void Casella.\+agafa\+Peca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{nova\+Peca }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+La casella ara conté la peça. Si hi havia una peça prèviament ha quedat sobreescrita. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em nova\+Peca} & Peça que s\textquotesingle{}afegirà. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_casella_a24b8621270eb2e7cdab01518040831d2}\label{class_casella_a24b8621270eb2e7cdab01518040831d2}} 
+\index{Casella@{Casella}!tePeca@{tePeca}}
+\index{tePeca@{tePeca}!Casella@{Casella}}
+\doxysubsubsection{\texorpdfstring{tePeca()}{tePeca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Casella.\+te\+Peca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna la peça que conté la casella. En cas de no contenir cap peça retorna null. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_casella_a09c237b8b3c4adc0f6c64b537b32de9e}\label{class_casella_a09c237b8b3c4adc0f6c64b537b32de9e}} 
+\index{Casella@{Casella}!treuPeca@{treuPeca}}
+\index{treuPeca@{treuPeca}!Casella@{Casella}}
+\doxysubsubsection{\texorpdfstring{treuPeca()}{treuPeca()}}
+{\footnotesize\ttfamily void Casella.\+treu\+Peca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha eliminat la peça de la casella si n\textquotesingle{}hi havia, altrament no s\textquotesingle{}ha modificat. 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_casella_a05bc15463f79cf49bc8bf9ee7eb78e5d}\label{class_casella_a05bc15463f79cf49bc8bf9ee7eb78e5d}} 
+\index{Casella@{Casella}!peca@{peca}}
+\index{peca@{peca}!Casella@{Casella}}
+\doxysubsubsection{\texorpdfstring{peca}{peca}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Casella.\+peca\hspace{0.3cm}{\ttfamily [private]}}
+
+Peça que conté la casella. Per defecte una casella no té cap peça i aquest paràmetre serà = null. 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_casella_8java}{Casella.\+java}}\end{DoxyCompactItemize}

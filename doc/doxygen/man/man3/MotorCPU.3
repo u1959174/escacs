@@ -1,0 +1,123 @@
+.TH "MotorCPU" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MotorCPU \- Mòdul de suport de la \fBCPU\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static \fBJugada\fP \fBesEstatConegut\fP (\fBTauler\fP taulerActual, \fBColor\fP torn)"
+.br
+.ti -1c
+.RI "static int \fBvalorarJugada\fP (\fBTauler\fP taulerActual, \fBJugada\fP jug)"
+.br
+.ti -1c
+.RI "static void \fBcarregarConeixement\fP (String rutaFitxerConeixement)"
+.br
+.RI "Càrrega del coneixement a partir d'una ruta de fitxer de coneixemnt\&. "
+.in -1c
+.SS "Atributs Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static int \fBVALOR_ENROC\fP = 8"
+.br
+.ti -1c
+.RI "static int \fBVALOR_DIVISOR\fP = 2"
+.br
+.ti -1c
+.RI "static HashMap< String, \fBJugada\fP > \fBconeixement\fP = new HashMap<String,\fBJugada\fP>()"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Mòdul de suport de la \fBCPU\fP\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "static void MotorCPU\&.carregarConeixement (String rutaFitxerConeixement)\fC [static]\fP"
+
+.PP
+Càrrega del coneixement a partir d'una ruta de fitxer de coneixemnt\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIrutaFitxerConeixement\fP La ruta del fitxer amb les partides de prova\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Carrega les llistes de taulers i jugades\&. 
+.RE
+.PP
+
+.SS "static \fBJugada\fP MotorCPU\&.esEstatConegut (\fBTauler\fP taulerActual, \fBColor\fP torn)\fC [static]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItaulerActual\fP \fBTauler\fP amb l'estat actual\&. 
+.br
+\fIllista\fP 
+.br
+\fItorn\fP \fBColor\fP del jugador que tocaria moure\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La jugada que tocaria fer si l'estat Ã©s conegut\&. Null si no es troba o no és moviment o escac\&. 
+.RE
+.PP
+
+.SS "static int MotorCPU\&.valorarJugada (\fBTauler\fP taulerActual, \fBJugada\fP jug)\fC [static]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItaulerActual\fP \fBTauler\fP amb l'estat actual\&. 
+.br
+\fIjug\fP \fBJugada\fP que s'evalua\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna el valor de la jugada\&. Valor negatiu si Ã©s a favor de les negres\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+taulerActual no queda modificat\&. 
+.RE
+.PP
+\fBAntiquat\fP
+.RS 4
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "HashMap<String,\fBJugada\fP> MotorCPU\&.coneixement = new HashMap<String,\fBJugada\fP>()\fC [static]\fP, \fC [private]\fP"
+
+.SS "int MotorCPU\&.VALOR_DIVISOR = 2\fC [static]\fP, \fC [private]\fP"
+
+.SS "int MotorCPU\&.VALOR_ENROC = 8\fC [static]\fP, \fC [private]\fP"
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

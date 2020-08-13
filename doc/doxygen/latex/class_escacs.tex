@@ -1,0 +1,189 @@
+\hypertarget{class_escacs}{}\doxysection{Referència de la Classe Escacs}
+\label{class_escacs}\index{Escacs@{Escacs}}
+
+
+Classe d\textquotesingle{}entrada al programa. Pregunta en quin mode es vol executar el joc\+: la versio gràfica o text/terminal.  
+
+
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_escacs_ae18895c68998b716cebe29d2cdad5fbb}{desfer\+Jugada}} (int num\+Jugades)  throws Illegal\+Argument\+Exception
+\item 
+static void \mbox{\hyperlink{class_escacs_a707bff2087211232f6a669c5d80c689e}{guardar\+Partida}} ()
+\item 
+static void \mbox{\hyperlink{class_escacs_a88c9f31b18eb8a7b0cdc626bd41b81e2}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Mètode d\textquotesingle{}entrada al programa. Demana en quin mode es vol executar el joc i l\textquotesingle{}executa. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_escacs_a88bbb13a3a19045cf43f09464781f9b3}{obtenir\+Tauler}} ()
+\item 
+static boolean \mbox{\hyperlink{class_escacs_ab206c378dba47e4b8d0e4ddb3914897a}{pot\+Desfer}} ()
+\item 
+static boolean \mbox{\hyperlink{class_escacs_a02166ea83948a482cc0e9fb42f84d120}{pot\+Refer}} ()
+\item 
+static \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_escacs_ae6f496f05295f220d5e05a7835a50f8b}{promocionar}} ()
+\item 
+static void \mbox{\hyperlink{class_escacs_a58791c0153afdf84ac5c134cf6dfe9b3}{refer\+Jugada}} (int num\+Jugades)  throws Illegal\+Argument\+Exception
+\item 
+static Array\+List$<$ \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ \mbox{\hyperlink{class_escacs_a42eb1beed8133a57ce216fd8019cb7d5}{tipus\+Disponibles}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{class_escacs_a70bceb37680ffe330b503e42d03e54b9}{mode}} = true
+\begin{DoxyCompactList}\small\item\em Booleà que indica quin mode s\textquotesingle{}ha inicialitzat. True-\/$>$ Text, False-\/$>$Grafic. Per defecte es deixa en mode terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe d\textquotesingle{}entrada al programa. Pregunta en quin mode es vol executar el joc\+: la versio gràfica o text/terminal. 
+
+\begin{DoxyNote}{Nota}
+També conté els mètodes generals que tenen els dos modes per tal de \char`\"{}generalitzar\char`\"{} els missatges(crides a mètodes) al mode. 
+\end{DoxyNote}
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_escacs_ae18895c68998b716cebe29d2cdad5fbb}\label{class_escacs_ae18895c68998b716cebe29d2cdad5fbb}} 
+\index{Escacs@{Escacs}!desferJugada@{desferJugada}}
+\index{desferJugada@{desferJugada}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{desferJugada()}{desferJugada()}}
+{\footnotesize\ttfamily static void Escacs.\+desfer\+Jugada (\begin{DoxyParamCaption}\item[{int}]{num\+Jugades }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+Es poden desfer num\+Jugades. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han desfet num\+Jugades. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em num\+Jugades} & Número de jugades que es volen desfer. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & Quan num\+Jugades no és un número vàlid de jugades a desfer. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_escacs_a707bff2087211232f6a669c5d80c689e}\label{class_escacs_a707bff2087211232f6a669c5d80c689e}} 
+\index{Escacs@{Escacs}!guardarPartida@{guardarPartida}}
+\index{guardarPartida@{guardarPartida}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{guardarPartida()}{guardarPartida()}}
+{\footnotesize\ttfamily static void Escacs.\+guardar\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha guardat la \mbox{\hyperlink{class_partida}{Partida}} segons el format especificat als requeriments a la ruta escollida. També s\textquotesingle{}ha donat l\textquotesingle{}opcio de cancelar el guardat. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_escacs_a88c9f31b18eb8a7b0cdc626bd41b81e2}\label{class_escacs_a88c9f31b18eb8a7b0cdc626bd41b81e2}} 
+\index{Escacs@{Escacs}!main@{main}}
+\index{main@{main}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Escacs.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Mètode d\textquotesingle{}entrada al programa. Demana en quin mode es vol executar el joc i l\textquotesingle{}executa. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em args} & Arguments passats per paràmetre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha executat el programa en el mode seleccionat per terminal. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_escacs_a88bbb13a3a19045cf43f09464781f9b3}\label{class_escacs_a88bbb13a3a19045cf43f09464781f9b3}} 
+\index{Escacs@{Escacs}!obtenirTauler@{obtenirTauler}}
+\index{obtenirTauler@{obtenirTauler}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{obtenirTauler()}{obtenirTauler()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tauler}{Tauler}} Escacs.\+obtenir\+Tauler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+El tauler actual sobre el que es fa la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_escacs_ab206c378dba47e4b8d0e4ddb3914897a}\label{class_escacs_ab206c378dba47e4b8d0e4ddb3914897a}} 
+\index{Escacs@{Escacs}!potDesfer@{potDesfer}}
+\index{potDesfer@{potDesfer}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{potDesfer()}{potDesfer()}}
+{\footnotesize\ttfamily static boolean Escacs.\+pot\+Desfer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si es poden o no desfer jugades en aquest estat de la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_escacs_a02166ea83948a482cc0e9fb42f84d120}\label{class_escacs_a02166ea83948a482cc0e9fb42f84d120}} 
+\index{Escacs@{Escacs}!potRefer@{potRefer}}
+\index{potRefer@{potRefer}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{potRefer()}{potRefer()}}
+{\footnotesize\ttfamily static boolean Escacs.\+pot\+Refer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si es poden o no refer jugades en aquest estat de la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_escacs_ae6f496f05295f220d5e05a7835a50f8b}\label{class_escacs_ae6f496f05295f220d5e05a7835a50f8b}} 
+\index{Escacs@{Escacs}!promocionar@{promocionar}}
+\index{promocionar@{promocionar}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{promocionar()}{promocionar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Escacs.\+promocionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha alguna peça promocionable del jugador amb torn. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha preguntat al jugador amb torn a quina peça es vol promocionar. S\textquotesingle{}ha retornat el tipus\+Peca el qual el jugador ha escollit per fer la promoció. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+El \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} que ha triat el jugador que podria promocionar. Es garanteix que el tipus retornat no serà el R\+EI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_escacs_a58791c0153afdf84ac5c134cf6dfe9b3}\label{class_escacs_a58791c0153afdf84ac5c134cf6dfe9b3}} 
+\index{Escacs@{Escacs}!referJugada@{referJugada}}
+\index{referJugada@{referJugada}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{referJugada()}{referJugada()}}
+{\footnotesize\ttfamily static void Escacs.\+refer\+Jugada (\begin{DoxyParamCaption}\item[{int}]{num\+Jugades }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+Es poden refer num\+Jugades. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em num\+Jugades} & Número de jugades que es volen refer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han refet num\+Jugades. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & Quan num\+Jugades no és un número vàlid de jugades a refer. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_escacs_a42eb1beed8133a57ce216fd8019cb7d5}\label{class_escacs_a42eb1beed8133a57ce216fd8019cb7d5}} 
+\index{Escacs@{Escacs}!tipusDisponibles@{tipusDisponibles}}
+\index{tipusDisponibles@{tipusDisponibles}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{tipusDisponibles()}{tipusDisponibles()}}
+{\footnotesize\ttfamily static Array\+List$<$\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}$>$ Escacs.\+tipus\+Disponibles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+Un conjunt de \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} amb tots els \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} en aquesta partida. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_escacs_a70bceb37680ffe330b503e42d03e54b9}\label{class_escacs_a70bceb37680ffe330b503e42d03e54b9}} 
+\index{Escacs@{Escacs}!mode@{mode}}
+\index{mode@{mode}!Escacs@{Escacs}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily boolean Escacs.\+mode = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Booleà que indica quin mode s\textquotesingle{}ha inicialitzat. True-\/$>$ Text, False-\/$>$Grafic. Per defecte es deixa en mode terminal. 
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_escacs_8java}{Escacs.\+java}}\end{DoxyCompactItemize}

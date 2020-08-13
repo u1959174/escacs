@@ -1,0 +1,171 @@
+.TH "MovimentEspecial" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MovimentEspecial \- Implementació de \fBMoviment\fP per \fBMovimentEspecial\fP (enroc rectilini)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de \fBMoviment\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBMovimentEspecial\fP (boolean \fBquiets\fP, boolean \fBbuit\fP, \fBTipusPeca\fP \fBpeca\fP)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "boolean \fBesMoviment\fP (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+.br
+.ti -1c
+.RI "boolean \fBequals\fP (\fBMovimentEspecial\fP mov)"
+.br
+.ti -1c
+.RI "String \fBdiguemA\fP ()"
+.br
+.RI "Traducció del paràmetre A\&. "
+.ti -1c
+.RI "String \fBdiguemB\fP ()"
+.br
+.RI "Traducció del paràmetre B\&. "
+.ti -1c
+.RI "Integer \fBdiguemSaltar\fP ()"
+.br
+.RI "Diu el valor de saltar\&. "
+.ti -1c
+.RI "boolean \fBesEnroc\fP ()"
+.br
+.RI "Diu si el \fBMoviment\fP és de tipus enroc\&. "
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBquiets\fP"
+.br
+.RI "Indica si s'ha de fer amb les peces no mogudes\&. "
+.ti -1c
+.RI "boolean \fBbuit\fP"
+.br
+.RI "Indica si l'espai entre les dues peces no ha d'estar ocupa per cap altra\&. "
+.ti -1c
+.RI "\fBTipusPeca\fP \fBpeca\fP"
+.br
+.RI "L'altra peça amb la que es fa l'enroc\&. "
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Implementació de \fBMoviment\fP per \fBMovimentEspecial\fP (enroc rectilini)\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "MovimentEspecial\&.MovimentEspecial (boolean quiets, boolean buit, \fBTipusPeca\fP peca)"
+
+.PP
+Constructor\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIquiets\fP Peces han d'estar quietes\&. 
+.br
+\fIbuit\fP Espai buit entre peces\&. 
+.br
+\fIpeca\fP \fBTipusPeca\fP de l'altra peca\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea un moviment de tipus especial, l'enroc\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "String MovimentEspecial\&.diguemA ()"
+
+.PP
+Traducció del paràmetre A\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre A traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "String MovimentEspecial\&.diguemB ()"
+
+.PP
+Traducció del paràmetre B\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre B traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "Integer MovimentEspecial\&.diguemSaltar ()"
+
+.PP
+Diu el valor de saltar\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l'atribut\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentEspecial\&.equals (\fBMovimentEspecial\fP mov)"
+
+.SS "boolean MovimentEspecial\&.esEnroc ()"
+
+.PP
+Diu si el \fBMoviment\fP és de tipus enroc\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el \fBMoviment\fP és enroc, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentEspecial\&.esMoviment (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+@Pre El tipus de peça amb la que es vol fer l'intercanvi és compatible\&. 
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "boolean MovimentEspecial\&.buit\fC [private]\fP"
+
+.PP
+Indica si l'espai entre les dues peces no ha d'estar ocupa per cap altra\&. 
+.SS "\fBTipusPeca\fP MovimentEspecial\&.peca\fC [private]\fP"
+
+.PP
+L'altra peça amb la que es fa l'enroc\&. 
+.SS "boolean MovimentEspecial\&.quiets\fC [private]\fP"
+
+.PP
+Indica si s'ha de fer amb les peces no mogudes\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

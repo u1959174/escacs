@@ -1,0 +1,482 @@
+\hypertarget{class_json}{}\doxysection{Referència de la Classe Json}
+\label{class_json}\index{Json@{Json}}
+
+
+Gestiona tota la lectura i la generació dels fitxers \mbox{\hyperlink{class_json}{Json}} i la creació dels objectes que aquest està involucrat.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_json_a7e173158c9061e07ae5cf17590fdef65}{Json}} ()  throws I\+O\+Exception, ExcepcioG
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_partida}{Partida}} \mbox{\hyperlink{class_json_a4c0b9a117044fcd03f0b0f586918742c}{crear\+Partida\+Nova}} (String fitxer)  throws I\+O\+Exception, ExcepcioG
+\item 
+static \mbox{\hyperlink{class_partida}{Partida}} \mbox{\hyperlink{class_json_afe288a876c59f3fc0e54ed6dffee17d2}{crear\+Partida\+Comencada}} (String fitxer)  throws I\+O\+Exception, ExcepcioG
+\item 
+static Collection$<$ \mbox{\hyperlink{class_partida}{Partida}} $>$ \mbox{\hyperlink{class_json_a123b157b90b95e24e10be405a1957ebd}{carregar\+Coneixement}} (String ruta\+Fitxer\+Coneixement)  throws I\+O\+Exception, ExcepcioG
+\item 
+static void \mbox{\hyperlink{class_json_a38fac21995676e2ab03a9fe004665183}{guardar\+Partida}} (\mbox{\hyperlink{class_partida}{Partida}} p, String fitxer)  throws I\+O\+Exception, ExcepcioG
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{class_json_a77b7a7c6fceebf88f90f4a95757fd842}{generar\+J\+S\+O\+N\+Jugades}} (\mbox{\hyperlink{class_partida}{Partida}} p)
+\item 
+static J\+S\+O\+N\+Array \mbox{\hyperlink{class_json_a3f4d6c18eb2d6e22e32492206a2c0c13}{generar\+Pos\+Ini}} (\mbox{\hyperlink{class_partida}{Partida}} p, \mbox{\hyperlink{enum_color}{Color}} col)
+\item 
+static J\+S\+O\+N\+Array \mbox{\hyperlink{class_json_a40bf6cf50083c8eb26a0114660c47f38}{generar\+Tirades\+Partida}} (\mbox{\hyperlink{class_partida}{Partida}} p)
+\item 
+static String \mbox{\hyperlink{class_json_ab3ba3126a4297cec9723dcf70025148c}{generar\+String\+Resultat\+Partida}} (\mbox{\hyperlink{class_partida}{Partida}} p)
+\item 
+static String \mbox{\hyperlink{class_json_ac1e0d2e6f1228365db0f81f4d220e54d}{generar\+String\+Resultat\+Jugada}} (\mbox{\hyperlink{class_jugada}{Jugada}} j)
+\item 
+static void \mbox{\hyperlink{class_json_a2c20e727414738bd4428d9e1ca80cb9b}{comprobar\+Mida\+Tauler}} (int fil, int col)  throws ExcepcioG
+\item 
+static J\+S\+O\+N\+Object \mbox{\hyperlink{class_json_aa7840810e957b4784d731bc248dd837a}{lectura\+Fitxers}} (String fitxer, boolean es\+Jugades)  throws I\+O\+Exception, ExcepcioG
+\item 
+static boolean \mbox{\hyperlink{class_json_aed241bea13087b1fa22c0448f56ba978}{comprovar\+Fitxer\+Jugades}} (J\+S\+O\+N\+Object obj)
+\item 
+static boolean \mbox{\hyperlink{class_json_af7b50b29691fd50e859f050e74719219}{comprovar\+Fitxer\+Regles}} (J\+S\+O\+N\+Object obj)
+\item 
+static boolean \mbox{\hyperlink{class_json_a3e7a3bfff016e657f3249515ff3f3897}{comprovar\+Fitxer\+Coneixement}} (J\+S\+O\+N\+Object obj)
+\item 
+static int \mbox{\hyperlink{class_json_a9d13918a84ee585aaa9d3e8e0037fe82}{lectura\+Enter}} (J\+S\+O\+N\+Object obj, String nom)
+\item 
+static String \mbox{\hyperlink{class_json_aeb598d35c1a9aca60d3dfe5d01c2bc83}{lectura\+String}} (J\+S\+O\+N\+Object obj, String nom)
+\item 
+static \mbox{\hyperlink{interface_moviment}{Moviment}} \mbox{\hyperlink{class_json_ac705607a03d0ad6a400b6a5a59d95091}{traduir\+Moviment}} (Array\+List$<$ String $>$ mov, boolean inicial)  throws Illegal\+Argument\+Exception 
+\item 
+static void \mbox{\hyperlink{class_json_a9a025c24c8446dc3df5015a430ac8504}{lectura\+Peces}} (J\+S\+O\+N\+Object obj, Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ tipus)  throws Excepcio\+G 
+\item 
+static void \mbox{\hyperlink{class_json_ad1f158371ed8633cd3d8c7499ba631e2}{lectura\+Moviments\+Peca}} (\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} peca\+Tmp, J\+S\+O\+N\+Object obj, String nom, boolean inicial)
+\item 
+static void \mbox{\hyperlink{class_json_abf52eecf9a6511898ad38e303ee89123}{lectura\+Enrocs}} (Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ tipus, J\+S\+O\+N\+Object obj)  throws ExcepcioG
+\item 
+static void \mbox{\hyperlink{class_json_ad8e55d98cd8e4fe4ca00fa3aa29e9e44}{lectura\+Posicions}} (J\+S\+O\+N\+Object obj, \mbox{\hyperlink{class_tauler}{Tauler}} t, Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ tipus, int n\+Files, int n\+Cols)  throws ExcepcioG
+\item 
+static void \mbox{\hyperlink{class_json_a927d1c5db31fcb8c3398617af5e94ceb}{lectura\+Posicions\+Regles}} (J\+S\+O\+N\+Object obj, String nom, \mbox{\hyperlink{class_tauler}{Tauler}} t, Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ tipus, \mbox{\hyperlink{enum_color}{Color}} color)  throws ExcepcioG
+\item 
+static void \mbox{\hyperlink{class_json_ac4fbd84cdd16c33ebafdcdd971728b6f}{lectura\+Tirades}} (J\+S\+O\+N\+Object obj, Array\+List$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$ j, Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ tipus)  throws ExcepcioG
+\item 
+static boolean \mbox{\hyperlink{class_json_af52bf226a5caa6cf5cd07154ab5bd1cd}{comprovar\+Tirada}} (J\+S\+O\+N\+Object obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Gestiona tota la lectura i la generació dels fitxers \mbox{\hyperlink{class_json}{Json}} i la creació dels objectes que aquest està involucrat. 
+
+\begin{DoxyAuthor}{Autor}
+Eloi Quintana 
+
+u1963141 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_json_a7e173158c9061e07ae5cf17590fdef65}\label{class_json_a7e173158c9061e07ae5cf17590fdef65}} 
+\index{Json@{Json}!Json@{Json}}
+\index{Json@{Json}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{Json()}{Json()}}
+{\footnotesize\ttfamily Json.\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+\begin{DoxyPostcond}{Postcondició}
+-\/ @comment Constructor Constructor buid 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em I\+O\+Exception} & En la lectura del fitxxer \\
+\hline
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & en diversos casos \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_json_a123b157b90b95e24e10be405a1957ebd}\label{class_json_a123b157b90b95e24e10be405a1957ebd}} 
+\index{Json@{Json}!carregarConeixement@{carregarConeixement}}
+\index{carregarConeixement@{carregarConeixement}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{carregarConeixement()}{carregarConeixement()}}
+{\footnotesize\ttfamily static Collection$<$\mbox{\hyperlink{class_partida}{Partida}}$>$ Json.\+carregar\+Coneixement (\begin{DoxyParamCaption}\item[{String}]{ruta\+Fitxer\+Coneixement }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+donat un fitxr s\textquotesingle{}ha llegit i retornat una Array de Has\+Map$<$\+String tauler, Tauler t$>$ 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em ruta\+Fitxer\+Coneixement} & ruta del fitxer de coneixement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+una Collection de partides aplicades contingudes al fitxer de la ruta\+Fitxer\+Coneixement 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_json_a2c20e727414738bd4428d9e1ca80cb9b}\label{class_json_a2c20e727414738bd4428d9e1ca80cb9b}} 
+\index{Json@{Json}!comprobarMidaTauler@{comprobarMidaTauler}}
+\index{comprobarMidaTauler@{comprobarMidaTauler}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{comprobarMidaTauler()}{comprobarMidaTauler()}}
+{\footnotesize\ttfamily static void Json.\+comprobar\+Mida\+Tauler (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+fil i col $>$ 0 @\+Post S\textquotesingle{}ha comprobat que fil i col esta disns els paràmetres establerts 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_json_a3e7a3bfff016e657f3249515ff3f3897}\label{class_json_a3e7a3bfff016e657f3249515ff3f3897}} 
+\index{Json@{Json}!comprovarFitxerConeixement@{comprovarFitxerConeixement}}
+\index{comprovarFitxerConeixement@{comprovarFitxerConeixement}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{comprovarFitxerConeixement()}{comprovarFitxerConeixement()}}
+{\footnotesize\ttfamily static boolean Json.\+comprovar\+Fitxer\+Coneixement (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post Ha coprovat que existeixen tots els objectes a l\textquotesingle{}objecte d\textquotesingle{}entrada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte a comprovar @\+Return True si conte els objectes especificats, false altrament \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_aed241bea13087b1fa22c0448f56ba978}\label{class_json_aed241bea13087b1fa22c0448f56ba978}} 
+\index{Json@{Json}!comprovarFitxerJugades@{comprovarFitxerJugades}}
+\index{comprovarFitxerJugades@{comprovarFitxerJugades}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{comprovarFitxerJugades()}{comprovarFitxerJugades()}}
+{\footnotesize\ttfamily static boolean Json.\+comprovar\+Fitxer\+Jugades (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post Ha coprovat que existeixen tots els objectes a l\textquotesingle{}objecte d\textquotesingle{}entrada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte a comprovar @\+Return True si conte els objectes especificats, false altrament \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_af7b50b29691fd50e859f050e74719219}\label{class_json_af7b50b29691fd50e859f050e74719219}} 
+\index{Json@{Json}!comprovarFitxerRegles@{comprovarFitxerRegles}}
+\index{comprovarFitxerRegles@{comprovarFitxerRegles}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{comprovarFitxerRegles()}{comprovarFitxerRegles()}}
+{\footnotesize\ttfamily static boolean Json.\+comprovar\+Fitxer\+Regles (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post Ha coprovat que existeixen tots els objectes a l\textquotesingle{}objecte d\textquotesingle{}entrada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte a comprovar @\+Return True si conte els objectes especificats, false altrament \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_af52bf226a5caa6cf5cd07154ab5bd1cd}\label{class_json_af52bf226a5caa6cf5cd07154ab5bd1cd}} 
+\index{Json@{Json}!comprovarTirada@{comprovarTirada}}
+\index{comprovarTirada@{comprovarTirada}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{comprovarTirada()}{comprovarTirada()}}
+{\footnotesize\ttfamily static boolean Json.\+comprovar\+Tirada (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post Ha coprovat que existeixen tots els objectes a l\textquotesingle{}objecte d\textquotesingle{}entrada. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte a comprovar @\+Return True si conte els objectes especificats, false altrament \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_afe288a876c59f3fc0e54ed6dffee17d2}\label{class_json_afe288a876c59f3fc0e54ed6dffee17d2}} 
+\index{Json@{Json}!crearPartidaComencada@{crearPartidaComencada}}
+\index{crearPartidaComencada@{crearPartidaComencada}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{crearPartidaComencada()}{crearPartidaComencada()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_partida}{Partida}} Json.\+crear\+Partida\+Comencada (\begin{DoxyParamCaption}\item[{String}]{fitxer }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha creat una nova partida a partir de les dades del fitxer amb jugades introduïdes. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Es retorna \mbox{\hyperlink{class_partida}{Partida}} 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paràmetres}
+{\em fitxer} & ruta del fitxer de relges \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_json_a4c0b9a117044fcd03f0b0f586918742c}\label{class_json_a4c0b9a117044fcd03f0b0f586918742c}} 
+\index{Json@{Json}!crearPartidaNova@{crearPartidaNova}}
+\index{crearPartidaNova@{crearPartidaNova}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{crearPartidaNova()}{crearPartidaNova()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_partida}{Partida}} Json.\+crear\+Partida\+Nova (\begin{DoxyParamCaption}\item[{String}]{fitxer }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha creat una nova partida a partir de les dades del fitxer. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+partida Es retorna la \mbox{\hyperlink{class_partida}{Partida}} creada 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paràmetres}
+{\em fitxer} & ruta del fitxer de regles \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_a77b7a7c6fceebf88f90f4a95757fd842}\label{class_json_a77b7a7c6fceebf88f90f4a95757fd842}} 
+\index{Json@{Json}!generarJSONJugades@{generarJSONJugades}}
+\index{generarJSONJugades@{generarJSONJugades}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{generarJSONJugades()}{generarJSONJugades()}}
+{\footnotesize\ttfamily static String Json.\+generar\+J\+S\+O\+N\+Jugades (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_partida}{Partida}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post S\textquotesingle{}ha generat el contingut de un objecte J\+S\+ON. @\+Return Objecte J\+S\+ON 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_json_a3f4d6c18eb2d6e22e32492206a2c0c13}\label{class_json_a3f4d6c18eb2d6e22e32492206a2c0c13}} 
+\index{Json@{Json}!generarPosIni@{generarPosIni}}
+\index{generarPosIni@{generarPosIni}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{generarPosIni()}{generarPosIni()}}
+{\footnotesize\ttfamily static J\+S\+O\+N\+Array Json.\+generar\+Pos\+Ini (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_partida}{Partida}}}]{p,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{col }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}ha generat l\textquotesingle{}array de posicions inicials de la partida p del color col. @\+Return Objecte array J\+S\+ON 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_json_ac1e0d2e6f1228365db0f81f4d220e54d}\label{class_json_ac1e0d2e6f1228365db0f81f4d220e54d}} 
+\index{Json@{Json}!generarStringResultatJugada@{generarStringResultatJugada}}
+\index{generarStringResultatJugada@{generarStringResultatJugada}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{generarStringResultatJugada()}{generarStringResultatJugada()}}
+{\footnotesize\ttfamily static String Json.\+generar\+String\+Resultat\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugada}{Jugada}}}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}ha generat un string amb tots els resultats d\textquotesingle{}una partida @\+Return Es retorna l\textquotesingle{}string amb tots els resultats 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em j} & jugada en la que s\textquotesingle{}aplicara el mètode \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_ab3ba3126a4297cec9723dcf70025148c}\label{class_json_ab3ba3126a4297cec9723dcf70025148c}} 
+\index{Json@{Json}!generarStringResultatPartida@{generarStringResultatPartida}}
+\index{generarStringResultatPartida@{generarStringResultatPartida}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{generarStringResultatPartida()}{generarStringResultatPartida()}}
+{\footnotesize\ttfamily static String Json.\+generar\+String\+Resultat\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_partida}{Partida}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+p != null @\+Post s\textquotesingle{}ha generat un string amb el resultat de la partida si no es null @\+Return Es retorna l\textquotesingle{}string amb el resultat 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_json_a40bf6cf50083c8eb26a0114660c47f38}\label{class_json_a40bf6cf50083c8eb26a0114660c47f38}} 
+\index{Json@{Json}!generarTiradesPartida@{generarTiradesPartida}}
+\index{generarTiradesPartida@{generarTiradesPartida}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{generarTiradesPartida()}{generarTiradesPartida()}}
+{\footnotesize\ttfamily static J\+S\+O\+N\+Array Json.\+generar\+Tirades\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_partida}{Partida}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}ha generat l\textquotesingle{}array de posicions inicials de la partida p del color col. @\+Return Objecte array J\+S\+ON 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_json_a38fac21995676e2ab03a9fe004665183}\label{class_json_a38fac21995676e2ab03a9fe004665183}} 
+\index{Json@{Json}!guardarPartida@{guardarPartida}}
+\index{guardarPartida@{guardarPartida}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{guardarPartida()}{guardarPartida()}}
+{\footnotesize\ttfamily static void Json.\+guardar\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_partida}{Partida}}}]{p,  }\item[{String}]{fitxer }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post S\textquotesingle{}ha creat una nova partida a partir de les dades del fitxer amb jugades introduïdes. @\+Return Es retorna \mbox{\hyperlink{class_partida}{Partida}} 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em p} & \\
+\hline
+{\em fitxer} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em java.\+io.\+I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_json_abf52eecf9a6511898ad38e303ee89123}\label{class_json_abf52eecf9a6511898ad38e303ee89123}} 
+\index{Json@{Json}!lecturaEnrocs@{lecturaEnrocs}}
+\index{lecturaEnrocs@{lecturaEnrocs}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaEnrocs()}{lecturaEnrocs()}}
+{\footnotesize\ttfamily static void Json.\+lectura\+Enrocs (\begin{DoxyParamCaption}\item[{Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$}]{tipus,  }\item[{J\+S\+O\+N\+Object}]{obj }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+tipus ja s\textquotesingle{}ha inicialitzat. @\+Post s\textquotesingle{}han llegit tots els moviments enrocs de l\textquotesingle{}objecte json i s\textquotesingle{}han carregat al hasmap 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em tipus} & es el hasmap ja inicialitzat on es guarden els objecte llegits a obj \\
+\hline
+{\em obj} & es el objecte on s\textquotesingle{}extreuen els moviments enrocs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_a9d13918a84ee585aaa9d3e8e0037fe82}\label{class_json_a9d13918a84ee585aaa9d3e8e0037fe82}} 
+\index{Json@{Json}!lecturaEnter@{lecturaEnter}}
+\index{lecturaEnter@{lecturaEnter}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaEnter()}{lecturaEnter()}}
+{\footnotesize\ttfamily static int Json.\+lectura\+Enter (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj,  }\item[{String}]{nom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post ha extret l\textquotesingle{}enter amb amb nom (nom) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em nom} & Nom de l\textquotesingle{}objecte a extreure @\+Return l\textquotesingle{}enter amb nom (nom) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_aa7840810e957b4784d731bc248dd837a}\label{class_json_aa7840810e957b4784d731bc248dd837a}} 
+\index{Json@{Json}!lecturaFitxers@{lecturaFitxers}}
+\index{lecturaFitxers@{lecturaFitxers}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaFitxers()}{lecturaFitxers()}}
+{\footnotesize\ttfamily static J\+S\+O\+N\+Object Json.\+lectura\+Fitxers (\begin{DoxyParamCaption}\item[{String}]{fitxer,  }\item[{boolean}]{es\+Jugades }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post S\textquotesingle{}ha classificat el fitxer d\textquotesingle{}entrada en el format que es, i s\textquotesingle{}ha transformat a objecte J\+S\+ON. @\+Return Es retorna l\textquotesingle{}Objecte 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em fitxer} & ruta del fitxer de jugades o regles \\
+\hline
+{\em es\+Jugades} & indica si el fitxer es de jugades o de regles \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_ad1f158371ed8633cd3d8c7499ba631e2}\label{class_json_ad1f158371ed8633cd3d8c7499ba631e2}} 
+\index{Json@{Json}!lecturaMovimentsPeca@{lecturaMovimentsPeca}}
+\index{lecturaMovimentsPeca@{lecturaMovimentsPeca}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaMovimentsPeca()}{lecturaMovimentsPeca()}}
+{\footnotesize\ttfamily static void Json.\+lectura\+Moviments\+Peca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca\+Tmp,  }\item[{J\+S\+O\+N\+Object}]{obj,  }\item[{String}]{nom,  }\item[{boolean}]{inicial }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}han carregat tots els moviments de l\textquotesingle{}objecte json a \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca\+Tmp} & \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} on es guardaran els moviments \\
+\hline
+{\em obj} & Objecte json de on es llegeixen els moviment \\
+\hline
+{\em inicial} & true si el moviment es de tipus inicial, false altrament \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_a9a025c24c8446dc3df5015a430ac8504}\label{class_json_a9a025c24c8446dc3df5015a430ac8504}} 
+\index{Json@{Json}!lecturaPeces@{lecturaPeces}}
+\index{lecturaPeces@{lecturaPeces}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaPeces()}{lecturaPeces()}}
+{\footnotesize\ttfamily static void Json.\+lectura\+Peces (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj,  }\item[{Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$}]{tipus }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post Hash\+Map conte ara tots els tipus de peces de l\textquotesingle{}object obj. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte a extreure les peces. \\
+\hline
+{\em tipus} & Conte els Tipus de peces ordenats pel seu Nom. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_ad8e55d98cd8e4fe4ca00fa3aa29e9e44}\label{class_json_ad8e55d98cd8e4fe4ca00fa3aa29e9e44}} 
+\index{Json@{Json}!lecturaPosicions@{lecturaPosicions}}
+\index{lecturaPosicions@{lecturaPosicions}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaPosicions()}{lecturaPosicions()}}
+{\footnotesize\ttfamily static void Json.\+lectura\+Posicions (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj,  }\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{t,  }\item[{Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$}]{tipus,  }\item[{int}]{n\+Files,  }\item[{int}]{n\+Cols }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}han llegit les posicions inicials del json obj 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte json on s\textquotesingle{}extreurean les posicions inicials \\
+\hline
+{\em tipus} & hashmap on es guarden tots els tipus de peca \\
+\hline
+{\em n\+Files} & numero de files del tauler \\
+\hline
+{\em n\+Cols} & numero de columnes del tauler \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_a927d1c5db31fcb8c3398617af5e94ceb}\label{class_json_a927d1c5db31fcb8c3398617af5e94ceb}} 
+\index{Json@{Json}!lecturaPosicionsRegles@{lecturaPosicionsRegles}}
+\index{lecturaPosicionsRegles@{lecturaPosicionsRegles}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaPosicionsRegles()}{lecturaPosicionsRegles()}}
+{\footnotesize\ttfamily static void Json.\+lectura\+Posicions\+Regles (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj,  }\item[{String}]{nom,  }\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{t,  }\item[{Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$}]{tipus,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post S\textquotesingle{}ha classificat el fitxer d\textquotesingle{}entrada en el format que es, i s\textquotesingle{}ha transformat a objecte J\+S\+ON. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte json on s\textquotesingle{}extreurean les posicions de les peces \\
+\hline
+{\em nom} & nom de l\textquotesingle{}objecte a extreure \\
+\hline
+{\em t} & \mbox{\hyperlink{class_tauler}{Tauler}} on s\textquotesingle{}afegiran les peces en questio \\
+\hline
+{\em tipus} & index on es guarden tots els tipus de peces disponibles \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_aeb598d35c1a9aca60d3dfe5d01c2bc83}\label{class_json_aeb598d35c1a9aca60d3dfe5d01c2bc83}} 
+\index{Json@{Json}!lecturaString@{lecturaString}}
+\index{lecturaString@{lecturaString}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaString()}{lecturaString()}}
+{\footnotesize\ttfamily static String Json.\+lectura\+String (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj,  }\item[{String}]{nom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post ha extret l\textquotesingle{}String amb amb nom (nom) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em nom} & Nom de l\textquotesingle{}objecte a extreure @\+Return l\textquotesingle{}String amb nom (nom) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_ac4fbd84cdd16c33ebafdcdd971728b6f}\label{class_json_ac4fbd84cdd16c33ebafdcdd971728b6f}} 
+\index{Json@{Json}!lecturaTirades@{lecturaTirades}}
+\index{lecturaTirades@{lecturaTirades}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{lecturaTirades()}{lecturaTirades()}}
+{\footnotesize\ttfamily static void Json.\+lectura\+Tirades (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Object}]{obj,  }\item[{Array\+List$<$ \mbox{\hyperlink{class_jugada}{Jugada}} $>$}]{j,  }\item[{Hash\+Map$<$ String, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$}]{tipus }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+j ja inicialitzat. @\+Post S\textquotesingle{}han llegit totes les jugades del obj json. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em obj} & Objecte json on s\textquotesingle{}extreurean les tirades o jugades \\
+\hline
+{\em j} & index on es guardaran les jugades extretes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_json_ac705607a03d0ad6a400b6a5a59d95091}\label{class_json_ac705607a03d0ad6a400b6a5a59d95091}} 
+\index{Json@{Json}!traduirMoviment@{traduirMoviment}}
+\index{traduirMoviment@{traduirMoviment}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{traduirMoviment()}{traduirMoviment()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{interface_moviment}{Moviment}} Json.\+traduir\+Moviment (\begin{DoxyParamCaption}\item[{Array\+List$<$ String $>$}]{mov,  }\item[{boolean}]{inicial }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post Ha traduit un arraylist de Strings a un tipus de \mbox{\hyperlink{interface_moviment}{Moviment}} 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em mov} & \+: Array\+List de String que conte els 4 paràmetres de moviment. \\
+\hline
+{\em inicial} & \+: True si el moviment es inicial, false altrament. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya 
+\end{DoxyAuthor}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_json_8java}{Json.\+java}}\end{DoxyCompactItemize}

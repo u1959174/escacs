@@ -1,0 +1,311 @@
+\hypertarget{class_tipus_peca}{}\doxysection{Referència de la Classe Tipus\+Peca}
+\label{class_tipus_peca}\index{TipusPeca@{TipusPeca}}
+
+
+Un tipus de peça configurable.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tipus_peca_a050d02a5cdec93dc7d9c18ce1b5ad814}{Tipus\+Peca}} (String \mbox{\hyperlink{class_tipus_peca_aedcdcac4f4a9993b3264b99fdf05e46c}{nom}}, char \mbox{\hyperlink{class_tipus_peca_ab5e0ab1d1a3a2697881e3741afcd14d6}{simbol}}, int \mbox{\hyperlink{class_tipus_peca_a56f1ce04d2e5678fbc836d858b0f996c}{valor}}, boolean \mbox{\hyperlink{class_tipus_peca_ab76c9bbaca333946ad38e953fca7ba07}{promocio}}, boolean \mbox{\hyperlink{class_tipus_peca_a6caff497cd9c9f79c5328412beea92c5}{invulnerabilitat}}, String \mbox{\hyperlink{class_tipus_peca_a6c4aaec964f34d0c77824f0a929bdfd8}{ruta\+\_\+blanca}}, String \mbox{\hyperlink{class_tipus_peca_ab6ad1cb9f18706039bc197e2bb118755}{ruta\+\_\+negra}})  throws Illegal\+Argument\+Exception 
+\item 
+String \mbox{\hyperlink{class_tipus_peca_ae08eccf1f28f51e85810d273617dd918}{diguem\+Ruta\+Blanca}} ()
+\item 
+String \mbox{\hyperlink{class_tipus_peca_a42bc6855e8bd2fa13adbbb529af90aef}{diguem\+Ruta\+Negra}} ()
+\item 
+boolean \mbox{\hyperlink{class_tipus_peca_a815c4e8a201e24c05e7d53f9286bf36d}{diguem\+Promocio}} ()
+\item 
+boolean \mbox{\hyperlink{class_tipus_peca_a58923f4e979d3a86682a5a3323ab6972}{es\+Invulnerable}} ()
+\item 
+void \mbox{\hyperlink{class_tipus_peca_aab7df8827abdc84fcf6e3de9364a5171}{carregar\+Moviment}} (\mbox{\hyperlink{interface_moviment}{Moviment}} mov, boolean inicial)  throws Excepcio\+G 
+\item 
+int \mbox{\hyperlink{class_tipus_peca_ac960ad3bb1f664cff899adb988db4d9f}{diguem\+Valor}} ()
+\item 
+char \mbox{\hyperlink{class_tipus_peca_a683b8143030fa8ccb8c9480e53992a9a}{diguem\+Simbol}} ()
+\item 
+\mbox{\hyperlink{interface_moviment}{Moviment}} \mbox{\hyperlink{class_tipus_peca_a0ce152a9ff99423553aa3fb61bf791ce}{prova\+Moviment}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti, boolean primer, boolean blanques, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} peca\+\_\+final, boolean peca\+\_\+mig)
+\item 
+boolean \mbox{\hyperlink{class_tipus_peca_ac35af650d4f345204ae2163670758cf1}{prova\+Moviment}} (\mbox{\hyperlink{interface_moviment}{Moviment}} mov)
+\item 
+String \mbox{\hyperlink{class_tipus_peca_ab199b95419418482c4d8ac904d13dd81}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs de Paquet}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{class_tipus_peca_ab76c9bbaca333946ad38e953fca7ba07}{promocio}}
+\begin{DoxyCompactList}\small\item\em Regles extra de la peça. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{class_tipus_peca_a6caff497cd9c9f79c5328412beea92c5}{invulnerabilitat}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_tipus_peca_a9f44b89813c6e7ca36e398ef47dc067f}{diguem\+Nom}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_tipus_peca_aedcdcac4f4a9993b3264b99fdf05e46c}{nom}}
+\begin{DoxyCompactList}\small\item\em Tipus de peça, configuració. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_tipus_peca_ab5e0ab1d1a3a2697881e3741afcd14d6}{simbol}}
+\begin{DoxyCompactList}\small\item\em Símbol de la peça en majúscula. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_tipus_peca_a56f1ce04d2e5678fbc836d858b0f996c}{valor}}
+\begin{DoxyCompactList}\small\item\em Valor de la peça. \end{DoxyCompactList}\item 
+Array\+List$<$ \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ \mbox{\hyperlink{class_tipus_peca_aeb0cc2d65a447ab21ffc6f1aa3c1331a}{moviments}}
+\begin{DoxyCompactList}\small\item\em Moviments de la peça. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_tipus_peca_a6c4aaec964f34d0c77824f0a929bdfd8}{ruta\+\_\+blanca}}
+\begin{DoxyCompactList}\small\item\em Rutes de les icones. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{class_tipus_peca_ab6ad1cb9f18706039bc197e2bb118755}{ruta\+\_\+negra}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Un tipus de peça configurable. 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_tipus_peca_a050d02a5cdec93dc7d9c18ce1b5ad814}\label{class_tipus_peca_a050d02a5cdec93dc7d9c18ce1b5ad814}} 
+\index{TipusPeca@{TipusPeca}!TipusPeca@{TipusPeca}}
+\index{TipusPeca@{TipusPeca}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{TipusPeca()}{TipusPeca()}}
+{\footnotesize\ttfamily Tipus\+Peca.\+Tipus\+Peca (\begin{DoxyParamCaption}\item[{String}]{nom,  }\item[{char}]{simbol,  }\item[{int}]{valor,  }\item[{boolean}]{promocio,  }\item[{boolean}]{invulnerabilitat,  }\item[{String}]{ruta\+\_\+blanca,  }\item[{String}]{ruta\+\_\+negra }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em nom} & El nom. \\
+\hline
+{\em simbol} & El símbol. \\
+\hline
+{\em valor} & El valor. \\
+\hline
+{\em promocio} & Indica si té promoció o no. \\
+\hline
+{\em invulnerabilitat} & Indica si la peça és invulnerable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+char majúscula i valor $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Crea un tipus de peça amb nom i valors entrats. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & Quan se salta la precondició. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_tipus_peca_aab7df8827abdc84fcf6e3de9364a5171}\label{class_tipus_peca_aab7df8827abdc84fcf6e3de9364a5171}} 
+\index{TipusPeca@{TipusPeca}!carregarMoviment@{carregarMoviment}}
+\index{carregarMoviment@{carregarMoviment}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{carregarMoviment()}{carregarMoviment()}}
+{\footnotesize\ttfamily void Tipus\+Peca.\+carregar\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_moviment}{Moviment}}}]{mov,  }\item[{boolean}]{inicial }\end{DoxyParamCaption}) throws \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em mov} & \mbox{\hyperlink{interface_moviment}{Moviment}} a inserir. \\
+\hline
+{\em inicial} & Indica si el moviment és exclusivament inicial o no. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+Carrega el moviment al a configuració de la peça. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em D\+O\+B\+L\+E\+\_\+\+M\+O\+V\+I\+M\+E\+NT} & Si s\textquotesingle{}ha trobat un moviment amb el mateix vector de desplaçament. \\
+\hline
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & Quan el moviment ja existeix. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_tipus_peca_a9f44b89813c6e7ca36e398ef47dc067f}\label{class_tipus_peca_a9f44b89813c6e7ca36e398ef47dc067f}} 
+\index{TipusPeca@{TipusPeca}!diguemNom@{diguemNom}}
+\index{diguemNom@{diguemNom}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{diguemNom()}{diguemNom()}}
+{\footnotesize\ttfamily String Tipus\+Peca.\+diguem\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Retorna}
+Retorna el nom. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_a815c4e8a201e24c05e7d53f9286bf36d}\label{class_tipus_peca_a815c4e8a201e24c05e7d53f9286bf36d}} 
+\index{TipusPeca@{TipusPeca}!diguemPromocio@{diguemPromocio}}
+\index{diguemPromocio@{diguemPromocio}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{diguemPromocio()}{diguemPromocio()}}
+{\footnotesize\ttfamily boolean Tipus\+Peca.\+diguem\+Promocio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna si té promoció. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_ae08eccf1f28f51e85810d273617dd918}\label{class_tipus_peca_ae08eccf1f28f51e85810d273617dd918}} 
+\index{TipusPeca@{TipusPeca}!diguemRutaBlanca@{diguemRutaBlanca}}
+\index{diguemRutaBlanca@{diguemRutaBlanca}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{diguemRutaBlanca()}{diguemRutaBlanca()}}
+{\footnotesize\ttfamily String Tipus\+Peca.\+diguem\+Ruta\+Blanca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna la ruta de la icona blanca. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_a42bc6855e8bd2fa13adbbb529af90aef}\label{class_tipus_peca_a42bc6855e8bd2fa13adbbb529af90aef}} 
+\index{TipusPeca@{TipusPeca}!diguemRutaNegra@{diguemRutaNegra}}
+\index{diguemRutaNegra@{diguemRutaNegra}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{diguemRutaNegra()}{diguemRutaNegra()}}
+{\footnotesize\ttfamily String Tipus\+Peca.\+diguem\+Ruta\+Negra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna la ruta de la icona negra. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_a683b8143030fa8ccb8c9480e53992a9a}\label{class_tipus_peca_a683b8143030fa8ccb8c9480e53992a9a}} 
+\index{TipusPeca@{TipusPeca}!diguemSimbol@{diguemSimbol}}
+\index{diguemSimbol@{diguemSimbol}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{diguemSimbol()}{diguemSimbol()}}
+{\footnotesize\ttfamily char Tipus\+Peca.\+diguem\+Simbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna el símbol. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_ac960ad3bb1f664cff899adb988db4d9f}\label{class_tipus_peca_ac960ad3bb1f664cff899adb988db4d9f}} 
+\index{TipusPeca@{TipusPeca}!diguemValor@{diguemValor}}
+\index{diguemValor@{diguemValor}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{diguemValor()}{diguemValor()}}
+{\footnotesize\ttfamily int Tipus\+Peca.\+diguem\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna el valor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_a58923f4e979d3a86682a5a3323ab6972}\label{class_tipus_peca_a58923f4e979d3a86682a5a3323ab6972}} 
+\index{TipusPeca@{TipusPeca}!esInvulnerable@{esInvulnerable}}
+\index{esInvulnerable@{esInvulnerable}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{esInvulnerable()}{esInvulnerable()}}
+{\footnotesize\ttfamily boolean Tipus\+Peca.\+es\+Invulnerable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna la invulnerabilitat de la peça. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_ac35af650d4f345204ae2163670758cf1}\label{class_tipus_peca_ac35af650d4f345204ae2163670758cf1}} 
+\index{TipusPeca@{TipusPeca}!provaMoviment@{provaMoviment}}
+\index{provaMoviment@{provaMoviment}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{provaMoviment()}{provaMoviment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean Tipus\+Peca.\+prova\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_moviment}{Moviment}}}]{mov }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Cert si el moviment està repetit amb el mateix vector de desplaçament, fals altrament. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_a0ce152a9ff99423553aa3fb61bf791ce}\label{class_tipus_peca_a0ce152a9ff99423553aa3fb61bf791ce}} 
+\index{TipusPeca@{TipusPeca}!provaMoviment@{provaMoviment}}
+\index{provaMoviment@{provaMoviment}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{provaMoviment()}{provaMoviment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_moviment}{Moviment}} Tipus\+Peca.\+prova\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti,  }\item[{boolean}]{primer,  }\item[{boolean}]{blanques,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca\+\_\+final,  }\item[{boolean}]{peca\+\_\+mig }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em origen} & Posició d\textquotesingle{}origen. \\
+\hline
+{\em desti} & Posició destí. \\
+\hline
+{\em primer} & Indica si el el moviment és el primer de la partida. \\
+\hline
+{\em peca\+\_\+final} & Referència al tipus de peça de la posició destí. \\
+\hline
+{\em peca\+\_\+mig} & Indica si hi ha alguna peça enmig de la trajectòria. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Retorna primer els enrocs. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Retorna}
+Retorna el moviment que fa el desplaçament. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tipus_peca_ab199b95419418482c4d8ac904d13dd81}\label{class_tipus_peca_ab199b95419418482c4d8ac904d13dd81}} 
+\index{TipusPeca@{TipusPeca}!toString@{toString}}
+\index{toString@{toString}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Tipus\+Peca.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_tipus_peca_a6caff497cd9c9f79c5328412beea92c5}\label{class_tipus_peca_a6caff497cd9c9f79c5328412beea92c5}} 
+\index{TipusPeca@{TipusPeca}!invulnerabilitat@{invulnerabilitat}}
+\index{invulnerabilitat@{invulnerabilitat}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{invulnerabilitat}{invulnerabilitat}}
+{\footnotesize\ttfamily boolean Tipus\+Peca.\+invulnerabilitat\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_tipus_peca_aeb0cc2d65a447ab21ffc6f1aa3c1331a}\label{class_tipus_peca_aeb0cc2d65a447ab21ffc6f1aa3c1331a}} 
+\index{TipusPeca@{TipusPeca}!moviments@{moviments}}
+\index{moviments@{moviments}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{moviments}{moviments}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ Tipus\+Peca.\+moviments\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Moviments de la peça. 
+
+\mbox{\Hypertarget{class_tipus_peca_aedcdcac4f4a9993b3264b99fdf05e46c}\label{class_tipus_peca_aedcdcac4f4a9993b3264b99fdf05e46c}} 
+\index{TipusPeca@{TipusPeca}!nom@{nom}}
+\index{nom@{nom}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily String Tipus\+Peca.\+nom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tipus de peça, configuració. 
+
+Nom de la peça \mbox{\Hypertarget{class_tipus_peca_ab76c9bbaca333946ad38e953fca7ba07}\label{class_tipus_peca_ab76c9bbaca333946ad38e953fca7ba07}} 
+\index{TipusPeca@{TipusPeca}!promocio@{promocio}}
+\index{promocio@{promocio}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{promocio}{promocio}}
+{\footnotesize\ttfamily boolean Tipus\+Peca.\+promocio\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Regles extra de la peça. 
+
+\mbox{\Hypertarget{class_tipus_peca_a6c4aaec964f34d0c77824f0a929bdfd8}\label{class_tipus_peca_a6c4aaec964f34d0c77824f0a929bdfd8}} 
+\index{TipusPeca@{TipusPeca}!ruta\_blanca@{ruta\_blanca}}
+\index{ruta\_blanca@{ruta\_blanca}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{ruta\_blanca}{ruta\_blanca}}
+{\footnotesize\ttfamily String Tipus\+Peca.\+ruta\+\_\+blanca\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Rutes de les icones. 
+
+\mbox{\Hypertarget{class_tipus_peca_ab6ad1cb9f18706039bc197e2bb118755}\label{class_tipus_peca_ab6ad1cb9f18706039bc197e2bb118755}} 
+\index{TipusPeca@{TipusPeca}!ruta\_negra@{ruta\_negra}}
+\index{ruta\_negra@{ruta\_negra}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{ruta\_negra}{ruta\_negra}}
+{\footnotesize\ttfamily String Tipus\+Peca.\+ruta\+\_\+negra\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_tipus_peca_ab5e0ab1d1a3a2697881e3741afcd14d6}\label{class_tipus_peca_ab5e0ab1d1a3a2697881e3741afcd14d6}} 
+\index{TipusPeca@{TipusPeca}!simbol@{simbol}}
+\index{simbol@{simbol}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{simbol}{simbol}}
+{\footnotesize\ttfamily char Tipus\+Peca.\+simbol\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Símbol de la peça en majúscula. 
+
+\mbox{\Hypertarget{class_tipus_peca_a56f1ce04d2e5678fbc836d858b0f996c}\label{class_tipus_peca_a56f1ce04d2e5678fbc836d858b0f996c}} 
+\index{TipusPeca@{TipusPeca}!valor@{valor}}
+\index{valor@{valor}!TipusPeca@{TipusPeca}}
+\doxysubsubsection{\texorpdfstring{valor}{valor}}
+{\footnotesize\ttfamily int Tipus\+Peca.\+valor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Valor de la peça. 
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_tipus_peca_8java}{Tipus\+Peca.\+java}}\end{DoxyCompactItemize}

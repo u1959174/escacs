@@ -1,0 +1,121 @@
+\hypertarget{class_motor_c_p_u}{}\doxysection{Referència de la Classe Motor\+C\+PU}
+\label{class_motor_c_p_u}\index{MotorCPU@{MotorCPU}}
+
+
+Mòdul de suport de la \mbox{\hyperlink{class_c_p_u}{C\+PU}}.  
+
+
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_motor_c_p_u_aa45ca6c43b3ea5b68f6b2f7507de0429}{es\+Estat\+Conegut}} (\mbox{\hyperlink{class_tauler}{Tauler}} tauler\+Actual, \mbox{\hyperlink{enum_color}{Color}} torn)
+\item 
+static int \mbox{\hyperlink{class_motor_c_p_u_ab8fb4ba35da3c2493fffb5b1148b258c}{valorar\+Jugada}} (\mbox{\hyperlink{class_tauler}{Tauler}} tauler\+Actual, \mbox{\hyperlink{class_jugada}{Jugada}} jug)
+\item 
+static void \mbox{\hyperlink{class_motor_c_p_u_a9624d54353150513e0171406c72be2fa}{carregar\+Coneixement}} (String ruta\+Fitxer\+Coneixement)
+\begin{DoxyCompactList}\small\item\em Càrrega del coneixement a partir d\textquotesingle{}una ruta de fitxer de coneixemnt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_motor_c_p_u_a759a4c60ca09ae32608c6c5a058f9ef5}{V\+A\+L\+O\+R\+\_\+\+E\+N\+R\+OC}} = 8
+\item 
+static int \mbox{\hyperlink{class_motor_c_p_u_abd83e6f7f36a4abab32ba54b4849534a}{V\+A\+L\+O\+R\+\_\+\+D\+I\+V\+I\+S\+OR}} = 2
+\item 
+static Hash\+Map$<$ String, \mbox{\hyperlink{class_jugada}{Jugada}} $>$ \mbox{\hyperlink{class_motor_c_p_u_a96271320569f20f543202a2fe1bef76d}{coneixement}} = new Hash\+Map$<$String,\mbox{\hyperlink{class_jugada}{Jugada}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Mòdul de suport de la \mbox{\hyperlink{class_c_p_u}{C\+PU}}. 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_motor_c_p_u_a9624d54353150513e0171406c72be2fa}\label{class_motor_c_p_u_a9624d54353150513e0171406c72be2fa}} 
+\index{MotorCPU@{MotorCPU}!carregarConeixement@{carregarConeixement}}
+\index{carregarConeixement@{carregarConeixement}!MotorCPU@{MotorCPU}}
+\doxysubsubsection{\texorpdfstring{carregarConeixement()}{carregarConeixement()}}
+{\footnotesize\ttfamily static void Motor\+C\+P\+U.\+carregar\+Coneixement (\begin{DoxyParamCaption}\item[{String}]{ruta\+Fitxer\+Coneixement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Càrrega del coneixement a partir d\textquotesingle{}una ruta de fitxer de coneixemnt. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em ruta\+Fitxer\+Coneixement} & La ruta del fitxer amb les partides de prova. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+Carrega les llistes de taulers i jugades. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_motor_c_p_u_aa45ca6c43b3ea5b68f6b2f7507de0429}\label{class_motor_c_p_u_aa45ca6c43b3ea5b68f6b2f7507de0429}} 
+\index{MotorCPU@{MotorCPU}!esEstatConegut@{esEstatConegut}}
+\index{esEstatConegut@{esEstatConegut}!MotorCPU@{MotorCPU}}
+\doxysubsubsection{\texorpdfstring{esEstatConegut()}{esEstatConegut()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_jugada}{Jugada}} Motor\+C\+P\+U.\+es\+Estat\+Conegut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{tauler\+Actual,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{torn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em tauler\+Actual} & \mbox{\hyperlink{class_tauler}{Tauler}} amb l\textquotesingle{}estat actual. \\
+\hline
+{\em llista} & \\
+\hline
+{\em torn} & \mbox{\hyperlink{enum_color}{Color}} del jugador que tocaria moure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+La jugada que tocaria fer si l\textquotesingle{}estat Ã©s conegut. Null si no es troba o no és moviment o escac. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_motor_c_p_u_ab8fb4ba35da3c2493fffb5b1148b258c}\label{class_motor_c_p_u_ab8fb4ba35da3c2493fffb5b1148b258c}} 
+\index{MotorCPU@{MotorCPU}!valorarJugada@{valorarJugada}}
+\index{valorarJugada@{valorarJugada}!MotorCPU@{MotorCPU}}
+\doxysubsubsection{\texorpdfstring{valorarJugada()}{valorarJugada()}}
+{\footnotesize\ttfamily static int Motor\+C\+P\+U.\+valorar\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{tauler\+Actual,  }\item[{\mbox{\hyperlink{class_jugada}{Jugada}}}]{jug }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em tauler\+Actual} & \mbox{\hyperlink{class_tauler}{Tauler}} amb l\textquotesingle{}estat actual. \\
+\hline
+{\em jug} & \mbox{\hyperlink{class_jugada}{Jugada}} que s\textquotesingle{}evalua. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna el valor de la jugada. Valor negatiu si Ã©s a favor de les negres. 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondició}
+tauler\+Actual no queda modificat. 
+\end{DoxyPostcond}
+\begin{DoxyRefDesc}{Antiquat}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Antiquat}}]\end{DoxyRefDesc}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_motor_c_p_u_a96271320569f20f543202a2fe1bef76d}\label{class_motor_c_p_u_a96271320569f20f543202a2fe1bef76d}} 
+\index{MotorCPU@{MotorCPU}!coneixement@{coneixement}}
+\index{coneixement@{coneixement}!MotorCPU@{MotorCPU}}
+\doxysubsubsection{\texorpdfstring{coneixement}{coneixement}}
+{\footnotesize\ttfamily Hash\+Map$<$String,\mbox{\hyperlink{class_jugada}{Jugada}}$>$ Motor\+C\+P\+U.\+coneixement = new Hash\+Map$<$String,\mbox{\hyperlink{class_jugada}{Jugada}}$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_motor_c_p_u_abd83e6f7f36a4abab32ba54b4849534a}\label{class_motor_c_p_u_abd83e6f7f36a4abab32ba54b4849534a}} 
+\index{MotorCPU@{MotorCPU}!VALOR\_DIVISOR@{VALOR\_DIVISOR}}
+\index{VALOR\_DIVISOR@{VALOR\_DIVISOR}!MotorCPU@{MotorCPU}}
+\doxysubsubsection{\texorpdfstring{VALOR\_DIVISOR}{VALOR\_DIVISOR}}
+{\footnotesize\ttfamily int Motor\+C\+P\+U.\+V\+A\+L\+O\+R\+\_\+\+D\+I\+V\+I\+S\+OR = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_motor_c_p_u_a759a4c60ca09ae32608c6c5a058f9ef5}\label{class_motor_c_p_u_a759a4c60ca09ae32608c6c5a058f9ef5}} 
+\index{MotorCPU@{MotorCPU}!VALOR\_ENROC@{VALOR\_ENROC}}
+\index{VALOR\_ENROC@{VALOR\_ENROC}!MotorCPU@{MotorCPU}}
+\doxysubsubsection{\texorpdfstring{VALOR\_ENROC}{VALOR\_ENROC}}
+{\footnotesize\ttfamily int Motor\+C\+P\+U.\+V\+A\+L\+O\+R\+\_\+\+E\+N\+R\+OC = 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_motor_c_p_u_8java}{Motor\+C\+P\+U.\+java}}\end{DoxyCompactItemize}

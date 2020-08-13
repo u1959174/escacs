@@ -1,0 +1,153 @@
+.TH "MinIMaxParalel" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MinIMaxParalel \- Classe que conté l'algoritme \fBMinIMax\fP aplicat als \fBEscacs\fP en mode Paralel\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de RecursiveTask< Pair< Integer, Pair< Peca, Pair< Posicio, Moviment > > > > i \fBMinIMax\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBMinIMaxParalel\fP (\fBTauler\fP \fBtauler\fP, \fBColor\fP \fBcolorQueMou\fP)"
+.br
+.RI "Constructor per defecte\&. "
+.ti -1c
+.RI "\fBJugada\fP \fBcalcularMillorJugada\fP ()"
+.br
+.in -1c
+.SS "Mètodes Protegits"
+
+.in +1c
+.ti -1c
+.RI "\fBPair\fP< Integer, \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > > > \fBcompute\fP ()"
+.br
+.ti -1c
+.RI "\fBPair\fP< Integer, \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > > > \fBcomputeDirectly\fP ()"
+.br
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "\fBMinIMaxParalel\fP (\fBTauler\fP \fBtauler\fP, \fBColor\fP \fBcolorQueMou\fP, int \fBprofunditatActual\fP, \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP >> \fBmovimentAplicat\fP)"
+.br
+.RI "Constructor per la crida recursiva\&. "
+.ti -1c
+.RI "Collection< \fBPair\fP< \fBMinIMaxParalel\fP, \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > > > > \fBsplitAndFork\fP (Collection< \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP >>> possiblesJugades)"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "\fBColor\fP \fBcolorQueMou\fP"
+.br
+.ti -1c
+.RI "\fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > > \fBmovimentAplicat\fP"
+.br
+.ti -1c
+.RI "int \fBprofunditatActual\fP"
+.br
+.ti -1c
+.RI "int \fBprofunditatTotalIA\fP = 4"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBtauler\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe que conté l'algoritme \fBMinIMax\fP aplicat als \fBEscacs\fP en mode Paralel\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "MinIMaxParalel\&.MinIMaxParalel (\fBTauler\fP tauler, \fBColor\fP colorQueMou)"
+
+.PP
+Constructor per defecte\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItauler\fP \fBTauler\fP sobre el qual s'operarà\&. 
+.br
+\fIcolorQueMou\fP \fBColor\fP del qual se'n calcularà la millor jugada\&. 
+.RE
+.PP
+
+.SS "MinIMaxParalel\&.MinIMaxParalel (\fBTauler\fP tauler, \fBColor\fP colorQueMou, int profunditatActual, \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP >> movimentAplicat)\fC [private]\fP"
+
+.PP
+Constructor per la crida recursiva\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItauler\fP \fBTauler\fP sobre el qual s'operarà\&. 
+.br
+\fIcolorQueMou\fP \fBColor\fP del qual se'n calcularà la millor jugada\&. 
+.br
+\fIprofunditatActual\fP Profunditat d'aquest nivell\&. 
+.br
+\fImovimentAplicat\fP \fBMoviment\fP que s'aplica en aquest nivell\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "\fBJugada\fP MinIMaxParalel\&.calcularMillorJugada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha com a mínim una jugada vàlida a fer\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorQueMou\fP \fBColor\fP del qual es calcularà la millor jugada possible 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La millor jugada calculada amb aquest algoritme i el tauler actual del joc\&. La jugada és vàlida segons les regles d'aquest joc\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMinIMax\fP\&.
+.SS "\fBPair\fP<Integer,\fBPair\fP<\fBPeca\fP,\fBPair\fP<\fBPosicio\fP,\fBMoviment\fP> > > MinIMaxParalel\&.compute ()\fC [protected]\fP"
+
+.SS "\fBPair\fP<Integer,\fBPair\fP<\fBPeca\fP,\fBPair\fP<\fBPosicio\fP,\fBMoviment\fP> > > MinIMaxParalel\&.computeDirectly ()\fC [protected]\fP"
+
+.SS "Collection<\fBPair\fP<\fBMinIMaxParalel\fP,\fBPair\fP<\fBPeca\fP,\fBPair\fP<\fBPosicio\fP,\fBMoviment\fP> > > > MinIMaxParalel\&.splitAndFork (Collection< \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP >>> possiblesJugades)\fC [private]\fP"
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "\fBColor\fP MinIMaxParalel\&.colorQueMou\fC [private]\fP"
+\fBColor\fP del jugador que mou en aquest nivell de la IA\&. 
+.SS "\fBPair\fP<\fBPeca\fP,\fBPair\fP<\fBPosicio\fP,\fBMoviment\fP> > MinIMaxParalel\&.movimentAplicat\fC [private]\fP"
+\fBMoviment\fP que s'aplica a quest nivell\&. Si és el primer nivell serà null\&. 
+.SS "int MinIMaxParalel\&.profunditatActual\fC [private]\fP"
+Profunditat d'aquest nivell\&. 
+.SS "int MinIMaxParalel\&.profunditatTotalIA = 4\fC [private]\fP"
+Profunditat màxima a la que la IA calcularà la millor jugada\&. 
+.SS "\fBTauler\fP MinIMaxParalel\&.tauler\fC [private]\fP"
+Referencia al tauler a partir del qual s'ha de calcular l'algorisme\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

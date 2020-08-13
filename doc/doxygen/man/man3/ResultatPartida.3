@@ -1,0 +1,99 @@
+.TH "ResultatPartida" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ResultatPartida \- Enum que conté tots els possibles resultats d'una \fBPartida\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static \fBResultatPartida\fP \fBobtenirResultat\fP (String str)"
+.br
+.in -1c
+.SS "Atributs Públics"
+
+.in +1c
+.ti -1c
+.RI "\fBtoString\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Enum que conté tots els possibles resultats d'una \fBPartida\fP\&. 
+
+
+.PP
+\fBNota\fP
+.RS 4
+és un Enum\&. 
+.RE
+.PP
+\fBAutor\fP
+.RS 4
+Eloi Quintana Ferrer 
+.PP
+u1963141 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "static \fBResultatPartida\fP ResultatPartida\&.obtenirResultat (String str)\fC [static]\fP"
+
+.PP
+.nf
+@post donada una string aquesta la compara amb cada un dels possibles resultats de partida.
+
+.fi
+.PP
+ 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIstr\fP Conté la representació en format string d'un possible valor d'aquest ennum\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El Resultat de l'string\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "ResultatPartida\&.toString"
+\fBValor inicial:\fP
+.PP
+.nf
+=() {
+              return "BLANQUES GUANYEN";
+            }
+          },
+    NegresGuanyen {
+            @Override
+            public String toString() {
+              return "NEGRES GUANYEN";
+            }
+          },
+        Taules {
+            @Override
+            public String toString() {
+              return "TAULES";
+            }
+          },
+        PartidaAjornada {
+            @Override
+            public String toString() {
+              return "PARTIDA AJORNADA";
+            }
+          }
+.fi
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

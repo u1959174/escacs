@@ -1,0 +1,1636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Escacs: Referència de la Classe Partida</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="reiB.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Escacs
+   &#160;<span id="projectnumber">v3</span>
+   </div>
+   <div id="projectbrief">Joc d&#39;Escacs IA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_partida.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Mètodes públics</a> &#124;
+<a href="#pub-static-methods">Mètodes Públics Estàtics</a> &#124;
+<a href="#pri-methods">Mètodes Privats</a> &#124;
+<a href="#pri-static-methods">Mètodes Privats Estàtics</a> &#124;
+<a href="#pri-attribs">Atributs Privats</a> &#124;
+<a href="class_partida-members.html">Llista de tots els membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Referència de la Classe Partida</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Motor de el conjunt de <a class="el" href="class_escacs.html" title="Classe d&#39;entrada al programa. Pregunta en quin mode es vol executar el joc: la versio gràfica o text/...">Escacs</a>. Gestiona les jugades, el tauler, les peces. Executa també les jugades.  
+ <a href="class_partida.html#details">Més...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Mètodes públics</h2></td></tr>
+<tr class="memitem:abd176d333d00742880da45fcf8c85e38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#abd176d333d00742880da45fcf8c85e38">Partida</a> (<a class="el" href="class_tauler.html">Tauler</a> <a class="el" href="class_partida.html#a2d4fb7fd2d91dc7c64fc1ca9b1e1194c">t</a>, HashMap&lt; String, <a class="el" href="class_tipus_peca.html">TipusPeca</a> &gt; <a class="el" href="class_partida.html#acdc3efc1902bc7673d0bfc416cfeb8fd">tipus</a>, ArrayList&lt; <a class="el" href="class_jugada.html">Jugada</a> &gt; j, int <a class="el" href="class_partida.html#a2fe23a5d12e258dadf56ce569d9e8cc6">maxInaccio</a>, int <a class="el" href="class_partida.html#a1c916571fa05667e4ba4329ed1912f3c">maxEscacs</a>)  throws ExcepcioG</td></tr>
+<tr class="separator:abd176d333d00742880da45fcf8c85e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343c19f2d229b763c45477a20cc22647"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a343c19f2d229b763c45477a20cc22647">Partida</a> (<a class="el" href="class_tauler.html">Tauler</a> <a class="el" href="class_partida.html#a2d4fb7fd2d91dc7c64fc1ca9b1e1194c">t</a>, HashMap&lt; String, <a class="el" href="class_tipus_peca.html">TipusPeca</a> &gt; <a class="el" href="class_partida.html#acdc3efc1902bc7673d0bfc416cfeb8fd">tipus</a>, int <a class="el" href="class_partida.html#a2fe23a5d12e258dadf56ce569d9e8cc6">maxInaccio</a>, int <a class="el" href="class_partida.html#a1c916571fa05667e4ba4329ed1912f3c">maxEscacs</a>)  throws ExcepcioG</td></tr>
+<tr class="separator:a343c19f2d229b763c45477a20cc22647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7750bc040285966d17a31115a2974e9e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a7750bc040285966d17a31115a2974e9e">acabada</a> ()</td></tr>
+<tr class="separator:a7750bc040285966d17a31115a2974e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e785a94a34c38e77d73f15230946ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a92e785a94a34c38e77d73f15230946ca">canviarTorn</a> (<a class="el" href="enum_color.html">Color</a> <a class="el" href="class_partida.html#a9449a95a4b9b9eb3b60744b4a7a85fe0">torn</a>)</td></tr>
+<tr class="separator:a92e785a94a34c38e77d73f15230946ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5197bb5ae8bc0a833bf48db6f24f5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a4e5197bb5ae8bc0a833bf48db6f24f5a">comprobarJugada</a> (<a class="el" href="class_jugada.html">Jugada</a> j)  throws ExcepcioG</td></tr>
+<tr class="separator:a4e5197bb5ae8bc0a833bf48db6f24f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325bbae76da5d73f9ba35b4b2a5174de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_jugada.html">Jugada</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a325bbae76da5d73f9ba35b4b2a5174de">crearJugada</a> (<a class="el" href="class_posicio.html">Posicio</a> origen, <a class="el" href="class_posicio.html">Posicio</a> desti)  throws ExcepcioG</td></tr>
+<tr class="separator:a325bbae76da5d73f9ba35b4b2a5174de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e90b33d9c8522b8217ae6d3232e7159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a3e90b33d9c8522b8217ae6d3232e7159">desferJugada</a> ()</td></tr>
+<tr class="separator:a3e90b33d9c8522b8217ae6d3232e7159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa316e0ebfbdd331a4a13044dc805be58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pair.html">Pair</a>&lt; Integer, Integer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#aa316e0ebfbdd331a4a13044dc805be58">dimensions</a> ()</td></tr>
+<tr class="separator:aa316e0ebfbdd331a4a13044dc805be58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9aa36160559e3dbf4bea9288bd657ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#aa9aa36160559e3dbf4bea9288bd657ff">ferJugada</a> (<a class="el" href="class_posicio.html">Posicio</a> origen, <a class="el" href="class_posicio.html">Posicio</a> desti)  throws ExcepcioG</td></tr>
+<tr class="separator:aa9aa36160559e3dbf4bea9288bd657ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d16d0d2d2c2cd81fb566e3f1326b066"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a2d16d0d2d2c2cd81fb566e3f1326b066">ferJugada</a> (<a class="el" href="enum_resultat_jugada.html">ResultatJugada</a> resultat)  throws ExcepcioG</td></tr>
+<tr class="separator:a2d16d0d2d2c2cd81fb566e3f1326b066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fad82d4fa3646f5edf77197b51a1729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a9fad82d4fa3646f5edf77197b51a1729">guanyador</a> ()</td></tr>
+<tr class="separator:a9fad82d4fa3646f5edf77197b51a1729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f32f46909b7d58dcf60d83d470a213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a69f32f46909b7d58dcf60d83d470a213">modificarRutaFitxerRegles</a> (String <a class="el" href="class_partida.html#aa93aaefc087031f52f5fd074af8e4c3b">rutaFitxerRegles</a>)</td></tr>
+<tr class="separator:a69f32f46909b7d58dcf60d83d470a213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71c857d26809a5216a73ed006933ffb"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_jugada.html">Jugada</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#ae71c857d26809a5216a73ed006933ffb">obtenirJugades</a> ()</td></tr>
+<tr class="separator:ae71c857d26809a5216a73ed006933ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f2b847c4e55d87eea36b3047f91e8f"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_tipus_peca.html">TipusPeca</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a08f2b847c4e55d87eea36b3047f91e8f">obtenirNomsTipusPeca</a> ()</td></tr>
+<tr class="separator:a08f2b847c4e55d87eea36b3047f91e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d465d393be07fd13405b774e174f11c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_resultat_partida.html">ResultatPartida</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a6d465d393be07fd13405b774e174f11c">obtenirResultatPartida</a> ()</td></tr>
+<tr class="separator:a6d465d393be07fd13405b774e174f11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a003c51e82699d6970a20f6eda7f35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_resultat_jugada.html">ResultatJugada</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a89a003c51e82699d6970a20f6eda7f35">obtenirResultatPartidaDetall</a> ()</td></tr>
+<tr class="separator:a89a003c51e82699d6970a20f6eda7f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0241f7aec43c0f56bc242544396d05ee"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a0241f7aec43c0f56bc242544396d05ee">obtenirRutaFitxerRegles</a> ()</td></tr>
+<tr class="separator:a0241f7aec43c0f56bc242544396d05ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5078c7c38c86fa622ce9511a0b27259"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#ac5078c7c38c86fa622ce9511a0b27259">obtenirTauler</a> ()</td></tr>
+<tr class="separator:ac5078c7c38c86fa622ce9511a0b27259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e1f47ee720b816f483ba0a8814ebb95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a4e1f47ee720b816f483ba0a8814ebb95">obtenirTaulerInicial</a> ()</td></tr>
+<tr class="separator:a4e1f47ee720b816f483ba0a8814ebb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d230e7f6588a0f60c4cc2ac3556f36"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a13d230e7f6588a0f60c4cc2ac3556f36">potContinuar</a> ()</td></tr>
+<tr class="separator:a13d230e7f6588a0f60c4cc2ac3556f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3128c5cfc1173e969db4a7a30b948c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#abe3128c5cfc1173e969db4a7a30b948c">potDesferJugada</a> ()</td></tr>
+<tr class="separator:abe3128c5cfc1173e969db4a7a30b948c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac69a2c88f5fab1ab1cc92d2e996811"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a7ac69a2c88f5fab1ab1cc92d2e996811">potReferJugada</a> ()</td></tr>
+<tr class="separator:a7ac69a2c88f5fab1ab1cc92d2e996811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415cb8450adcad1e177b01e4870da731"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a415cb8450adcad1e177b01e4870da731">realitzarJugada</a> (<a class="el" href="class_peca.html">Peca</a> tmpOrigen, <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt; a)  throws ExcepcioG</td></tr>
+<tr class="separator:a415cb8450adcad1e177b01e4870da731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7994d595113a872963b33f2b9d4d59d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a7994d595113a872963b33f2b9d4d59d8">referJugada</a> ()</td></tr>
+<tr class="separator:a7994d595113a872963b33f2b9d4d59d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60276370247f2e51e9ffe07cb21977a"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#ac60276370247f2e51e9ffe07cb21977a">tauler</a> ()</td></tr>
+<tr class="separator:ac60276370247f2e51e9ffe07cb21977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5733cabd31532ba2bd72d00c6b6451"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a4d5733cabd31532ba2bd72d00c6b6451">torn</a> ()</td></tr>
+<tr class="separator:a4d5733cabd31532ba2bd72d00c6b6451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Mètodes Públics Estàtics</h2></td></tr>
+<tr class="memitem:ad2773bc5c1580303babfd34ad2014cad"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#ad2773bc5c1580303babfd34ad2014cad">realitzarJugada</a> (<a class="el" href="class_tauler.html">Tauler</a> <a class="el" href="class_partida.html#ac60276370247f2e51e9ffe07cb21977a">tauler</a>, <a class="el" href="class_peca.html">Peca</a> tmpOrigen, <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt; a, <a class="el" href="class_contadors.html">Contadors</a> cont, <a class="el" href="enum_color.html">Color</a> tornE)  throws ExcepcioG</td></tr>
+<tr class="separator:ad2773bc5c1580303babfd34ad2014cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Mètodes Privats</h2></td></tr>
+<tr class="memitem:a8d87fd59dbf543cbfa5b72d76fa66d2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a8d87fd59dbf543cbfa5b72d76fa66d2d">acabarPartida</a> (<a class="el" href="enum_resultat_partida.html">ResultatPartida</a> <a class="el" href="class_partida.html#a0e51ebc8f0d0d28cf0b63abb03a694ee">resultatFinal</a>, <a class="el" href="enum_resultat_jugada.html">ResultatJugada</a> <a class="el" href="class_partida.html#a432b326d7d9153985f41d0fc45a38500">resultatFinalDetall</a>, <a class="el" href="enum_color.html">Color</a> <a class="el" href="class_partida.html#a0f8270dcd9f4ec3d4542da7840d249b3">guanyador</a>)</td></tr>
+<tr class="separator:a8d87fd59dbf543cbfa5b72d76fa66d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44250f4d56506464e69ae51c7cad62db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a44250f4d56506464e69ae51c7cad62db">afegirJugada</a> (<a class="el" href="class_jugada.html">Jugada</a> j, Integer pos)  throws ExcepcioG</td></tr>
+<tr class="separator:a44250f4d56506464e69ae51c7cad62db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c26df2b7a3a95049813c10ece4aba4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a7c26df2b7a3a95049813c10ece4aba4b">carregarJugada</a> (int pos)</td></tr>
+<tr class="separator:a7c26df2b7a3a95049813c10ece4aba4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4695b58c5e5ebcac0ba284293982851e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a4695b58c5e5ebcac0ba284293982851e">comprobarJugada</a> (<a class="el" href="class_jugada.html">Jugada</a> j, <a class="el" href="class_tipus_peca.html">TipusPeca</a> tipusPecaPromocio)  throws ExcepcioG</td></tr>
+<tr class="separator:a4695b58c5e5ebcac0ba284293982851e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4134ce7321653cd343956d3761b533c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#aa4134ce7321653cd343956d3761b533c">desferJugadaFinal</a> ()</td></tr>
+<tr class="separator:aa4134ce7321653cd343956d3761b533c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8ead92044ff11376d0167b890c93bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a1b8ead92044ff11376d0167b890c93bb">ferJugada</a> (<a class="el" href="class_posicio.html">Posicio</a> origen, <a class="el" href="class_posicio.html">Posicio</a> desti, Integer posicio, <a class="el" href="class_tipus_peca.html">TipusPeca</a> pecaPromocio)  throws ExcepcioG</td></tr>
+<tr class="separator:a1b8ead92044ff11376d0167b890c93bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1596dcca3686a0f35cd845cc6b5f84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#aaf1596dcca3686a0f35cd845cc6b5f84">realitzarJugades</a> (ArrayList&lt; <a class="el" href="class_jugada.html">Jugada</a> &gt; j)  throws ExcepcioG </td></tr>
+<tr class="separator:aaf1596dcca3686a0f35cd845cc6b5f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Mètodes Privats Estàtics</h2></td></tr>
+<tr class="memitem:a212e844414e42354f10a3c386ce26cf0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a212e844414e42354f10a3c386ce26cf0">eliminarPeces</a> (ArrayList&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="class_peca.html">Peca</a> &gt;&gt; mig, <a class="el" href="class_tauler.html">Tauler</a> tau, <a class="el" href="class_contadors.html">Contadors</a> cont, <a class="el" href="enum_color.html">Color</a> tornE)</td></tr>
+<tr class="separator:a212e844414e42354f10a3c386ce26cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributs Privats</h2></td></tr>
+<tr class="memitem:adaa31fc95ee1a802308cb6d36fb53f26"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#adaa31fc95ee1a802308cb6d36fb53f26">acabada</a></td></tr>
+<tr class="separator:adaa31fc95ee1a802308cb6d36fb53f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac629b43c9ce6f012cefd71318c0c7b27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_contadors.html">Contadors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#ac629b43c9ce6f012cefd71318c0c7b27">contador</a></td></tr>
+<tr class="separator:ac629b43c9ce6f012cefd71318c0c7b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8270dcd9f4ec3d4542da7840d249b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a0f8270dcd9f4ec3d4542da7840d249b3">guanyador</a></td></tr>
+<tr class="separator:a0f8270dcd9f4ec3d4542da7840d249b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8288c527063f572ffb19431dc5b863"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a3d8288c527063f572ffb19431dc5b863">jugadaActual</a> = 0</td></tr>
+<tr class="separator:a3d8288c527063f572ffb19431dc5b863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2dfae84386bd455d6d58ca4ce69b3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a6f2dfae84386bd455d6d58ca4ce69b3f">jugadaFinal</a> = 0</td></tr>
+<tr class="separator:a6f2dfae84386bd455d6d58ca4ce69b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65fce93efff1e64d593afeb1d6a791c2"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; <a class="el" href="class_jugada.html">Jugada</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a65fce93efff1e64d593afeb1d6a791c2">jugades</a></td></tr>
+<tr class="separator:a65fce93efff1e64d593afeb1d6a791c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c916571fa05667e4ba4329ed1912f3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a1c916571fa05667e4ba4329ed1912f3c">maxEscacs</a></td></tr>
+<tr class="separator:a1c916571fa05667e4ba4329ed1912f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe23a5d12e258dadf56ce569d9e8cc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a2fe23a5d12e258dadf56ce569d9e8cc6">maxInaccio</a></td></tr>
+<tr class="separator:a2fe23a5d12e258dadf56ce569d9e8cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e51ebc8f0d0d28cf0b63abb03a694ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_resultat_partida.html">ResultatPartida</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a0e51ebc8f0d0d28cf0b63abb03a694ee">resultatFinal</a></td></tr>
+<tr class="separator:a0e51ebc8f0d0d28cf0b63abb03a694ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432b326d7d9153985f41d0fc45a38500"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_resultat_jugada.html">ResultatJugada</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a432b326d7d9153985f41d0fc45a38500">resultatFinalDetall</a></td></tr>
+<tr class="separator:a432b326d7d9153985f41d0fc45a38500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93aaefc087031f52f5fd074af8e4c3b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#aa93aaefc087031f52f5fd074af8e4c3b">rutaFitxerRegles</a></td></tr>
+<tr class="separator:aa93aaefc087031f52f5fd074af8e4c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4fb7fd2d91dc7c64fc1ca9b1e1194c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a2d4fb7fd2d91dc7c64fc1ca9b1e1194c">t</a></td></tr>
+<tr class="separator:a2d4fb7fd2d91dc7c64fc1ca9b1e1194c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc3efc1902bc7673d0bfc416cfeb8fd"><td class="memItemLeft" align="right" valign="top">HashMap&lt; String, <a class="el" href="class_tipus_peca.html">TipusPeca</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#acdc3efc1902bc7673d0bfc416cfeb8fd">tipus</a></td></tr>
+<tr class="separator:acdc3efc1902bc7673d0bfc416cfeb8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9449a95a4b9b9eb3b60744b4a7a85fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_color.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_partida.html#a9449a95a4b9b9eb3b60744b4a7a85fe0">torn</a></td></tr>
+<tr class="separator:a9449a95a4b9b9eb3b60744b4a7a85fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripció Detallada</h2>
+<div class="textblock"><p>Motor de el conjunt de <a class="el" href="class_escacs.html" title="Classe d&#39;entrada al programa. Pregunta en quin mode es vol executar el joc: la versio gràfica o text/...">Escacs</a>. Gestiona les jugades, el tauler, les peces. Executa també les jugades. </p>
+<dl class="section note"><dt>Nota</dt><dd>Motor del Joc. ../projecte-2020-a4/dataset/jugades.json </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Eloi Quintana Ferrer </dd>
+<dd>
+u1963141 </dd></dl>
+</div><h2 class="groupheader">Documentació del Constructor i el Destructor</h2>
+<a id="abd176d333d00742880da45fcf8c85e38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd176d333d00742880da45fcf8c85e38">&#9670;&nbsp;</a></span>Partida() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Partida.Partida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HashMap&lt; String, <a class="el" href="class_tipus_peca.html">TipusPeca</a> &gt;&#160;</td>
+          <td class="paramname"><em>tipus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ArrayList&lt; <a class="el" href="class_jugada.html">Jugada</a> &gt;&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxInaccio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxEscacs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section post"><dt>Postcondició</dt><dd>Crea la partida, executa totes les jugades passades. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Objecte tauler </td></tr>
+    <tr><td class="paramname">tipus</td><td>Un hashmap on String es el nom del tipusPeca. </td></tr>
+    <tr><td class="paramname">Array</td><td>de jugades, aquestes però s'han d'afegir i comprovar per a la partida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>La partida ha estat començada. </dd></dl>
+
+</div>
+</div>
+<a id="a343c19f2d229b763c45477a20cc22647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a343c19f2d229b763c45477a20cc22647">&#9670;&nbsp;</a></span>Partida() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Partida.Partida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HashMap&lt; String, <a class="el" href="class_tipus_peca.html">TipusPeca</a> &gt;&#160;</td>
+          <td class="paramname"><em>tipus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxInaccio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxEscacs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section post"><dt>Postcondició</dt><dd>Crea una partida inicial. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Objecte tauler </td></tr>
+    <tr><td class="paramname">tipus</td><td>Un hashmap on String es el nom del tipusPeca i tipusPeca. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>La partida esta inicialitzada nova. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentació de les Funcions Membre</h2>
+<a id="a7750bc040285966d17a31115a2974e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7750bc040285966d17a31115a2974e9e">&#9670;&nbsp;</a></span>acabada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Partida.acabada </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>ha retornat un bolea de l'atribut acabada. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>acabada, cert si la partida esta acabada, fals altrament. </dd></dl>
+
+</div>
+</div>
+<a id="a8d87fd59dbf543cbfa5b72d76fa66d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d87fd59dbf543cbfa5b72d76fa66d2d">&#9670;&nbsp;</a></span>acabarPartida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.acabarPartida </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_resultat_partida.html">ResultatPartida</a>&#160;</td>
+          <td class="paramname"><em>resultatFinal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_resultat_jugada.html">ResultatJugada</a>&#160;</td>
+          <td class="paramname"><em>resultatFinalDetall</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>guanyador</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>partida no acabada </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>s'ha marcat la partida com acabada i es guarda el guanyador </dd></dl>
+
+</div>
+</div>
+<a id="a44250f4d56506464e69ae51c7cad62db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44250f4d56506464e69ae51c7cad62db">&#9670;&nbsp;</a></span>afegirJugada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.afegirJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jugada.html">Jugada</a>&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>j != null @Post s'ha afegit la jugada a la llista de jugades a una posicio donada o no </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td><a class="el" href="class_jugada.html" title="Conte tota la informacio de una Jugada i part de les dades de una partida.">Jugada</a> afegir. </td></tr>
+    <tr><td class="paramname">pos</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> de la jugada a fegir, null per afegir al final </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92e785a94a34c38e77d73f15230946ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e785a94a34c38e77d73f15230946ca">&#9670;&nbsp;</a></span>canviarTorn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.canviarTorn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>torn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- @Post s'ha canviat el color del torn </dd></dl>
+
+</div>
+</div>
+<a id="a7c26df2b7a3a95049813c10ece4aba4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c26df2b7a3a95049813c10ece4aba4b">&#9670;&nbsp;</a></span>carregarJugada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.carregarJugada </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>pos ha d'estar dins el size de jugades </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha carregat a la partida en joc la jugada previament introduïda. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>posicio de l'array que s'agafara la jugada a aplicar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4e5197bb5ae8bc0a833bf48db6f24f5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5197bb5ae8bc0a833bf48db6f24f5a">&#9670;&nbsp;</a></span>comprobarJugada() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.comprobarJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jugada.html">Jugada</a>&#160;</td>
+          <td class="paramname"><em>j</em></td><td>)</td>
+          <td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>j != null </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>s'ha comprobat al jugada j </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td><a class="el" href="class_jugada.html" title="Conte tota la informacio de una Jugada i part de les dades de una partida.">Jugada</a> a analitzar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepcions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_excepcio_g.html" title="Classe ExepcioG que gestiona el tipus de ExepcionsG (TipusExcepcioG).">ExcepcioG</a></td><td>si la jugada no es vàlida </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4695b58c5e5ebcac0ba284293982851e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4695b58c5e5ebcac0ba284293982851e">&#9670;&nbsp;</a></span>comprobarJugada() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.comprobarJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_jugada.html">Jugada</a>&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_tipus_peca.html">TipusPeca</a>&#160;</td>
+          <td class="paramname"><em>tipusPecaPromocio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>j != null </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>s'ha comprobat(escac,..i mat, contadors..) i aplicat una jugada. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td><a class="el" href="class_jugada.html" title="Conte tota la informacio de una Jugada i part de les dades de una partida.">Jugada</a> a analitzar </td></tr>
+    <tr><td class="paramname">tipusPecaPromocio</td><td>Tipus de peca a promocionar amb la peca desti. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepcions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_excepcio_g.html" title="Classe ExepcioG que gestiona el tipus de ExepcionsG (TipusExcepcioG).">ExcepcioG</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a325bbae76da5d73f9ba35b4b2a5174de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a325bbae76da5d73f9ba35b4b2a5174de">&#9670;&nbsp;</a></span>crearJugada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_jugada.html">Jugada</a> Partida.crearJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>desti</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Es crea una jugada. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desti</td><td>posicio destí per a crear la jugada. </td></tr>
+    <tr><td class="paramname">origen</td><td>Posico d'origen per crear la jugada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepcions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_excepcio_g.html" title="Classe ExepcioG que gestiona el tipus de ExepcionsG (TipusExcepcioG).">ExcepcioG</a></td><td>si la jugada és invalida. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Mirem que la peca desti no sigui del mateix color ni invulnerable</p>
+
+</div>
+</div>
+<a id="a3e90b33d9c8522b8217ae6d3232e7159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e90b33d9c8522b8217ae6d3232e7159">&#9670;&nbsp;</a></span>desferJugada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.desferJugada </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>Hi ha una jugada per desfer </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>s'ha desfet la jugada actual. </dd></dl>
+
+</div>
+</div>
+<a id="aa4134ce7321653cd343956d3761b533c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4134ce7321653cd343956d3761b533c">&#9670;&nbsp;</a></span>desferJugadaFinal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.desferJugadaFinal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>Hi ha una jugada per desfer @Post Desfà la jugada actual, i si a mes aquesta son taules acceptades desfa 2 jugades. </dd></dl>
+
+</div>
+</div>
+<a id="aa316e0ebfbdd331a4a13044dc805be58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa316e0ebfbdd331a4a13044dc805be58">&#9670;&nbsp;</a></span>dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pair.html">Pair</a>&lt;Integer,Integer&gt; Partida.dimensions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>: t != null </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>: retorna l'atribut dimensions del tauler actual. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>: Un pair amb les dimensions del tauler first-&gt;columnes, seccond-&gt;files. </dd></dl>
+
+</div>
+</div>
+<a id="a212e844414e42354f10a3c386ce26cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a212e844414e42354f10a3c386ce26cf0">&#9670;&nbsp;</a></span>eliminarPeces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Partida.eliminarPeces </td>
+          <td>(</td>
+          <td class="paramtype">ArrayList&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="class_peca.html">Peca</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>mig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td>
+          <td class="paramname"><em>tau</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_contadors.html">Contadors</a>&#160;</td>
+          <td class="paramname"><em>cont</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>tornE</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>s'han eliminat les peces del tauler donades i s'ha posat el contador d'inaccio a 0. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mig</td><td>conte el conjunt de peces i posicions a eliminar del tauler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa9aa36160559e3dbf4bea9288bd657ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9aa36160559e3dbf4bea9288bd657ff">&#9670;&nbsp;</a></span>ferJugada() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tauler.html">Tauler</a> Partida.ferJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>desti</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>origen != null @Post s'ha creat una jugada i s'ha guardart a la llista de jugades </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>posició d'origen des d'on es vol moure una peça </td></tr>
+    <tr><td class="paramname">desti</td><td>posició d'origen </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1b8ead92044ff11376d0167b890c93bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8ead92044ff11376d0167b890c93bb">&#9670;&nbsp;</a></span>ferJugada() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tauler.html">Tauler</a> Partida.ferJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>desti</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Integer&#160;</td>
+          <td class="paramname"><em>posicio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_tipus_peca.html">TipusPeca</a>&#160;</td>
+          <td class="paramname"><em>pecaPromocio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>posicio és vàlida, i origen != null @Post es cra una jugada i es guarda a la posicó de l'array de jugades donada. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">origen</td><td>posició d'origen des d'on es vol moure una peça </td></tr>
+    <tr><td class="paramname">desti</td><td>posició d'origen </td></tr>
+    <tr><td class="paramname">posicio</td><td>posició on es guardara la jugada al l'array de jugades. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d16d0d2d2c2cd81fb566e3f1326b066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d16d0d2d2c2cd81fb566e3f1326b066">&#9670;&nbsp;</a></span>ferJugada() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Partida.ferJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_resultat_jugada.html">ResultatJugada</a>&#160;</td>
+          <td class="paramname"><em>resultat</em></td><td>)</td>
+          <td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>resultat != null @Post s'exectua una jugada especial donat un resultat de jugada. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">resultat</td><td>conte el resultat que tindra la jugada que es crea. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fad82d4fa3646f5edf77197b51a1729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fad82d4fa3646f5edf77197b51a1729">&#9670;&nbsp;</a></span>guanyador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_color.html">Color</a> Partida.guanyador </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- @Post Retorna el <a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> del jugador del torn actual </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Blanques si color Blanc, Negres si color Negre. </dd></dl>
+
+</div>
+</div>
+<a id="a69f32f46909b7d58dcf60d83d470a213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f32f46909b7d58dcf60d83d470a213">&#9670;&nbsp;</a></span>modificarRutaFitxerRegles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.modificarRutaFitxerRegles </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>rutaFitxerRegles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rutaFitxerRegles</td><td>string que conte la nova ruta del fitxer de regles. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae71c857d26809a5216a73ed006933ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71c857d26809a5216a73ed006933ffb">&#9670;&nbsp;</a></span>obtenirJugades()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_jugada.html">Jugada</a>&gt; Partida.obtenirJugades </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>: - </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>retorna una col·leccio de les jugades realitzades al llarg de la partida. </dd></dl>
+
+</div>
+</div>
+<a id="a08f2b847c4e55d87eea36b3047f91e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f2b847c4e55d87eea36b3047f91e8f">&#9670;&nbsp;</a></span>obtenirNomsTipusPeca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_tipus_peca.html">TipusPeca</a>&gt; Partida.obtenirNomsTipusPeca </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>: - </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>: retorna una coleccio de tots els noms dels tipus de peca que tenim carregats. </dd></dl>
+
+</div>
+</div>
+<a id="a6d465d393be07fd13405b774e174f11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d465d393be07fd13405b774e174f11c">&#9670;&nbsp;</a></span>obtenirResultatPartida()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_resultat_partida.html">ResultatPartida</a> Partida.obtenirResultatPartida </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>: - </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>: retorna el resultat de la partida. </dd></dl>
+
+</div>
+</div>
+<a id="a89a003c51e82699d6970a20f6eda7f35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a003c51e82699d6970a20f6eda7f35">&#9670;&nbsp;</a></span>obtenirResultatPartidaDetall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_resultat_jugada.html">ResultatJugada</a> Partida.obtenirResultatPartidaDetall </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Retorna el resultat de la partida en detall </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>resultatFinalDetall, un tipus de <a class="el" href="enum_resultat_jugada.html" title="Conte tots els possibles estats d&#39;una Jugada.">ResultatJugada</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0241f7aec43c0f56bc242544396d05ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0241f7aec43c0f56bc242544396d05ee">&#9670;&nbsp;</a></span>obtenirRutaFitxerRegles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String Partida.obtenirRutaFitxerRegles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>ruta del fitxer de regles </dd></dl>
+
+</div>
+</div>
+<a id="ac5078c7c38c86fa622ce9511a0b27259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5078c7c38c86fa622ce9511a0b27259">&#9670;&nbsp;</a></span>obtenirTauler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tauler.html">Tauler</a> Partida.obtenirTauler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>el tauler actual </dd></dl>
+<dl class="section pre"><dt>Precondició</dt><dd>- @Post ha realizat el retorn </dd></dl>
+
+</div>
+</div>
+<a id="a4e1f47ee720b816f483ba0a8814ebb95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e1f47ee720b816f483ba0a8814ebb95">&#9670;&nbsp;</a></span>obtenirTaulerInicial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tauler.html">Tauler</a> Partida.obtenirTaulerInicial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>existeix el tauler inicial @Post ha retornat el tauler inicial </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>el tauler inicial </dd></dl>
+
+</div>
+</div>
+<a id="a13d230e7f6588a0f60c4cc2ac3556f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d230e7f6588a0f60c4cc2ac3556f36">&#9670;&nbsp;</a></span>potContinuar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Partida.potContinuar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- @Post indica si la partida pot continuar </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>true si una partida pot continuar, false altrament </dd></dl>
+
+</div>
+</div>
+<a id="abe3128c5cfc1173e969db4a7a30b948c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3128c5cfc1173e969db4a7a30b948c">&#9670;&nbsp;</a></span>potDesferJugada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Partida.potDesferJugada </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>realitza el calcul de jugades x desfer </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>nombre de jugades per desfer. </dd></dl>
+
+</div>
+</div>
+<a id="a7ac69a2c88f5fab1ab1cc92d2e996811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ac69a2c88f5fab1ab1cc92d2e996811">&#9670;&nbsp;</a></span>potReferJugada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Partida.potReferJugada </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- @Post calcula el nombre de jugada que pot refer </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>nombre de jugades disponibles per refer </dd></dl>
+
+</div>
+</div>
+<a id="a415cb8450adcad1e177b01e4870da731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415cb8450adcad1e177b01e4870da731">&#9670;&nbsp;</a></span>realitzarJugada() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.realitzarJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_peca.html">Peca</a>&#160;</td>
+          <td class="paramname"><em>tmpOrigen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>j no esta buit </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>donat els parametres s'ha classificat la jugada i s'ha gestionat el tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tmpOrigen</td><td>peca d'origen </td></tr>
+    <tr><td class="paramname">a</td><td>pair de posicio i moviment del desti </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepcions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_excepcio_g.html" title="Classe ExepcioG que gestiona el tipus de ExepcionsG (TipusExcepcioG).">ExcepcioG</a></td><td>@comment metode que crida el metode estatic de partida però amb les dades de la partida actual. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad2773bc5c1580303babfd34ad2014cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2773bc5c1580303babfd34ad2014cad">&#9670;&nbsp;</a></span>realitzarJugada() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Partida.realitzarJugada </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td>
+          <td class="paramname"><em>tauler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_peca.html">Peca</a>&#160;</td>
+          <td class="paramname"><em>tmpOrigen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_contadors.html">Contadors</a>&#160;</td>
+          <td class="paramname"><em>cont</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>tornE</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>cap dels elements es null </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>donat els parametres s'ha classificat la jugada i s'ha gestionat el tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tauler</td><td>tauler a realitzar la jugada </td></tr>
+    <tr><td class="paramname">tmpOrigen</td><td>peca d'origen </td></tr>
+    <tr><td class="paramname">a</td><td>pair de posicio i moviment </td></tr>
+    <tr><td class="paramname">cont</td><td>objecte contadors </td></tr>
+    <tr><td class="paramname">tornE</td><td>torn actual del que realitza la jugada </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepcions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_excepcio_g.html" title="Classe ExepcioG que gestiona el tipus de ExepcionsG (TipusExcepcioG).">ExcepcioG</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Mirem que la peca desti no sigui del mateix color ni invulnerable</p>
+<p>Mirem que la peca desti no sigui del mateix color ni invulnerable</p>
+
+</div>
+</div>
+<a id="aaf1596dcca3686a0f35cd845cc6b5f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1596dcca3686a0f35cd845cc6b5f84">&#9670;&nbsp;</a></span>realitzarJugades()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.realitzarJugades </td>
+          <td>(</td>
+          <td class="paramtype">ArrayList&lt; <a class="el" href="class_jugada.html">Jugada</a> &gt;&#160;</td>
+          <td class="paramname"><em>j</em></td><td>)</td>
+          <td> throws <a class="el" href="class_excepcio_g.html">ExcepcioG</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>j no esta buit, el color dels tiradors de les jugades son correctes(no es tindras en compte) @Post donat un conjunt de jugades, s'executa cada una per ordre ascendent. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>conte el conjunt de jugades a executar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7994d595113a872963b33f2b9d4d59d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7994d595113a872963b33f2b9d4d59d8">&#9670;&nbsp;</a></span>referJugada()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Partida.referJugada </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>Hi ha una jugada per refer. @Post Torna a fer la jugada següent. </dd></dl>
+
+</div>
+</div>
+<a id="ac60276370247f2e51e9ffe07cb21977a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60276370247f2e51e9ffe07cb21977a">&#9670;&nbsp;</a></span>tauler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String Partida.tauler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section post"><dt>Postcondició</dt><dd>obte el tauler actual en format text. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>El tauler en format String. </dd></dl>
+
+</div>
+</div>
+<a id="a4d5733cabd31532ba2bd72d00c6b6451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5733cabd31532ba2bd72d00c6b6451">&#9670;&nbsp;</a></span>torn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_color.html">Color</a> Partida.torn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>- </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>Retorna el <a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> del jugador del torn actual </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Blanques si color Blanc, Negres si color Negre. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentació de les Dades Membre</h2>
+<a id="adaa31fc95ee1a802308cb6d36fb53f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa31fc95ee1a802308cb6d36fb53f26">&#9670;&nbsp;</a></span>acabada</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Partida.acabada</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si la partida esta acabada o no. </p>
+
+</div>
+</div>
+<a id="ac629b43c9ce6f012cefd71318c0c7b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac629b43c9ce6f012cefd71318c0c7b27">&#9670;&nbsp;</a></span>contador</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_contadors.html">Contadors</a> Partida.contador</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Cotnadors de escacs i inaccio per a cada color. </p>
+
+</div>
+</div>
+<a id="a0f8270dcd9f4ec3d4542da7840d249b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8270dcd9f4ec3d4542da7840d249b3">&#9670;&nbsp;</a></span>guanyador</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_color.html">Color</a> Partida.guanyador</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el color de quin jugador és el guanyador. </p>
+
+</div>
+</div>
+<a id="a3d8288c527063f572ffb19431dc5b863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8288c527063f572ffb19431dc5b863">&#9670;&nbsp;</a></span>jugadaActual</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Partida.jugadaActual = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica la posició de la jugada actual de l'Array de les jugades. </p>
+
+</div>
+</div>
+<a id="a6f2dfae84386bd455d6d58ca4ce69b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f2dfae84386bd455d6d58ca4ce69b3f">&#9670;&nbsp;</a></span>jugadaFinal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Partida.jugadaFinal = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica la posició de la jugada en la qual es pot recuperar realitzant un refer. </p>
+
+</div>
+</div>
+<a id="a65fce93efff1e64d593afeb1d6a791c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65fce93efff1e64d593afeb1d6a791c2">&#9670;&nbsp;</a></span>jugades</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="class_jugada.html">Jugada</a>&gt; Partida.jugades</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>índex de les jugades realitzades. </p>
+
+</div>
+</div>
+<a id="a1c916571fa05667e4ba4329ed1912f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c916571fa05667e4ba4329ed1912f3c">&#9670;&nbsp;</a></span>maxEscacs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Partida.maxEscacs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nombre màxim de escacs seguits. </p>
+
+</div>
+</div>
+<a id="a2fe23a5d12e258dadf56ce569d9e8cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe23a5d12e258dadf56ce569d9e8cc6">&#9670;&nbsp;</a></span>maxInaccio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Partida.maxInaccio</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nombre màxim de jugades en inacció. </p>
+
+</div>
+</div>
+<a id="a0e51ebc8f0d0d28cf0b63abb03a694ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e51ebc8f0d0d28cf0b63abb03a694ee">&#9670;&nbsp;</a></span>resultatFinal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_resultat_partida.html">ResultatPartida</a> Partida.resultatFinal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el resultat final de la partida. </p>
+
+</div>
+</div>
+<a id="a432b326d7d9153985f41d0fc45a38500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432b326d7d9153985f41d0fc45a38500">&#9670;&nbsp;</a></span>resultatFinalDetall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_resultat_jugada.html">ResultatJugada</a> Partida.resultatFinalDetall</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el resultat final de la partida en detall. </p>
+
+</div>
+</div>
+<a id="aa93aaefc087031f52f5fd074af8e4c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93aaefc087031f52f5fd074af8e4c3b">&#9670;&nbsp;</a></span>rutaFitxerRegles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String Partida.rutaFitxerRegles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ruta completa del fitxer de regles de la partida </p>
+
+</div>
+</div>
+<a id="a2d4fb7fd2d91dc7c64fc1ca9b1e1194c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d4fb7fd2d91dc7c64fc1ca9b1e1194c">&#9670;&nbsp;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tauler.html">Tauler</a> Partida.t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Guarda la classe <a class="el" href="class_tauler.html" title="Classe que representa un tauler d&#39;Escacs. Contenidor de Caselles. Conté alguns mètodes de suport rela...">Tauler</a> que s'esta utilitzant actualment. </p>
+
+</div>
+</div>
+<a id="acdc3efc1902bc7673d0bfc416cfeb8fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc3efc1902bc7673d0bfc416cfeb8fd">&#9670;&nbsp;</a></span>tipus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashMap&lt;String,<a class="el" href="class_tipus_peca.html">TipusPeca</a>&gt; Partida.tipus</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index dels tipus de peces que tenim. </p>
+
+</div>
+</div>
+<a id="a9449a95a4b9b9eb3b60744b4a7a85fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9449a95a4b9b9eb3b60744b4a7a85fe0">&#9670;&nbsp;</a></span>torn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_color.html">Color</a> Partida.torn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el torn actual de la partida </p>
+
+</div>
+</div>
+<hr/>La documentació d'aquesta classe es va generar a partir del següent fitxer:<ul>
+<li>src/<a class="el" href="_partida_8java.html">Partida.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_partida.html">Partida</a></li>
+    <li class="footer">Generat per
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

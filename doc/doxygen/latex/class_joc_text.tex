@@ -1,0 +1,338 @@
+\hypertarget{class_joc_text}{}\doxysection{Referència de la Classe Joc\+Text}
+\label{class_joc_text}\index{JocText@{JocText}}
+
+
+Classe controladora del joc en mode text/terminal. Controla el flux de la partida a traves del motor i s\textquotesingle{}encarrega de demanar els moviments als jugadors.  
+
+
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_joc_text_ae474c5ddd49243a8089d2913d915b514}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Entrada el programa quan s\textquotesingle{}executa el mode text/terminal. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_text_a12b81ace31d43b2305fe5b4b8f19fe35}{desfer\+Jugada}} (int num\+Jugades)  throws Illegal\+Argument\+Exception
+\item 
+static void \mbox{\hyperlink{class_joc_text_a65426f3f4b623fc5b419a19b66af0a79}{guardar\+Partida}} ()
+\item 
+static \mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_joc_text_ae8ce3613f2dc2e38421519c9188c6896}{obtenir\+Tauler}} ()
+\item 
+static boolean \mbox{\hyperlink{class_joc_text_a7593f3aae8d0f44891d04fde491165df}{pot\+Desfer}} ()
+\item 
+static boolean \mbox{\hyperlink{class_joc_text_ab34728e7795fbdc8c1cb513667d5df4f}{pot\+Refer}} ()
+\item 
+static \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_joc_text_a748a99a5b974815c6ba06a53dbdd81d3}{promocionar}} ()
+\item 
+static void \mbox{\hyperlink{class_joc_text_a493b8661ef8655ffb7f54dfca4cb7569}{refer\+Jugada}} (int num\+Jugades)  throws Illegal\+Argument\+Exception
+\item 
+static Array\+List$<$ \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ \mbox{\hyperlink{class_joc_text_a9959f81537a12e2a3a47ec580b837c8e}{tipus\+Disponibles}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_joc_text_a7d6272278e375dbeed8970a8bf9b5d83}{carregar\+Coneixement}} (String ruta\+Coneixement)
+\item 
+static void \mbox{\hyperlink{class_joc_text_a9093b3a71b8fe36204eb851a1382bd25}{carregar\+Partida}} (String ruta\+Fitxer\+Jugades)  throws I\+O\+Exception, Excepcio\+G 
+\item 
+static void \mbox{\hyperlink{class_joc_text_a0ff814417061ac59a3f9cf462aec4e7c}{demanar\+Jugadors}} ()
+\begin{DoxyCompactList}\small\item\em Es demana quins jugadors jugaran la partida, els seus noms i qui els controla. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_text_a63239159a21db94d4b652d411ed68425}{fer\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Controlador del joc. Va preguntant als jugadors a cada torn què volen fer i va ordenant al motor les seves peticions. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{class_joc_text_a879b93018a24c07f8f4498351377abfb}{gestor\+Partida\+Acabada}} ()
+\begin{DoxyCompactList}\small\item\em Fa la gestió del les opcions que es poden triar quan una partida està acabada. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_text_a7dc3c94a1b06f4584bc6158093f11912}{inicialitzar\+Dades}} ()
+\item 
+static void \mbox{\hyperlink{class_joc_text_af0d728689b3bc6c9704146c9c8ded35d}{nova\+Partida}} (String ruta\+Fitxer\+Config)  throws I\+O\+Exception, Excepcio\+G 
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_jugador}{Jugador}} \mbox{\hyperlink{class_joc_text_a1f2fed856e1f7c008a1b1089bf55fbf4}{jugador\+Blanques}}
+\item 
+static \mbox{\hyperlink{interface_jugador}{Jugador}} \mbox{\hyperlink{class_joc_text_a40e95e16321ae5368e6604de58acdff1}{jugador\+Negres}}
+\item 
+static \mbox{\hyperlink{class_partida}{Partida}} \mbox{\hyperlink{class_joc_text_af71028b7208c9c610894babaff80ce0c}{partida}}
+\item 
+static \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_joc_text_a26b9dbdd61ac27d15b25858b5833c878}{torn}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe controladora del joc en mode text/terminal. Controla el flux de la partida a traves del motor i s\textquotesingle{}encarrega de demanar els moviments als jugadors. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_joc_text_a7d6272278e375dbeed8970a8bf9b5d83}\label{class_joc_text_a7d6272278e375dbeed8970a8bf9b5d83}} 
+\index{JocText@{JocText}!carregarConeixement@{carregarConeixement}}
+\index{carregarConeixement@{carregarConeixement}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{carregarConeixement()}{carregarConeixement()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+carregar\+Coneixement (\begin{DoxyParamCaption}\item[{String}]{ruta\+Coneixement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em ruta\+Fitxer\+Coneixement} & Ruta al fitxer de coneixement que es vol carregar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha carregat el coneixement a la IA si no ho ha hagut errors al buscar i carregar els fitxers. Si hi ha hagut errors s\textquotesingle{}ha informat. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_joc_text_a9093b3a71b8fe36204eb851a1382bd25}\label{class_joc_text_a9093b3a71b8fe36204eb851a1382bd25}} 
+\index{JocText@{JocText}!carregarPartida@{carregarPartida}}
+\index{carregarPartida@{carregarPartida}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{carregarPartida()}{carregarPartida()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+carregar\+Partida (\begin{DoxyParamCaption}\item[{String}]{ruta\+Fitxer\+Jugades }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+ruta\+Fitxer\+Jugades és la ruta d\textquotesingle{}un fitxer de regles en el format especificat en l\textquotesingle{}enunciat del projecte i extensió J\+S\+ON. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em ruta\+Fitxer\+Jugades} & fitxer de jugades. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & Quan el fitxer està en un estat incorrecte. \\
+\hline
+{\em I\+O\+Exception} & Quan hi ha algun error al obrir el fitxer, per exemple que no es troba o no tenim els permisos. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondició}
+carrega la partida. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_joc_text_a0ff814417061ac59a3f9cf462aec4e7c}\label{class_joc_text_a0ff814417061ac59a3f9cf462aec4e7c}} 
+\index{JocText@{JocText}!demanarJugadors@{demanarJugadors}}
+\index{demanarJugadors@{demanarJugadors}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{demanarJugadors()}{demanarJugadors()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+demanar\+Jugadors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Es demana quins jugadors jugaran la partida, els seus noms i qui els controla. 
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha demanat quin tipus de jugador controlarà cada jugador. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_joc_text_a12b81ace31d43b2305fe5b4b8f19fe35}\label{class_joc_text_a12b81ace31d43b2305fe5b4b8f19fe35}} 
+\index{JocText@{JocText}!desferJugada@{desferJugada}}
+\index{desferJugada@{desferJugada}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{desferJugada()}{desferJugada()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+desfer\+Jugada (\begin{DoxyParamCaption}\item[{int}]{num\+Jugades }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+Es poden desfer num\+Jugades. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em num\+Jugades} & Numero de jugades que es volen desfer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han desfet num\+Jugades. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & quan num\+Jugades no és un número vàlid de jugades a desfer. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_joc_text_a63239159a21db94d4b652d411ed68425}\label{class_joc_text_a63239159a21db94d4b652d411ed68425}} 
+\index{JocText@{JocText}!ferPartida@{ferPartida}}
+\index{ferPartida@{ferPartida}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{ferPartida()}{ferPartida()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+fer\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Controlador del joc. Va preguntant als jugadors a cada torn què volen fer i va ordenant al motor les seves peticions. 
+
+\begin{DoxyPostcond}{Postcondició}
+La partida s\textquotesingle{}ha acabat. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_joc_text_a879b93018a24c07f8f4498351377abfb}\label{class_joc_text_a879b93018a24c07f8f4498351377abfb}} 
+\index{JocText@{JocText}!gestorPartidaAcabada@{gestorPartidaAcabada}}
+\index{gestorPartidaAcabada@{gestorPartidaAcabada}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{gestorPartidaAcabada()}{gestorPartidaAcabada()}}
+{\footnotesize\ttfamily static boolean Joc\+Text.\+gestor\+Partida\+Acabada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Fa la gestió del les opcions que es poden triar quan una partida està acabada. 
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha gestionat una partida que ha finalitzat. L\textquotesingle{}usuari ha tingut l\textquotesingle{}opcio de defer jugades, guardar i sortir. En el cas de que continuar sigui una opció vàlida, també s\textquotesingle{}ha ofert aquesta opció. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Un booleà que serà true quan el jugador ha desfet jugades i, per tant vol continuar amb la partida. Altrament false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_text_a65426f3f4b623fc5b419a19b66af0a79}\label{class_joc_text_a65426f3f4b623fc5b419a19b66af0a79}} 
+\index{JocText@{JocText}!guardarPartida@{guardarPartida}}
+\index{guardarPartida@{guardarPartida}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{guardarPartida()}{guardarPartida()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+guardar\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha guardat la \mbox{\hyperlink{class_partida}{Partida}} segons el format especificat als requeriments a la ruta escollida. També s\textquotesingle{}ha donat l\textquotesingle{}opcio de cancelar el guardat. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_joc_text_a7dc3c94a1b06f4584bc6158093f11912}\label{class_joc_text_a7dc3c94a1b06f4584bc6158093f11912}} 
+\index{JocText@{JocText}!inicialitzarDades@{inicialitzarDades}}
+\index{inicialitzarDades@{inicialitzarDades}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{inicialitzarDades()}{inicialitzarDades()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+inicialitzar\+Dades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han demanat al jugador les dades per començar la partida i aquestes s\textquotesingle{}han carregat. 
+\end{DoxyPostcond}
+\begin{DoxyVersion}{Versió}
+2. S\textquotesingle{}afegeix l\textquotesingle{}opció de sortir del programa. 
+
+3. S\textquotesingle{}afegeix l\textquotesingle{}opcio de carregar coneixament. 
+\end{DoxyVersion}
+\mbox{\Hypertarget{class_joc_text_ae474c5ddd49243a8089d2913d915b514}\label{class_joc_text_ae474c5ddd49243a8089d2913d915b514}} 
+\index{JocText@{JocText}!main@{main}}
+\index{main@{main}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Entrada el programa quan s\textquotesingle{}executa el mode text/terminal. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em args} & Arguments del programa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_joc_text_af0d728689b3bc6c9704146c9c8ded35d}\label{class_joc_text_af0d728689b3bc6c9704146c9c8ded35d}} 
+\index{JocText@{JocText}!novaPartida@{novaPartida}}
+\index{novaPartida@{novaPartida}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{novaPartida()}{novaPartida()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+nova\+Partida (\begin{DoxyParamCaption}\item[{String}]{ruta\+Fitxer\+Config }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+ruta\+Fitxer\+Config és la ruta d\textquotesingle{}un fitxer de regles en el format especificat en l\textquotesingle{}enunciat del projecte i extensió J\+S\+ON. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em ruta\+Fitxer\+Config} & fitxer de configuració. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}} & Quan el fitxer està en un estat incorrecte. \\
+\hline
+{\em I\+O\+Exception} & Quan hi ha algun error al obrir el fitxer, per exemple que no es troba o no tenim els permisos. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondició}
+inicialitza la partida. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_joc_text_ae8ce3613f2dc2e38421519c9188c6896}\label{class_joc_text_ae8ce3613f2dc2e38421519c9188c6896}} 
+\index{JocText@{JocText}!obtenirTauler@{obtenirTauler}}
+\index{obtenirTauler@{obtenirTauler}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{obtenirTauler()}{obtenirTauler()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tauler}{Tauler}} Joc\+Text.\+obtenir\+Tauler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+El tauler actual sobre el que es fa la partida 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_text_a7593f3aae8d0f44891d04fde491165df}\label{class_joc_text_a7593f3aae8d0f44891d04fde491165df}} 
+\index{JocText@{JocText}!potDesfer@{potDesfer}}
+\index{potDesfer@{potDesfer}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{potDesfer()}{potDesfer()}}
+{\footnotesize\ttfamily static boolean Joc\+Text.\+pot\+Desfer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si es poden o no desfer jugades en aquest estat de la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_text_ab34728e7795fbdc8c1cb513667d5df4f}\label{class_joc_text_ab34728e7795fbdc8c1cb513667d5df4f}} 
+\index{JocText@{JocText}!potRefer@{potRefer}}
+\index{potRefer@{potRefer}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{potRefer()}{potRefer()}}
+{\footnotesize\ttfamily static boolean Joc\+Text.\+pot\+Refer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si es poden o no refer jugades en aquest estat de la partida. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_text_a748a99a5b974815c6ba06a53dbdd81d3}\label{class_joc_text_a748a99a5b974815c6ba06a53dbdd81d3}} 
+\index{JocText@{JocText}!promocionar@{promocionar}}
+\index{promocionar@{promocionar}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{promocionar()}{promocionar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Joc\+Text.\+promocionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha alguna peça promocionable del jugador amb torn. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha preguntat al jugador amb torn a quina peça es vol promocionar. S\textquotesingle{}ha retornat el tipus\+Peca el qual el jugador ha escollit per fer la promoció. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+El \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} que ha triat el jugador que podria promocionar. Es garanteix que el tipus retornat no serà el R\+EI. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_text_a493b8661ef8655ffb7f54dfca4cb7569}\label{class_joc_text_a493b8661ef8655ffb7f54dfca4cb7569}} 
+\index{JocText@{JocText}!referJugada@{referJugada}}
+\index{referJugada@{referJugada}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{referJugada()}{referJugada()}}
+{\footnotesize\ttfamily static void Joc\+Text.\+refer\+Jugada (\begin{DoxyParamCaption}\item[{int}]{num\+Jugades }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPrecond}{Precondició}
+Es poden refer num\+Jugades. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em num\+Jugades} & Numero de jugades que es volen refer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han refet num\+Jugades. 
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & quan num\+Jugades no és un número vàlid de jugades a refer. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_joc_text_a9959f81537a12e2a3a47ec580b837c8e}\label{class_joc_text_a9959f81537a12e2a3a47ec580b837c8e}} 
+\index{JocText@{JocText}!tipusDisponibles@{tipusDisponibles}}
+\index{tipusDisponibles@{tipusDisponibles}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{tipusDisponibles()}{tipusDisponibles()}}
+{\footnotesize\ttfamily static Array\+List$<$\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}$>$ Joc\+Text.\+tipus\+Disponibles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Retorna}
+Un conjunt de \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} amb tots els \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} en aquesta partida. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_joc_text_a1f2fed856e1f7c008a1b1089bf55fbf4}\label{class_joc_text_a1f2fed856e1f7c008a1b1089bf55fbf4}} 
+\index{JocText@{JocText}!jugadorBlanques@{jugadorBlanques}}
+\index{jugadorBlanques@{jugadorBlanques}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{jugadorBlanques}{jugadorBlanques}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_jugador}{Jugador}} Joc\+Text.\+jugador\+Blanques\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\hyperlink{interface_jugador}{Jugador}} que controla les peces blanques. \mbox{\Hypertarget{class_joc_text_a40e95e16321ae5368e6604de58acdff1}\label{class_joc_text_a40e95e16321ae5368e6604de58acdff1}} 
+\index{JocText@{JocText}!jugadorNegres@{jugadorNegres}}
+\index{jugadorNegres@{jugadorNegres}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{jugadorNegres}{jugadorNegres}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_jugador}{Jugador}} Joc\+Text.\+jugador\+Negres\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\hyperlink{interface_jugador}{Jugador}} que controla les peces negres. \mbox{\Hypertarget{class_joc_text_af71028b7208c9c610894babaff80ce0c}\label{class_joc_text_af71028b7208c9c610894babaff80ce0c}} 
+\index{JocText@{JocText}!partida@{partida}}
+\index{partida@{partida}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{partida}{partida}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_partida}{Partida}} Joc\+Text.\+partida\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\hyperlink{class_partida}{Partida}} del Joc, motor del joc. \mbox{\Hypertarget{class_joc_text_a26b9dbdd61ac27d15b25858b5833c878}\label{class_joc_text_a26b9dbdd61ac27d15b25858b5833c878}} 
+\index{JocText@{JocText}!torn@{torn}}
+\index{torn@{torn}!JocText@{JocText}}
+\doxysubsubsection{\texorpdfstring{torn}{torn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Joc\+Text.\+torn\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\hyperlink{enum_color}{Color}} del jugador que té el torn. 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_joc_text_8java}{Joc\+Text.\+java}}\end{DoxyCompactItemize}

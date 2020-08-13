@@ -1,0 +1,373 @@
+.TH "Huma" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Huma \- Classe que representa un \fBJugador\fP controlat per un Humà\&. Fa les interaccions entre un Humà i el contolador a través del terminal\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de \fBJugador\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBHuma\fP (String \fBnom\fP)"
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBjugar\fP (boolean modeText)"
+.br
+.ti -1c
+.RI "void \fBpreguntarTaules\fP ()"
+.br
+.ti -1c
+.RI "\fBTipusPeca\fP \fBpromocionar\fP ()"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static boolean \fBdesferJugada\fP ()"
+.br
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "\fBJugada\fP \fBacceptarTaules\fP ()"
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBajornarPartida\fP ()"
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBdemanarTaules\fP ()"
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBferJugada\fP ()  throws IllegalArgumentException, StringIndexOutOfBoundsException "
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBgestionarTaulesPendents\fP (boolean modeText)"
+.br
+.ti -1c
+.RI "void \fBguardarPartida\fP ()"
+.br
+.ti -1c
+.RI "void \fBmostrarOpcions\fP (boolean modeText)"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBparseString\fP (String pos)  throws IllegalArgumentException"
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBrebutjarTaules\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBreferJugada\fP ()"
+.br
+.ti -1c
+.RI "\fBJugada\fP \fBrendirse\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "String \fBnom\fP"
+.br
+.ti -1c
+.RI "boolean \fBtaulesPendentsAcceptacio\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe que representa un \fBJugador\fP controlat per un Humà\&. Fa les interaccions entre un Humà i el contolador a través del terminal\&. 
+
+Interfície que generalitza un \fBJugador\fP d'escacs\&.
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Huma\&.Huma (String nom)"
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "\fBJugada\fP Huma\&.acceptarTaules ()\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha retornat una jugada que indica que les taules s'han rebutjat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una jugada que té com a resultat TRebutjades\&. 
+.RE
+.PP
+
+.SS "\fBJugada\fP Huma\&.ajornarPartida ()\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha retornat una jugada que indica la petició d'ajornament i s'ha informat als jugadors de l'Ajornament\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una jugada que té com a resultat Ajornament\&. 
+.RE
+.PP
+
+.SS "\fBJugada\fP Huma\&.demanarTaules ()\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha retornat una jugada que indica la petició de taules\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una jugada que té com a resultat Taules Solicitades\&. 
+.RE
+.PP
+
+.SS "static boolean Huma\&.desferJugada ()\fC [static]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha demanat al \fBJugador\fP si quantes jugades vol desfer i s'ha passat la petició al controlador\&. Si la petició de desfer jugades és vàlida es retorna true, altrament false\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si la petició s'ha realitzat\&. 
+.RE
+.PP
+
+.SS "\fBJugada\fP Huma\&.ferJugada () throws IllegalArgumentException, StringIndexOutOfBoundsException\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha demanat la jugada a fer al jugador, aquesta s'ha enregistrat i retornat en una \fBJugada\fP\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una jugada que conté el moviment que vol fer el \fBJugador\fP\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP Quan el format que ha entrat el jugador no era l'esperat\&. 
+.br
+\fIStringIndexOutOfBoundsException\fP Quan el format que ha entrat el jugador no era l'esperat\&. 
+.RE
+.PP
+
+.SS "\fBJugada\fP Huma\&.gestionarTaulesPendents (boolean modeText)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi han taules pendents d'acceptar o rebutjar per part d'aquest jugador\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImodeText\fP Booleà que indica si estem en mode Text(true) o gràfic(false) 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una jugada que conté la decisió d'acceptar o rebutjar les taules per part d'aquest jugador\&. 
+.RE
+.PP
+
+.SS "void Huma\&.guardarPartida ()\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+El jugador ha tingut la opció de guardar la partida\&. 
+.RE
+.PP
+
+.SS "\fBJugada\fP Huma\&.jugar (boolean modeText)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImodeText\fP Indica si el jugador juga en mode text\&. En aquest cas el jugador té opcions diferents a mode text\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha demanat al jugador quina jugada vol fer i s'ha retornat una jugada que conté la seva desició\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La \fBJugada\fP que s'ha fet\&. Null si en mode grafic s'ha demanat sortir\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+La \fBJugada\fP pot contenir un moviment, pot contenir una desició diferent de moure una peça com per exemple: petició de taules o rendició\&. També pot contenir una desició buida indicant que s'han desfet o refet jugades i pot ser null en cas que en mode grafic s'hagi sortit del menú\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SS "void Huma\&.mostrarOpcions (boolean modeText)\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha mostrat al jugador les opcions que té disponibles en aquest estat i mode de la partida\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImodeText\fP Booleà que indica si estem en mode Text(true) o gràfic(false)\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Les opcions mostrades són 1-Jugar(text)/Sortir(gràfic), 2-Rendir-se, 3-Demanar Taules, 4-Guardar, 5-Desfer, 6-Refer, 7-Ajornar\&. 
+.RE
+.PP
+
+.SS "\fBPosicio\fP Huma\&.parseString (String pos) throws IllegalArgumentException\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+pos està en format algebraic 
+.RE
+.PP
+\fBMireu també\fP
+.RS 4
+\fBPosicio::Posicio(char columna, int fila)\fP\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpos\fP String representatiu d'una posició\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una instància de \fBPosicio\fP inicialitzada a partir del paràmtre pos\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP En cas que pos no estigui en el format especificat\&. 
+.RE
+.PP
+
+.SS "void Huma\&.preguntarTaules ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+El jugador sap que li han demanat taules\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SS "\fBTipusPeca\fP Huma\&.promocionar ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha alguna peca a promocionar\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la peca a la que es desitja promocionar\&. Es garanteix que el \fBTipusPeca\fP retornat no serà el tipus REI\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SS "\fBJugada\fP Huma\&.rebutjarTaules ()\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha retornat una jugada que indica que les taules s'han rebutjat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una jugada que té com a resultat TRebutjades\&. 
+.RE
+.PP
+
+.SS "boolean Huma\&.referJugada ()\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha demanat al \fBJugador\fP si quantes jugades vol desfer i s'ha passat la petició al controlador\&. Si la petició de desfer jugades és vàlida es retorna true, altrament false\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si la petició s'ha realitzat\&. 
+.RE
+.PP
+
+.SS "\fBJugada\fP Huma\&.rendirse ()\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha retornat una jugada que conté la rendició\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una jugada que té com a resultat Rendició\&. 
+.RE
+.PP
+
+.SS "String Huma\&.toString ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+El nom del \fBJugador\fP\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "String Huma\&.nom\fC [private]\fP"
+Nom del jugador 
+.SS "boolean Huma\&.taulesPendentsAcceptacio\fC [private]\fP"
+Indica si el jugador té pendent decidir si accepta o no taules\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

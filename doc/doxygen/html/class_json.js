@@ -1,0 +1,28 @@
+var class_json =
+[
+    [ "Json", "class_json.html#a7e173158c9061e07ae5cf17590fdef65", null ],
+    [ "carregarConeixement", "class_json.html#a123b157b90b95e24e10be405a1957ebd", null ],
+    [ "comprobarMidaTauler", "class_json.html#a2c20e727414738bd4428d9e1ca80cb9b", null ],
+    [ "comprovarFitxerConeixement", "class_json.html#a3e7a3bfff016e657f3249515ff3f3897", null ],
+    [ "comprovarFitxerJugades", "class_json.html#aed241bea13087b1fa22c0448f56ba978", null ],
+    [ "comprovarFitxerRegles", "class_json.html#af7b50b29691fd50e859f050e74719219", null ],
+    [ "comprovarTirada", "class_json.html#af52bf226a5caa6cf5cd07154ab5bd1cd", null ],
+    [ "crearPartidaComencada", "class_json.html#afe288a876c59f3fc0e54ed6dffee17d2", null ],
+    [ "crearPartidaNova", "class_json.html#a4c0b9a117044fcd03f0b0f586918742c", null ],
+    [ "generarJSONJugades", "class_json.html#a77b7a7c6fceebf88f90f4a95757fd842", null ],
+    [ "generarPosIni", "class_json.html#a3f4d6c18eb2d6e22e32492206a2c0c13", null ],
+    [ "generarStringResultatJugada", "class_json.html#ac1e0d2e6f1228365db0f81f4d220e54d", null ],
+    [ "generarStringResultatPartida", "class_json.html#ab3ba3126a4297cec9723dcf70025148c", null ],
+    [ "generarTiradesPartida", "class_json.html#a40bf6cf50083c8eb26a0114660c47f38", null ],
+    [ "guardarPartida", "class_json.html#a38fac21995676e2ab03a9fe004665183", null ],
+    [ "lecturaEnrocs", "class_json.html#abf52eecf9a6511898ad38e303ee89123", null ],
+    [ "lecturaEnter", "class_json.html#a9d13918a84ee585aaa9d3e8e0037fe82", null ],
+    [ "lecturaFitxers", "class_json.html#aa7840810e957b4784d731bc248dd837a", null ],
+    [ "lecturaMovimentsPeca", "class_json.html#ad1f158371ed8633cd3d8c7499ba631e2", null ],
+    [ "lecturaPeces", "class_json.html#a9a025c24c8446dc3df5015a430ac8504", null ],
+    [ "lecturaPosicions", "class_json.html#ad8e55d98cd8e4fe4ca00fa3aa29e9e44", null ],
+    [ "lecturaPosicionsRegles", "class_json.html#a927d1c5db31fcb8c3398617af5e94ceb", null ],
+    [ "lecturaString", "class_json.html#aeb598d35c1a9aca60d3dfe5d01c2bc83", null ],
+    [ "lecturaTirades", "class_json.html#ac4fbd84cdd16c33ebafdcdd971728b6f", null ],
+    [ "traduirMoviment", "class_json.html#ac705607a03d0ad6a400b6a5a59d95091", null ]
+];

@@ -1,0 +1,96 @@
+.TH "Jugador" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Jugador
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Heretat per \fBCPU\fP i \fBHuma\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBJugada\fP \fBjugar\fP (boolean modeText)"
+.br
+.ti -1c
+.RI "void \fBpreguntarTaules\fP ()"
+.br
+.ti -1c
+.RI "\fBTipusPeca\fP \fBpromocionar\fP ()"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "\fBJugada\fP Jugador\&.jugar (boolean modeText)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImodeText\fP Indica si el jugador juga en mode text\&. En aquest cas el jugador té opcions diferents a mode text\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha demanat al jugador quina jugada vol fer i s'ha retornat una jugada que conté la seva desició\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La \fBJugada\fP que s'ha fet\&. Null si en mode grafic s'ha demanat sortir\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+La \fBJugada\fP pot contenir un moviment, pot contenir una desició diferent de moure una peça com per exemple: petició de taules o rendició\&. També pot contenir una desició buida indicant que s'han desfet o refet jugades i pot ser null en cas que en mode grafic s'hagi sortit del menú\&. 
+.RE
+.PP
+
+.PP
+Implementat a \fBCPU\fP i \fBHuma\fP\&.
+.SS "void Jugador\&.preguntarTaules ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+El jugador sap que li han demanat taules\&. 
+.RE
+.PP
+
+.PP
+Implementat a \fBHuma\fP i \fBCPU\fP\&.
+.SS "\fBTipusPeca\fP Jugador\&.promocionar ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha alguna peca a promocionar\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la peca a la que es desitja promocionar\&. Es garanteix que el \fBTipusPeca\fP retornat no serà el tipus REI\&. 
+.RE
+.PP
+
+.PP
+Implementat a \fBHuma\fP i \fBCPU\fP\&.
+.SS "String Jugador\&.toString ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+El nom del \fBJugador\fP\&. 
+.RE
+.PP
+
+.PP
+Implementat a \fBHuma\fP i \fBCPU\fP\&.
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

@@ -1,0 +1,211 @@
+\hypertarget{class_contadors}{}\doxysection{Referència de la Classe Contadors}
+\label{class_contadors}\index{Contadors@{Contadors}}
+
+
+Gestiona els dos contadors per a cada color. Innacció i \mbox{\hyperlink{class_escacs}{Escacs}} seguits.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_contadors_a488af0fcfa75ff06b771d125d671dd89}{Contadors}} ()
+\item 
+\mbox{\hyperlink{class_contadors_a3afa5af642005aa86e8a6ccd21d9f9f6}{Contadors}} (int \mbox{\hyperlink{class_contadors_a038ece19dbfd9d58968f1b28bee0fcf5}{contador\+Inaccio\+Blanques}}, int \mbox{\hyperlink{class_contadors_ad5fae6d6b6a54a4fe70d07cb79fa1119}{contador\+Inaccio\+Negres}}, int \mbox{\hyperlink{class_contadors_a98f5950e89f665af821f009faa6976a0}{contador\+Escac\+Blanques}}, int \mbox{\hyperlink{class_contadors_a12c00317b757b41084538bee7336b5c3}{contador\+Escac\+Negres}})
+\item 
+void \mbox{\hyperlink{class_contadors_a8e234899aad24f8c79fb3a52d7c36714}{modificar\+Contador\+Escac}} (int val, \mbox{\hyperlink{enum_color}{Color}} col)
+\item 
+void \mbox{\hyperlink{class_contadors_a6b3379a4531ce397615fbc5b077d844d}{modificar\+Contador\+Inaccio}} (int val, \mbox{\hyperlink{enum_color}{Color}} col)
+\item 
+int \mbox{\hyperlink{class_contadors_ab6e18187b58ae7ca8bca61f4f3da16d8}{obtenir\+Contador\+Escac}} (\mbox{\hyperlink{enum_color}{Color}} col)
+\item 
+int \mbox{\hyperlink{class_contadors_af760e41082d094dcefd296b499ef11fa}{obtenir\+Contador\+Inaccio}} (\mbox{\hyperlink{enum_color}{Color}} col)
+\item 
+void \mbox{\hyperlink{class_contadors_a50a07dfce76859311f885d4209c9895e}{posar\+A\+Zero\+Contador\+Escac}} (\mbox{\hyperlink{enum_color}{Color}} col)
+\item 
+void \mbox{\hyperlink{class_contadors_a4b65ad10a89cf800f2526fecf94ee518}{posar\+A\+Zero\+Contador\+Inaccio}} (\mbox{\hyperlink{enum_color}{Color}} col)
+\item 
+\mbox{\hyperlink{class_contadors}{Contadors}} \mbox{\hyperlink{class_contadors_a3f86dd82c72dac83a6683942deec4ea7}{deep\+Copy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_contadors_a038ece19dbfd9d58968f1b28bee0fcf5}{contador\+Inaccio\+Blanques}}
+\item 
+int \mbox{\hyperlink{class_contadors_ad5fae6d6b6a54a4fe70d07cb79fa1119}{contador\+Inaccio\+Negres}}
+\item 
+int \mbox{\hyperlink{class_contadors_a98f5950e89f665af821f009faa6976a0}{contador\+Escac\+Blanques}}
+\item 
+int \mbox{\hyperlink{class_contadors_a12c00317b757b41084538bee7336b5c3}{contador\+Escac\+Negres}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Gestiona els dos contadors per a cada color. Innacció i \mbox{\hyperlink{class_escacs}{Escacs}} seguits. 
+
+\begin{DoxyAuthor}{Autor}
+Eloi Quintana 
+
+u1963141 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_contadors_a488af0fcfa75ff06b771d125d671dd89}\label{class_contadors_a488af0fcfa75ff06b771d125d671dd89}} 
+\index{Contadors@{Contadors}!Contadors@{Contadors}}
+\index{Contadors@{Contadors}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{Contadors()}{Contadors()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Contadors.\+Contadors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post S\textquotesingle{}han assignat els valors dels contadors ls valor 0; 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_contadors_a3afa5af642005aa86e8a6ccd21d9f9f6}\label{class_contadors_a3afa5af642005aa86e8a6ccd21d9f9f6}} 
+\index{Contadors@{Contadors}!Contadors@{Contadors}}
+\index{Contadors@{Contadors}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{Contadors()}{Contadors()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Contadors.\+Contadors (\begin{DoxyParamCaption}\item[{int}]{contador\+Inaccio\+Blanques,  }\item[{int}]{contador\+Inaccio\+Negres,  }\item[{int}]{contador\+Escac\+Blanques,  }\item[{int}]{contador\+Escac\+Negres }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post S\textquotesingle{}han assignat els valors dels contadors als valors dels parametres; 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_contadors_a3f86dd82c72dac83a6683942deec4ea7}\label{class_contadors_a3f86dd82c72dac83a6683942deec4ea7}} 
+\index{Contadors@{Contadors}!deepCopy@{deepCopy}}
+\index{deepCopy@{deepCopy}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{deepCopy()}{deepCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_contadors}{Contadors}} Contadors.\+deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+-\/ @\+Post s\textquotesingle{}ha realitzat una còpia de valors de l\textquotesingle{}objecte 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+retorna un nou objecte amb copia realitzada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_contadors_a8e234899aad24f8c79fb3a52d7c36714}\label{class_contadors_a8e234899aad24f8c79fb3a52d7c36714}} 
+\index{Contadors@{Contadors}!modificarContadorEscac@{modificarContadorEscac}}
+\index{modificarContadorEscac@{modificarContadorEscac}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{modificarContadorEscac()}{modificarContadorEscac()}}
+{\footnotesize\ttfamily void Contadors.\+modificar\+Contador\+Escac (\begin{DoxyParamCaption}\item[{int}]{val,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{col }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+El color es Blanques o Negres @\+Post S\textquotesingle{}ha sumat/restat el valor d\textquotesingle{}entrada de Escac 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em val} & Valor en la operació. \\
+\hline
+{\em col} & \mbox{\hyperlink{enum_color}{Color}} on s\textquotesingle{}aplicarà l\textquotesingle{}operació \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_contadors_a6b3379a4531ce397615fbc5b077d844d}\label{class_contadors_a6b3379a4531ce397615fbc5b077d844d}} 
+\index{Contadors@{Contadors}!modificarContadorInaccio@{modificarContadorInaccio}}
+\index{modificarContadorInaccio@{modificarContadorInaccio}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{modificarContadorInaccio()}{modificarContadorInaccio()}}
+{\footnotesize\ttfamily void Contadors.\+modificar\+Contador\+Inaccio (\begin{DoxyParamCaption}\item[{int}]{val,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{col }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+El color es Blanques o Negres @\+Post S\textquotesingle{}ha sumat/restat el valor d\textquotesingle{}entrada de Inacció 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em val} & Valor en la operació. \\
+\hline
+{\em col} & \mbox{\hyperlink{enum_color}{Color}} on s\textquotesingle{}aplicarà l\textquotesingle{}operació \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_contadors_ab6e18187b58ae7ca8bca61f4f3da16d8}\label{class_contadors_ab6e18187b58ae7ca8bca61f4f3da16d8}} 
+\index{Contadors@{Contadors}!obtenirContadorEscac@{obtenirContadorEscac}}
+\index{obtenirContadorEscac@{obtenirContadorEscac}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{obtenirContadorEscac()}{obtenirContadorEscac()}}
+{\footnotesize\ttfamily int Contadors.\+obtenir\+Contador\+Escac (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{col }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+El color es Blanques o Negres @\+Post s\textquotesingle{}ha retornat el valor del contador de Escac del color donat. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+enter del contador seleccionat. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paràmetres}
+{\em col} & \mbox{\hyperlink{enum_color}{Color}} on s\textquotesingle{}aplicarà l\textquotesingle{}operació \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_contadors_af760e41082d094dcefd296b499ef11fa}\label{class_contadors_af760e41082d094dcefd296b499ef11fa}} 
+\index{Contadors@{Contadors}!obtenirContadorInaccio@{obtenirContadorInaccio}}
+\index{obtenirContadorInaccio@{obtenirContadorInaccio}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{obtenirContadorInaccio()}{obtenirContadorInaccio()}}
+{\footnotesize\ttfamily int Contadors.\+obtenir\+Contador\+Inaccio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{col }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+El color es Blanques o Negres @\+Post s\textquotesingle{}ha retornat el valor del contador d\textquotesingle{}inaccio del color donat. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+enter del contador seleccionat. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paràmetres}
+{\em col} & \mbox{\hyperlink{enum_color}{Color}} on s\textquotesingle{}aplicarà l\textquotesingle{}operació \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_contadors_a50a07dfce76859311f885d4209c9895e}\label{class_contadors_a50a07dfce76859311f885d4209c9895e}} 
+\index{Contadors@{Contadors}!posarAZeroContadorEscac@{posarAZeroContadorEscac}}
+\index{posarAZeroContadorEscac@{posarAZeroContadorEscac}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{posarAZeroContadorEscac()}{posarAZeroContadorEscac()}}
+{\footnotesize\ttfamily void Contadors.\+posar\+A\+Zero\+Contador\+Escac (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{col }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+El color es Blanques o Negres @\+Post s\textquotesingle{}ha posat a valor 0 el contador d\textquotesingle{}escac del color donat. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em col} & \mbox{\hyperlink{enum_color}{Color}} on s\textquotesingle{}aplicarà l\textquotesingle{}operació \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_contadors_a4b65ad10a89cf800f2526fecf94ee518}\label{class_contadors_a4b65ad10a89cf800f2526fecf94ee518}} 
+\index{Contadors@{Contadors}!posarAZeroContadorInaccio@{posarAZeroContadorInaccio}}
+\index{posarAZeroContadorInaccio@{posarAZeroContadorInaccio}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{posarAZeroContadorInaccio()}{posarAZeroContadorInaccio()}}
+{\footnotesize\ttfamily void Contadors.\+posar\+A\+Zero\+Contador\+Inaccio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{col }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+El color es Blanques o Negres @\+Post s\textquotesingle{}ha posat a valor 0 el contador d\textquotesingle{}inaccio del color donat. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em col} & \mbox{\hyperlink{enum_color}{Color}} on s\textquotesingle{}aplicarà l\textquotesingle{}operació \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_contadors_a98f5950e89f665af821f009faa6976a0}\label{class_contadors_a98f5950e89f665af821f009faa6976a0}} 
+\index{Contadors@{Contadors}!contadorEscacBlanques@{contadorEscacBlanques}}
+\index{contadorEscacBlanques@{contadorEscacBlanques}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{contadorEscacBlanques}{contadorEscacBlanques}}
+{\footnotesize\ttfamily int Contadors.\+contador\+Escac\+Blanques\hspace{0.3cm}{\ttfamily [private]}}
+
+Contador de \mbox{\hyperlink{class_escacs}{Escacs}} de \mbox{\hyperlink{interface_jugador}{Jugador}} Blanc \mbox{\Hypertarget{class_contadors_a12c00317b757b41084538bee7336b5c3}\label{class_contadors_a12c00317b757b41084538bee7336b5c3}} 
+\index{Contadors@{Contadors}!contadorEscacNegres@{contadorEscacNegres}}
+\index{contadorEscacNegres@{contadorEscacNegres}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{contadorEscacNegres}{contadorEscacNegres}}
+{\footnotesize\ttfamily int Contadors.\+contador\+Escac\+Negres\hspace{0.3cm}{\ttfamily [private]}}
+
+Contador de Enrocs de \mbox{\hyperlink{interface_jugador}{Jugador}} Negre \mbox{\Hypertarget{class_contadors_a038ece19dbfd9d58968f1b28bee0fcf5}\label{class_contadors_a038ece19dbfd9d58968f1b28bee0fcf5}} 
+\index{Contadors@{Contadors}!contadorInaccioBlanques@{contadorInaccioBlanques}}
+\index{contadorInaccioBlanques@{contadorInaccioBlanques}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{contadorInaccioBlanques}{contadorInaccioBlanques}}
+{\footnotesize\ttfamily int Contadors.\+contador\+Inaccio\+Blanques\hspace{0.3cm}{\ttfamily [private]}}
+
+Contador de Inaccio de \mbox{\hyperlink{interface_jugador}{Jugador}} Blanc \mbox{\Hypertarget{class_contadors_ad5fae6d6b6a54a4fe70d07cb79fa1119}\label{class_contadors_ad5fae6d6b6a54a4fe70d07cb79fa1119}} 
+\index{Contadors@{Contadors}!contadorInaccioNegres@{contadorInaccioNegres}}
+\index{contadorInaccioNegres@{contadorInaccioNegres}!Contadors@{Contadors}}
+\doxysubsubsection{\texorpdfstring{contadorInaccioNegres}{contadorInaccioNegres}}
+{\footnotesize\ttfamily int Contadors.\+contador\+Inaccio\+Negres\hspace{0.3cm}{\ttfamily [private]}}
+
+Contador de Inaccio de \mbox{\hyperlink{interface_jugador}{Jugador}} Negre 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_contadors_8java}{Contadors.\+java}}\end{DoxyCompactItemize}

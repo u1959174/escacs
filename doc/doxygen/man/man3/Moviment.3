@@ -1,0 +1,227 @@
+.TH "Moviment" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Moviment \- Interfície d'un \fBMoviment\fP d'un \fBTipusPeca\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Heretat per \fBMovimentCombinat\fP, \fBMovimentDiagonal\fP, \fBMovimentEspecial\fP i \fBMovimentRectilini\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBesMoviment\fP (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+.br
+.RI "Comprova si un desplaçament és el \fBMoviment\fP\&. "
+.ti -1c
+.RI "default Integer \fBtraduirParametre\fP (String param)"
+.br
+.RI "Tradueix els paràmetres perquè puguin ser interpretats\&. "
+.ti -1c
+.RI "default boolean \fBesEnter\fP (String entrada)"
+.br
+.RI "Comprova si una string és un nombre enter\&. "
+.ti -1c
+.RI "default boolean \fBmateixVector\fP (\fBMoviment\fP mov)"
+.br
+.RI "Comprova si un \fBMoviment\fP té el mateix vector de desplaçament que un altre\&. "
+.ti -1c
+.RI "String \fBdiguemA\fP ()"
+.br
+.RI "Traducció del paràmetre A\&. "
+.ti -1c
+.RI "String \fBdiguemB\fP ()"
+.br
+.RI "Traducció del paràmetre B\&. "
+.ti -1c
+.RI "Integer \fBdiguemSaltar\fP ()"
+.br
+.RI "Diu el valor de saltar\&. "
+.ti -1c
+.RI "default boolean \fBconte\fP (String a, String b)"
+.br
+.RI "Indica si un paràmetre conté a un altre\&. "
+.ti -1c
+.RI "boolean \fBesEnroc\fP ()"
+.br
+.RI "Diu si el \fBMoviment\fP és de tipus enroc\&. "
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Interfície d'un \fBMoviment\fP d'un \fBTipusPeca\fP\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "default boolean Moviment\&.conte (String a, String b)"
+
+.PP
+Indica si un paràmetre conté a un altre\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIa\fP Component A|B d'un moviment\&. 
+.br
+\fIb\fP Component A|B d'un moviment\&. 
+.RE
+.PP
+\fBPrecondició\fP
+.RS 4
+a i b han de ser tots dos component A o component B\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si a conté b\&. 
+.RE
+.PP
+
+.SS "String Moviment\&.diguemA ()"
+
+.PP
+Traducció del paràmetre A\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre A traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat a \fBMovimentRectilini\fP, \fBMovimentDiagonal\fP, \fBMovimentCombinat\fP i \fBMovimentEspecial\fP\&.
+.SS "String Moviment\&.diguemB ()"
+
+.PP
+Traducció del paràmetre B\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre B traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat a \fBMovimentRectilini\fP, \fBMovimentDiagonal\fP, \fBMovimentCombinat\fP i \fBMovimentEspecial\fP\&.
+.SS "Integer Moviment\&.diguemSaltar ()"
+
+.PP
+Diu el valor de saltar\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l'atribut\&. 
+.RE
+.PP
+
+.PP
+Reimplementat a \fBMovimentCombinat\fP, \fBMovimentEspecial\fP, \fBMovimentDiagonal\fP i \fBMovimentRectilini\fP\&.
+.SS "boolean Moviment\&.esEnroc ()"
+
+.PP
+Diu si el \fBMoviment\fP és de tipus enroc\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el \fBMoviment\fP és enroc, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat a \fBMovimentDiagonal\fP, \fBMovimentRectilini\fP, \fBMovimentCombinat\fP i \fBMovimentEspecial\fP\&.
+.SS "default boolean Moviment\&.esEnter (String entrada)"
+
+.PP
+Comprova si una string és un nombre enter\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIentrada\fP String d'entrada\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna cert si entrada és enter, fals altrament\&. 
+.RE
+.PP
+
+.SS "boolean Moviment\&.esMoviment (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+
+.PP
+Comprova si un desplaçament és el \fBMoviment\fP\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP Posició d'origen\&. 
+.br
+\fIdesti\fP Posició destí\&. 
+.br
+\fIprimer\fP Indica si el el moviment és el primer de la partida\&. 
+.br
+\fIpeca_final\fP Referència al tipus de peça de la posició destí\&. 
+.br
+\fIpeca_mig\fP Indica si hi ha alguna peça en la trajectòria\&. 
+.br
+\fIexacte\fP Demanar si la distància ha de ser exacte\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna cert si amb origen-desti és compleix el moviment, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat a \fBMovimentRectilini\fP, \fBMovimentDiagonal\fP, \fBMovimentEspecial\fP i \fBMovimentCombinat\fP\&.
+.SS "default boolean Moviment\&.mateixVector (\fBMoviment\fP mov)"
+
+.PP
+Comprova si un \fBMoviment\fP té el mateix vector de desplaçament que un altre\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImov\fP \fBMoviment\fP amb el que es vol comparar\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el vector de desplaçament és igual\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+serveix per diferenciar els vectors combinats dels diagonals i rectilinis en temps de càrrega 
+.RE
+.PP
+
+.SS "default Integer Moviment\&.traduirParametre (String param)"
+
+.PP
+Tradueix els paràmetres perquè puguin ser interpretats\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIparam\fP Coordenada A o B del moviment a configuració\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna param en format int\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

@@ -1,0 +1,159 @@
+\hypertarget{class_c_p_u}{}\doxysection{Referència de la Classe C\+PU}
+\label{class_c_p_u}\index{CPU@{CPU}}
+
+
+Classe que representa un \mbox{\hyperlink{interface_jugador}{Jugador}} controlat per l\textquotesingle{}ordinador.  
+
+
+Diagrama d\textquotesingle{}Herència per a C\+PU\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_p_u}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_p_u_a5a255ca565df1c0bf6d3b712fe15e571}{C\+PU}} (String \mbox{\hyperlink{class_c_p_u_a4710cc8511a514f7d0e7ebe18554abe4}{nom}}, \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_c_p_u_a1e7473daad00be0d3cad997550493f7e}{color}})
+\begin{DoxyCompactList}\small\item\em Crea un jugador controlat per ordinador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_c_p_u_aff729c30a92fafa53f538f7fc35bae60}{jugar}} (boolean pot\+Moure)
+\item 
+void \mbox{\hyperlink{class_c_p_u_aac6f483e5b02f661514ee3c36add8fc4}{preguntar\+Taules}} ()
+\item 
+\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_c_p_u_af37ae59955f52bc664bc2a2d16dd5f6f}{promocionar}} ()
+\item 
+String \mbox{\hyperlink{class_c_p_u_a27bf52c9f2742f842818d3698c17049d}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_c_p_u_a1e7473daad00be0d3cad997550493f7e}{color}}
+\item 
+String \mbox{\hyperlink{class_c_p_u_a4710cc8511a514f7d0e7ebe18554abe4}{nom}}
+\item 
+boolean \mbox{\hyperlink{class_c_p_u_a3021e77d97bb778ba77dc39d9476402d}{taules\+Pendents\+Acceptacio}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa un \mbox{\hyperlink{interface_jugador}{Jugador}} controlat per l\textquotesingle{}ordinador. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_c_p_u_a5a255ca565df1c0bf6d3b712fe15e571}\label{class_c_p_u_a5a255ca565df1c0bf6d3b712fe15e571}} 
+\index{CPU@{CPU}!CPU@{CPU}}
+\index{CPU@{CPU}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{CPU()}{CPU()}}
+{\footnotesize\ttfamily C\+P\+U.\+C\+PU (\begin{DoxyParamCaption}\item[{String}]{nom,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+
+
+Crea un jugador controlat per ordinador. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em nom} & Nom de la \mbox{\hyperlink{class_c_p_u}{C\+PU}} \\
+\hline
+{\em color} & \mbox{\hyperlink{enum_color}{Color}} de les peces de la \mbox{\hyperlink{class_c_p_u}{C\+PU}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_c_p_u_aff729c30a92fafa53f538f7fc35bae60}\label{class_c_p_u_aff729c30a92fafa53f538f7fc35bae60}} 
+\index{CPU@{CPU}!jugar@{jugar}}
+\index{jugar@{jugar}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{jugar()}{jugar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} C\+P\+U.\+jugar (\begin{DoxyParamCaption}\item[{boolean}]{mode\+Text }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em mode\+Text} & Indica si el jugador juga en mode text. En aquest cas el jugador té opcions diferents a mode text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha demanat al jugador quina jugada vol fer i s\textquotesingle{}ha retornat una jugada que conté la seva desició. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+La \mbox{\hyperlink{class_jugada}{Jugada}} que s\textquotesingle{}ha fet. Null si en mode grafic s\textquotesingle{}ha demanat sortir. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+La \mbox{\hyperlink{class_jugada}{Jugada}} pot contenir un moviment, pot contenir una desició diferent de moure una peça com per exemple\+: petició de taules o rendició. També pot contenir una desició buida indicant que s\textquotesingle{}han desfet o refet jugades i pot ser null en cas que en mode grafic s\textquotesingle{}hagi sortit del menú. 
+\end{DoxyNote}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_abc782ec5dd8d62f265c6683b798e7311}{Jugador}}.
+
+\mbox{\Hypertarget{class_c_p_u_aac6f483e5b02f661514ee3c36add8fc4}\label{class_c_p_u_aac6f483e5b02f661514ee3c36add8fc4}} 
+\index{CPU@{CPU}!preguntarTaules@{preguntarTaules}}
+\index{preguntarTaules@{preguntarTaules}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{preguntarTaules()}{preguntarTaules()}}
+{\footnotesize\ttfamily void C\+P\+U.\+preguntar\+Taules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+El jugador sap que li han demanat taules. 
+\end{DoxyPostcond}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_a9a40261ca4b4785423c5aacdcd9319dc}{Jugador}}.
+
+\mbox{\Hypertarget{class_c_p_u_af37ae59955f52bc664bc2a2d16dd5f6f}\label{class_c_p_u_af37ae59955f52bc664bc2a2d16dd5f6f}} 
+\index{CPU@{CPU}!promocionar@{promocionar}}
+\index{promocionar@{promocionar}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{promocionar()}{promocionar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} C\+P\+U.\+promocionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Nota}
+En el cas de la \mbox{\hyperlink{class_c_p_u}{C\+PU}}, si no estem \char`\"{}enganxats\char`\"{} a un conjunt de jugades, triarem la peça amb més valor per promocionar. 
+
+Altres opcions vàlides\+: En cas de promoció sense estar \char`\"{}enganxats\char`\"{} mirar quina peça ens dóna més valor a llarg termini. 
+\end{DoxyNote}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_a6898dae2a8347e3137e706aed77d9278}{Jugador}}.
+
+\mbox{\Hypertarget{class_c_p_u_a27bf52c9f2742f842818d3698c17049d}\label{class_c_p_u_a27bf52c9f2742f842818d3698c17049d}} 
+\index{CPU@{CPU}!toString@{toString}}
+\index{toString@{toString}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String C\+P\+U.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+El nom del \mbox{\hyperlink{interface_jugador}{Jugador}}. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_a69e46d6ddf4397e9325d4cdec5bb4253}{Jugador}}.
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_c_p_u_a1e7473daad00be0d3cad997550493f7e}\label{class_c_p_u_a1e7473daad00be0d3cad997550493f7e}} 
+\index{CPU@{CPU}!color@{color}}
+\index{color@{color}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} C\+P\+U.\+color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{enum_color}{Color}} de les peces de la \mbox{\hyperlink{class_c_p_u}{C\+PU}}. \mbox{\Hypertarget{class_c_p_u_a4710cc8511a514f7d0e7ebe18554abe4}\label{class_c_p_u_a4710cc8511a514f7d0e7ebe18554abe4}} 
+\index{CPU@{CPU}!nom@{nom}}
+\index{nom@{nom}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily String C\+P\+U.\+nom\hspace{0.3cm}{\ttfamily [private]}}
+
+Nom de la \mbox{\hyperlink{class_c_p_u}{C\+PU}}. \mbox{\Hypertarget{class_c_p_u_a3021e77d97bb778ba77dc39d9476402d}\label{class_c_p_u_a3021e77d97bb778ba77dc39d9476402d}} 
+\index{CPU@{CPU}!taulesPendentsAcceptacio@{taulesPendentsAcceptacio}}
+\index{taulesPendentsAcceptacio@{taulesPendentsAcceptacio}!CPU@{CPU}}
+\doxysubsubsection{\texorpdfstring{taulesPendentsAcceptacio}{taulesPendentsAcceptacio}}
+{\footnotesize\ttfamily boolean C\+P\+U.\+taules\+Pendents\+Acceptacio\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica si el jugador té pendent decidir si accepta o no taules. 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_c_p_u_8java}{C\+P\+U.\+java}}\end{DoxyCompactItemize}

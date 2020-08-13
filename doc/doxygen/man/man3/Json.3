@@ -1,0 +1,527 @@
+.TH "Json" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Json \- Gestiona tota la lectura i la generació dels fitxers \fBJson\fP i la creació dels objectes que aquest està involucrat\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBJson\fP ()  throws IOException, ExcepcioG"
+.br
+.in -1c
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static \fBPartida\fP \fBcrearPartidaNova\fP (String fitxer)  throws IOException, ExcepcioG"
+.br
+.ti -1c
+.RI "static \fBPartida\fP \fBcrearPartidaComencada\fP (String fitxer)  throws IOException, ExcepcioG"
+.br
+.ti -1c
+.RI "static Collection< \fBPartida\fP > \fBcarregarConeixement\fP (String rutaFitxerConeixement)  throws IOException, ExcepcioG"
+.br
+.ti -1c
+.RI "static void \fBguardarPartida\fP (\fBPartida\fP p, String fitxer)  throws IOException, ExcepcioG"
+.br
+.in -1c
+.SS "Mètodes Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static String \fBgenerarJSONJugades\fP (\fBPartida\fP p)"
+.br
+.ti -1c
+.RI "static JSONArray \fBgenerarPosIni\fP (\fBPartida\fP p, \fBColor\fP col)"
+.br
+.ti -1c
+.RI "static JSONArray \fBgenerarTiradesPartida\fP (\fBPartida\fP p)"
+.br
+.ti -1c
+.RI "static String \fBgenerarStringResultatPartida\fP (\fBPartida\fP p)"
+.br
+.ti -1c
+.RI "static String \fBgenerarStringResultatJugada\fP (\fBJugada\fP j)"
+.br
+.ti -1c
+.RI "static void \fBcomprobarMidaTauler\fP (int fil, int col)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "static JSONObject \fBlecturaFitxers\fP (String fitxer, boolean esJugades)  throws IOException, ExcepcioG"
+.br
+.ti -1c
+.RI "static boolean \fBcomprovarFitxerJugades\fP (JSONObject obj)"
+.br
+.ti -1c
+.RI "static boolean \fBcomprovarFitxerRegles\fP (JSONObject obj)"
+.br
+.ti -1c
+.RI "static boolean \fBcomprovarFitxerConeixement\fP (JSONObject obj)"
+.br
+.ti -1c
+.RI "static int \fBlecturaEnter\fP (JSONObject obj, String nom)"
+.br
+.ti -1c
+.RI "static String \fBlecturaString\fP (JSONObject obj, String nom)"
+.br
+.ti -1c
+.RI "static \fBMoviment\fP \fBtraduirMoviment\fP (ArrayList< String > mov, boolean inicial)  throws IllegalArgumentException "
+.br
+.ti -1c
+.RI "static void \fBlecturaPeces\fP (JSONObject obj, HashMap< String, \fBTipusPeca\fP > tipus)  throws ExcepcioG "
+.br
+.ti -1c
+.RI "static void \fBlecturaMovimentsPeca\fP (\fBTipusPeca\fP pecaTmp, JSONObject obj, String nom, boolean inicial)"
+.br
+.ti -1c
+.RI "static void \fBlecturaEnrocs\fP (HashMap< String, \fBTipusPeca\fP > tipus, JSONObject obj)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "static void \fBlecturaPosicions\fP (JSONObject obj, \fBTauler\fP t, HashMap< String, \fBTipusPeca\fP > tipus, int nFiles, int nCols)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "static void \fBlecturaPosicionsRegles\fP (JSONObject obj, String nom, \fBTauler\fP t, HashMap< String, \fBTipusPeca\fP > tipus, \fBColor\fP color)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "static void \fBlecturaTirades\fP (JSONObject obj, ArrayList< \fBJugada\fP > j, HashMap< String, \fBTipusPeca\fP > tipus)  throws ExcepcioG"
+.br
+.ti -1c
+.RI "static boolean \fBcomprovarTirada\fP (JSONObject obj)"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Gestiona tota la lectura i la generació dels fitxers \fBJson\fP i la creació dels objectes que aquest està involucrat\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Eloi Quintana 
+.PP
+u1963141 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Json\&.Json () throws IOException, \fBExcepcioG\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+- @comment Constructor Constructor buid 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIOException\fP En la lectura del fitxxer 
+.br
+\fI\fBExcepcioG\fP\fP en diversos casos 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "static Collection<\fBPartida\fP> Json\&.carregarConeixement (String rutaFitxerConeixement) throws IOException, \fBExcepcioG\fP\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+donat un fitxr s'ha llegit i retornat una Array de HasMap<String tauler, Tauler t> 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIrutaFitxerConeixement\fP ruta del fitxer de coneixement 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+una Collection de partides aplicades contingudes al fitxer de la rutaFitxerConeixement 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIjava\&.io\&.IOException\fP 
+.br
+\fI\fBExcepcioG\fP\fP 
+.RE
+.PP
+
+.SS "static void Json\&.comprobarMidaTauler (int fil, int col) throws \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+fil i col > 0 @Post S'ha comprobat que fil i col esta disns els paràmetres establerts 
+.RE
+.PP
+
+.SS "static boolean Json\&.comprovarFitxerConeixement (JSONObject obj)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post Ha coprovat que existeixen tots els objectes a l'objecte d'entrada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte a comprovar @Return True si conte els objectes especificats, false altrament 
+.RE
+.PP
+
+.SS "static boolean Json\&.comprovarFitxerJugades (JSONObject obj)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post Ha coprovat que existeixen tots els objectes a l'objecte d'entrada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte a comprovar @Return True si conte els objectes especificats, false altrament 
+.RE
+.PP
+
+.SS "static boolean Json\&.comprovarFitxerRegles (JSONObject obj)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post Ha coprovat que existeixen tots els objectes a l'objecte d'entrada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte a comprovar @Return True si conte els objectes especificats, false altrament 
+.RE
+.PP
+
+.SS "static boolean Json\&.comprovarTirada (JSONObject obj)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post Ha coprovat que existeixen tots els objectes a l'objecte d'entrada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte a comprovar @Return True si conte els objectes especificats, false altrament 
+.RE
+.PP
+
+.SS "static \fBPartida\fP Json\&.crearPartidaComencada (String fitxer) throws IOException, \fBExcepcioG\fP\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha creat una nova partida a partir de les dades del fitxer amb jugades introduïdes\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Es retorna \fBPartida\fP 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfitxer\fP ruta del fitxer de relges 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIjava\&.io\&.IOException\fP 
+.br
+\fI\fBExcepcioG\fP\fP 
+.RE
+.PP
+
+.SS "static \fBPartida\fP Json\&.crearPartidaNova (String fitxer) throws IOException, \fBExcepcioG\fP\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha creat una nova partida a partir de les dades del fitxer\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+partida Es retorna la \fBPartida\fP creada 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfitxer\fP ruta del fitxer de regles 
+.RE
+.PP
+
+.SS "static String Json\&.generarJSONJugades (\fBPartida\fP p)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post S'ha generat el contingut de un objecte JSON\&. @Return Objecte JSON 
+.RE
+.PP
+
+.SS "static JSONArray Json\&.generarPosIni (\fBPartida\fP p, \fBColor\fP col)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'ha generat l'array de posicions inicials de la partida p del color col\&. @Return Objecte array JSON 
+.RE
+.PP
+
+.SS "static String Json\&.generarStringResultatJugada (\fBJugada\fP j)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'ha generat un string amb tots els resultats d'una partida @Return Es retorna l'string amb tots els resultats 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIj\fP jugada en la que s'aplicara el mètode 
+.RE
+.PP
+
+.SS "static String Json\&.generarStringResultatPartida (\fBPartida\fP p)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+p != null @Post s'ha generat un string amb el resultat de la partida si no es null @Return Es retorna l'string amb el resultat 
+.RE
+.PP
+
+.SS "static JSONArray Json\&.generarTiradesPartida (\fBPartida\fP p)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'ha generat l'array de posicions inicials de la partida p del color col\&. @Return Objecte array JSON 
+.RE
+.PP
+
+.SS "static void Json\&.guardarPartida (\fBPartida\fP p, String fitxer) throws IOException, \fBExcepcioG\fP\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post S'ha creat una nova partida a partir de les dades del fitxer amb jugades introduïdes\&. @Return Es retorna \fBPartida\fP 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIp\fP 
+.br
+\fIfitxer\fP 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIjava\&.io\&.IOException\fP 
+.RE
+.PP
+
+.SS "static void Json\&.lecturaEnrocs (HashMap< String, \fBTipusPeca\fP > tipus, JSONObject obj) throws \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+tipus ja s'ha inicialitzat\&. @Post s'han llegit tots els moviments enrocs de l'objecte json i s'han carregat al hasmap 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItipus\fP es el hasmap ja inicialitzat on es guarden els objecte llegits a obj 
+.br
+\fIobj\fP es el objecte on s'extreuen els moviments enrocs 
+.RE
+.PP
+
+.SS "static int Json\&.lecturaEnter (JSONObject obj, String nom)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post ha extret l'enter amb amb nom (nom) 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInom\fP Nom de l'objecte a extreure @Return l'enter amb nom (nom) 
+.RE
+.PP
+
+.SS "static JSONObject Json\&.lecturaFitxers (String fitxer, boolean esJugades) throws IOException, \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post S'ha classificat el fitxer d'entrada en el format que es, i s'ha transformat a objecte JSON\&. @Return Es retorna l'Objecte 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfitxer\fP ruta del fitxer de jugades o regles 
+.br
+\fIesJugades\fP indica si el fitxer es de jugades o de regles 
+.RE
+.PP
+
+.SS "static void Json\&.lecturaMovimentsPeca (\fBTipusPeca\fP pecaTmp, JSONObject obj, String nom, boolean inicial)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'han carregat tots els moviments de l'objecte json a \fBTipusPeca\fP 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpecaTmp\fP \fBTipusPeca\fP on es guardaran els moviments 
+.br
+\fIobj\fP Objecte json de on es llegeixen els moviment 
+.br
+\fIinicial\fP true si el moviment es de tipus inicial, false altrament 
+.RE
+.PP
+
+.SS "static void Json\&.lecturaPeces (JSONObject obj, HashMap< String, \fBTipusPeca\fP > tipus) throws \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post HashMap conte ara tots els tipus de peces de l'object obj\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte a extreure les peces\&. 
+.br
+\fItipus\fP Conte els Tipus de peces ordenats pel seu Nom\&. 
+.RE
+.PP
+
+.SS "static void Json\&.lecturaPosicions (JSONObject obj, \fBTauler\fP t, HashMap< String, \fBTipusPeca\fP > tipus, int nFiles, int nCols) throws \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post s'han llegit les posicions inicials del json obj 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte json on s'extreurean les posicions inicials 
+.br
+\fItipus\fP hashmap on es guarden tots els tipus de peca 
+.br
+\fInFiles\fP numero de files del tauler 
+.br
+\fInCols\fP numero de columnes del tauler 
+.RE
+.PP
+
+.SS "static void Json\&.lecturaPosicionsRegles (JSONObject obj, String nom, \fBTauler\fP t, HashMap< String, \fBTipusPeca\fP > tipus, \fBColor\fP color) throws \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post S'ha classificat el fitxer d'entrada en el format que es, i s'ha transformat a objecte JSON\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte json on s'extreurean les posicions de les peces 
+.br
+\fInom\fP nom de l'objecte a extreure 
+.br
+\fIt\fP \fBTauler\fP on s'afegiran les peces en questio 
+.br
+\fItipus\fP index on es guarden tots els tipus de peces disponibles 
+.RE
+.PP
+
+.SS "static String Json\&.lecturaString (JSONObject obj, String nom)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post ha extret l'String amb amb nom (nom) 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInom\fP Nom de l'objecte a extreure @Return l'String amb nom (nom) 
+.RE
+.PP
+
+.SS "static void Json\&.lecturaTirades (JSONObject obj, ArrayList< \fBJugada\fP > j, HashMap< String, \fBTipusPeca\fP > tipus) throws \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+j ja inicialitzat\&. @Post S'han llegit totes les jugades del obj json\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIobj\fP Objecte json on s'extreurean les tirades o jugades 
+.br
+\fIj\fP index on es guardaran les jugades extretes 
+.RE
+.PP
+
+.SS "static \fBMoviment\fP Json\&.traduirMoviment (ArrayList< String > mov, boolean inicial) throws IllegalArgumentException\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post Ha traduit un arraylist de Strings a un tipus de \fBMoviment\fP 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImov\fP : ArrayList de String que conte els 4 paràmetres de moviment\&. 
+.br
+\fIinicial\fP : True si el moviment es inicial, false altrament\&. 
+.RE
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

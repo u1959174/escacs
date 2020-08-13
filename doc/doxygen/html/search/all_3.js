@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['deepcopy_72',['deepCopy',['../class_contadors.html#a3f86dd82c72dac83a6683942deec4ea7',1,'Contadors.deepCopy()'],['../class_peca.html#aea21bc011b1dfeecd8517f8c53c23da6',1,'Peca.deepCopy()'],['../class_tauler.html#a83013a8d97831b278431305dea132f7a',1,'Tauler.deepCopy()']]],
+  ['demanaraltres_73',['demanarAltres',['../class_joc_grafic.html#ab69220727200947d0a973e613956980f',1,'JocGrafic']]],
+  ['demanarjugadors_74',['demanarJugadors',['../class_joc_grafic.html#a14e6b8a1681d181541defea21b2aca95',1,'JocGrafic.demanarJugadors()'],['../class_joc_text.html#a0ff814417061ac59a3f9cf462aec4e7c',1,'JocText.demanarJugadors()']]],
+  ['demanartaules_75',['demanarTaules',['../class_huma.html#a206ec91cfb082a7ea2647ebaa472b4a2',1,'Huma']]],
+  ['desfer_76',['desfer',['../class_peca.html#a6237fed647e8bbd2c41908d677e8d2e8',1,'Peca']]],
+  ['desferjugada_77',['desferJugada',['../class_escacs.html#ae18895c68998b716cebe29d2cdad5fbb',1,'Escacs.desferJugada()'],['../class_huma.html#aecd8a0e14d22007e1f39ada7a4d407e7',1,'Huma.desferJugada()'],['../class_joc_grafic.html#a041439300aade2deae0f571f0222e7f6',1,'JocGrafic.desferJugada()'],['../class_joc_text.html#a12b81ace31d43b2305fe5b4b8f19fe35',1,'JocText.desferJugada()'],['../class_partida.html#a3e90b33d9c8522b8217ae6d3232e7159',1,'Partida.desferJugada()']]],
+  ['desferjugadafinal_78',['desferJugadaFinal',['../class_partida.html#aa4134ce7321653cd343956d3761b533c',1,'Partida']]],
+  ['desti_79',['desti',['../class_jugada.html#a4536bca6880b05f918a41168725b3fbe',1,'Jugada']]],
+  ['diguema_80',['diguemA',['../interface_moviment.html#aa11bb0c771e4be8571289a962bebf699',1,'Moviment.diguemA()'],['../class_moviment_combinat.html#ac5a9f04b4340eb003f3f0c2d5c276cd4',1,'MovimentCombinat.diguemA()'],['../class_moviment_diagonal.html#a5ec833b802ec4136dc5aaa18279980fc',1,'MovimentDiagonal.diguemA()'],['../class_moviment_especial.html#a793e4e6b559500bf95bc2330591543ab',1,'MovimentEspecial.diguemA()'],['../class_moviment_rectilini.html#aa39d4e0b4fb96f7f83ae7453be6a2179',1,'MovimentRectilini.diguemA()']]],
+  ['diguemb_81',['diguemB',['../interface_moviment.html#ae4894ae266575c53390205fc3abbc900',1,'Moviment.diguemB()'],['../class_moviment_combinat.html#ab9831c71df0b767f4168b7c3c2838656',1,'MovimentCombinat.diguemB()'],['../class_moviment_diagonal.html#aee3acd20d0f1f1f73e1c2583b176d5ab',1,'MovimentDiagonal.diguemB()'],['../class_moviment_especial.html#a7199eea7bce035df35b7c84b375a904a',1,'MovimentEspecial.diguemB()'],['../class_moviment_rectilini.html#a84fecf9785089fbd0771414fdaf31c6b',1,'MovimentRectilini.diguemB()']]],
+  ['diguemhoritzontal_82',['diguemHoritzontal',['../class_moviment_rectilini.html#ac96be9ff2ee3a189693bdbf6922d8f5d',1,'MovimentRectilini']]],
+  ['digueminicial_83',['diguemInicial',['../class_moviment_rectilini.html#a4559df568305a19bb584f22493f6cee3',1,'MovimentRectilini']]],
+  ['diguemmatar_84',['diguemMatar',['../class_moviment_rectilini.html#adb69fc1ceaa405b4017955afe4235344',1,'MovimentRectilini']]],
+  ['diguemnom_85',['diguemNom',['../class_tipus_peca.html#a9f44b89813c6e7ca36e398ef47dc067f',1,'TipusPeca']]],
+  ['diguempromocio_86',['diguemPromocio',['../class_tipus_peca.html#a815c4e8a201e24c05e7d53f9286bf36d',1,'TipusPeca']]],
+  ['diguemrutablanca_87',['diguemRutaBlanca',['../class_tipus_peca.html#ae08eccf1f28f51e85810d273617dd918',1,'TipusPeca']]],
+  ['diguemrutanegra_88',['diguemRutaNegra',['../class_tipus_peca.html#a42bc6855e8bd2fa13adbbb529af90aef',1,'TipusPeca']]],
+  ['diguemsaltar_89',['diguemSaltar',['../interface_moviment.html#a6588478cb741e56193ffb19b9726c08a',1,'Moviment.diguemSaltar()'],['../class_moviment_combinat.html#ac18119035fbb14c29f782bc70479ba84',1,'MovimentCombinat.diguemSaltar()'],['../class_moviment_diagonal.html#a0a92a47ababac4a2a1b28d983ec2ce03',1,'MovimentDiagonal.diguemSaltar()'],['../class_moviment_especial.html#abba5c46b90a2d10ccbf6e65b36f8bfd3',1,'MovimentEspecial.diguemSaltar()'],['../class_moviment_rectilini.html#a8e4e42a10220f4d58c08d7c1c299bfa3',1,'MovimentRectilini.diguemSaltar()']]],
+  ['diguemsimbol_90',['diguemSimbol',['../class_tipus_peca.html#a683b8143030fa8ccb8c9480e53992a9a',1,'TipusPeca']]],
+  ['diguemvalor_91',['diguemValor',['../class_tipus_peca.html#ac960ad3bb1f664cff899adb988db4d9f',1,'TipusPeca']]],
+  ['dimensions_92',['dimensions',['../class_partida.html#aa316e0ebfbdd331a4a13044dc805be58',1,'Partida.dimensions()'],['../class_tauler.html#a8912aa8474c11e2425b8c6a54dd8882b',1,'Tauler.dimensions()']]],
+  ['dinstauler_93',['dinsTauler',['../class_tauler.html#a263b1121064bd079c0000e946d0dd8aa',1,'Tauler']]],
+  ['distancia_94',['distancia',['../class_moviment_diagonal.html#a772c718364c872b4789483b138fd4db9',1,'MovimentDiagonal.distancia()'],['../class_moviment_rectilini.html#ac094c2b4e2d9c3f99f458fa68ade20fc',1,'MovimentRectilini.distancia()']]],
+  ['donampeces_95',['donamPeces',['../class_tauler.html#ae349247a3e51ac2c9fae204d00225f68',1,'Tauler']]],
+  ['dreta_96',['dreta',['../class_moviment_diagonal.html#a151a1fb3245547bb3a0482be992d3755',1,'MovimentDiagonal']]]
+];

@@ -1,0 +1,864 @@
+.TH "Tauler" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Tauler \- Classe que representa un tauler d'\fBEscacs\fP\&. Contenidor de Caselles\&. Conté alguns mètodes de suport relacionats amb el tauler\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBTauler\fP (int \fBfiles\fP, int \fBcolumnes\fP)"
+.br
+.ti -1c
+.RI "void \fBafegirPeca\fP (\fBPosicio\fP pos, \fBPeca\fP peca)"
+.br
+.ti -1c
+.RI "\fBPair\fP< \fBPosicio\fP, \fBPosicio\fP > \fBcalcularEnrroc\fP (\fBPosicio\fP posInicialA, \fBPosicio\fP posInicialB)"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBcanviarPerspectiva\fP ()"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBdeepCopy\fP ()"
+.br
+.ti -1c
+.RI "\fBPair\fP< Integer, Integer > \fBdimensions\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBdinsTauler\fP (\fBPosicio\fP pos)"
+.br
+.ti -1c
+.RI "Collection< \fBPeca\fP > \fBdonamPeces\fP (\fBColor\fP colorPeces)"
+.br
+.ti -1c
+.RI "void \fBeliminarPeca\fP (\fBPosicio\fP pos)"
+.br
+.ti -1c
+.RI "boolean \fBesFinal\fP (\fBPosicio\fP posicioAComprovar, \fBColor\fP color)"
+.br
+.ti -1c
+.RI "\fBEstatTauler\fP \fBestat\fP (\fBColor\fP torn)"
+.br
+.ti -1c
+.RI "int \fBevaluarTauler\fP ()"
+.br
+.RI "Evalua aquest tauler indicant la superioritat d'un jugador en vers l'altre\&. El valor absolut indica la superioritat i el signe a favor de quin jugador és aquesta\&. Positiu->Blanques, Negatiu->Negres\&. "
+.ti -1c
+.RI "Collection< \fBPair\fP< \fBPosicio\fP, \fBPeca\fP > > \fBpecesAlMig\fP (\fBPosicio\fP posInicial, \fBPosicio\fP posFinal, boolean filaPrimer, boolean incloureExtrems)"
+.br
+.ti -1c
+.RI "Collection< \fBPair\fP< \fBPosicio\fP, \fBPeca\fP > > \fBpecesAlMigColorConcret\fP (\fBPosicio\fP posInicial, \fBPosicio\fP posFinal, boolean filaPrimer, \fBColor\fP colorAComprovar)"
+.br
+.ti -1c
+.RI "Collection< \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > > > \fBpossiblesMovimentsJugador\fP (\fBColor\fP colorJugador)"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBtensPeca\fP (\fBPosicio\fP pos)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Atributs de Paquet"
+
+.in +1c
+.ti -1c
+.RI "\fBelse\fP"
+.br
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "void \fBactualitzarAmenaces\fP (\fBColor\fP peces)"
+.br
+.ti -1c
+.RI "void \fBafegirIndex\fP (\fBPeca\fP peca)"
+.br
+.ti -1c
+.RI "void \fBborrarIndex\fP (\fBPeca\fP pecaAEliminar)"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBbuscarPeca\fP (String nomPeca, \fBColor\fP color)"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBcalcularPosicioCanviPrespectiva\fP (\fBPeca\fP pecaAct)"
+.br
+.ti -1c
+.RI "Collection< \fBPosicio\fP > \fBcasellesEntrePosicions\fP (\fBPosicio\fP posInicial, \fBPosicio\fP posFinal, boolean filaPrimer)"
+.br
+.ti -1c
+.RI "void \fBcasellesEntrePosicionsDiagonals\fP (Collection< \fBPosicio\fP > res, \fBPosicio\fP posInicial, \fBPosicio\fP posFinal)"
+.br
+.ti -1c
+.RI "void \fBcasellesEntrePosicionsRectilinies\fP (Collection< \fBPosicio\fP > res, \fBPosicio\fP posInicial, \fBPosicio\fP posFinal)"
+.br
+.ti -1c
+.RI "boolean \fBhiHaEscac\fP (\fBColor\fP colorRei)"
+.br
+.ti -1c
+.RI "boolean \fBhiHaEscacIMat\fP (\fBColor\fP colorRei)"
+.br
+.ti -1c
+.RI "boolean \fBhiHaJugadaQueEvitaMat\fP (\fBColor\fP colorRei)"
+.br
+.ti -1c
+.RI "boolean \fBhiHaMovimentValid\fP (\fBColor\fP torn)"
+.br
+.ti -1c
+.RI "boolean \fBhiHaTaulesPerOfegat\fP (\fBColor\fP torn)"
+.br
+.ti -1c
+.RI "Collection< \fBPeca\fP > \fBpecesAtacants\fP (\fBPosicio\fP objectiu, \fBColor\fP colorAmenaca)"
+.br
+.ti -1c
+.RI "Collection< \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > > \fBpossiblesMovimentsValids\fP (\fBPeca\fP peca)"
+.br
+.ti -1c
+.RI "boolean \fBreiTeMovimentSenseEscac\fP (\fBPosicio\fP posRei)"
+.br
+.ti -1c
+.RI "boolean \fBsimularMoviment\fP (\fBPosicio\fP peca, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > moviment)"
+.br
+.ti -1c
+.RI "int \fBvalorarPosicioRei\fP (\fBPosicio\fP posRei)"
+.br
+.RI "Donada la columna on està el rei, calcula el valor que té tenir-lo en aquesta posició\&. Es valor molt més tenir-lo als extrems del tauler\&. "
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "ArrayList< \fBPair\fP< \fBPeca\fP, \fBMoviment\fP > > \fBatacantsAlReiBlanc\fP"
+.br
+.ti -1c
+.RI "ArrayList< \fBPair\fP< \fBPeca\fP, \fBMoviment\fP > > \fBatacantsAlReiNegre\fP"
+.br
+.ti -1c
+.RI "ArrayList< ArrayList< \fBCasella\fP > > \fBcaselles\fP"
+.br
+.ti -1c
+.RI "int \fBcolumnes\fP"
+.br
+.ti -1c
+.RI "int \fBfiles\fP"
+.br
+.ti -1c
+.RI "HashMap< String, List< \fBPeca\fP > > \fBindexBlanques\fP"
+.br
+.ti -1c
+.RI "HashMap< String, List< \fBPeca\fP > > \fBindexNegres\fP"
+.br
+.ti -1c
+.RI "ArrayList< \fBPosicio\fP > \fBtaulerAmenacesBlanques\fP"
+.br
+.ti -1c
+.RI "ArrayList< \fBPosicio\fP > \fBtaulerAmenacesNegres\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe que representa un tauler d'\fBEscacs\fP\&. Contenidor de Caselles\&. Conté alguns mètodes de suport relacionats amb el tauler\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Tauler\&.Tauler (int files, int columnes)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea el tauler a partir del nombre de files i columnes que ha de tenir\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfiles\fP Files del tauler 
+.br
+\fIcolumnes\fP Columnes del tauler 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "void Tauler\&.actualitzarAmenaces (\fBColor\fP peces)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+el rei rival està al tauler\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha actualitzat el conjunt de posicions amenaçades per les peces del \fBColor\fP peces i s'ha actualitzat el conjunt de peces que ataquen al rei rival\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpeces\fP \fBColor\fP de les peces de les quals s'han d'actualitzar les posicions amenaçades\&. 
+.RE
+.PP
+
+.SS "void Tauler\&.afegirIndex (\fBPeca\fP peca)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+\fBPeca\fP != null\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha afegit la peca als índexs\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpeca\fP \fBPeca\fP a afegir als índexs\&. 
+.RE
+.PP
+
+.SS "void Tauler\&.afegirPeca (\fBPosicio\fP pos, \fBPeca\fP peca)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+La \fBPosicio\fP pos existeix al tauler\&. No pot haver-hi al tauler cap referència a la mateixa peça que es vol afegir\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha afegit la peça del tauler\&. Si ja hi havia cap peça a aquella \fBPosicio\fP s'ha sobreescrit\&. La peça afegida sap a quin tauler està i a quina posició d'aquest tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpos\fP \fBPosicio\fP on s'afegirà la peça\&. 
+.br
+\fIpeca\fP peça que s'afegira\&. 
+.RE
+.PP
+
+.SS "void Tauler\&.borrarIndex (\fBPeca\fP pecaAEliminar)\fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha borrat la \fBPeca\fP dels índexs 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpecaAEliminar\fP \fBPeca\fP a eliminar dels índexs\&. 
+.RE
+.PP
+
+.SS "\fBPosicio\fP Tauler\&.buscarPeca (String nomPeca, \fBColor\fP color)\fC [private]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInomPeca\fP Nom de la peça a buscar 
+.br
+\fIcolor\fP \fBColor\fP de la peça a buscar 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La primera posicio trobada d'una casella que conté una peça de nom 'nomPeca'\&. Si no es troba retorna null; 
+.RE
+.PP
+
+.SS "\fBPair\fP<\fBPosicio\fP,\fBPosicio\fP> Tauler\&.calcularEnrroc (\fBPosicio\fP posInicialA, \fBPosicio\fP posInicialB)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+posInicialA i posInicialB són dues posicions diferents que fan referencia a dues Peces diferents al tauler\&. Les dues peces estan en aquest tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposInicialA\fP \fBPosicio\fP actual/inicial de la peça A de l'enrroc\&. 
+.br
+\fIposInicialB\fP \fBPosicio\fP actual/inicial de la peça B de l'enrroc\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un pair de Posicions amb les posicions de destí que hauríen de prendre les peces després d'un teoric enrroc\&. Si l'enrroc no és vàlid segons els moviements dels tipus es retorna null\&. First->posFinalA, Second->posFinalB\&. 
+.RE
+.PP
+
+.SS "\fBPosicio\fP Tauler\&.calcularPosicioCanviPrespectiva (\fBPeca\fP pecaAct)\fC [private]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpecaAct\fP \fBPeca\fP sobre la que s'aplicarà el calcul de la nova posició 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La posicio a la que hauria d'anar la pecaAct si aquesta es canvies de prespectiva tenint en compte les dimensions d'aquest tauler\&. 
+.RE
+.PP
+
+.SS "\fBTauler\fP Tauler\&.canviarPerspectiva ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Una copia profunda d'aquest tauler s'hi ha aplicat un eix de simetria horitzontal\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+No es té en compte que el rei i la reina estan a la mateixa columna\&. 
+.RE
+.PP
+
+.SS "Collection<\fBPosicio\fP> Tauler\&.casellesEntrePosicions (\fBPosicio\fP posInicial, \fBPosicio\fP posFinal, boolean filaPrimer)\fC [private]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposInicial\fP \fBPosicio\fP inicial del moviment 
+.br
+\fIposFinal\fP Posicion final del moviment 
+.br
+\fIfilaPrimer\fP En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El conjunt de caselles entre les dues posicions(inicial i final incloses)\&. 
+.RE
+.PP
+
+.SS "void Tauler\&.casellesEntrePosicionsDiagonals (Collection< \fBPosicio\fP > res, \fBPosicio\fP posInicial, \fBPosicio\fP posFinal)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El desplaçament ha de ser diagonal\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'actualitza res amb les caselles que hi ha en el rang diagonal (posInicial, posFinal] 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIres\fP Conjunt de posicions del tauler que hi ha entre les dues posicions inicial i final 
+.br
+\fIposInicial\fP \fBPosicio\fP inicial del moviment 
+.br
+\fIposFinal\fP \fBPosicio\fP final del moviment 
+.RE
+.PP
+
+.SS "void Tauler\&.casellesEntrePosicionsRectilinies (Collection< \fBPosicio\fP > res, \fBPosicio\fP posInicial, \fBPosicio\fP posFinal)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+El desplaçament ha de ser rectilini\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'actualitza res amb les caselles que hi ha en el rang rectilini (posInicial, posFinal]\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIres\fP Conjunt de posicions del tauler que hi ha entre les dues posicions inicial i final\&. 
+.br
+\fIposInicial\fP \fBPosicio\fP inicial del moviment\&. 
+.br
+\fIposFinal\fP \fBPosicio\fP final del moviment\&. 
+.RE
+.PP
+
+.SS "\fBTauler\fP Tauler\&.deepCopy ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+original != null\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una ref a una copia del tauler\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Respecte les estructures internes només s'en copien els índexs\&. Les altres es recalculen cada cop que es pregunta l'estat del tauler i per tant, no cal\&. 
+.RE
+.PP
+
+.SS "\fBPair\fP<Integer,Integer> Tauler\&.dimensions ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+: S'ha inicialitzat el \fBTauler\fP 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+: Un pair amb les dimensions first->columnes, seccond->files\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.dinsTauler (\fBPosicio\fP pos)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpos\fP Posició que es comprova\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleaà que serà true si pos es dins el tauler i false altrament 
+.RE
+.PP
+
+.SS "Collection<\fBPeca\fP> Tauler\&.donamPeces (\fBColor\fP colorPeces)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorPeces\fP \fBColor\fP de les peces que es consulten\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una coleccio de totes les peces del colorPeces que conté el tauler\&. 
+.RE
+.PP
+
+.SS "void Tauler\&.eliminarPeca (\fBPosicio\fP pos)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+La \fBPosicio\fP existeix al tauler\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha eliminat la peça del tauler\&. Si no hi havia cap peça en aquella \fBPosicio\fP no s'ha modificat\&. La peça ja no sap on es\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpos\fP \fBPosicio\fP on s'eliminarà la peça\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.esFinal (\fBPosicio\fP posicioAComprovar, \fBColor\fP color)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposicioAComprovar\fP Posició que es comprovarà\&. 
+.br
+\fIcolor\fP \fBColor\fP que s'agafarà de referència a la comprovació\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+un booleà que indicarà si la posició està al la última fila del tauler tenint en compte la prespectiva de cada jugador\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Prespectiva: En la prespectiva de les negres l'última fila serà 0 mentre que per les blanques l'última serà la més gran\&. 
+.RE
+.PP
+
+.SS "\fBEstatTauler\fP Tauler\&.estat (\fBColor\fP torn)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+torn El color torn ha de ser el de l'últim jugador que ha fet una jugada\&. Aquesta jugada ha d'haver sigut ja aplicada al tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItorn\fP \fBColor\fP del jugador que ACABA de fer el torn\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un \fBEstatTauler\fP amb la informació de l'estat del tauler\&. Fent referència a qui acaba de jugar\&. Per exemple si tenim un escac, aquest l'ha provocat el jugador de color 'torn'\&. 
+.RE
+.PP
+
+.SS "int Tauler\&.evaluarTauler ()"
+
+.PP
+Evalua aquest tauler indicant la superioritat d'un jugador en vers l'altre\&. El valor absolut indica la superioritat i el signe a favor de quin jugador és aquesta\&. Positiu->Blanques, Negatiu->Negres\&. 
+.PP
+\fBPostcondició\fP
+.RS 4
+Es garanteix que l'estat del tauler no ha canviat\&. S'ha retornat el valor de l'evaluació\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Per fer aquesta evaluació s'han utilitzat diversos factors com la protecció del rei, el control del centre i desenvolupament així com les peces restants i el seu valor\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.hiHaEscac (\fBColor\fP colorRei)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha el rei del colorRei al tauler\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha actualitzat el conjunt de posicions amenaçades pel rival de colorRei i s'ha retornat un booleà en funció de si el Rei de colorRei està en escac\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorRei\fP \fBColor\fP color del rei que podria estar amenaçat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que diu si el rei de colorRei està en escac\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.hiHaEscacIMat (\fBColor\fP colorRei)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha el rei del color colorRei al tauler\&. S'ha comprovat que el rei colorRei està en escac\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha retornat un booleà en funció de si el Rei de colorRei està en escac i mat\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorRei\fP \fBColor\fP color del rei que podria estar en mat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que diu si el rei de colorRei està en escac i mat\&. 
+.RE
+.PP
+\fBVersió\fP
+.RS 4
+1\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.hiHaJugadaQueEvitaMat (\fBColor\fP colorRei)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+el Rei de colorRei està en escac i està al tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorRei\fP \fBColor\fP del rei que esta en escac\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que diu si s'ha trobat, o no, una jugada que evitaria el mat\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.hiHaMovimentValid (\fBColor\fP torn)\fC [private]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItorn\fP \fBColor\fP de qui té el torn i pot estar ofegat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+true si alguna peça de color torn pot fer algún movment vàlid\&. Altrament false\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.hiHaTaulesPerOfegat (\fBColor\fP torn)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha el rei del color contrari al color torn al tauler\&. S'han comprobat que no hi ha escac al rival de torn\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItorn\fP \fBColor\fP del jugador que ha fet la última jugada i que podria provocar l'afogat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que serà true si el jugador que no té el torn, està afogat\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Com diu el '@param torn', cal que la jugada que hauria de provocar l'ofegat s'hagi fet ja per comprovar si ara el rei rival ha quedat ofegat\&. 
+.RE
+.PP
+
+.SS "Collection<\fBPair\fP<\fBPosicio\fP,\fBPeca\fP> > Tauler\&.pecesAlMig (\fBPosicio\fP posInicial, \fBPosicio\fP posFinal, boolean filaPrimer, boolean incloureExtrems)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+posInicial i posFinal != null i dins el tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposInicial\fP Posició inicial a partir de la que es fa el càlcul\&. 
+.br
+\fIposFinal\fP Posició final a partir de la que es fa el càlcul\&. 
+.br
+\fIfilaPrimer\fP En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no\&. Altrament no es fa servir i es pot deixar qualsevol valor booleà\&. 
+.br
+\fIincloureExtrems\fP Si és true s'inclouran a la consulta les posicions Inicial i Final, altrament aquestes no es comprovaran 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una colecció de \fBPair\fP de totes les posicions entre posInicial i posFinal(incloses o no en funcio del parametre incloureExtrems) que estiguin ocupades per una \fBPeca\fP juntament amb aquesta última\&. First ->\fBPosicio\fP, Second -> \fBPeca\fP 
+.RE
+.PP
+
+.SS "Collection<\fBPair\fP<\fBPosicio\fP,\fBPeca\fP> > Tauler\&.pecesAlMigColorConcret (\fBPosicio\fP posInicial, \fBPosicio\fP posFinal, boolean filaPrimer, \fBColor\fP colorAComprovar)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+posInicial i posFinal != null i dins el tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposInicial\fP Posició inicial a partir de la que es fa el càlcul\&. 
+.br
+\fIposFinal\fP Posició final a partir de la que es fa el càlcul\&. 
+.br
+\fIfilaPrimer\fP En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no\&. Altrament no es fa servir i es pot deixar qualsevol valor booleà\&. 
+.br
+\fIcolorAComprovar\fP \fBColor\fP que han de tenir les peces\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una colecció de \fBPair\fP de totes les posicions entre posInicial i posFinal(posInicial i posFinal incloses) que estiguin ocupades per una \fBPeca\fP del colorAComprovar juntament amb aquesta última\&. First ->\fBPosicio\fP, Second -> \fBPeca\fP 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+No conforndre amb PecesAlMig() que no té en compte el color\&. 
+.RE
+.PP
+
+.SS "Collection<\fBPeca\fP> Tauler\&.pecesAtacants (\fBPosicio\fP objectiu, \fBColor\fP colorAmenaca)\fC [private]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorAmenaca\fP \fBColor\fP de les peces que amenacen\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una col·lecció de Peces de colorAmenaca que poden matar a una \fBPeca\fP a la \fBPosicio\fP objectiu 
+.RE
+.PP
+
+.SS "Collection<\fBPair\fP<\fBPeca\fP,\fBPair\fP<\fBPosicio\fP,\fBMoviment\fP> > > Tauler\&.possiblesMovimentsJugador (\fBColor\fP colorJugador)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorJugador\fP \fBColor\fP del jugador que ha de moure 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un conjunt de moviments que pot fer el jugador i que poden no ser vàlids si deixen el rei en escac\&. El conjunt de moviments s'interpreta com first->peça que mou, Second->moviment que fa on second\&.first és el destí del moviment i second\&.second és el moviment aplicat per anar-hi\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+No confondre amb \fBpossiblesMovimentsValids(Peca)\fP que si que assegura la validesa total de cada moviment 
+.RE
+.PP
+
+.SS "Collection<\fBPair\fP<\fBPosicio\fP,\fBMoviment\fP> > Tauler\&.possiblesMovimentsValids (\fBPeca\fP peca)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+\fBPeca\fP està al tauler i coneix la seva posicio\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpeca\fP Peça que es vol comprovar\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un conjunt de posicions de possibles desplaçaments VALIDS(legal segons les regles dels escacs ) que pot fer la peça a posPeca en l'estat actual del tauler\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.reiTeMovimentSenseEscac (\fBPosicio\fP posRei)\fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+posRei és una Posició que fa referència a una casella que conté un Rei amenaçat\&. El tauler d'amenaces del rival està actualitzat\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposRei\fP Posició del rei amenaçat\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que ens informa si el rei que està en escac té algun moviment valid que evités l'escac\&. 
+.RE
+.PP
+
+.SS "boolean Tauler\&.simularMoviment (\fBPosicio\fP peca, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > moviment)\fC [private]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpeca\fP \fBPosicio\fP de le peça que farà el moviment 
+.br
+\fImoviment\fP Conjunt de \fBPosicio\fP desti i \fBMoviment\fP a aplicar a la simulacio 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que determina si el moviment és o no vàlid\&. 
+.RE
+.PP
+
+.SS "\fBPeca\fP Tauler\&.tensPeca (\fBPosicio\fP pos)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+La \fBPosicio\fP existeix al tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpos\fP \fBPosicio\fP on es fa la consulta 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La peça a la \fBPosicio\fP demanada\&. Si no hi ha peça es retorna null\&. 
+.RE
+.PP
+
+.SS "String Tauler\&.toString ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+: Mostra tot el tauler en un format comprensible\&. Es mostren les files i columnes així com la representació de cada peça al tauler\&. 
+.RE
+.PP
+
+.SS "int Tauler\&.valorarPosicioRei (\fBPosicio\fP posRei)\fC [private]\fP"
+
+.PP
+Donada la columna on està el rei, calcula el valor que té tenir-lo en aquesta posició\&. Es valor molt més tenir-lo als extrems del tauler\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposRei\fP \fBPosicio\fP on està el rei\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El valor que té tenir el rei en aquesta posició\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "ArrayList<\fBPair\fP<\fBPeca\fP,\fBMoviment\fP> > Tauler\&.atacantsAlReiBlanc\fC [private]\fP"
+Conjunt de parells de peces que en un estat del tauler(que pot no ser l'actual) amenacen al rei Blanc i el moviment que ho permet\&. 
+.SS "ArrayList<\fBPair\fP<\fBPeca\fP,\fBMoviment\fP> > Tauler\&.atacantsAlReiNegre\fC [private]\fP"
+Conjunt de parells de peces que en un estat del tauler(que pot no ser l'actual) amenacen al rei Negre i el moviment que ho permet\&. 
+.SS "ArrayList<ArrayList<\fBCasella\fP> > Tauler\&.caselles\fC [private]\fP"
+Caselles del tauler en format matriu\&. L'acces és caselles[fila][columna] La posició 0 del contenidor no es fa servir\&. 
+.SS "int Tauler\&.columnes\fC [private]\fP"
+Nombre de columnes del tauler 
+.SS "Tauler\&.else\fC [package]\fP"
+\fBValor inicial:\fP
+.PP
+.nf
+{
+            for(int i = 1; i < difFiles; i++) {
+                res\&.add(new Posicio(filaMesBaixa\&.fila()+i,filaMesBaixa\&.columna()+i));
+            }
+            res\&.add(posFinal)
+.fi
+.SS "int Tauler\&.files\fC [private]\fP"
+Nombre de files del tauler 
+.SS "HashMap<String,List<\fBPeca\fP> > Tauler\&.indexBlanques\fC [private]\fP"
+Index de les peces de color blanc\&. La clau és el nom del tipus de la peça ex 'REI' i el valor és una llista de les peces d'aquell color i tipus\&. 
+.SS "HashMap<String,List<\fBPeca\fP> > Tauler\&.indexNegres\fC [private]\fP"
+Index de les peces de color negre\&. La clau és el nom del tipus de la peça ex 'REI' i el valor és una llista de les peces d'aquell color i tipus\&. 
+.SS "ArrayList<\fBPosicio\fP> Tauler\&.taulerAmenacesBlanques\fC [private]\fP"
+Conjunt de posicions amenaçades per les peces blanques\&. Pot no estar actualitzat\&. 
+.SS "ArrayList<\fBPosicio\fP> Tauler\&.taulerAmenacesNegres\fC [private]\fP"
+Conjunt de posicions amenaçades per les peces negres\&. Pot no estar actualitzat\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

@@ -1,0 +1,208 @@
+.TH "Escacs" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Escacs \- Classe d'entrada al programa\&. Pregunta en quin mode es vol executar el joc: la versio gràfica o text/terminal\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static void \fBdesferJugada\fP (int numJugades)  throws IllegalArgumentException"
+.br
+.ti -1c
+.RI "static void \fBguardarPartida\fP ()"
+.br
+.ti -1c
+.RI "static void \fBmain\fP (String[] args)"
+.br
+.RI "Mètode d'entrada al programa\&. Demana en quin mode es vol executar el joc i l'executa\&. "
+.ti -1c
+.RI "static \fBTauler\fP \fBobtenirTauler\fP ()"
+.br
+.ti -1c
+.RI "static boolean \fBpotDesfer\fP ()"
+.br
+.ti -1c
+.RI "static boolean \fBpotRefer\fP ()"
+.br
+.ti -1c
+.RI "static \fBTipusPeca\fP \fBpromocionar\fP ()"
+.br
+.ti -1c
+.RI "static void \fBreferJugada\fP (int numJugades)  throws IllegalArgumentException"
+.br
+.ti -1c
+.RI "static ArrayList< \fBTipusPeca\fP > \fBtipusDisponibles\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static boolean \fBmode\fP = true"
+.br
+.RI "Booleà que indica quin mode s'ha inicialitzat\&. True-> Text, False->Grafic\&. Per defecte es deixa en mode terminal\&. "
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe d'entrada al programa\&. Pregunta en quin mode es vol executar el joc: la versio gràfica o text/terminal\&. 
+
+
+.PP
+\fBNota\fP
+.RS 4
+També conté els mètodes generals que tenen els dos modes per tal de 'generalitzar' els missatges(crides a mètodes) al mode\&. 
+.RE
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "static void Escacs\&.desferJugada (int numJugades) throws IllegalArgumentException\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Es poden desfer numJugades\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'han desfet numJugades\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInumJugades\fP Número de jugades que es volen desfer\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP Quan numJugades no és un número vàlid de jugades a desfer\&. 
+.RE
+.PP
+
+.SS "static void Escacs\&.guardarPartida ()\fC [static]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha guardat la \fBPartida\fP segons el format especificat als requeriments a la ruta escollida\&. També s'ha donat l'opcio de cancelar el guardat\&. 
+.RE
+.PP
+
+.SS "static void Escacs\&.main (String[] args)\fC [static]\fP"
+
+.PP
+Mètode d'entrada al programa\&. Demana en quin mode es vol executar el joc i l'executa\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIargs\fP Arguments passats per paràmetre\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha executat el programa en el mode seleccionat per terminal\&. 
+.RE
+.PP
+
+.SS "static \fBTauler\fP Escacs\&.obtenirTauler ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+El tauler actual sobre el que es fa la partida\&. 
+.RE
+.PP
+
+.SS "static boolean Escacs\&.potDesfer ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si es poden o no desfer jugades en aquest estat de la partida\&. 
+.RE
+.PP
+
+.SS "static boolean Escacs\&.potRefer ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si es poden o no refer jugades en aquest estat de la partida\&. 
+.RE
+.PP
+
+.SS "static \fBTipusPeca\fP Escacs\&.promocionar ()\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha alguna peça promocionable del jugador amb torn\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha preguntat al jugador amb torn a quina peça es vol promocionar\&. S'ha retornat el tipusPeca el qual el jugador ha escollit per fer la promoció\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El \fBTipusPeca\fP que ha triat el jugador que podria promocionar\&. Es garanteix que el tipus retornat no serà el REI\&. 
+.RE
+.PP
+
+.SS "static void Escacs\&.referJugada (int numJugades) throws IllegalArgumentException\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Es poden refer numJugades\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInumJugades\fP Número de jugades que es volen refer\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'han refet numJugades\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP Quan numJugades no és un número vàlid de jugades a refer\&. 
+.RE
+.PP
+
+.SS "static ArrayList<\fBTipusPeca\fP> Escacs\&.tipusDisponibles ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un conjunt de \fBTipusPeca\fP amb tots els \fBTipusPeca\fP en aquesta partida\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "boolean Escacs\&.mode = true\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Booleà que indica quin mode s'ha inicialitzat\&. True-> Text, False->Grafic\&. Per defecte es deixa en mode terminal\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

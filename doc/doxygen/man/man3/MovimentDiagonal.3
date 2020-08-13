@@ -1,0 +1,250 @@
+.TH "MovimentDiagonal" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MovimentDiagonal \- Implementació de \fBMoviment\fP per \fBMovimentDiagonal\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de \fBMoviment\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "Integer \fBdiguemSaltar\fP ()"
+.br
+.RI "Diu el valor de saltar\&. "
+.ti -1c
+.RI "\fBMovimentDiagonal\fP (String a, String b, String c, String d, boolean \fBinicial\fP)  throws IllegalArgumentException "
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "boolean \fBesMoviment\fP (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+.br
+.RI "Comprova si un desplaçament és el \fBMoviment\fP\&. "
+.ti -1c
+.RI "boolean \fBequals\fP (\fBMovimentDiagonal\fP mov)"
+.br
+.ti -1c
+.RI "String \fBdiguemA\fP ()"
+.br
+.RI "Traducció del paràmetre A\&. "
+.ti -1c
+.RI "String \fBdiguemB\fP ()"
+.br
+.RI "Traducció del paràmetre B\&. "
+.ti -1c
+.RI "boolean \fBesEnroc\fP ()"
+.br
+.RI "Diu si el \fBMoviment\fP és de tipus enroc\&. "
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBtraduirAB\fP (String a, String b)"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBinicial\fP"
+.br
+.RI "\fBMoviment\fP diagonal d'una peça\&. "
+.ti -1c
+.RI "int \fBdistancia\fP"
+.br
+.RI "Indica el límit de dstància del moviment, 0 si és infinit\&. "
+.ti -1c
+.RI "int \fBsentit\fP"
+.br
+.RI "Indica la direcció el sentit del moviment\&. 1 positiu, -1 negatiu i 0 en ambdos sentits respecte la A\&. "
+.ti -1c
+.RI "boolean \fBdreta\fP"
+.br
+.RI "Cert si la diagonal és dreta, fals és esquerra\&. "
+.ti -1c
+.RI "int \fBsaltar\fP"
+.br
+.RI "0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades "
+.ti -1c
+.RI "int \fBmatar\fP"
+.br
+.RI "0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment "
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Implementació de \fBMoviment\fP per \fBMovimentDiagonal\fP\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "MovimentDiagonal\&.MovimentDiagonal (String a, String b, String c, String d, boolean inicial) throws IllegalArgumentException"
+
+.PP
+Constructor\&. 
+.PP
+\fBPrecondició\fP
+.RS 4
+c i d són enters 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIa\fP Component A\&. 
+.br
+\fIb\fP Component B\&. 
+.br
+\fIc\fP Component C\&. 
+.br
+\fId\fP Component D\&. 
+.br
+\fIinicial\fP Indica si el moviment és inicial\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea un moviment de tipus diagonal\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP Quan no es compleix la pre\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "String MovimentDiagonal\&.diguemA ()"
+
+.PP
+Traducció del paràmetre A\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre A traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "String MovimentDiagonal\&.diguemB ()"
+
+.PP
+Traducció del paràmetre B\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre B traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "Integer MovimentDiagonal\&.diguemSaltar ()"
+
+.PP
+Diu el valor de saltar\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l'atribut\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentDiagonal\&.equals (\fBMovimentDiagonal\fP mov)"
+
+.SS "boolean MovimentDiagonal\&.esEnroc ()"
+
+.PP
+Diu si el \fBMoviment\fP és de tipus enroc\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el \fBMoviment\fP és enroc, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentDiagonal\&.esMoviment (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+
+.PP
+Comprova si un desplaçament és el \fBMoviment\fP\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP Posició d'origen\&. 
+.br
+\fIdesti\fP Posició destí\&. 
+.br
+\fIprimer\fP Indica si el el moviment és el primer de la partida\&. 
+.br
+\fIpeca_final\fP Referència al tipus de peça de la posició destí\&. 
+.br
+\fIpeca_mig\fP Indica si hi ha alguna peça en la trajectòria\&. 
+.br
+\fIexacte\fP Demanar si la distància ha de ser exacte\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna cert si amb origen-desti és compleix el moviment, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentDiagonal\&.traduirAB (String a, String b)\fC [private]\fP"
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "int MovimentDiagonal\&.distancia\fC [private]\fP"
+
+.PP
+Indica el límit de dstància del moviment, 0 si és infinit\&. 
+.SS "boolean MovimentDiagonal\&.dreta\fC [private]\fP"
+
+.PP
+Cert si la diagonal és dreta, fals és esquerra\&. 
+.SS "boolean MovimentDiagonal\&.inicial\fC [private]\fP"
+
+.PP
+\fBMoviment\fP diagonal d'una peça\&. Indica si el moviment és exclusivament inicial 
+.SS "int MovimentDiagonal\&.matar\fC [private]\fP"
+
+.PP
+0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment 
+.SS "int MovimentDiagonal\&.saltar\fC [private]\fP"
+
+.PP
+0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades 
+.SS "int MovimentDiagonal\&.sentit\fC [private]\fP"
+
+.PP
+Indica la direcció el sentit del moviment\&. 1 positiu, -1 negatiu i 0 en ambdos sentits respecte la A\&. 
+.PP
+\fBNota\fP
+.RS 4
+També pot ser 0 si el moviment és d'una distància determinada\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

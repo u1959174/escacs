@@ -1,0 +1,304 @@
+\hypertarget{class_posicio}{}\doxysection{Referència de la Classe Posicio}
+\label{class_posicio}\index{Posicio@{Posicio}}
+
+
+Classe que representa una posició d\textquotesingle{}un tauler d\textquotesingle{}escacs.  
+
+
+Diagrama d\textquotesingle{}Herència per a Posicio\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_posicio}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_posicio_ac3911cd6a78ff5608df2dd74a87c7758}{Posicio}} (char \mbox{\hyperlink{class_posicio_a4865d206ce5446cdf1e451d427e2a687}{columna}}, int \mbox{\hyperlink{class_posicio_ac0688dd9f92cba09b883816d48ea1eb4}{fila}})  throws Illegal\+Argument\+Exception
+\item 
+\mbox{\hyperlink{class_posicio_ac46714ae5476f52dd15889f82a089a3e}{Posicio}} (int \mbox{\hyperlink{class_posicio_ac0688dd9f92cba09b883816d48ea1eb4}{fila}}, int \mbox{\hyperlink{class_posicio_a4865d206ce5446cdf1e451d427e2a687}{columna}})
+\item 
+\mbox{\hyperlink{class_posicio_ac38dceeef1801e6f8f84cf5f5e38c953}{Posicio}} (\mbox{\hyperlink{class_posicio}{Posicio}} antiga, int desp\+Fila, int desp\+Columna)
+\item 
+\mbox{\hyperlink{class_posicio}{Posicio}} \mbox{\hyperlink{class_posicio_aa878255f8f52facbe983fffa4c868f11}{canvi\+Prespectiva}} (int files)
+\item 
+int \mbox{\hyperlink{class_posicio_ab2f1aceeab50511d62d7062542d405dc}{columna}} ()
+\item 
+int \mbox{\hyperlink{class_posicio_acf0007d402d368d7fe646096826a5d6d}{compare\+Columna}} (\mbox{\hyperlink{class_posicio}{Posicio}} o)
+\item 
+int \mbox{\hyperlink{class_posicio_a11da20d8161b0fcd6fef6071ee294c8e}{compare\+Fila}} (\mbox{\hyperlink{class_posicio}{Posicio}} o)
+\item 
+int \mbox{\hyperlink{class_posicio_a32c10a9021c636eee8dcbe85f348389a}{compare\+To}} (\mbox{\hyperlink{class_posicio}{Posicio}} o)
+\item 
+boolean \mbox{\hyperlink{class_posicio_aace143f99edb1146822d21ed40e9217d}{equals}} (Object o)
+\item 
+int \mbox{\hyperlink{class_posicio_a33a025eec6722559ace94e47091ad3d0}{fila}} ()
+\item 
+boolean \mbox{\hyperlink{class_posicio_a6c95ef50d4a271f1d428f978e5549347}{moviment\+Diagonal}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Final)
+\item 
+boolean \mbox{\hyperlink{class_posicio_a557b27c8228d0cbc5f9c1a2dcf79feeb}{moviment\+Rectilini}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Final)
+\item 
+void \mbox{\hyperlink{class_posicio_adea3cbe58da36877ef9a85159d2101bf}{swap}} (\mbox{\hyperlink{class_posicio}{Posicio}} o)
+\item 
+String \mbox{\hyperlink{class_posicio_aa150553319e5f09a7de09f7d0065b290}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_posicio_a4865d206ce5446cdf1e451d427e2a687}{columna}}
+\item 
+int \mbox{\hyperlink{class_posicio_ac0688dd9f92cba09b883816d48ea1eb4}{fila}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa una posició d\textquotesingle{}un tauler d\textquotesingle{}escacs. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_posicio_ac3911cd6a78ff5608df2dd74a87c7758}\label{class_posicio_ac3911cd6a78ff5608df2dd74a87c7758}} 
+\index{Posicio@{Posicio}!Posicio@{Posicio}}
+\index{Posicio@{Posicio}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{Posicio()}{Posicio()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Posicio.\+Posicio (\begin{DoxyParamCaption}\item[{char}]{columna,  }\item[{int}]{fila }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception}
+
+\begin{DoxyPostcond}{Postcondició}
+Crea una posició a partir de les seva notació algebraica. Més info\+: \href{https://www.ajedrez365.com/2007/10/la-notacin-de-las-partidas-de-ajedrez.html}{\texttt{ https\+://www.\+ajedrez365.\+com/2007/10/la-\/notacin-\/de-\/las-\/partidas-\/de-\/ajedrez.\+html}} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em fila} & Enter que representa la fila. \\
+\hline
+{\em columna} & Caràcter que representa la columna de la posició. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_posicio_ac46714ae5476f52dd15889f82a089a3e}\label{class_posicio_ac46714ae5476f52dd15889f82a089a3e}} 
+\index{Posicio@{Posicio}!Posicio@{Posicio}}
+\index{Posicio@{Posicio}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{Posicio()}{Posicio()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Posicio.\+Posicio (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{columna }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+Crea una posició a partir de les seves coordenades fila i columna. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em fila} & Fila en format enter \\
+\hline
+{\em columna} & Columna en format enter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_posicio_ac38dceeef1801e6f8f84cf5f5e38c953}\label{class_posicio_ac38dceeef1801e6f8f84cf5f5e38c953}} 
+\index{Posicio@{Posicio}!Posicio@{Posicio}}
+\index{Posicio@{Posicio}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{Posicio()}{Posicio()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Posicio.\+Posicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{antiga,  }\item[{int}]{desp\+Fila,  }\item[{int}]{desp\+Columna }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+Crea una nova Posició a partir d\textquotesingle{}una altre i un desplaçament. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em antiga} & Posició antiga/original a partir de la qual es crea la nova \\
+\hline
+{\em desp\+Fila} & Desplaçament de files. \\
+\hline
+{\em desp\+Columna} & Desplaçament de columnes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Els desplaçaments poden ser negatius per indicar que es redueix el valor de la coordenada a la nova Posició. 
+\end{DoxyNote}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_posicio_aa878255f8f52facbe983fffa4c868f11}\label{class_posicio_aa878255f8f52facbe983fffa4c868f11}} 
+\index{Posicio@{Posicio}!canviPrespectiva@{canviPrespectiva}}
+\index{canviPrespectiva@{canviPrespectiva}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{canviPrespectiva()}{canviPrespectiva()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_posicio}{Posicio}} Posicio.\+canvi\+Prespectiva (\begin{DoxyParamCaption}\item[{int}]{files }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em files} & Nombre de files del tauler. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat una copia d\textquotesingle{}aquesta \mbox{\hyperlink{class_posicio}{Posicio}} però canviada de prespectiva. Es garanteix que l\textquotesingle{}estat d\textquotesingle{}aquesta \mbox{\hyperlink{class_posicio}{Posicio}} no variarà. 
+\end{DoxyPostcond}
+\begin{DoxyNote}{Nota}
+Canviar de prespectiva vol dir que s\textquotesingle{}aplica un eix de simetria horitzontal. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_posicio_ab2f1aceeab50511d62d7062542d405dc}\label{class_posicio_ab2f1aceeab50511d62d7062542d405dc}} 
+\index{Posicio@{Posicio}!columna@{columna}}
+\index{columna@{columna}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{columna()}{columna()}}
+{\footnotesize\ttfamily int Posicio.\+columna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+La columna de la posició. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_posicio_acf0007d402d368d7fe646096826a5d6d}\label{class_posicio_acf0007d402d368d7fe646096826a5d6d}} 
+\index{Posicio@{Posicio}!compareColumna@{compareColumna}}
+\index{compareColumna@{compareColumna}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{compareColumna()}{compareColumna()}}
+{\footnotesize\ttfamily int Posicio.\+compare\+Columna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{o }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em o} & \mbox{\hyperlink{class_posicio}{Posicio}} amb la que es compararà. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un enter positiu, negatiu, o 0, en funció de si la columna d\textquotesingle{}aquest objecte és més gran, més petit o igual al passat per paràmetre \textquotesingle{}o\textquotesingle{}. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+No confondre amb el compare\+To. Aquest mètode només compara la columna dels objectes aixi doncs\+: a5 $<$ h5 i a2 == a3 (retorna 0). 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_posicio_a11da20d8161b0fcd6fef6071ee294c8e}\label{class_posicio_a11da20d8161b0fcd6fef6071ee294c8e}} 
+\index{Posicio@{Posicio}!compareFila@{compareFila}}
+\index{compareFila@{compareFila}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{compareFila()}{compareFila()}}
+{\footnotesize\ttfamily int Posicio.\+compare\+Fila (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{o }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em o} & \mbox{\hyperlink{class_posicio}{Posicio}} amb la que es compararà. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un enter positiu, negatiu, o 0, en funció de si la fila d\textquotesingle{}aquest objecte és més gran, més petit o igual al passat per paràmetre \textquotesingle{}o\textquotesingle{}. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+No confondre amb el compare\+To. Aquest mètode només compara la fila dels objectes aixi doncs\+: a5 == h5(retorna 0) i a2 $<$ a3. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_posicio_a32c10a9021c636eee8dcbe85f348389a}\label{class_posicio_a32c10a9021c636eee8dcbe85f348389a}} 
+\index{Posicio@{Posicio}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{compareTo()}{compareTo()}}
+{\footnotesize\ttfamily int Posicio.\+compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{o }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Nota}
+La comparació es fa primer en funcio de la fila i en cas de ser iguals en funció de la columna. 
+
+La ordenació, per tant, és de dalt a baix i de dreta a esquerra. 
+
+Exemples a1 $<$ a8, b5 $>$ a5, h3 == h3 (retorna 0) 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{Mireu també}
+Comparable. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Paràmetres}
+{\em o} & \mbox{\hyperlink{class_posicio}{Posicio}} amb la que es compararà \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_posicio_aace143f99edb1146822d21ed40e9217d}\label{class_posicio_aace143f99edb1146822d21ed40e9217d}} 
+\index{Posicio@{Posicio}!equals@{equals}}
+\index{equals@{equals}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean Posicio.\+equals (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+\+: Compara la fila i la columna entre this i o. Si son iguals retorna true, altrament false. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_posicio_a33a025eec6722559ace94e47091ad3d0}\label{class_posicio_a33a025eec6722559ace94e47091ad3d0}} 
+\index{Posicio@{Posicio}!fila@{fila}}
+\index{fila@{fila}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{fila()}{fila()}}
+{\footnotesize\ttfamily int Posicio.\+fila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+La fila de la posició. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_posicio_a6c95ef50d4a271f1d428f978e5549347}\label{class_posicio_a6c95ef50d4a271f1d428f978e5549347}} 
+\index{Posicio@{Posicio}!movimentDiagonal@{movimentDiagonal}}
+\index{movimentDiagonal@{movimentDiagonal}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{movimentDiagonal()}{movimentDiagonal()}}
+{\footnotesize\ttfamily boolean Posicio.\+moviment\+Diagonal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Final }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+pos\+Inicial i pos\+Final ! null 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Inicial} & Posició inicial a partir de la que es fa el càlcul. \\
+\hline
+{\em pos\+Final} & Posició final a partir de la que es fa el càlcul. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Si el desplaçament entre pos\+Inicial i pos\+Final és diagonal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_posicio_a557b27c8228d0cbc5f9c1a2dcf79feeb}\label{class_posicio_a557b27c8228d0cbc5f9c1a2dcf79feeb}} 
+\index{Posicio@{Posicio}!movimentRectilini@{movimentRectilini}}
+\index{movimentRectilini@{movimentRectilini}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{movimentRectilini()}{movimentRectilini()}}
+{\footnotesize\ttfamily boolean Posicio.\+moviment\+Rectilini (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Final }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+pos\+Inicial i pos\+Final ! null 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Inicial} & Posició inicial a partir de la que es fa el càlcul. \\
+\hline
+{\em pos\+Final} & Posició final a partir de la que es fa el càlcul. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Si el desplaçament entre pos\+Inicial i pos\+Final és rectilini 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_posicio_adea3cbe58da36877ef9a85159d2101bf}\label{class_posicio_adea3cbe58da36877ef9a85159d2101bf}} 
+\index{Posicio@{Posicio}!swap@{swap}}
+\index{swap@{swap}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void Posicio.\+swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{o }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+o != null. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em o} & \mbox{\hyperlink{class_posicio}{Posicio}} amb la que es canviarà. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}han intercanviat els valors entre this i o. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_posicio_aa150553319e5f09a7de09f7d0065b290}\label{class_posicio_aa150553319e5f09a7de09f7d0065b290}} 
+\index{Posicio@{Posicio}!toString@{toString}}
+\index{toString@{toString}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Posicio.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+La representació algebraica de la posició. Ex \char`\"{}a3\char`\"{} en format string. ~\newline
+ 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_posicio_a4865d206ce5446cdf1e451d427e2a687}\label{class_posicio_a4865d206ce5446cdf1e451d427e2a687}} 
+\index{Posicio@{Posicio}!columna@{columna}}
+\index{columna@{columna}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{columna}{columna}}
+{\footnotesize\ttfamily int Posicio.\+columna\hspace{0.3cm}{\ttfamily [private]}}
+
+Coordenades de la \mbox{\hyperlink{class_posicio}{Posicio}} \mbox{\Hypertarget{class_posicio_ac0688dd9f92cba09b883816d48ea1eb4}\label{class_posicio_ac0688dd9f92cba09b883816d48ea1eb4}} 
+\index{Posicio@{Posicio}!fila@{fila}}
+\index{fila@{fila}!Posicio@{Posicio}}
+\doxysubsubsection{\texorpdfstring{fila}{fila}}
+{\footnotesize\ttfamily int Posicio.\+fila\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_posicio_8java}{Posicio.\+java}}\end{DoxyCompactItemize}

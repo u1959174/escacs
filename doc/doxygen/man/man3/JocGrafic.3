@@ -1,0 +1,411 @@
+.TH "JocGrafic" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+JocGrafic \- Classe que gestiona la interfície gràfica del programa\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de Application\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit\fP ()  throws Exception "
+.br
+.ti -1c
+.RI "void \fBstart\fP (Stage primaryStage)"
+.br
+.in -1c
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String[] args)"
+.br
+.RI "Mètode d'entrada al programa\&. "
+.ti -1c
+.RI "static void \fBguardarPartida\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static boolean \fBpotDesfer\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static boolean \fBpotRefer\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static void \fBdesferJugada\fP (int numJugades)  throws IllegalArgumentException"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static void \fBreferJugada\fP (int numJugades)  throws IllegalArgumentException"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static \fBTipusPeca\fP \fBpromocionar\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static ArrayList< \fBTipusPeca\fP > \fBtipusDisponibles\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static \fBTauler\fP \fBobtenirTauler\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.in -1c
+.SS "Mètodes Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static Parent \fBcrearContingut\fP ()"
+.br
+.RI "Genera el contingut, rajoles i peces, a representar\&. "
+.ti -1c
+.RI "static \fBPecaGrafica\fP \fBcreaPeca\fP (\fBPeca\fP peca, int x, int y)"
+.br
+.RI "Crea la peca a representar\&. "
+.ti -1c
+.RI "static int \fBposTauler\fP (double pixel)"
+.br
+.ti -1c
+.RI "static boolean \fBaplicaMoviment\fP (\fBPosicio\fP origen, \fBPosicio\fP desti)"
+.br
+.RI "Aplica el moviment d'una peca\&. "
+.ti -1c
+.RI "static \fBJugada\fP \fBdemanarAltres\fP (\fBJugador\fP jugador)"
+.br
+.RI "Demana les opcions i actualitza el tauler grafic\&. "
+.ti -1c
+.RI "static int \fBinvertirY\fP (int n)"
+.br
+.RI "Inversió de coordenada en l'eix de les Y\&. "
+.ti -1c
+.RI "static void \fBmostrarEstatConsola\fP ()"
+.br
+.RI "Mostra l'estat de la partida grafica per consola\&. "
+.ti -1c
+.RI "static void \fBactualitzarTaulerGrafic\fP ()"
+.br
+.RI "Torna a generar el tauler gràfic\&. "
+.ti -1c
+.RI "static void \fBcarregarConeixement\fP (String rutaConeixement)  throws IOException, ExcepcioG "
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static void \fBnovaPartida\fP (String rutaFitxerConfig)  throws IOException, ExcepcioG "
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static void \fBcarregarPartida\fP (String rutaFitxerJugades)  throws IOException, ExcepcioG "
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static void \fBdemanarJugadors\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static boolean \fBgestorPartidaAcabada\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static void \fBinicialitzarDades\fP ()"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.in -1c
+.SS "Atributs Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static Group \fBrajoles\fP = new Group()"
+.br
+.RI "El conjunt de rajoles que s'han de representar\&. "
+.ti -1c
+.RI "static Group \fBpeces\fP = new Group()"
+.br
+.RI "El conjunt de peces que s'han de representar\&. "
+.ti -1c
+.RI "static int \fBcostatRajola\fP"
+.br
+.RI "El nombre de pixels que fa cada rajola de costat\&. "
+.ti -1c
+.RI "static \fBTauler\fP \fBtauler_actual\fP"
+.br
+.RI "El tauler actual que s'ha de representar\&. "
+.ti -1c
+.RI "static Stage \fBescenari\fP"
+.br
+.RI "L'escenari actual\&. "
+.ti -1c
+.RI "static \fBPartida\fP \fBpartida\fP"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static \fBJugador\fP \fBjugadorBlanques\fP"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.ti -1c
+.RI "static \fBJugador\fP \fBjugadorNegres\fP"
+.br
+.RI "Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. "
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe que gestiona la interfície gràfica del programa\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "static void JocGrafic\&.actualitzarTaulerGrafic ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Torna a generar el tauler gràfic\&. 
+.SS "static boolean JocGrafic\&.aplicaMoviment (\fBPosicio\fP origen, \fBPosicio\fP desti)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Aplica el moviment d'una peca\&. 
+.PP
+\fBNota\fP
+.RS 4
+En el cas de que el jugador actual sigui una \fBCPU\fP, farà el seu moviment\&. 
+.PP
+Si origen == desti s'obre el menu d'opcions extra per consola\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si s'ha fet un moviment, fals altrament\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP \fBPosicio\fP d'origen\&. 
+.br
+\fIdesti\fP \fBPosicio\fP de desti\&. 
+.RE
+.PP
+
+.SS "static void JocGrafic\&.carregarConeixement (String rutaConeixement) throws IOException, \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static void JocGrafic\&.carregarPartida (String rutaFitxerJugades) throws IOException, \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static \fBPecaGrafica\fP JocGrafic\&.creaPeca (\fBPeca\fP peca, int x, int y)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Crea la peca a representar\&. 
+.PP
+\fBPrecondició\fP
+.RS 4
+fons1\&.png i fons2\&.png existents\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La \fBPecaGrafica\fP amb les coordenades i peca real corresponents amb els gestors d'esdeveniments\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpeca\fP \fBPeca\fP real a representar\&. 
+.br
+\fIx\fP Coordenada x de la peca\&. 
+.br
+\fIy\fP Coordenada y de la peca\&. 
+.RE
+.PP
+
+.SS "static Parent JocGrafic\&.crearContingut ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Genera el contingut, rajoles i peces, a representar\&. 
+.PP
+\fBPrecondició\fP
+.RS 4
+fons1\&.png i fons2\&.png existents\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El contingut amb les rajoles i peces segons el tauler actual\&. 
+.RE
+.PP
+
+.SS "static \fBJugada\fP JocGrafic\&.demanarAltres (\fBJugador\fP jugador)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Demana les opcions i actualitza el tauler grafic\&. 
+.PP
+\fBNota\fP
+.RS 4
+Es pot acabar l'execució si s'ha acabat la partida\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIjugador\fP El jugador que demana les opcions\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La jugada que s'ha fet 
+.RE
+.PP
+
+.SS "static void JocGrafic\&.demanarJugadors ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static void JocGrafic\&.desferJugada (int numJugades) throws IllegalArgumentException\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static boolean JocGrafic\&.gestorPartidaAcabada ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static void JocGrafic\&.guardarPartida ()\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static void JocGrafic\&.inicialitzarDades ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "void JocGrafic\&.init () throws Exception"
+
+.SS "static int JocGrafic\&.invertirY (int n)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Inversió de coordenada en l'eix de les Y\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIn\fP Nombre a invertir\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El nombre entrat invertit\&. 
+.RE
+.PP
+
+.SS "static void JocGrafic\&.main (String[] args)\fC [static]\fP"
+
+.PP
+Mètode d'entrada al programa\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIargs\fP Arguments passats per paràmetre\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha executat el programa en mode gràfic\&. 
+.RE
+.PP
+
+.SS "static void JocGrafic\&.mostrarEstatConsola ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Mostra l'estat de la partida grafica per consola\&. 
+.SS "static void JocGrafic\&.novaPartida (String rutaFitxerConfig) throws IOException, \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static \fBTauler\fP JocGrafic\&.obtenirTauler ()\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static int JocGrafic\&.posTauler (double pixel)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Fila o columna corresponent a pixel\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpixel\fP Pixel d'entrada\&. 
+.RE
+.PP
+
+.SS "static boolean JocGrafic\&.potDesfer ()\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static boolean JocGrafic\&.potRefer ()\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static \fBTipusPeca\fP JocGrafic\&.promocionar ()\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "static void JocGrafic\&.referJugada (int numJugades) throws IllegalArgumentException\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "void JocGrafic\&.start (Stage primaryStage)"
+
+.SS "static ArrayList<\fBTipusPeca\fP> JocGrafic\&.tipusDisponibles ()\fC [static]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "int JocGrafic\&.costatRajola\fC [static]\fP, \fC [private]\fP"
+
+.PP
+El nombre de pixels que fa cada rajola de costat\&. 
+.SS "Stage JocGrafic\&.escenari\fC [static]\fP, \fC [private]\fP"
+
+.PP
+L'escenari actual\&. 
+.SS "\fBJugador\fP JocGrafic\&.jugadorBlanques\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "\fBJugador\fP JocGrafic\&.jugadorNegres\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "\fBPartida\fP JocGrafic\&.partida\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Adaptacio de \fBJocText\fP, es un placeholder per despres fer els menus corresponents en grafic\&. Per la documentacio buscar-ho a \fBJocText\fP\&. 
+.SS "Group JocGrafic\&.peces = new Group()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+El conjunt de peces que s'han de representar\&. 
+.SS "Group JocGrafic\&.rajoles = new Group()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+El conjunt de rajoles que s'han de representar\&. 
+.SS "\fBTauler\fP JocGrafic\&.tauler_actual\fC [static]\fP, \fC [private]\fP"
+
+.PP
+El tauler actual que s'ha de representar\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

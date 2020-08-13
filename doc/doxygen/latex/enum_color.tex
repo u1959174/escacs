@@ -1,0 +1,103 @@
+\hypertarget{enum_color}{}\doxysection{Color Enum Reference}
+\label{enum_color}\index{Color@{Color}}
+
+
+\mbox{\hyperlink{enum_color}{Color}} d\textquotesingle{}una peça que pot ser blanca o negra. Adicionalment s\textquotesingle{}hi afegeix un element neutre(cap\+Color).  
+
+
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{enum_color_a50a3526afdb2f503e7a22434fb6ca5c4}{canvia\+Color}} (\mbox{\hyperlink{enum_color}{Color}} actual)
+\begin{DoxyCompactList}\small\item\em Donat un color et retorna el color contrari. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{enum_color_a5577eb38e18b8708f4319302a405a4f6}{obtenir\+Color}} (String color\+En\+String)
+\begin{DoxyCompactList}\small\item\em Transforma un String al color que representa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enum_color_a4121291206b205d1cec85be71d2ff51f}{to\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+\mbox{\hyperlink{enum_color}{Color}} d\textquotesingle{}una peça que pot ser blanca o negra. Adicionalment s\textquotesingle{}hi afegeix un element neutre(cap\+Color). 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{enum_color_a50a3526afdb2f503e7a22434fb6ca5c4}\label{enum_color_a50a3526afdb2f503e7a22434fb6ca5c4}} 
+\index{Color@{Color}!canviaColor@{canviaColor}}
+\index{canviaColor@{canviaColor}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{canviaColor()}{canviaColor()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{enum_color}{Color}} Color.\+canvia\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{actual }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Donat un color et retorna el color contrari. 
+
+\begin{DoxyPrecond}{Precondició}
+El color actual no pot ser el neutre. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em actual} & \mbox{\hyperlink{enum_color}{Color}} actual. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+El color oposat a l\textquotesingle{}actual. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{enum_color_a5577eb38e18b8708f4319302a405a4f6}\label{enum_color_a5577eb38e18b8708f4319302a405a4f6}} 
+\index{Color@{Color}!obtenirColor@{obtenirColor}}
+\index{obtenirColor@{obtenirColor}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{obtenirColor()}{obtenirColor()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{enum_color}{Color}} Color.\+obtenir\+Color (\begin{DoxyParamCaption}\item[{String}]{color\+En\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Transforma un String al color que representa. 
+
+\begin{DoxyPrecond}{Precondició}
+color\+En\+String Conté la representació en format string d\textquotesingle{}un possible valor d\textquotesingle{}aquest ennum. No pot ser el color neutre. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+En\+String} & String que conte el nom del color. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+El \mbox{\hyperlink{enum_color}{Color}} al que correspon color\+En\+String. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{enum_color_a4121291206b205d1cec85be71d2ff51f}\label{enum_color_a4121291206b205d1cec85be71d2ff51f}} 
+\index{Color@{Color}!toString@{toString}}
+\index{toString@{toString}!Color@{Color}}
+\doxysubsubsection{\texorpdfstring{toString}{toString}}
+{\footnotesize\ttfamily Color.\+to\+String}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=() \{}
+\DoxyCodeLine{              \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Blanques"};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{          \},}
+\DoxyCodeLine{    capColor,}
+\DoxyCodeLine{    Negres \{}
+\DoxyCodeLine{            @Override}
+\DoxyCodeLine{            \textcolor{keyword}{public} String \mbox{\hyperlink{enum_color_a4121291206b205d1cec85be71d2ff51f}{toString}}() \{}
+\DoxyCodeLine{              \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Negres"};}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{          \}}
+
+\end{DoxyCode}
+
+
+The documentation for this enum was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_color_8java}{Color.\+java}}\end{DoxyCompactItemize}

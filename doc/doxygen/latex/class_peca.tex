@@ -1,0 +1,339 @@
+\hypertarget{class_peca}{}\doxysection{Referència de la Classe Peca}
+\label{class_peca}\index{Peca@{Peca}}
+
+
+Classe que representa una \mbox{\hyperlink{class_peca}{Peca}} dels escacs.  
+
+
+Diagrama d\textquotesingle{}Herència per a Peca\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_peca}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_peca_ae9c50c4918942b8ebab7adb5de0af9ab}{Peca}} (\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_peca_a3b34a3bfa792d42d1cc82384328eece6}{tipus}}, \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_peca_a08fcb45fa90faa1b7f017eb7c3958b9d}{color}})
+\item 
+void \mbox{\hyperlink{class_peca_a6ef827f08225018d5ab5eaf51b100144}{canviar\+De\+Posicio}} (\mbox{\hyperlink{class_posicio}{Posicio}} nova\+Pos)
+\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_peca_a75978dc6ff5134f88c9c626ebc453d2d}{canviar\+Prespectiva}} ()
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_peca_a45c65218591e7766399e03574525d7f4}{color}} ()
+\item 
+int \mbox{\hyperlink{class_peca_a9c987ce22439d06cbf363eeddf022167}{compare\+To}} (\mbox{\hyperlink{class_peca}{Peca}} o)
+\begin{DoxyCompactList}\small\item\em Compara les peces a partir de la seva posicio. En cas de que alguna no tingui posicio assignada, es fa servir la posicio fora del tauler 0,0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_peca_aea21bc011b1dfeecd8517f8c53c23da6}{deep\+Copy}} ()
+\item 
+void \mbox{\hyperlink{class_peca_a6237fed647e8bbd2c41908d677e8d2e8}{desfer}} ()
+\item 
+boolean \mbox{\hyperlink{class_peca_a99426c7afa74a35249c3a5c021e91e2e}{equals}} (Object o)
+\begin{DoxyCompactList}\small\item\em Dues peces son iguals si tenen el mateix nom, color i \mbox{\hyperlink{class_posicio}{Posicio}} o bé les o és referencia a this. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_peca_a71a49c294e8f0fb03899cd2cb398da5d}{has\+Promocionat}} (\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} nou\+Tipus)
+\item 
+void \mbox{\hyperlink{class_peca_a6f376fd4a5a162c7edeff3ca0ca3df50}{init\+Tauler}} (\mbox{\hyperlink{class_tauler}{Tauler}} ref)
+\item 
+void \mbox{\hyperlink{class_peca_af72dff6fb9fd4dc7165eeedc40384b80}{moure}} ()
+\item 
+\mbox{\hyperlink{class_posicio}{Posicio}} \mbox{\hyperlink{class_peca_a45fe6a849e21dc4beee42e18f8ba1a7b}{on\+Estic}} ()  throws Illegal\+State\+Exception
+\item 
+Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ \mbox{\hyperlink{class_peca_ac9d9ef8d2e45d241a1779e903d531b0a}{possibles\+Moviments}} ()
+\item 
+\mbox{\hyperlink{interface_moviment}{Moviment}} \mbox{\hyperlink{class_peca_a47d0d2099a7a895574164db97d33c243}{pot\+Anar}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Anar)
+\item 
+boolean \mbox{\hyperlink{class_peca_a93284347eb2379105a4463498f18fae5}{promocionada}} ()
+\item 
+boolean \mbox{\hyperlink{class_peca_a0c6266384a0b399ccff418d52df59ea2}{quieta}} ()
+\item 
+\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_peca_a3b34a3bfa792d42d1cc82384328eece6}{tipus}} ()
+\item 
+String \mbox{\hyperlink{class_peca_a11565c29623525d7f65e3493a6ff0b6d}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_peca_a08fcb45fa90faa1b7f017eb7c3958b9d}{color}}
+\item 
+boolean \mbox{\hyperlink{class_peca_a7dadc7ead0feaba63e5091cd9920a46e}{moguda}}
+\item 
+\mbox{\hyperlink{class_posicio}{Posicio}} \mbox{\hyperlink{class_peca_a77a6f53c2100f028faef83a6e46b4d9d}{posicio}}
+\item 
+boolean \mbox{\hyperlink{class_peca_a55716d1cd606713d59c076c9d4ea8775}{promocionada}}
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_peca_a5857bfa5e0807aef7263a4ef14a79e7b}{tauler}}
+\item 
+\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_peca_a968694ad378099d2a76336b56dc8249d}{tipus\+Peca}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa una \mbox{\hyperlink{class_peca}{Peca}} dels escacs. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_peca_ae9c50c4918942b8ebab7adb5de0af9ab}\label{class_peca_ae9c50c4918942b8ebab7adb5de0af9ab}} 
+\index{Peca@{Peca}!Peca@{Peca}}
+\index{Peca@{Peca}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{Peca()}{Peca()}}
+{\footnotesize\ttfamily Peca.\+Peca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{tipus,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+crea una peça a partir del tipus i el color. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em tipus} & Tipus de la Peça. \\
+\hline
+{\em color} & \mbox{\hyperlink{enum_color}{Color}} de la Peça. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_peca_a6ef827f08225018d5ab5eaf51b100144}\label{class_peca_a6ef827f08225018d5ab5eaf51b100144}} 
+\index{Peca@{Peca}!canviarDePosicio@{canviarDePosicio}}
+\index{canviarDePosicio@{canviarDePosicio}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{canviarDePosicio()}{canviarDePosicio()}}
+{\footnotesize\ttfamily void Peca.\+canviar\+De\+Posicio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{nova\+Pos }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+La peça sap a quina posició està. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em nova\+Pos} & Nova posició de la Peça. Pot ser null, indicant que la peça ja no està al tauler \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_peca_a75978dc6ff5134f88c9c626ebc453d2d}\label{class_peca_a75978dc6ff5134f88c9c626ebc453d2d}} 
+\index{Peca@{Peca}!canviarPrespectiva@{canviarPrespectiva}}
+\index{canviarPrespectiva@{canviarPrespectiva}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{canviarPrespectiva()}{canviarPrespectiva()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Peca.\+canviar\+Prespectiva (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Una copia profunda d\textquotesingle{}aquesta peça amb el color canviat. Important\+: NO s\textquotesingle{}ha canviat la posició i es manté el tauler. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a45c65218591e7766399e03574525d7f4}\label{class_peca_a45c65218591e7766399e03574525d7f4}} 
+\index{Peca@{Peca}!color@{color}}
+\index{color@{color}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Peca.\+color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+El color de la Peça 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a9c987ce22439d06cbf363eeddf022167}\label{class_peca_a9c987ce22439d06cbf363eeddf022167}} 
+\index{Peca@{Peca}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{compareTo()}{compareTo()}}
+{\footnotesize\ttfamily int Peca.\+compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{o }\end{DoxyParamCaption})}
+
+
+
+Compara les peces a partir de la seva posicio. En cas de que alguna no tingui posicio assignada, es fa servir la posicio fora del tauler 0,0. 
+
+\mbox{\Hypertarget{class_peca_aea21bc011b1dfeecd8517f8c53c23da6}\label{class_peca_aea21bc011b1dfeecd8517f8c53c23da6}} 
+\index{Peca@{Peca}!deepCopy@{deepCopy}}
+\index{deepCopy@{deepCopy}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{deepCopy()}{deepCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Peca.\+deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Una referencia a una copia d\textquotesingle{}aquesta peça 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a6237fed647e8bbd2c41908d677e8d2e8}\label{class_peca_a6237fed647e8bbd2c41908d677e8d2e8}} 
+\index{Peca@{Peca}!desfer@{desfer}}
+\index{desfer@{desfer}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{desfer()}{desfer()}}
+{\footnotesize\ttfamily void Peca.\+desfer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Nota}
+\+: En cas d\textquotesingle{}haver tirat enrrere una jugada, aquest mètode permet tornar la peça a l\textquotesingle{}estat de no-\/moguda. 
+\end{DoxyNote}
+\begin{DoxyPostcond}{Postcondició}
+\+: La peça sap que no s\textquotesingle{}ha mogut. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_peca_a99426c7afa74a35249c3a5c021e91e2e}\label{class_peca_a99426c7afa74a35249c3a5c021e91e2e}} 
+\index{Peca@{Peca}!equals@{equals}}
+\index{equals@{equals}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily boolean Peca.\+equals (\begin{DoxyParamCaption}\item[{Object}]{o }\end{DoxyParamCaption})}
+
+
+
+Dues peces son iguals si tenen el mateix nom, color i \mbox{\hyperlink{class_posicio}{Posicio}} o bé les o és referencia a this. 
+
+\begin{DoxyNote}{Nota}
+Si alguna de les Peces no té Posició assignada, es fa servir la posicio fora del tauler 0,0. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_peca_a71a49c294e8f0fb03899cd2cb398da5d}\label{class_peca_a71a49c294e8f0fb03899cd2cb398da5d}} 
+\index{Peca@{Peca}!hasPromocionat@{hasPromocionat}}
+\index{hasPromocionat@{hasPromocionat}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{hasPromocionat()}{hasPromocionat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Peca.\+has\+Promocionat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{nou\+Tipus }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Una nova peça del mateix color i amb el tipus nou\+Tipus. Aquesta peça no esta encara al tauler, no sap on està. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a6f376fd4a5a162c7edeff3ca0ca3df50}\label{class_peca_a6f376fd4a5a162c7edeff3ca0ca3df50}} 
+\index{Peca@{Peca}!initTauler@{initTauler}}
+\index{initTauler@{initTauler}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{initTauler()}{initTauler()}}
+{\footnotesize\ttfamily void Peca.\+init\+Tauler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{ref }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+La Peça sap a quin tauler està. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em ref} & \mbox{\hyperlink{class_tauler}{Tauler}} on està la peça \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_peca_af72dff6fb9fd4dc7165eeedc40384b80}\label{class_peca_af72dff6fb9fd4dc7165eeedc40384b80}} 
+\index{Peca@{Peca}!moure@{moure}}
+\index{moure@{moure}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{moure()}{moure()}}
+{\footnotesize\ttfamily void Peca.\+moure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+\+: La peça sap que s\textquotesingle{}ha mogut. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_peca_a45fe6a849e21dc4beee42e18f8ba1a7b}\label{class_peca_a45fe6a849e21dc4beee42e18f8ba1a7b}} 
+\index{Peca@{Peca}!onEstic@{onEstic}}
+\index{onEstic@{onEstic}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{onEstic()}{onEstic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_posicio}{Posicio}} Peca.\+on\+Estic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Illegal\+State\+Exception}
+
+\begin{DoxyPrecond}{Precondició}
+la Peça sap a quina posició està. Se li pot dir a través de \mbox{\hyperlink{class_peca_a6ef827f08225018d5ab5eaf51b100144}{Peca\+::canviar\+De\+Posicio(\+Posicio nova\+Pos)}}. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+La posicio on està la Peça 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+State\+Exception} & Si la peça encara no sabia a quina posicio estava. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_peca_ac9d9ef8d2e45d241a1779e903d531b0a}\label{class_peca_ac9d9ef8d2e45d241a1779e903d531b0a}} 
+\index{Peca@{Peca}!possiblesMoviments@{possiblesMoviments}}
+\index{possiblesMoviments@{possiblesMoviments}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{possiblesMoviments()}{possiblesMoviments()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ Peca.\+possibles\+Moviments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+La peça sap on es. Se li pot dir a traves de \mbox{\hyperlink{class_peca_a6ef827f08225018d5ab5eaf51b100144}{canviar\+De\+Posicio()}}. La peça està en un tauler. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+Una col·lecció de les posicions i el moviment associat on aquesta peça pot anar tenint en compte l\textquotesingle{}estat actual del tauler. No es comprova la validesa de la jugada. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+Aquest mètode no s\textquotesingle{}ha de confondre amb Tauler\+::possibles\+Movimets\+Valids, que a diferència d\textquotesingle{}aquest comprova la validesa de la jugada. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_peca_a47d0d2099a7a895574164db97d33c243}\label{class_peca_a47d0d2099a7a895574164db97d33c243}} 
+\index{Peca@{Peca}!potAnar@{potAnar}}
+\index{potAnar@{potAnar}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{potAnar()}{potAnar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_moviment}{Moviment}} Peca.\+pot\+Anar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Anar }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+La peça sap on es. pos\+Anar posició dins el tauler. La peça està en un tauler. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Anar} & \mbox{\hyperlink{class_posicio}{Posicio}} on es consulta si la peça pot anar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+No es comprova si el fet de desplaçar-\/se pot deixar el rei en escac -\/$>$ moviment invàlid 
+\end{DoxyNote}
+\begin{DoxyReturn}{Retorna}
+Un \mbox{\hyperlink{interface_moviment}{Moviment}} que serà null quan aquest sigui impossible. En cas de ser possible es retorna el propi moviment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a93284347eb2379105a4463498f18fae5}\label{class_peca_a93284347eb2379105a4463498f18fae5}} 
+\index{Peca@{Peca}!promocionada@{promocionada}}
+\index{promocionada@{promocionada}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{promocionada()}{promocionada()}}
+{\footnotesize\ttfamily boolean Peca.\+promocionada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si la peça ja s\textquotesingle{}ha promocionat. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a0c6266384a0b399ccff418d52df59ea2}\label{class_peca_a0c6266384a0b399ccff418d52df59ea2}} 
+\index{Peca@{Peca}!quieta@{quieta}}
+\index{quieta@{quieta}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{quieta()}{quieta()}}
+{\footnotesize\ttfamily boolean Peca.\+quieta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Un booleà en funció de si la peça s\textquotesingle{}ha mogut 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a3b34a3bfa792d42d1cc82384328eece6}\label{class_peca_a3b34a3bfa792d42d1cc82384328eece6}} 
+\index{Peca@{Peca}!tipus@{tipus}}
+\index{tipus@{tipus}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{tipus()}{tipus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Peca.\+tipus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+El tipus de la peça. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_a11565c29623525d7f65e3493a6ff0b6d}\label{class_peca_a11565c29623525d7f65e3493a6ff0b6d}} 
+\index{Peca@{Peca}!toString@{toString}}
+\index{toString@{toString}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Peca.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Un String amb la representació de la peça en funció del seu color. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_peca_a08fcb45fa90faa1b7f017eb7c3958b9d}\label{class_peca_a08fcb45fa90faa1b7f017eb7c3958b9d}} 
+\index{Peca@{Peca}!color@{color}}
+\index{color@{color}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Peca.\+color\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{enum_color}{Color}} de la peça. \mbox{\Hypertarget{class_peca_a7dadc7ead0feaba63e5091cd9920a46e}\label{class_peca_a7dadc7ead0feaba63e5091cd9920a46e}} 
+\index{Peca@{Peca}!moguda@{moguda}}
+\index{moguda@{moguda}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{moguda}{moguda}}
+{\footnotesize\ttfamily boolean Peca.\+moguda\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica si la peça s\textquotesingle{}ha mogut(true) o no(false) de posicio. \mbox{\Hypertarget{class_peca_a77a6f53c2100f028faef83a6e46b4d9d}\label{class_peca_a77a6f53c2100f028faef83a6e46b4d9d}} 
+\index{Peca@{Peca}!posicio@{posicio}}
+\index{posicio@{posicio}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{posicio}{posicio}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_posicio}{Posicio}} Peca.\+posicio\hspace{0.3cm}{\ttfamily [private]}}
+
+Posició on està la \mbox{\hyperlink{class_peca}{Peca}}. \mbox{\Hypertarget{class_peca_a55716d1cd606713d59c076c9d4ea8775}\label{class_peca_a55716d1cd606713d59c076c9d4ea8775}} 
+\index{Peca@{Peca}!promocionada@{promocionada}}
+\index{promocionada@{promocionada}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{promocionada}{promocionada}}
+{\footnotesize\ttfamily boolean Peca.\+promocionada\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica si la peça ja s\textquotesingle{}ha promocionat i per tant no ho podrà tornar a fer. \mbox{\Hypertarget{class_peca_a5857bfa5e0807aef7263a4ef14a79e7b}\label{class_peca_a5857bfa5e0807aef7263a4ef14a79e7b}} 
+\index{Peca@{Peca}!tauler@{tauler}}
+\index{tauler@{tauler}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{tauler}{tauler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Peca.\+tauler\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{class_tauler}{Tauler}} on es la Peça \mbox{\Hypertarget{class_peca_a968694ad378099d2a76336b56dc8249d}\label{class_peca_a968694ad378099d2a76336b56dc8249d}} 
+\index{Peca@{Peca}!tipusPeca@{tipusPeca}}
+\index{tipusPeca@{tipusPeca}!Peca@{Peca}}
+\doxysubsubsection{\texorpdfstring{tipusPeca}{tipusPeca}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Peca.\+tipus\+Peca\hspace{0.3cm}{\ttfamily [private]}}
+
+Tipus de la \mbox{\hyperlink{class_peca}{Peca}} 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_peca_8java}{Peca.\+java}}\end{DoxyCompactItemize}

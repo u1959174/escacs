@@ -1,0 +1,798 @@
+\hypertarget{class_tauler}{}\doxysection{Referència de la Classe Tauler}
+\label{class_tauler}\index{Tauler@{Tauler}}
+
+
+Classe que representa un tauler d\textquotesingle{}\mbox{\hyperlink{class_escacs}{Escacs}}. Contenidor de Caselles. Conté alguns mètodes de suport relacionats amb el tauler.  
+
+
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tauler_a57081367230c4308c407028df10b3b7d}{Tauler}} (int \mbox{\hyperlink{class_tauler_a7b9ca4f7b4b0f828db35b23a439ff467}{files}}, int \mbox{\hyperlink{class_tauler_a484a0b6941bfaa378ae27790016519d8}{columnes}})
+\item 
+void \mbox{\hyperlink{class_tauler_a027176876223ca4e703f20a8dd975522}{afegir\+Peca}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos, \mbox{\hyperlink{class_peca}{Peca}} peca)
+\item 
+\mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{class_posicio}{Posicio}} $>$ \mbox{\hyperlink{class_tauler_a137e944c6f34f17f138d98c666a31561}{calcular\+Enrroc}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+InicialA, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+InicialB)
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_tauler_aab6a4fdd3e1c49bd0abf5cb165d65bde}{canviar\+Perspectiva}} ()
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_tauler_a83013a8d97831b278431305dea132f7a}{deep\+Copy}} ()
+\item 
+\mbox{\hyperlink{class_pair}{Pair}}$<$ Integer, Integer $>$ \mbox{\hyperlink{class_tauler_a8912aa8474c11e2425b8c6a54dd8882b}{dimensions}} ()
+\item 
+boolean \mbox{\hyperlink{class_tauler_a263b1121064bd079c0000e946d0dd8aa}{dins\+Tauler}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos)
+\item 
+Collection$<$ \mbox{\hyperlink{class_peca}{Peca}} $>$ \mbox{\hyperlink{class_tauler_ae349247a3e51ac2c9fae204d00225f68}{donam\+Peces}} (\mbox{\hyperlink{enum_color}{Color}} color\+Peces)
+\item 
+void \mbox{\hyperlink{class_tauler_a8569be227afaeefb92179f39aed44774}{eliminar\+Peca}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos)
+\item 
+boolean \mbox{\hyperlink{class_tauler_af1ed5247780b47ff1ff5f9bb1e68335e}{es\+Final}} (\mbox{\hyperlink{class_posicio}{Posicio}} posicio\+A\+Comprovar, \mbox{\hyperlink{enum_color}{Color}} color)
+\item 
+\mbox{\hyperlink{enum_estat_tauler}{Estat\+Tauler}} \mbox{\hyperlink{class_tauler_ae41220c09c617a3000265418d1ab2097}{estat}} (\mbox{\hyperlink{enum_color}{Color}} torn)
+\item 
+int \mbox{\hyperlink{class_tauler_a769d6521e685275ad008e0bec3c39a30}{evaluar\+Tauler}} ()
+\begin{DoxyCompactList}\small\item\em Evalua aquest tauler indicant la superioritat d\textquotesingle{}un jugador en vers l\textquotesingle{}altre. El valor absolut indica la superioritat i el signe a favor de quin jugador és aquesta. Positiu-\/$>$Blanques, Negatiu-\/$>$Negres. \end{DoxyCompactList}\item 
+Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{class_peca}{Peca}} $>$ $>$ \mbox{\hyperlink{class_tauler_ab6c4f071cfb8b992678bf6e41ea89c23}{peces\+Al\+Mig}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Inicial, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+Final, boolean fila\+Primer, boolean incloure\+Extrems)
+\item 
+Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{class_peca}{Peca}} $>$ $>$ \mbox{\hyperlink{class_tauler_abbdfb759857ae4fa94f3a8a0d86de2a7}{peces\+Al\+Mig\+Color\+Concret}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Inicial, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+Final, boolean fila\+Primer, \mbox{\hyperlink{enum_color}{Color}} color\+A\+Comprovar)
+\item 
+Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ $>$ \mbox{\hyperlink{class_tauler_a6f81d33470a6a9e2d305b1f157df5eb1}{possibles\+Moviments\+Jugador}} (\mbox{\hyperlink{enum_color}{Color}} color\+Jugador)
+\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_tauler_af70c17a5d0601fd35cb944ca66ff4e50}{tens\+Peca}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos)
+\item 
+String \mbox{\hyperlink{class_tauler_accc9eac98f175247fc448dcd1adcea97}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs de Paquet}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tauler_a103c29cb97bc9ac5c0bf973046f429b9}{else}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tauler_a41bfa8f4e3b745723d90275aacfd8272}{actualitzar\+Amenaces}} (\mbox{\hyperlink{enum_color}{Color}} peces)
+\item 
+void \mbox{\hyperlink{class_tauler_a203d322d5b85e1babebe4830d6f080cc}{afegir\+Index}} (\mbox{\hyperlink{class_peca}{Peca}} peca)
+\item 
+void \mbox{\hyperlink{class_tauler_aa67cc5ef0706cd4c73d2a1cf2f97c8ab}{borrar\+Index}} (\mbox{\hyperlink{class_peca}{Peca}} peca\+A\+Eliminar)
+\item 
+\mbox{\hyperlink{class_posicio}{Posicio}} \mbox{\hyperlink{class_tauler_ad6f40216ff94e59ebc23b82a98564ca9}{buscar\+Peca}} (String nom\+Peca, \mbox{\hyperlink{enum_color}{Color}} color)
+\item 
+\mbox{\hyperlink{class_posicio}{Posicio}} \mbox{\hyperlink{class_tauler_a47f765b236e89faff1474c12fdc1d649}{calcular\+Posicio\+Canvi\+Prespectiva}} (\mbox{\hyperlink{class_peca}{Peca}} peca\+Act)
+\item 
+Collection$<$ \mbox{\hyperlink{class_posicio}{Posicio}} $>$ \mbox{\hyperlink{class_tauler_ae7112d0eff5be417123c0fa6aeeb56a9}{caselles\+Entre\+Posicions}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Inicial, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+Final, boolean fila\+Primer)
+\item 
+void \mbox{\hyperlink{class_tauler_a271c2a667206c87d5f6092912e318e75}{caselles\+Entre\+Posicions\+Diagonals}} (Collection$<$ \mbox{\hyperlink{class_posicio}{Posicio}} $>$ res, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+Inicial, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+Final)
+\item 
+void \mbox{\hyperlink{class_tauler_a351f47779e1279c18fb9d082d79c1bb9}{caselles\+Entre\+Posicions\+Rectilinies}} (Collection$<$ \mbox{\hyperlink{class_posicio}{Posicio}} $>$ res, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+Inicial, \mbox{\hyperlink{class_posicio}{Posicio}} pos\+Final)
+\item 
+boolean \mbox{\hyperlink{class_tauler_a46b92da08cdbd2f753a6e86b2d76dc2b}{hi\+Ha\+Escac}} (\mbox{\hyperlink{enum_color}{Color}} color\+Rei)
+\item 
+boolean \mbox{\hyperlink{class_tauler_a2c0b57ceee06fd4d770af51dcd8f7624}{hi\+Ha\+Escac\+I\+Mat}} (\mbox{\hyperlink{enum_color}{Color}} color\+Rei)
+\item 
+boolean \mbox{\hyperlink{class_tauler_aa95e905872e2b7238ae7df7c41048362}{hi\+Ha\+Jugada\+Que\+Evita\+Mat}} (\mbox{\hyperlink{enum_color}{Color}} color\+Rei)
+\item 
+boolean \mbox{\hyperlink{class_tauler_a8633397585331cccbe9615b140e4a24d}{hi\+Ha\+Moviment\+Valid}} (\mbox{\hyperlink{enum_color}{Color}} torn)
+\item 
+boolean \mbox{\hyperlink{class_tauler_a45862370f91eafb4f25322936ff7d2ab}{hi\+Ha\+Taules\+Per\+Ofegat}} (\mbox{\hyperlink{enum_color}{Color}} torn)
+\item 
+Collection$<$ \mbox{\hyperlink{class_peca}{Peca}} $>$ \mbox{\hyperlink{class_tauler_a2dadba9c40cdf8c6146c10fa5f7a2509}{peces\+Atacants}} (\mbox{\hyperlink{class_posicio}{Posicio}} objectiu, \mbox{\hyperlink{enum_color}{Color}} color\+Amenaca)
+\item 
+Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ \mbox{\hyperlink{class_tauler_a0b989c0279854bd05c4dae089c010bc6}{possibles\+Moviments\+Valids}} (\mbox{\hyperlink{class_peca}{Peca}} peca)
+\item 
+boolean \mbox{\hyperlink{class_tauler_a6e9f8de7454bd25a93fdca15dc72d3ad}{rei\+Te\+Moviment\+Sense\+Escac}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Rei)
+\item 
+boolean \mbox{\hyperlink{class_tauler_a4083b16d780e762e10aacadbc9f9e1d3}{simular\+Moviment}} (\mbox{\hyperlink{class_posicio}{Posicio}} peca, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ moviment)
+\item 
+int \mbox{\hyperlink{class_tauler_ab52536736acb27f8c59a593f02499582}{valorar\+Posicio\+Rei}} (\mbox{\hyperlink{class_posicio}{Posicio}} pos\+Rei)
+\begin{DoxyCompactList}\small\item\em Donada la columna on està el rei, calcula el valor que té tenir-\/lo en aquesta posició. Es valor molt més tenir-\/lo als extrems del tauler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ \mbox{\hyperlink{class_tauler_a8a08bc8e2c49b7add0502d87c05585e9}{atacants\+Al\+Rei\+Blanc}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ \mbox{\hyperlink{class_tauler_a05e1477c0d834db60194c27933ce5563}{atacants\+Al\+Rei\+Negre}}
+\item 
+Array\+List$<$ Array\+List$<$ \mbox{\hyperlink{class_casella}{Casella}} $>$ $>$ \mbox{\hyperlink{class_tauler_a05d62ed0613ef4450a7f38fd34ef6247}{caselles}}
+\item 
+int \mbox{\hyperlink{class_tauler_a484a0b6941bfaa378ae27790016519d8}{columnes}}
+\item 
+int \mbox{\hyperlink{class_tauler_a7b9ca4f7b4b0f828db35b23a439ff467}{files}}
+\item 
+Hash\+Map$<$ String, List$<$ \mbox{\hyperlink{class_peca}{Peca}} $>$ $>$ \mbox{\hyperlink{class_tauler_a857f29bc07298cebf4d72467c89bad02}{index\+Blanques}}
+\item 
+Hash\+Map$<$ String, List$<$ \mbox{\hyperlink{class_peca}{Peca}} $>$ $>$ \mbox{\hyperlink{class_tauler_a6e95ff5dfd61fdfd5c14cf1c9bf50b03}{index\+Negres}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_posicio}{Posicio}} $>$ \mbox{\hyperlink{class_tauler_a0f77c6752c10bf587b5fe98a9a6a26c0}{tauler\+Amenaces\+Blanques}}
+\item 
+Array\+List$<$ \mbox{\hyperlink{class_posicio}{Posicio}} $>$ \mbox{\hyperlink{class_tauler_a5b7917d0e6c026da0c7ffa03ec482385}{tauler\+Amenaces\+Negres}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa un tauler d\textquotesingle{}\mbox{\hyperlink{class_escacs}{Escacs}}. Contenidor de Caselles. Conté alguns mètodes de suport relacionats amb el tauler. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_tauler_a57081367230c4308c407028df10b3b7d}\label{class_tauler_a57081367230c4308c407028df10b3b7d}} 
+\index{Tauler@{Tauler}!Tauler@{Tauler}}
+\index{Tauler@{Tauler}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{Tauler()}{Tauler()}}
+{\footnotesize\ttfamily Tauler.\+Tauler (\begin{DoxyParamCaption}\item[{int}]{files,  }\item[{int}]{columnes }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+Crea el tauler a partir del nombre de files i columnes que ha de tenir. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em files} & Files del tauler \\
+\hline
+{\em columnes} & Columnes del tauler \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_tauler_a41bfa8f4e3b745723d90275aacfd8272}\label{class_tauler_a41bfa8f4e3b745723d90275aacfd8272}} 
+\index{Tauler@{Tauler}!actualitzarAmenaces@{actualitzarAmenaces}}
+\index{actualitzarAmenaces@{actualitzarAmenaces}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{actualitzarAmenaces()}{actualitzarAmenaces()}}
+{\footnotesize\ttfamily void Tauler.\+actualitzar\+Amenaces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{peces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+el rei rival està al tauler. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha actualitzat el conjunt de posicions amenaçades per les peces del \mbox{\hyperlink{enum_color}{Color}} peces i s\textquotesingle{}ha actualitzat el conjunt de peces que ataquen al rei rival. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em peces} & \mbox{\hyperlink{enum_color}{Color}} de les peces de les quals s\textquotesingle{}han d\textquotesingle{}actualitzar les posicions amenaçades. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tauler_a203d322d5b85e1babebe4830d6f080cc}\label{class_tauler_a203d322d5b85e1babebe4830d6f080cc}} 
+\index{Tauler@{Tauler}!afegirIndex@{afegirIndex}}
+\index{afegirIndex@{afegirIndex}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{afegirIndex()}{afegirIndex()}}
+{\footnotesize\ttfamily void Tauler.\+afegir\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{peca }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+\mbox{\hyperlink{class_peca}{Peca}} != null. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha afegit la peca als índexs. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca} & \mbox{\hyperlink{class_peca}{Peca}} a afegir als índexs. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tauler_a027176876223ca4e703f20a8dd975522}\label{class_tauler_a027176876223ca4e703f20a8dd975522}} 
+\index{Tauler@{Tauler}!afegirPeca@{afegirPeca}}
+\index{afegirPeca@{afegirPeca}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{afegirPeca()}{afegirPeca()}}
+{\footnotesize\ttfamily void Tauler.\+afegir\+Peca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos,  }\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{peca }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+La \mbox{\hyperlink{class_posicio}{Posicio}} pos existeix al tauler. No pot haver-\/hi al tauler cap referència a la mateixa peça que es vol afegir. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha afegit la peça del tauler. Si ja hi havia cap peça a aquella \mbox{\hyperlink{class_posicio}{Posicio}} s\textquotesingle{}ha sobreescrit. La peça afegida sap a quin tauler està i a quina posició d\textquotesingle{}aquest tauler. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos} & \mbox{\hyperlink{class_posicio}{Posicio}} on s\textquotesingle{}afegirà la peça. \\
+\hline
+{\em peca} & peça que s\textquotesingle{}afegira. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tauler_aa67cc5ef0706cd4c73d2a1cf2f97c8ab}\label{class_tauler_aa67cc5ef0706cd4c73d2a1cf2f97c8ab}} 
+\index{Tauler@{Tauler}!borrarIndex@{borrarIndex}}
+\index{borrarIndex@{borrarIndex}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{borrarIndex()}{borrarIndex()}}
+{\footnotesize\ttfamily void Tauler.\+borrar\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{peca\+A\+Eliminar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha borrat la \mbox{\hyperlink{class_peca}{Peca}} dels índexs 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca\+A\+Eliminar} & \mbox{\hyperlink{class_peca}{Peca}} a eliminar dels índexs. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tauler_ad6f40216ff94e59ebc23b82a98564ca9}\label{class_tauler_ad6f40216ff94e59ebc23b82a98564ca9}} 
+\index{Tauler@{Tauler}!buscarPeca@{buscarPeca}}
+\index{buscarPeca@{buscarPeca}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{buscarPeca()}{buscarPeca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_posicio}{Posicio}} Tauler.\+buscar\+Peca (\begin{DoxyParamCaption}\item[{String}]{nom\+Peca,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em nom\+Peca} & Nom de la peça a buscar \\
+\hline
+{\em color} & \mbox{\hyperlink{enum_color}{Color}} de la peça a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+La primera posicio trobada d\textquotesingle{}una casella que conté una peça de nom \char`\"{}nom\+Peca\char`\"{}. Si no es troba retorna null; 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a137e944c6f34f17f138d98c666a31561}\label{class_tauler_a137e944c6f34f17f138d98c666a31561}} 
+\index{Tauler@{Tauler}!calcularEnrroc@{calcularEnrroc}}
+\index{calcularEnrroc@{calcularEnrroc}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{calcularEnrroc()}{calcularEnrroc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{class_posicio}{Posicio}}$>$ Tauler.\+calcular\+Enrroc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+InicialA,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+InicialB }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+pos\+InicialA i pos\+InicialB són dues posicions diferents que fan referencia a dues Peces diferents al tauler. Les dues peces estan en aquest tauler. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+InicialA} & \mbox{\hyperlink{class_posicio}{Posicio}} actual/inicial de la peça A de l\textquotesingle{}enrroc. \\
+\hline
+{\em pos\+InicialB} & \mbox{\hyperlink{class_posicio}{Posicio}} actual/inicial de la peça B de l\textquotesingle{}enrroc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un pair de Posicions amb les posicions de destí que hauríen de prendre les peces després d\textquotesingle{}un teoric enrroc. Si l\textquotesingle{}enrroc no és vàlid segons els moviements dels tipus es retorna null. First-\/$>$pos\+FinalA, Second-\/$>$pos\+FinalB. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a47f765b236e89faff1474c12fdc1d649}\label{class_tauler_a47f765b236e89faff1474c12fdc1d649}} 
+\index{Tauler@{Tauler}!calcularPosicioCanviPrespectiva@{calcularPosicioCanviPrespectiva}}
+\index{calcularPosicioCanviPrespectiva@{calcularPosicioCanviPrespectiva}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{calcularPosicioCanviPrespectiva()}{calcularPosicioCanviPrespectiva()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_posicio}{Posicio}} Tauler.\+calcular\+Posicio\+Canvi\+Prespectiva (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{peca\+Act }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca\+Act} & \mbox{\hyperlink{class_peca}{Peca}} sobre la que s\textquotesingle{}aplicarà el calcul de la nova posició \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+La posicio a la que hauria d\textquotesingle{}anar la peca\+Act si aquesta es canvies de prespectiva tenint en compte les dimensions d\textquotesingle{}aquest tauler. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_aab6a4fdd3e1c49bd0abf5cb165d65bde}\label{class_tauler_aab6a4fdd3e1c49bd0abf5cb165d65bde}} 
+\index{Tauler@{Tauler}!canviarPerspectiva@{canviarPerspectiva}}
+\index{canviarPerspectiva@{canviarPerspectiva}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{canviarPerspectiva()}{canviarPerspectiva()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Tauler.\+canviar\+Perspectiva (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Una copia profunda d\textquotesingle{}aquest tauler s\textquotesingle{}hi ha aplicat un eix de simetria horitzontal. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+No es té en compte que el rei i la reina estan a la mateixa columna. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_tauler_ae7112d0eff5be417123c0fa6aeeb56a9}\label{class_tauler_ae7112d0eff5be417123c0fa6aeeb56a9}} 
+\index{Tauler@{Tauler}!casellesEntrePosicions@{casellesEntrePosicions}}
+\index{casellesEntrePosicions@{casellesEntrePosicions}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{casellesEntrePosicions()}{casellesEntrePosicions()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_posicio}{Posicio}}$>$ Tauler.\+caselles\+Entre\+Posicions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Inicial,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Final,  }\item[{boolean}]{fila\+Primer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Inicial} & \mbox{\hyperlink{class_posicio}{Posicio}} inicial del moviment \\
+\hline
+{\em pos\+Final} & Posicion final del moviment \\
+\hline
+{\em fila\+Primer} & En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+El conjunt de caselles entre les dues posicions(inicial i final incloses). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a271c2a667206c87d5f6092912e318e75}\label{class_tauler_a271c2a667206c87d5f6092912e318e75}} 
+\index{Tauler@{Tauler}!casellesEntrePosicionsDiagonals@{casellesEntrePosicionsDiagonals}}
+\index{casellesEntrePosicionsDiagonals@{casellesEntrePosicionsDiagonals}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{casellesEntrePosicionsDiagonals()}{casellesEntrePosicionsDiagonals()}}
+{\footnotesize\ttfamily void Tauler.\+caselles\+Entre\+Posicions\+Diagonals (\begin{DoxyParamCaption}\item[{Collection$<$ \mbox{\hyperlink{class_posicio}{Posicio}} $>$}]{res,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Inicial,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+El desplaçament ha de ser diagonal. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}actualitza res amb les caselles que hi ha en el rang diagonal (pos\+Inicial, pos\+Final\mbox{]} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em res} & Conjunt de posicions del tauler que hi ha entre les dues posicions inicial i final \\
+\hline
+{\em pos\+Inicial} & \mbox{\hyperlink{class_posicio}{Posicio}} inicial del moviment \\
+\hline
+{\em pos\+Final} & \mbox{\hyperlink{class_posicio}{Posicio}} final del moviment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tauler_a351f47779e1279c18fb9d082d79c1bb9}\label{class_tauler_a351f47779e1279c18fb9d082d79c1bb9}} 
+\index{Tauler@{Tauler}!casellesEntrePosicionsRectilinies@{casellesEntrePosicionsRectilinies}}
+\index{casellesEntrePosicionsRectilinies@{casellesEntrePosicionsRectilinies}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{casellesEntrePosicionsRectilinies()}{casellesEntrePosicionsRectilinies()}}
+{\footnotesize\ttfamily void Tauler.\+caselles\+Entre\+Posicions\+Rectilinies (\begin{DoxyParamCaption}\item[{Collection$<$ \mbox{\hyperlink{class_posicio}{Posicio}} $>$}]{res,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Inicial,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Final }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+El desplaçament ha de ser rectilini. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}actualitza res amb les caselles que hi ha en el rang rectilini (pos\+Inicial, pos\+Final\mbox{]}. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em res} & Conjunt de posicions del tauler que hi ha entre les dues posicions inicial i final. \\
+\hline
+{\em pos\+Inicial} & \mbox{\hyperlink{class_posicio}{Posicio}} inicial del moviment. \\
+\hline
+{\em pos\+Final} & \mbox{\hyperlink{class_posicio}{Posicio}} final del moviment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tauler_a83013a8d97831b278431305dea132f7a}\label{class_tauler_a83013a8d97831b278431305dea132f7a}} 
+\index{Tauler@{Tauler}!deepCopy@{deepCopy}}
+\index{deepCopy@{deepCopy}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{deepCopy()}{deepCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Tauler.\+deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+original != null. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+Una ref a una copia del tauler. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+Respecte les estructures internes només s\textquotesingle{}en copien els índexs. Les altres es recalculen cada cop que es pregunta l\textquotesingle{}estat del tauler i per tant, no cal. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_tauler_a8912aa8474c11e2425b8c6a54dd8882b}\label{class_tauler_a8912aa8474c11e2425b8c6a54dd8882b}} 
+\index{Tauler@{Tauler}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{dimensions()}{dimensions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pair}{Pair}}$<$Integer,Integer$>$ Tauler.\+dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+\+: S\textquotesingle{}ha inicialitzat el \mbox{\hyperlink{class_tauler}{Tauler}} 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+\+: Un pair amb les dimensions first-\/$>$columnes, seccond-\/$>$files. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a263b1121064bd079c0000e946d0dd8aa}\label{class_tauler_a263b1121064bd079c0000e946d0dd8aa}} 
+\index{Tauler@{Tauler}!dinsTauler@{dinsTauler}}
+\index{dinsTauler@{dinsTauler}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{dinsTauler()}{dinsTauler()}}
+{\footnotesize\ttfamily boolean Tauler.\+dins\+Tauler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos} & Posició que es comprova. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleaà que serà true si pos es dins el tauler i false altrament 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_ae349247a3e51ac2c9fae204d00225f68}\label{class_tauler_ae349247a3e51ac2c9fae204d00225f68}} 
+\index{Tauler@{Tauler}!donamPeces@{donamPeces}}
+\index{donamPeces@{donamPeces}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{donamPeces()}{donamPeces()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_peca}{Peca}}$>$ Tauler.\+donam\+Peces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Peces }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Peces} & \mbox{\hyperlink{enum_color}{Color}} de les peces que es consulten. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Una coleccio de totes les peces del color\+Peces que conté el tauler. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a8569be227afaeefb92179f39aed44774}\label{class_tauler_a8569be227afaeefb92179f39aed44774}} 
+\index{Tauler@{Tauler}!eliminarPeca@{eliminarPeca}}
+\index{eliminarPeca@{eliminarPeca}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{eliminarPeca()}{eliminarPeca()}}
+{\footnotesize\ttfamily void Tauler.\+eliminar\+Peca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+La \mbox{\hyperlink{class_posicio}{Posicio}} existeix al tauler. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha eliminat la peça del tauler. Si no hi havia cap peça en aquella \mbox{\hyperlink{class_posicio}{Posicio}} no s\textquotesingle{}ha modificat. La peça ja no sap on es. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos} & \mbox{\hyperlink{class_posicio}{Posicio}} on s\textquotesingle{}eliminarà la peça. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tauler_af1ed5247780b47ff1ff5f9bb1e68335e}\label{class_tauler_af1ed5247780b47ff1ff5f9bb1e68335e}} 
+\index{Tauler@{Tauler}!esFinal@{esFinal}}
+\index{esFinal@{esFinal}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{esFinal()}{esFinal()}}
+{\footnotesize\ttfamily boolean Tauler.\+es\+Final (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{posicio\+A\+Comprovar,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em posicio\+A\+Comprovar} & Posició que es comprovarà. \\
+\hline
+{\em color} & \mbox{\hyperlink{enum_color}{Color}} que s\textquotesingle{}agafarà de referència a la comprovació. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+un booleà que indicarà si la posició està al la última fila del tauler tenint en compte la prespectiva de cada jugador. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+Prespectiva\+: En la prespectiva de les negres l\textquotesingle{}última fila serà 0 mentre que per les blanques l\textquotesingle{}última serà la més gran. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_tauler_ae41220c09c617a3000265418d1ab2097}\label{class_tauler_ae41220c09c617a3000265418d1ab2097}} 
+\index{Tauler@{Tauler}!estat@{estat}}
+\index{estat@{estat}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{estat()}{estat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_estat_tauler}{Estat\+Tauler}} Tauler.\+estat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{torn }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+torn El color torn ha de ser el de l\textquotesingle{}últim jugador que ha fet una jugada. Aquesta jugada ha d\textquotesingle{}haver sigut ja aplicada al tauler. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em torn} & \mbox{\hyperlink{enum_color}{Color}} del jugador que A\+C\+A\+BA de fer el torn. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un \mbox{\hyperlink{enum_estat_tauler}{Estat\+Tauler}} amb la informació de l\textquotesingle{}estat del tauler. Fent referència a qui acaba de jugar. Per exemple si tenim un escac, aquest l\textquotesingle{}ha provocat el jugador de color \char`\"{}torn\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a769d6521e685275ad008e0bec3c39a30}\label{class_tauler_a769d6521e685275ad008e0bec3c39a30}} 
+\index{Tauler@{Tauler}!evaluarTauler@{evaluarTauler}}
+\index{evaluarTauler@{evaluarTauler}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{evaluarTauler()}{evaluarTauler()}}
+{\footnotesize\ttfamily int Tauler.\+evaluar\+Tauler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Evalua aquest tauler indicant la superioritat d\textquotesingle{}un jugador en vers l\textquotesingle{}altre. El valor absolut indica la superioritat i el signe a favor de quin jugador és aquesta. Positiu-\/$>$Blanques, Negatiu-\/$>$Negres. 
+
+\begin{DoxyPostcond}{Postcondició}
+Es garanteix que l\textquotesingle{}estat del tauler no ha canviat. S\textquotesingle{}ha retornat el valor de l\textquotesingle{}evaluació. 
+\end{DoxyPostcond}
+\begin{DoxyNote}{Nota}
+Per fer aquesta evaluació s\textquotesingle{}han utilitzat diversos factors com la protecció del rei, el control del centre i desenvolupament així com les peces restants i el seu valor. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_tauler_a46b92da08cdbd2f753a6e86b2d76dc2b}\label{class_tauler_a46b92da08cdbd2f753a6e86b2d76dc2b}} 
+\index{Tauler@{Tauler}!hiHaEscac@{hiHaEscac}}
+\index{hiHaEscac@{hiHaEscac}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{hiHaEscac()}{hiHaEscac()}}
+{\footnotesize\ttfamily boolean Tauler.\+hi\+Ha\+Escac (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Rei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha el rei del color\+Rei al tauler. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha actualitzat el conjunt de posicions amenaçades pel rival de color\+Rei i s\textquotesingle{}ha retornat un booleà en funció de si el Rei de color\+Rei està en escac. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Rei} & \mbox{\hyperlink{enum_color}{Color}} color del rei que podria estar amenaçat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleà que diu si el rei de color\+Rei està en escac. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a2c0b57ceee06fd4d770af51dcd8f7624}\label{class_tauler_a2c0b57ceee06fd4d770af51dcd8f7624}} 
+\index{Tauler@{Tauler}!hiHaEscacIMat@{hiHaEscacIMat}}
+\index{hiHaEscacIMat@{hiHaEscacIMat}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{hiHaEscacIMat()}{hiHaEscacIMat()}}
+{\footnotesize\ttfamily boolean Tauler.\+hi\+Ha\+Escac\+I\+Mat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Rei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha el rei del color color\+Rei al tauler. S\textquotesingle{}ha comprovat que el rei color\+Rei està en escac. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat un booleà en funció de si el Rei de color\+Rei està en escac i mat. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Rei} & \mbox{\hyperlink{enum_color}{Color}} color del rei que podria estar en mat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleà que diu si el rei de color\+Rei està en escac i mat. 
+\end{DoxyReturn}
+\begin{DoxyVersion}{Versió}
+1. 
+\end{DoxyVersion}
+\mbox{\Hypertarget{class_tauler_aa95e905872e2b7238ae7df7c41048362}\label{class_tauler_aa95e905872e2b7238ae7df7c41048362}} 
+\index{Tauler@{Tauler}!hiHaJugadaQueEvitaMat@{hiHaJugadaQueEvitaMat}}
+\index{hiHaJugadaQueEvitaMat@{hiHaJugadaQueEvitaMat}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{hiHaJugadaQueEvitaMat()}{hiHaJugadaQueEvitaMat()}}
+{\footnotesize\ttfamily boolean Tauler.\+hi\+Ha\+Jugada\+Que\+Evita\+Mat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Rei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+el Rei de color\+Rei està en escac i està al tauler. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Rei} & \mbox{\hyperlink{enum_color}{Color}} del rei que esta en escac. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleà que diu si s\textquotesingle{}ha trobat, o no, una jugada que evitaria el mat. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a8633397585331cccbe9615b140e4a24d}\label{class_tauler_a8633397585331cccbe9615b140e4a24d}} 
+\index{Tauler@{Tauler}!hiHaMovimentValid@{hiHaMovimentValid}}
+\index{hiHaMovimentValid@{hiHaMovimentValid}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{hiHaMovimentValid()}{hiHaMovimentValid()}}
+{\footnotesize\ttfamily boolean Tauler.\+hi\+Ha\+Moviment\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{torn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em torn} & \mbox{\hyperlink{enum_color}{Color}} de qui té el torn i pot estar ofegat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+true si alguna peça de color torn pot fer algún movment vàlid. Altrament false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a45862370f91eafb4f25322936ff7d2ab}\label{class_tauler_a45862370f91eafb4f25322936ff7d2ab}} 
+\index{Tauler@{Tauler}!hiHaTaulesPerOfegat@{hiHaTaulesPerOfegat}}
+\index{hiHaTaulesPerOfegat@{hiHaTaulesPerOfegat}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{hiHaTaulesPerOfegat()}{hiHaTaulesPerOfegat()}}
+{\footnotesize\ttfamily boolean Tauler.\+hi\+Ha\+Taules\+Per\+Ofegat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{torn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha el rei del color contrari al color torn al tauler. S\textquotesingle{}han comprobat que no hi ha escac al rival de torn. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em torn} & \mbox{\hyperlink{enum_color}{Color}} del jugador que ha fet la última jugada i que podria provocar l\textquotesingle{}afogat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleà que serà true si el jugador que no té el torn, està afogat. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+Com diu el \char`\"{}@param torn\char`\"{}, cal que la jugada que hauria de provocar l\textquotesingle{}ofegat s\textquotesingle{}hagi fet ja per comprovar si ara el rei rival ha quedat ofegat. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_tauler_ab6c4f071cfb8b992678bf6e41ea89c23}\label{class_tauler_ab6c4f071cfb8b992678bf6e41ea89c23}} 
+\index{Tauler@{Tauler}!pecesAlMig@{pecesAlMig}}
+\index{pecesAlMig@{pecesAlMig}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{pecesAlMig()}{pecesAlMig()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{class_peca}{Peca}}$>$ $>$ Tauler.\+peces\+Al\+Mig (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Inicial,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Final,  }\item[{boolean}]{fila\+Primer,  }\item[{boolean}]{incloure\+Extrems }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+pos\+Inicial i pos\+Final != null i dins el tauler. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Inicial} & Posició inicial a partir de la que es fa el càlcul. \\
+\hline
+{\em pos\+Final} & Posició final a partir de la que es fa el càlcul. \\
+\hline
+{\em fila\+Primer} & En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no. Altrament no es fa servir i es pot deixar qualsevol valor booleà. \\
+\hline
+{\em incloure\+Extrems} & Si és true s\textquotesingle{}inclouran a la consulta les posicions Inicial i Final, altrament aquestes no es comprovaran \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Una colecció de \mbox{\hyperlink{class_pair}{Pair}} de totes les posicions entre pos\+Inicial i pos\+Final(incloses o no en funcio del parametre incloure\+Extrems) que estiguin ocupades per una \mbox{\hyperlink{class_peca}{Peca}} juntament amb aquesta última. First -\/$>$\mbox{\hyperlink{class_posicio}{Posicio}}, Second -\/$>$ \mbox{\hyperlink{class_peca}{Peca}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_abbdfb759857ae4fa94f3a8a0d86de2a7}\label{class_tauler_abbdfb759857ae4fa94f3a8a0d86de2a7}} 
+\index{Tauler@{Tauler}!pecesAlMigColorConcret@{pecesAlMigColorConcret}}
+\index{pecesAlMigColorConcret@{pecesAlMigColorConcret}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{pecesAlMigColorConcret()}{pecesAlMigColorConcret()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{class_peca}{Peca}}$>$ $>$ Tauler.\+peces\+Al\+Mig\+Color\+Concret (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Inicial,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Final,  }\item[{boolean}]{fila\+Primer,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+A\+Comprovar }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+pos\+Inicial i pos\+Final != null i dins el tauler. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Inicial} & Posició inicial a partir de la que es fa el càlcul. \\
+\hline
+{\em pos\+Final} & Posició final a partir de la que es fa el càlcul. \\
+\hline
+{\em fila\+Primer} & En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no. Altrament no es fa servir i es pot deixar qualsevol valor booleà. \\
+\hline
+{\em color\+A\+Comprovar} & \mbox{\hyperlink{enum_color}{Color}} que han de tenir les peces. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Una colecció de \mbox{\hyperlink{class_pair}{Pair}} de totes les posicions entre pos\+Inicial i pos\+Final(pos\+Inicial i pos\+Final incloses) que estiguin ocupades per una \mbox{\hyperlink{class_peca}{Peca}} del color\+A\+Comprovar juntament amb aquesta última. First -\/$>$\mbox{\hyperlink{class_posicio}{Posicio}}, Second -\/$>$ \mbox{\hyperlink{class_peca}{Peca}} 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+No conforndre amb Peces\+Al\+Mig() que no té en compte el color. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_tauler_a2dadba9c40cdf8c6146c10fa5f7a2509}\label{class_tauler_a2dadba9c40cdf8c6146c10fa5f7a2509}} 
+\index{Tauler@{Tauler}!pecesAtacants@{pecesAtacants}}
+\index{pecesAtacants@{pecesAtacants}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{pecesAtacants()}{pecesAtacants()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_peca}{Peca}}$>$ Tauler.\+peces\+Atacants (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{objectiu,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Amenaca }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Amenaca} & \mbox{\hyperlink{enum_color}{Color}} de les peces que amenacen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Una col·lecció de Peces de color\+Amenaca que poden matar a una \mbox{\hyperlink{class_peca}{Peca}} a la \mbox{\hyperlink{class_posicio}{Posicio}} objectiu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a6f81d33470a6a9e2d305b1f157df5eb1}\label{class_tauler_a6f81d33470a6a9e2d305b1f157df5eb1}} 
+\index{Tauler@{Tauler}!possiblesMovimentsJugador@{possiblesMovimentsJugador}}
+\index{possiblesMovimentsJugador@{possiblesMovimentsJugador}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{possiblesMovimentsJugador()}{possiblesMovimentsJugador()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_peca}{Peca}},\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ $>$ Tauler.\+possibles\+Moviments\+Jugador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Jugador }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Jugador} & \mbox{\hyperlink{enum_color}{Color}} del jugador que ha de moure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un conjunt de moviments que pot fer el jugador i que poden no ser vàlids si deixen el rei en escac. El conjunt de moviments s\textquotesingle{}interpreta com first-\/$>$peça que mou, Second-\/$>$moviment que fa on second.\+first és el destí del moviment i second.\+second és el moviment aplicat per anar-\/hi. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+No confondre amb \mbox{\hyperlink{class_tauler_a0b989c0279854bd05c4dae089c010bc6}{possibles\+Moviments\+Valids(\+Peca)}} que si que assegura la validesa total de cada moviment 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_tauler_a0b989c0279854bd05c4dae089c010bc6}\label{class_tauler_a0b989c0279854bd05c4dae089c010bc6}} 
+\index{Tauler@{Tauler}!possiblesMovimentsValids@{possiblesMovimentsValids}}
+\index{possiblesMovimentsValids@{possiblesMovimentsValids}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{possiblesMovimentsValids()}{possiblesMovimentsValids()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ Tauler.\+possibles\+Moviments\+Valids (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{peca }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+\mbox{\hyperlink{class_peca}{Peca}} està al tauler i coneix la seva posicio. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca} & Peça que es vol comprovar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un conjunt de posicions de possibles desplaçaments V\+A\+L\+I\+D\+S(legal segons les regles dels escacs ) que pot fer la peça a pos\+Peca en l\textquotesingle{}estat actual del tauler. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a6e9f8de7454bd25a93fdca15dc72d3ad}\label{class_tauler_a6e9f8de7454bd25a93fdca15dc72d3ad}} 
+\index{Tauler@{Tauler}!reiTeMovimentSenseEscac@{reiTeMovimentSenseEscac}}
+\index{reiTeMovimentSenseEscac@{reiTeMovimentSenseEscac}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{reiTeMovimentSenseEscac()}{reiTeMovimentSenseEscac()}}
+{\footnotesize\ttfamily boolean Tauler.\+rei\+Te\+Moviment\+Sense\+Escac (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Rei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+pos\+Rei és una Posició que fa referència a una casella que conté un Rei amenaçat. El tauler d\textquotesingle{}amenaces del rival està actualitzat. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Rei} & Posició del rei amenaçat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleà que ens informa si el rei que està en escac té algun moviment valid que evités l\textquotesingle{}escac. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_a4083b16d780e762e10aacadbc9f9e1d3}\label{class_tauler_a4083b16d780e762e10aacadbc9f9e1d3}} 
+\index{Tauler@{Tauler}!simularMoviment@{simularMoviment}}
+\index{simularMoviment@{simularMoviment}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{simularMoviment()}{simularMoviment()}}
+{\footnotesize\ttfamily boolean Tauler.\+simular\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{peca,  }\item[{\mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$}]{moviment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca} & \mbox{\hyperlink{class_posicio}{Posicio}} de le peça que farà el moviment \\
+\hline
+{\em moviment} & Conjunt de \mbox{\hyperlink{class_posicio}{Posicio}} desti i \mbox{\hyperlink{interface_moviment}{Moviment}} a aplicar a la simulacio \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Un booleà que determina si el moviment és o no vàlid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_af70c17a5d0601fd35cb944ca66ff4e50}\label{class_tauler_af70c17a5d0601fd35cb944ca66ff4e50}} 
+\index{Tauler@{Tauler}!tensPeca@{tensPeca}}
+\index{tensPeca@{tensPeca}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{tensPeca()}{tensPeca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Tauler.\+tens\+Peca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+La \mbox{\hyperlink{class_posicio}{Posicio}} existeix al tauler. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos} & \mbox{\hyperlink{class_posicio}{Posicio}} on es fa la consulta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+La peça a la \mbox{\hyperlink{class_posicio}{Posicio}} demanada. Si no hi ha peça es retorna null. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tauler_accc9eac98f175247fc448dcd1adcea97}\label{class_tauler_accc9eac98f175247fc448dcd1adcea97}} 
+\index{Tauler@{Tauler}!toString@{toString}}
+\index{toString@{toString}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Tauler.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+\+: Mostra tot el tauler en un format comprensible. Es mostren les files i columnes així com la representació de cada peça al tauler. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_tauler_ab52536736acb27f8c59a593f02499582}\label{class_tauler_ab52536736acb27f8c59a593f02499582}} 
+\index{Tauler@{Tauler}!valorarPosicioRei@{valorarPosicioRei}}
+\index{valorarPosicioRei@{valorarPosicioRei}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{valorarPosicioRei()}{valorarPosicioRei()}}
+{\footnotesize\ttfamily int Tauler.\+valorar\+Posicio\+Rei (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{pos\+Rei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Donada la columna on està el rei, calcula el valor que té tenir-\/lo en aquesta posició. Es valor molt més tenir-\/lo als extrems del tauler. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos\+Rei} & \mbox{\hyperlink{class_posicio}{Posicio}} on està el rei. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+El valor que té tenir el rei en aquesta posició. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_tauler_a8a08bc8e2c49b7add0502d87c05585e9}\label{class_tauler_a8a08bc8e2c49b7add0502d87c05585e9}} 
+\index{Tauler@{Tauler}!atacantsAlReiBlanc@{atacantsAlReiBlanc}}
+\index{atacantsAlReiBlanc@{atacantsAlReiBlanc}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{atacantsAlReiBlanc}{atacantsAlReiBlanc}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_peca}{Peca}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ Tauler.\+atacants\+Al\+Rei\+Blanc\hspace{0.3cm}{\ttfamily [private]}}
+
+Conjunt de parells de peces que en un estat del tauler(que pot no ser l\textquotesingle{}actual) amenacen al rei Blanc i el moviment que ho permet. \mbox{\Hypertarget{class_tauler_a05e1477c0d834db60194c27933ce5563}\label{class_tauler_a05e1477c0d834db60194c27933ce5563}} 
+\index{Tauler@{Tauler}!atacantsAlReiNegre@{atacantsAlReiNegre}}
+\index{atacantsAlReiNegre@{atacantsAlReiNegre}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{atacantsAlReiNegre}{atacantsAlReiNegre}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_peca}{Peca}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ Tauler.\+atacants\+Al\+Rei\+Negre\hspace{0.3cm}{\ttfamily [private]}}
+
+Conjunt de parells de peces que en un estat del tauler(que pot no ser l\textquotesingle{}actual) amenacen al rei Negre i el moviment que ho permet. \mbox{\Hypertarget{class_tauler_a05d62ed0613ef4450a7f38fd34ef6247}\label{class_tauler_a05d62ed0613ef4450a7f38fd34ef6247}} 
+\index{Tauler@{Tauler}!caselles@{caselles}}
+\index{caselles@{caselles}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{caselles}{caselles}}
+{\footnotesize\ttfamily Array\+List$<$Array\+List$<$\mbox{\hyperlink{class_casella}{Casella}}$>$ $>$ Tauler.\+caselles\hspace{0.3cm}{\ttfamily [private]}}
+
+Caselles del tauler en format matriu. L\textquotesingle{}acces és caselles\mbox{[}fila\mbox{]}\mbox{[}columna\mbox{]} La posició 0 del contenidor no es fa servir. \mbox{\Hypertarget{class_tauler_a484a0b6941bfaa378ae27790016519d8}\label{class_tauler_a484a0b6941bfaa378ae27790016519d8}} 
+\index{Tauler@{Tauler}!columnes@{columnes}}
+\index{columnes@{columnes}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{columnes}{columnes}}
+{\footnotesize\ttfamily int Tauler.\+columnes\hspace{0.3cm}{\ttfamily [private]}}
+
+Nombre de columnes del tauler \mbox{\Hypertarget{class_tauler_a103c29cb97bc9ac5c0bf973046f429b9}\label{class_tauler_a103c29cb97bc9ac5c0bf973046f429b9}} 
+\index{Tauler@{Tauler}!else@{else}}
+\index{else@{else}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily Tauler.\+else\hspace{0.3cm}{\ttfamily [package]}}
+
+{\bfseries Valor inicial\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{            \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i < difFiles; i++) \{}
+\DoxyCodeLine{                res.add(\textcolor{keyword}{new} \mbox{\hyperlink{class_posicio}{Posicio}}(filaMesBaixa.fila()+i,filaMesBaixa.columna()+i));}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{            res.add(posFinal)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tauler_a7b9ca4f7b4b0f828db35b23a439ff467}\label{class_tauler_a7b9ca4f7b4b0f828db35b23a439ff467}} 
+\index{Tauler@{Tauler}!files@{files}}
+\index{files@{files}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily int Tauler.\+files\hspace{0.3cm}{\ttfamily [private]}}
+
+Nombre de files del tauler \mbox{\Hypertarget{class_tauler_a857f29bc07298cebf4d72467c89bad02}\label{class_tauler_a857f29bc07298cebf4d72467c89bad02}} 
+\index{Tauler@{Tauler}!indexBlanques@{indexBlanques}}
+\index{indexBlanques@{indexBlanques}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{indexBlanques}{indexBlanques}}
+{\footnotesize\ttfamily Hash\+Map$<$String,List$<$\mbox{\hyperlink{class_peca}{Peca}}$>$ $>$ Tauler.\+index\+Blanques\hspace{0.3cm}{\ttfamily [private]}}
+
+Index de les peces de color blanc. La clau és el nom del tipus de la peça ex \char`\"{}\+R\+E\+I\char`\"{} i el valor és una llista de les peces d\textquotesingle{}aquell color i tipus. \mbox{\Hypertarget{class_tauler_a6e95ff5dfd61fdfd5c14cf1c9bf50b03}\label{class_tauler_a6e95ff5dfd61fdfd5c14cf1c9bf50b03}} 
+\index{Tauler@{Tauler}!indexNegres@{indexNegres}}
+\index{indexNegres@{indexNegres}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{indexNegres}{indexNegres}}
+{\footnotesize\ttfamily Hash\+Map$<$String,List$<$\mbox{\hyperlink{class_peca}{Peca}}$>$ $>$ Tauler.\+index\+Negres\hspace{0.3cm}{\ttfamily [private]}}
+
+Index de les peces de color negre. La clau és el nom del tipus de la peça ex \char`\"{}\+R\+E\+I\char`\"{} i el valor és una llista de les peces d\textquotesingle{}aquell color i tipus. \mbox{\Hypertarget{class_tauler_a0f77c6752c10bf587b5fe98a9a6a26c0}\label{class_tauler_a0f77c6752c10bf587b5fe98a9a6a26c0}} 
+\index{Tauler@{Tauler}!taulerAmenacesBlanques@{taulerAmenacesBlanques}}
+\index{taulerAmenacesBlanques@{taulerAmenacesBlanques}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{taulerAmenacesBlanques}{taulerAmenacesBlanques}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_posicio}{Posicio}}$>$ Tauler.\+tauler\+Amenaces\+Blanques\hspace{0.3cm}{\ttfamily [private]}}
+
+Conjunt de posicions amenaçades per les peces blanques. Pot no estar actualitzat. \mbox{\Hypertarget{class_tauler_a5b7917d0e6c026da0c7ffa03ec482385}\label{class_tauler_a5b7917d0e6c026da0c7ffa03ec482385}} 
+\index{Tauler@{Tauler}!taulerAmenacesNegres@{taulerAmenacesNegres}}
+\index{taulerAmenacesNegres@{taulerAmenacesNegres}!Tauler@{Tauler}}
+\doxysubsubsection{\texorpdfstring{taulerAmenacesNegres}{taulerAmenacesNegres}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{class_posicio}{Posicio}}$>$ Tauler.\+tauler\+Amenaces\+Negres\hspace{0.3cm}{\ttfamily [private]}}
+
+Conjunt de posicions amenaçades per les peces negres. Pot no estar actualitzat. 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_tauler_8java}{Tauler.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,299 @@
+.TH "TipusPeca" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TipusPeca \- Un tipus de peça configurable\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBTipusPeca\fP (String \fBnom\fP, char \fBsimbol\fP, int \fBvalor\fP, boolean \fBpromocio\fP, boolean \fBinvulnerabilitat\fP, String \fBruta_blanca\fP, String \fBruta_negra\fP)  throws IllegalArgumentException "
+.br
+.ti -1c
+.RI "String \fBdiguemRutaBlanca\fP ()"
+.br
+.ti -1c
+.RI "String \fBdiguemRutaNegra\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBdiguemPromocio\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBesInvulnerable\fP ()"
+.br
+.ti -1c
+.RI "void \fBcarregarMoviment\fP (\fBMoviment\fP mov, boolean inicial)  throws ExcepcioG "
+.br
+.ti -1c
+.RI "int \fBdiguemValor\fP ()"
+.br
+.ti -1c
+.RI "char \fBdiguemSimbol\fP ()"
+.br
+.ti -1c
+.RI "\fBMoviment\fP \fBprovaMoviment\fP (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, boolean blanques, \fBTipusPeca\fP peca_final, boolean peca_mig)"
+.br
+.ti -1c
+.RI "boolean \fBprovaMoviment\fP (\fBMoviment\fP mov)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Atributs de Paquet"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBpromocio\fP"
+.br
+.RI "Regles extra de la peça\&. "
+.ti -1c
+.RI "boolean \fBinvulnerabilitat\fP"
+.br
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "String \fBdiguemNom\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "String \fBnom\fP"
+.br
+.RI "Tipus de peça, configuració\&. "
+.ti -1c
+.RI "char \fBsimbol\fP"
+.br
+.RI "Símbol de la peça en majúscula\&. "
+.ti -1c
+.RI "int \fBvalor\fP"
+.br
+.RI "Valor de la peça\&. "
+.ti -1c
+.RI "ArrayList< \fBMoviment\fP > \fBmoviments\fP"
+.br
+.RI "Moviments de la peça\&. "
+.ti -1c
+.RI "String \fBruta_blanca\fP"
+.br
+.RI "Rutes de les icones\&. "
+.ti -1c
+.RI "String \fBruta_negra\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Un tipus de peça configurable\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "TipusPeca\&.TipusPeca (String nom, char simbol, int valor, boolean promocio, boolean invulnerabilitat, String ruta_blanca, String ruta_negra) throws IllegalArgumentException"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInom\fP El nom\&. 
+.br
+\fIsimbol\fP El símbol\&. 
+.br
+\fIvalor\fP El valor\&. 
+.br
+\fIpromocio\fP Indica si té promoció o no\&. 
+.br
+\fIinvulnerabilitat\fP Indica si la peça és invulnerable\&. 
+.RE
+.PP
+\fBPrecondició\fP
+.RS 4
+char majúscula i valor >= 0 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea un tipus de peça amb nom i valors entrats\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP Quan se salta la precondició\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "void TipusPeca\&.carregarMoviment (\fBMoviment\fP mov, boolean inicial) throws \fBExcepcioG\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImov\fP \fBMoviment\fP a inserir\&. 
+.br
+\fIinicial\fP Indica si el moviment és exclusivament inicial o no\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Carrega el moviment al a configuració de la peça\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIDOBLE_MOVIMENT\fP Si s'ha trobat un moviment amb el mateix vector de desplaçament\&. 
+.br
+\fI\fBExcepcioG\fP\fP Quan el moviment ja existeix\&. 
+.RE
+.PP
+
+.SS "String TipusPeca\&.diguemNom ()\fC [private]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna el nom\&. 
+.RE
+.PP
+
+.SS "boolean TipusPeca\&.diguemPromocio ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna si té promoció\&. 
+.RE
+.PP
+
+.SS "String TipusPeca\&.diguemRutaBlanca ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la ruta de la icona blanca\&. 
+.RE
+.PP
+
+.SS "String TipusPeca\&.diguemRutaNegra ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la ruta de la icona negra\&. 
+.RE
+.PP
+
+.SS "char TipusPeca\&.diguemSimbol ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna el símbol\&. 
+.RE
+.PP
+
+.SS "int TipusPeca\&.diguemValor ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna el valor\&. 
+.RE
+.PP
+
+.SS "boolean TipusPeca\&.esInvulnerable ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la invulnerabilitat de la peça\&. 
+.RE
+.PP
+
+.SS "boolean TipusPeca\&.provaMoviment (\fBMoviment\fP mov)"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el moviment està repetit amb el mateix vector de desplaçament, fals altrament\&. 
+.RE
+.PP
+
+.SS "\fBMoviment\fP TipusPeca\&.provaMoviment (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, boolean blanques, \fBTipusPeca\fP peca_final, boolean peca_mig)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP Posició d'origen\&. 
+.br
+\fIdesti\fP Posició destí\&. 
+.br
+\fIprimer\fP Indica si el el moviment és el primer de la partida\&. 
+.br
+\fIpeca_final\fP Referència al tipus de peça de la posició destí\&. 
+.br
+\fIpeca_mig\fP Indica si hi ha alguna peça enmig de la trajectòria\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Retorna primer els enrocs\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna el moviment que fa el desplaçament\&. 
+.RE
+.PP
+
+.SS "String TipusPeca\&.toString ()"
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "boolean TipusPeca\&.invulnerabilitat\fC [package]\fP"
+
+.SS "ArrayList<\fBMoviment\fP> TipusPeca\&.moviments\fC [private]\fP"
+
+.PP
+Moviments de la peça\&. 
+.SS "String TipusPeca\&.nom\fC [private]\fP"
+
+.PP
+Tipus de peça, configuració\&. Nom de la peça 
+.SS "boolean TipusPeca\&.promocio\fC [package]\fP"
+
+.PP
+Regles extra de la peça\&. 
+.SS "String TipusPeca\&.ruta_blanca\fC [private]\fP"
+
+.PP
+Rutes de les icones\&. 
+.SS "String TipusPeca\&.ruta_negra\fC [private]\fP"
+
+.SS "char TipusPeca\&.simbol\fC [private]\fP"
+
+.PP
+Símbol de la peça en majúscula\&. 
+.SS "int TipusPeca\&.valor\fC [private]\fP"
+
+.PP
+Valor de la peça\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

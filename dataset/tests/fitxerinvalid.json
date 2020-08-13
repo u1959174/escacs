@@ -1,0 +1,131 @@
+{
+  "fitxerRegles": "../dataset/regles.json",
+  "posIniNegres": [
+    {
+      "pos": "a7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "b7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "c7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "d7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "e7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "f7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "g7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "h7",
+      "tipus": "PEO",
+      "moguda": false
+    },
+    {
+      "pos": "a8",
+      "tipus": "TORRE",
+      "moguda": false
+    },
+    {
+      "pos": "b8",
+      "tipus": "CAVALL",
+      "moguda": false
+    },
+    {
+      "pos": "c8",
+      "tipus": "ALFIL",
+      "moguda": false
+    },
+    {
+      "pos": "d8",
+      "tipus": "DAMA",
+      "moguda": false
+    },
+    {
+      "pos": "e8",
+      "tipus": "REI",
+      "moguda": false
+    },
+    {
+      "pos": "f8",
+      "tipus": "ALFIL",
+      "moguda": false
+    },
+    {
+      "pos": "g8",
+      "tipus": "CAVALL",
+      "moguda": false
+    },
+    {
+      "pos": "h8",
+      "tipus": "TORRE",
+      "moguda": false
+    }
+  ],
+  "proper_torn": "BLANQUES",
+  "tirades": [
+    {
+      "torn": "BLANQUES",
+      "origen": "e2",
+      "desti": "e4",
+      "resultat": ""
+    },
+    {
+      "torn": "NEGRES",
+      "origen": "e7",
+      "desti": "e5",
+      "resultat": ""
+    },
+    {
+      "torn": "BLANQUES",
+      "origen": "d1",
+      "desti": "h5",
+      "resultat": ""
+    },
+    {
+      "torn": "NEGRES",
+      "origen": "b8",
+      "desti": "c6",
+      "resultat": ""
+    },
+    {
+      "torn": "BLANQUES",
+      "origen": "f1",
+      "desti": "c4",
+      "resultat": ""
+    },
+    {
+      "torn": "NEGRES",
+      "origen": "g8",
+      "desti": "f6",
+      "resultat": ""
+    },
+    {
+      "torn": "BLANQUES",
+      "origen": "h5",
+      "desti": "f7",
+      "resultat": "ESCAC I MAT"
+    }
+  ],
+  "resultat_final": "BLANQUES GUANYEN"
+}

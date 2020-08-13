@@ -1,0 +1,344 @@
+\hypertarget{class_huma}{}\doxysection{Referència de la Classe Huma}
+\label{class_huma}\index{Huma@{Huma}}
+
+
+Classe que representa un \mbox{\hyperlink{interface_jugador}{Jugador}} controlat per un Humà. Fa les interaccions entre un Humà i el contolador a través del terminal.  
+
+
+Diagrama d\textquotesingle{}Herència per a Huma\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_huma}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_huma_ace88a23586050a317d792f5489a0600d}{Huma}} (String \mbox{\hyperlink{class_huma_a1e78da34846c04a0472a79433a505fa1}{nom}})
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_a781d0a9cb4ad8af9a000423e00ddfdf1}{jugar}} (boolean mode\+Text)
+\item 
+void \mbox{\hyperlink{class_huma_a6221b711f977ee1baca1d36759cb3770}{preguntar\+Taules}} ()
+\item 
+\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_huma_af85e43309241343d9c7dfa2c469c4f9a}{promocionar}} ()
+\item 
+String \mbox{\hyperlink{class_huma_a1fbcdca8f998d75953bb65386abc2f1a}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \mbox{\hyperlink{class_huma_aecd8a0e14d22007e1f39ada7a4d407e7}{desfer\+Jugada}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_a1144a05aa0e617bb29b54d7a79ce411f}{acceptar\+Taules}} ()
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_a6c95d230d572503156e1c258d9b150d7}{ajornar\+Partida}} ()
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_a206ec91cfb082a7ea2647ebaa472b4a2}{demanar\+Taules}} ()
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_af6a98d635b94ccc00793d9a6d3d2ccc7}{fer\+Jugada}} ()  throws Illegal\+Argument\+Exception, String\+Index\+Out\+Of\+Bounds\+Exception 
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_afa3dfcd86a4958c8b68f0b8d2068d016}{gestionar\+Taules\+Pendents}} (boolean mode\+Text)
+\item 
+void \mbox{\hyperlink{class_huma_a713af7420f5c3d55d0f84c660ccf8608}{guardar\+Partida}} ()
+\item 
+void \mbox{\hyperlink{class_huma_a17cc2355fd585d11eb19a794ba043593}{mostrar\+Opcions}} (boolean mode\+Text)
+\item 
+\mbox{\hyperlink{class_posicio}{Posicio}} \mbox{\hyperlink{class_huma_adc721611e299c57486efa70c5e3dad6f}{parse\+String}} (String pos)  throws Illegal\+Argument\+Exception
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_a593e6a813370b9956a5770c6ff9b4ef0}{rebutjar\+Taules}} ()
+\item 
+boolean \mbox{\hyperlink{class_huma_a805fb5cbf395732ad88404af09c2cfeb}{refer\+Jugada}} ()
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_huma_a78bec201f64bab9390cc405eac817adf}{rendirse}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_huma_a1e78da34846c04a0472a79433a505fa1}{nom}}
+\item 
+boolean \mbox{\hyperlink{class_huma_a47ef54883394e732c8b9d4c256405dc6}{taules\+Pendents\+Acceptacio}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que representa un \mbox{\hyperlink{interface_jugador}{Jugador}} controlat per un Humà. Fa les interaccions entre un Humà i el contolador a través del terminal. 
+
+Interfície que generalitza un \mbox{\hyperlink{interface_jugador}{Jugador}} d\textquotesingle{}escacs.
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_huma_ace88a23586050a317d792f5489a0600d}\label{class_huma_ace88a23586050a317d792f5489a0600d}} 
+\index{Huma@{Huma}!Huma@{Huma}}
+\index{Huma@{Huma}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{Huma()}{Huma()}}
+{\footnotesize\ttfamily Huma.\+Huma (\begin{DoxyParamCaption}\item[{String}]{nom }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_huma_a1144a05aa0e617bb29b54d7a79ce411f}\label{class_huma_a1144a05aa0e617bb29b54d7a79ce411f}} 
+\index{Huma@{Huma}!acceptarTaules@{acceptarTaules}}
+\index{acceptarTaules@{acceptarTaules}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{acceptarTaules()}{acceptarTaules()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+acceptar\+Taules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat una jugada que indica que les taules s\textquotesingle{}han rebutjat. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Una jugada que té com a resultat T\+Rebutjades. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_a6c95d230d572503156e1c258d9b150d7}\label{class_huma_a6c95d230d572503156e1c258d9b150d7}} 
+\index{Huma@{Huma}!ajornarPartida@{ajornarPartida}}
+\index{ajornarPartida@{ajornarPartida}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{ajornarPartida()}{ajornarPartida()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+ajornar\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat una jugada que indica la petició d\textquotesingle{}ajornament i s\textquotesingle{}ha informat als jugadors de l\textquotesingle{}Ajornament. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Una jugada que té com a resultat Ajornament. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_a206ec91cfb082a7ea2647ebaa472b4a2}\label{class_huma_a206ec91cfb082a7ea2647ebaa472b4a2}} 
+\index{Huma@{Huma}!demanarTaules@{demanarTaules}}
+\index{demanarTaules@{demanarTaules}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{demanarTaules()}{demanarTaules()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+demanar\+Taules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat una jugada que indica la petició de taules. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Una jugada que té com a resultat Taules Solicitades. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_aecd8a0e14d22007e1f39ada7a4d407e7}\label{class_huma_aecd8a0e14d22007e1f39ada7a4d407e7}} 
+\index{Huma@{Huma}!desferJugada@{desferJugada}}
+\index{desferJugada@{desferJugada}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{desferJugada()}{desferJugada()}}
+{\footnotesize\ttfamily static boolean Huma.\+desfer\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha demanat al \mbox{\hyperlink{interface_jugador}{Jugador}} si quantes jugades vol desfer i s\textquotesingle{}ha passat la petició al controlador. Si la petició de desfer jugades és vàlida es retorna true, altrament false. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si la petició s\textquotesingle{}ha realitzat. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_af6a98d635b94ccc00793d9a6d3d2ccc7}\label{class_huma_af6a98d635b94ccc00793d9a6d3d2ccc7}} 
+\index{Huma@{Huma}!ferJugada@{ferJugada}}
+\index{ferJugada@{ferJugada}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{ferJugada()}{ferJugada()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+fer\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception, String\+Index\+Out\+Of\+Bounds\+Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha demanat la jugada a fer al jugador, aquesta s\textquotesingle{}ha enregistrat i retornat en una \mbox{\hyperlink{class_jugada}{Jugada}}. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Una jugada que conté el moviment que vol fer el \mbox{\hyperlink{interface_jugador}{Jugador}}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & Quan el format que ha entrat el jugador no era l\textquotesingle{}esperat. \\
+\hline
+{\em String\+Index\+Out\+Of\+Bounds\+Exception} & Quan el format que ha entrat el jugador no era l\textquotesingle{}esperat. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_huma_afa3dfcd86a4958c8b68f0b8d2068d016}\label{class_huma_afa3dfcd86a4958c8b68f0b8d2068d016}} 
+\index{Huma@{Huma}!gestionarTaulesPendents@{gestionarTaulesPendents}}
+\index{gestionarTaulesPendents@{gestionarTaulesPendents}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{gestionarTaulesPendents()}{gestionarTaulesPendents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+gestionar\+Taules\+Pendents (\begin{DoxyParamCaption}\item[{boolean}]{mode\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+Hi han taules pendents d\textquotesingle{}acceptar o rebutjar per part d\textquotesingle{}aquest jugador. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em mode\+Text} & Booleà que indica si estem en mode Text(true) o gràfic(false) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Una jugada que conté la decisió d\textquotesingle{}acceptar o rebutjar les taules per part d\textquotesingle{}aquest jugador. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_a713af7420f5c3d55d0f84c660ccf8608}\label{class_huma_a713af7420f5c3d55d0f84c660ccf8608}} 
+\index{Huma@{Huma}!guardarPartida@{guardarPartida}}
+\index{guardarPartida@{guardarPartida}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{guardarPartida()}{guardarPartida()}}
+{\footnotesize\ttfamily void Huma.\+guardar\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+El jugador ha tingut la opció de guardar la partida. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_huma_a781d0a9cb4ad8af9a000423e00ddfdf1}\label{class_huma_a781d0a9cb4ad8af9a000423e00ddfdf1}} 
+\index{Huma@{Huma}!jugar@{jugar}}
+\index{jugar@{jugar}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{jugar()}{jugar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+jugar (\begin{DoxyParamCaption}\item[{boolean}]{mode\+Text }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em mode\+Text} & Indica si el jugador juga en mode text. En aquest cas el jugador té opcions diferents a mode text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha demanat al jugador quina jugada vol fer i s\textquotesingle{}ha retornat una jugada que conté la seva desició. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+La \mbox{\hyperlink{class_jugada}{Jugada}} que s\textquotesingle{}ha fet. Null si en mode grafic s\textquotesingle{}ha demanat sortir. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+La \mbox{\hyperlink{class_jugada}{Jugada}} pot contenir un moviment, pot contenir una desició diferent de moure una peça com per exemple\+: petició de taules o rendició. També pot contenir una desició buida indicant que s\textquotesingle{}han desfet o refet jugades i pot ser null en cas que en mode grafic s\textquotesingle{}hagi sortit del menú. 
+\end{DoxyNote}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_abc782ec5dd8d62f265c6683b798e7311}{Jugador}}.
+
+\mbox{\Hypertarget{class_huma_a17cc2355fd585d11eb19a794ba043593}\label{class_huma_a17cc2355fd585d11eb19a794ba043593}} 
+\index{Huma@{Huma}!mostrarOpcions@{mostrarOpcions}}
+\index{mostrarOpcions@{mostrarOpcions}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{mostrarOpcions()}{mostrarOpcions()}}
+{\footnotesize\ttfamily void Huma.\+mostrar\+Opcions (\begin{DoxyParamCaption}\item[{boolean}]{mode\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha mostrat al jugador les opcions que té disponibles en aquest estat i mode de la partida. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em mode\+Text} & Booleà que indica si estem en mode Text(true) o gràfic(false). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Les opcions mostrades són 1-\/Jugar(text)/\+Sortir(gràfic), 2-\/Rendir-\/se, 3-\/Demanar Taules, 4-\/Guardar, 5-\/Desfer, 6-\/Refer, 7-\/Ajornar. 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_huma_adc721611e299c57486efa70c5e3dad6f}\label{class_huma_adc721611e299c57486efa70c5e3dad6f}} 
+\index{Huma@{Huma}!parseString@{parseString}}
+\index{parseString@{parseString}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{parseString()}{parseString()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_posicio}{Posicio}} Huma.\+parse\+String (\begin{DoxyParamCaption}\item[{String}]{pos }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPrecond}{Precondició}
+pos està en format algebraic 
+\end{DoxyPrecond}
+\begin{DoxySeeAlso}{Mireu també}
+\mbox{\hyperlink{class_posicio_ac3911cd6a78ff5608df2dd74a87c7758}{Posicio\+::\+Posicio(char columna, int fila)}}. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pos} & String representatiu d\textquotesingle{}una posició. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Una instància de \mbox{\hyperlink{class_posicio}{Posicio}} inicialitzada a partir del paràmtre pos. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em Illegal\+Argument\+Exception} & En cas que pos no estigui en el format especificat. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_huma_a6221b711f977ee1baca1d36759cb3770}\label{class_huma_a6221b711f977ee1baca1d36759cb3770}} 
+\index{Huma@{Huma}!preguntarTaules@{preguntarTaules}}
+\index{preguntarTaules@{preguntarTaules}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{preguntarTaules()}{preguntarTaules()}}
+{\footnotesize\ttfamily void Huma.\+preguntar\+Taules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+El jugador sap que li han demanat taules. 
+\end{DoxyPostcond}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_a9a40261ca4b4785423c5aacdcd9319dc}{Jugador}}.
+
+\mbox{\Hypertarget{class_huma_af85e43309241343d9c7dfa2c469c4f9a}\label{class_huma_af85e43309241343d9c7dfa2c469c4f9a}} 
+\index{Huma@{Huma}!promocionar@{promocionar}}
+\index{promocionar@{promocionar}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{promocionar()}{promocionar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Huma.\+promocionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha alguna peca a promocionar. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+Retorna la peca a la que es desitja promocionar. Es garanteix que el \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} retornat no serà el tipus R\+EI. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_a6898dae2a8347e3137e706aed77d9278}{Jugador}}.
+
+\mbox{\Hypertarget{class_huma_a593e6a813370b9956a5770c6ff9b4ef0}\label{class_huma_a593e6a813370b9956a5770c6ff9b4ef0}} 
+\index{Huma@{Huma}!rebutjarTaules@{rebutjarTaules}}
+\index{rebutjarTaules@{rebutjarTaules}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{rebutjarTaules()}{rebutjarTaules()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+rebutjar\+Taules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat una jugada que indica que les taules s\textquotesingle{}han rebutjat. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Una jugada que té com a resultat T\+Rebutjades. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_a805fb5cbf395732ad88404af09c2cfeb}\label{class_huma_a805fb5cbf395732ad88404af09c2cfeb}} 
+\index{Huma@{Huma}!referJugada@{referJugada}}
+\index{referJugada@{referJugada}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{referJugada()}{referJugada()}}
+{\footnotesize\ttfamily boolean Huma.\+refer\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha demanat al \mbox{\hyperlink{interface_jugador}{Jugador}} si quantes jugades vol desfer i s\textquotesingle{}ha passat la petició al controlador. Si la petició de desfer jugades és vàlida es retorna true, altrament false. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Un booleà que indica si la petició s\textquotesingle{}ha realitzat. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_a78bec201f64bab9390cc405eac817adf}\label{class_huma_a78bec201f64bab9390cc405eac817adf}} 
+\index{Huma@{Huma}!rendirse@{rendirse}}
+\index{rendirse@{rendirse}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{rendirse()}{rendirse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Huma.\+rendirse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat una jugada que conté la rendició. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+Una jugada que té com a resultat Rendició. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_huma_a1fbcdca8f998d75953bb65386abc2f1a}\label{class_huma_a1fbcdca8f998d75953bb65386abc2f1a}} 
+\index{Huma@{Huma}!toString@{toString}}
+\index{toString@{toString}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Huma.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+El nom del \mbox{\hyperlink{interface_jugador}{Jugador}}. 
+\end{DoxyReturn}
+
+
+Implementa \mbox{\hyperlink{interface_jugador_a69e46d6ddf4397e9325d4cdec5bb4253}{Jugador}}.
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_huma_a1e78da34846c04a0472a79433a505fa1}\label{class_huma_a1e78da34846c04a0472a79433a505fa1}} 
+\index{Huma@{Huma}!nom@{nom}}
+\index{nom@{nom}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily String Huma.\+nom\hspace{0.3cm}{\ttfamily [private]}}
+
+Nom del jugador \mbox{\Hypertarget{class_huma_a47ef54883394e732c8b9d4c256405dc6}\label{class_huma_a47ef54883394e732c8b9d4c256405dc6}} 
+\index{Huma@{Huma}!taulesPendentsAcceptacio@{taulesPendentsAcceptacio}}
+\index{taulesPendentsAcceptacio@{taulesPendentsAcceptacio}!Huma@{Huma}}
+\doxysubsubsection{\texorpdfstring{taulesPendentsAcceptacio}{taulesPendentsAcceptacio}}
+{\footnotesize\ttfamily boolean Huma.\+taules\+Pendents\+Acceptacio\hspace{0.3cm}{\ttfamily [private]}}
+
+Indica si el jugador té pendent decidir si accepta o no taules. 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_huma_8java}{Huma.\+java}}\end{DoxyCompactItemize}

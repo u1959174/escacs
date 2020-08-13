@@ -1,0 +1,85 @@
+.TH "MinIMax" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MinIMax \- Interfície que coné els mètodes que implementa l'algoritme \fBMinIMax\fP adaptat al joc dels escacs\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Heretat per \fBMinIMaxParalel\fP i \fBMinIMaxSequencial\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBJugada\fP \fBcalcularMillorJugada\fP ()"
+.br
+.ti -1c
+.RI "default boolean \fBferIValidarJugada\fP (\fBTauler\fP taulerAmbAquestaJugada, \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP >> jugadaAct, \fBColor\fP colorQueMou)"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Interfície que coné els mètodes que implementa l'algoritme \fBMinIMax\fP adaptat al joc dels escacs\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "\fBJugada\fP MinIMax\&.calcularMillorJugada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha com a mínim una jugada vàlida a fer\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorQueMou\fP \fBColor\fP del qual es calcularà la millor jugada possible 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La millor jugada calculada amb aquest algoritme i el tauler actual del joc\&. La jugada és vàlida segons les regles d'aquest joc\&. 
+.RE
+.PP
+
+.PP
+Reimplementat a \fBMinIMaxParalel\fP i \fBMinIMaxSequencial\fP\&.
+.SS "default boolean MinIMax\&.ferIValidarJugada (\fBTauler\fP taulerAmbAquestaJugada, \fBPair\fP< \fBPeca\fP, \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP >> jugadaAct, \fBColor\fP colorQueMou)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItaulerAmbAquestaJugada\fP \fBTauler\fP sobre el que se li aplicara la jugada\&. 
+.br
+\fIjugadaAct\fP \fBJugada\fP que s'aplicarà al tauler\&. \fBPair\fP<PecaQueMou,\fBPair\fP<\fBPosicio\fP destí, \fBMoviment\fP aplicat per anar a desti>> 
+.br
+\fIcolorQueMou\fP \fBColor\fP que fa el moviment 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si la jugada que s'ha fet es vàlida o no 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+La jugada s'ha aplicat al tauler si aquesta era vàlida\&. Altrament no es garanteix aquesta aplicació\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

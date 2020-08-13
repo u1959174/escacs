@@ -1,0 +1,345 @@
+.TH "Peca" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Peca \- Classe que representa una \fBPeca\fP dels escacs\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de Comparable< Peca >\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBPeca\fP (\fBTipusPeca\fP \fBtipus\fP, \fBColor\fP \fBcolor\fP)"
+.br
+.ti -1c
+.RI "void \fBcanviarDePosicio\fP (\fBPosicio\fP novaPos)"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBcanviarPrespectiva\fP ()"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBcolor\fP ()"
+.br
+.ti -1c
+.RI "int \fBcompareTo\fP (\fBPeca\fP o)"
+.br
+.RI "Compara les peces a partir de la seva posicio\&. En cas de que alguna no tingui posicio assignada, es fa servir la posicio fora del tauler 0,0\&. "
+.ti -1c
+.RI "\fBPeca\fP \fBdeepCopy\fP ()"
+.br
+.ti -1c
+.RI "void \fBdesfer\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBequals\fP (Object o)"
+.br
+.RI "Dues peces son iguals si tenen el mateix nom, color i \fBPosicio\fP o bé les o és referencia a this\&. "
+.ti -1c
+.RI "\fBPeca\fP \fBhasPromocionat\fP (\fBTipusPeca\fP nouTipus)"
+.br
+.ti -1c
+.RI "void \fBinitTauler\fP (\fBTauler\fP ref)"
+.br
+.ti -1c
+.RI "void \fBmoure\fP ()"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBonEstic\fP ()  throws IllegalStateException"
+.br
+.ti -1c
+.RI "Collection< \fBPair\fP< \fBPosicio\fP, \fBMoviment\fP > > \fBpossiblesMoviments\fP ()"
+.br
+.ti -1c
+.RI "\fBMoviment\fP \fBpotAnar\fP (\fBPosicio\fP posAnar)"
+.br
+.ti -1c
+.RI "boolean \fBpromocionada\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBquieta\fP ()"
+.br
+.ti -1c
+.RI "\fBTipusPeca\fP \fBtipus\fP ()"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "\fBColor\fP \fBcolor\fP"
+.br
+.ti -1c
+.RI "boolean \fBmoguda\fP"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBposicio\fP"
+.br
+.ti -1c
+.RI "boolean \fBpromocionada\fP"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBtauler\fP"
+.br
+.ti -1c
+.RI "\fBTipusPeca\fP \fBtipusPeca\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe que representa una \fBPeca\fP dels escacs\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Peca\&.Peca (\fBTipusPeca\fP tipus, \fBColor\fP color)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+crea una peça a partir del tipus i el color\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fItipus\fP Tipus de la Peça\&. 
+.br
+\fIcolor\fP \fBColor\fP de la Peça\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "void Peca\&.canviarDePosicio (\fBPosicio\fP novaPos)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+La peça sap a quina posició està\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInovaPos\fP Nova posició de la Peça\&. Pot ser null, indicant que la peça ja no està al tauler 
+.RE
+.PP
+
+.SS "\fBPeca\fP Peca\&.canviarPrespectiva ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Una copia profunda d'aquesta peça amb el color canviat\&. Important: NO s'ha canviat la posició i es manté el tauler\&. 
+.RE
+.PP
+
+.SS "\fBColor\fP Peca\&.color ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+El color de la Peça 
+.RE
+.PP
+
+.SS "int Peca\&.compareTo (\fBPeca\fP o)"
+
+.PP
+Compara les peces a partir de la seva posicio\&. En cas de que alguna no tingui posicio assignada, es fa servir la posicio fora del tauler 0,0\&. 
+.SS "\fBPeca\fP Peca\&.deepCopy ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Una referencia a una copia d'aquesta peça 
+.RE
+.PP
+
+.SS "void Peca\&.desfer ()"
+
+.PP
+\fBNota\fP
+.RS 4
+: En cas d'haver tirat enrrere una jugada, aquest mètode permet tornar la peça a l'estat de no-moguda\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+: La peça sap que no s'ha mogut\&. 
+.RE
+.PP
+
+.SS "boolean Peca\&.equals (Object o)"
+
+.PP
+Dues peces son iguals si tenen el mateix nom, color i \fBPosicio\fP o bé les o és referencia a this\&. 
+.PP
+\fBNota\fP
+.RS 4
+Si alguna de les Peces no té Posició assignada, es fa servir la posicio fora del tauler 0,0\&. 
+.RE
+.PP
+
+.SS "\fBPeca\fP Peca\&.hasPromocionat (\fBTipusPeca\fP nouTipus)"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Una nova peça del mateix color i amb el tipus nouTipus\&. Aquesta peça no esta encara al tauler, no sap on està\&. 
+.RE
+.PP
+
+.SS "void Peca\&.initTauler (\fBTauler\fP ref)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+La Peça sap a quin tauler està\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIref\fP \fBTauler\fP on està la peça 
+.RE
+.PP
+
+.SS "void Peca\&.moure ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+: La peça sap que s'ha mogut\&. 
+.RE
+.PP
+
+.SS "\fBPosicio\fP Peca\&.onEstic () throws IllegalStateException"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+la Peça sap a quina posició està\&. Se li pot dir a través de \fBPeca::canviarDePosicio(Posicio novaPos)\fP\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La posicio on està la Peça 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalStateException\fP Si la peça encara no sabia a quina posicio estava\&. 
+.RE
+.PP
+
+.SS "Collection<\fBPair\fP<\fBPosicio\fP,\fBMoviment\fP> > Peca\&.possiblesMoviments ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+La peça sap on es\&. Se li pot dir a traves de \fBcanviarDePosicio()\fP\&. La peça està en un tauler\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Una col·lecció de les posicions i el moviment associat on aquesta peça pot anar tenint en compte l'estat actual del tauler\&. No es comprova la validesa de la jugada\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Aquest mètode no s'ha de confondre amb Tauler::possiblesMovimetsValids, que a diferència d'aquest comprova la validesa de la jugada\&. 
+.RE
+.PP
+
+.SS "\fBMoviment\fP Peca\&.potAnar (\fBPosicio\fP posAnar)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+La peça sap on es\&. posAnar posició dins el tauler\&. La peça està en un tauler\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposAnar\fP \fBPosicio\fP on es consulta si la peça pot anar\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+No es comprova si el fet de desplaçar-se pot deixar el rei en escac -> moviment invàlid 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un \fBMoviment\fP que serà null quan aquest sigui impossible\&. En cas de ser possible es retorna el propi moviment\&. 
+.RE
+.PP
+
+.SS "boolean Peca\&.promocionada ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si la peça ja s'ha promocionat\&. 
+.RE
+.PP
+
+.SS "boolean Peca\&.quieta ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà en funció de si la peça s'ha mogut 
+.RE
+.PP
+
+.SS "\fBTipusPeca\fP Peca\&.tipus ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+El tipus de la peça\&. 
+.RE
+.PP
+
+.SS "String Peca\&.toString ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un String amb la representació de la peça en funció del seu color\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "\fBColor\fP Peca\&.color\fC [private]\fP"
+\fBColor\fP de la peça\&. 
+.SS "boolean Peca\&.moguda\fC [private]\fP"
+Indica si la peça s'ha mogut(true) o no(false) de posicio\&. 
+.SS "\fBPosicio\fP Peca\&.posicio\fC [private]\fP"
+Posició on està la \fBPeca\fP\&. 
+.SS "boolean Peca\&.promocionada\fC [private]\fP"
+Indica si la peça ja s'ha promocionat i per tant no ho podrà tornar a fer\&. 
+.SS "\fBTauler\fP Peca\&.tauler\fC [private]\fP"
+\fBTauler\fP on es la Peça 
+.SS "\fBTipusPeca\fP Peca\&.tipusPeca\fC [private]\fP"
+Tipus de la \fBPeca\fP 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

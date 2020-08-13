@@ -1,0 +1,148 @@
+.TH "CPU" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CPU \- Classe que representa un \fBJugador\fP controlat per l'ordinador\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de \fBJugador\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBCPU\fP (String \fBnom\fP, \fBColor\fP \fBcolor\fP)"
+.br
+.RI "Crea un jugador controlat per ordinador\&. "
+.ti -1c
+.RI "\fBJugada\fP \fBjugar\fP (boolean potMoure)"
+.br
+.ti -1c
+.RI "void \fBpreguntarTaules\fP ()"
+.br
+.ti -1c
+.RI "\fBTipusPeca\fP \fBpromocionar\fP ()"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "\fBColor\fP \fBcolor\fP"
+.br
+.ti -1c
+.RI "String \fBnom\fP"
+.br
+.ti -1c
+.RI "boolean \fBtaulesPendentsAcceptacio\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe que representa un \fBJugador\fP controlat per l'ordinador\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "CPU\&.CPU (String nom, \fBColor\fP color)"
+
+.PP
+Crea un jugador controlat per ordinador\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInom\fP Nom de la \fBCPU\fP 
+.br
+\fIcolor\fP \fBColor\fP de les peces de la \fBCPU\fP 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "\fBJugada\fP CPU\&.jugar (boolean modeText)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fImodeText\fP Indica si el jugador juga en mode text\&. En aquest cas el jugador té opcions diferents a mode text\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha demanat al jugador quina jugada vol fer i s'ha retornat una jugada que conté la seva desició\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+La \fBJugada\fP que s'ha fet\&. Null si en mode grafic s'ha demanat sortir\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+La \fBJugada\fP pot contenir un moviment, pot contenir una desició diferent de moure una peça com per exemple: petició de taules o rendició\&. També pot contenir una desició buida indicant que s'han desfet o refet jugades i pot ser null en cas que en mode grafic s'hagi sortit del menú\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SS "void CPU\&.preguntarTaules ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+El jugador sap que li han demanat taules\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SS "\fBTipusPeca\fP CPU\&.promocionar ()"
+
+.PP
+\fBNota\fP
+.RS 4
+En el cas de la \fBCPU\fP, si no estem 'enganxats' a un conjunt de jugades, triarem la peça amb més valor per promocionar\&. 
+.PP
+Altres opcions vàlides: En cas de promoció sense estar 'enganxats' mirar quina peça ens dóna més valor a llarg termini\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SS "String CPU\&.toString ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+El nom del \fBJugador\fP\&. 
+.RE
+.PP
+
+.PP
+Implementa \fBJugador\fP\&.
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "\fBColor\fP CPU\&.color\fC [private]\fP"
+\fBColor\fP de les peces de la \fBCPU\fP\&. 
+.SS "String CPU\&.nom\fC [private]\fP"
+Nom de la \fBCPU\fP\&. 
+.SS "boolean CPU\&.taulesPendentsAcceptacio\fC [private]\fP"
+Indica si el jugador té pendent decidir si accepta o no taules\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

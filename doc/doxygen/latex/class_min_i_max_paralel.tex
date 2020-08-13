@@ -1,0 +1,178 @@
+\hypertarget{class_min_i_max_paralel}{}\doxysection{Referència de la Classe Min\+I\+Max\+Paralel}
+\label{class_min_i_max_paralel}\index{MinIMaxParalel@{MinIMaxParalel}}
+
+
+Classe que conté l\textquotesingle{}algoritme \mbox{\hyperlink{interface_min_i_max}{Min\+I\+Max}} aplicat als \mbox{\hyperlink{class_escacs}{Escacs}} en mode Paralel.  
+
+
+Diagrama d\textquotesingle{}Herència per a Min\+I\+Max\+Paralel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.968858cm]{class_min_i_max_paralel}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_min_i_max_paralel_a2717b8caa3a9a7509a6a0db990c1d94d}{Min\+I\+Max\+Paralel}} (\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_min_i_max_paralel_af130c1021e3b411bfd2dcd0cdf646b2a}{tauler}}, \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_min_i_max_paralel_a37c15ac9ae9680e543cf360fa840bd15}{color\+Que\+Mou}})
+\begin{DoxyCompactList}\small\item\em Constructor per defecte. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_min_i_max_paralel_a54e186601966cf85563a7dd05acc17e1}{calcular\+Millor\+Jugada}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Protegits}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pair}{Pair}}$<$ Integer, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ $>$ \mbox{\hyperlink{class_min_i_max_paralel_a8121951539746b446b8ed9b79bfcdca1}{compute}} ()
+\item 
+\mbox{\hyperlink{class_pair}{Pair}}$<$ Integer, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ $>$ \mbox{\hyperlink{class_min_i_max_paralel_a86983378ed11f7d84fe6ec7987c713a5}{compute\+Directly}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_min_i_max_paralel_abc7056495c3e1e653d5d6cea56f7743c}{Min\+I\+Max\+Paralel}} (\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_min_i_max_paralel_af130c1021e3b411bfd2dcd0cdf646b2a}{tauler}}, \mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_min_i_max_paralel_a37c15ac9ae9680e543cf360fa840bd15}{color\+Que\+Mou}}, int \mbox{\hyperlink{class_min_i_max_paralel_af50f9cf9bab64261a10b96841cef6820}{profunditat\+Actual}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$$>$ \mbox{\hyperlink{class_min_i_max_paralel_a4f09359ef5d77b6a7c40da92ed50a673}{moviment\+Aplicat}})
+\begin{DoxyCompactList}\small\item\em Constructor per la crida recursiva. \end{DoxyCompactList}\item 
+Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_min_i_max_paralel}{Min\+I\+Max\+Paralel}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ $>$ $>$ \mbox{\hyperlink{class_min_i_max_paralel_a312c9deb95f308948862eff6bb3b56e1}{split\+And\+Fork}} (Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$$>$$>$ possibles\+Jugades)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enum_color}{Color}} \mbox{\hyperlink{class_min_i_max_paralel_a37c15ac9ae9680e543cf360fa840bd15}{color\+Que\+Mou}}
+\item 
+\mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$ $>$ \mbox{\hyperlink{class_min_i_max_paralel_a4f09359ef5d77b6a7c40da92ed50a673}{moviment\+Aplicat}}
+\item 
+int \mbox{\hyperlink{class_min_i_max_paralel_af50f9cf9bab64261a10b96841cef6820}{profunditat\+Actual}}
+\item 
+int \mbox{\hyperlink{class_min_i_max_paralel_ac54b0161513744384fb8e4d46c783570}{profunditat\+Total\+IA}} = 4
+\item 
+\mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_min_i_max_paralel_af130c1021e3b411bfd2dcd0cdf646b2a}{tauler}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que conté l\textquotesingle{}algoritme \mbox{\hyperlink{interface_min_i_max}{Min\+I\+Max}} aplicat als \mbox{\hyperlink{class_escacs}{Escacs}} en mode Paralel. 
+
+\begin{DoxyAuthor}{Autor}
+Martí Madrenys Masferrer 
+
+u1953866 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_min_i_max_paralel_a2717b8caa3a9a7509a6a0db990c1d94d}\label{class_min_i_max_paralel_a2717b8caa3a9a7509a6a0db990c1d94d}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!MinIMaxParalel@{MinIMaxParalel}}
+\index{MinIMaxParalel@{MinIMaxParalel}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{MinIMaxParalel()}{MinIMaxParalel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Min\+I\+Max\+Paralel.\+Min\+I\+Max\+Paralel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{tauler,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Que\+Mou }\end{DoxyParamCaption})}
+
+
+
+Constructor per defecte. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em tauler} & \mbox{\hyperlink{class_tauler}{Tauler}} sobre el qual s\textquotesingle{}operarà. \\
+\hline
+{\em color\+Que\+Mou} & \mbox{\hyperlink{enum_color}{Color}} del qual se\textquotesingle{}n calcularà la millor jugada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_min_i_max_paralel_abc7056495c3e1e653d5d6cea56f7743c}\label{class_min_i_max_paralel_abc7056495c3e1e653d5d6cea56f7743c}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!MinIMaxParalel@{MinIMaxParalel}}
+\index{MinIMaxParalel@{MinIMaxParalel}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{MinIMaxParalel()}{MinIMaxParalel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Min\+I\+Max\+Paralel.\+Min\+I\+Max\+Paralel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tauler}{Tauler}}}]{tauler,  }\item[{\mbox{\hyperlink{enum_color}{Color}}}]{color\+Que\+Mou,  }\item[{int}]{profunditat\+Actual,  }\item[{\mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$$>$}]{moviment\+Aplicat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Constructor per la crida recursiva. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em tauler} & \mbox{\hyperlink{class_tauler}{Tauler}} sobre el qual s\textquotesingle{}operarà. \\
+\hline
+{\em color\+Que\+Mou} & \mbox{\hyperlink{enum_color}{Color}} del qual se\textquotesingle{}n calcularà la millor jugada. \\
+\hline
+{\em profunditat\+Actual} & Profunditat d\textquotesingle{}aquest nivell. \\
+\hline
+{\em moviment\+Aplicat} & \mbox{\hyperlink{interface_moviment}{Moviment}} que s\textquotesingle{}aplica en aquest nivell. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_min_i_max_paralel_a54e186601966cf85563a7dd05acc17e1}\label{class_min_i_max_paralel_a54e186601966cf85563a7dd05acc17e1}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!calcularMillorJugada@{calcularMillorJugada}}
+\index{calcularMillorJugada@{calcularMillorJugada}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{calcularMillorJugada()}{calcularMillorJugada()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Min\+I\+Max\+Paralel.\+calcular\+Millor\+Jugada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha com a mínim una jugada vàlida a fer. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em color\+Que\+Mou} & \mbox{\hyperlink{enum_color}{Color}} del qual es calcularà la millor jugada possible \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+La millor jugada calculada amb aquest algoritme i el tauler actual del joc. La jugada és vàlida segons les regles d\textquotesingle{}aquest joc. 
+\end{DoxyReturn}
+
+
+Reimplementat de \mbox{\hyperlink{interface_min_i_max_a31f376d9ae0cfce143eef4a6282fe0b6}{Min\+I\+Max}}.
+
+\mbox{\Hypertarget{class_min_i_max_paralel_a8121951539746b446b8ed9b79bfcdca1}\label{class_min_i_max_paralel_a8121951539746b446b8ed9b79bfcdca1}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!compute@{compute}}
+\index{compute@{compute}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pair}{Pair}}$<$Integer,\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_peca}{Peca}},\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ $>$ Min\+I\+Max\+Paralel.\+compute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_min_i_max_paralel_a86983378ed11f7d84fe6ec7987c713a5}\label{class_min_i_max_paralel_a86983378ed11f7d84fe6ec7987c713a5}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!computeDirectly@{computeDirectly}}
+\index{computeDirectly@{computeDirectly}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{computeDirectly()}{computeDirectly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pair}{Pair}}$<$Integer,\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_peca}{Peca}},\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ $>$ Min\+I\+Max\+Paralel.\+compute\+Directly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_min_i_max_paralel_a312c9deb95f308948862eff6bb3b56e1}\label{class_min_i_max_paralel_a312c9deb95f308948862eff6bb3b56e1}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!splitAndFork@{splitAndFork}}
+\index{splitAndFork@{splitAndFork}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{splitAndFork()}{splitAndFork()}}
+{\footnotesize\ttfamily Collection$<$\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_min_i_max_paralel}{Min\+I\+Max\+Paralel}},\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_peca}{Peca}},\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ $>$ $>$ Min\+I\+Max\+Paralel.\+split\+And\+Fork (\begin{DoxyParamCaption}\item[{Collection$<$ \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_peca}{Peca}}, \mbox{\hyperlink{class_pair}{Pair}}$<$ \mbox{\hyperlink{class_posicio}{Posicio}}, \mbox{\hyperlink{interface_moviment}{Moviment}} $>$$>$$>$}]{possibles\+Jugades }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_min_i_max_paralel_a37c15ac9ae9680e543cf360fa840bd15}\label{class_min_i_max_paralel_a37c15ac9ae9680e543cf360fa840bd15}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!colorQueMou@{colorQueMou}}
+\index{colorQueMou@{colorQueMou}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{colorQueMou}{colorQueMou}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enum_color}{Color}} Min\+I\+Max\+Paralel.\+color\+Que\+Mou\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{enum_color}{Color}} del jugador que mou en aquest nivell de la IA. \mbox{\Hypertarget{class_min_i_max_paralel_a4f09359ef5d77b6a7c40da92ed50a673}\label{class_min_i_max_paralel_a4f09359ef5d77b6a7c40da92ed50a673}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!movimentAplicat@{movimentAplicat}}
+\index{movimentAplicat@{movimentAplicat}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{movimentAplicat}{movimentAplicat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_peca}{Peca}},\mbox{\hyperlink{class_pair}{Pair}}$<$\mbox{\hyperlink{class_posicio}{Posicio}},\mbox{\hyperlink{interface_moviment}{Moviment}}$>$ $>$ Min\+I\+Max\+Paralel.\+moviment\+Aplicat\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\hyperlink{interface_moviment}{Moviment}} que s\textquotesingle{}aplica a quest nivell. Si és el primer nivell serà null. \mbox{\Hypertarget{class_min_i_max_paralel_af50f9cf9bab64261a10b96841cef6820}\label{class_min_i_max_paralel_af50f9cf9bab64261a10b96841cef6820}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!profunditatActual@{profunditatActual}}
+\index{profunditatActual@{profunditatActual}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{profunditatActual}{profunditatActual}}
+{\footnotesize\ttfamily int Min\+I\+Max\+Paralel.\+profunditat\+Actual\hspace{0.3cm}{\ttfamily [private]}}
+
+Profunditat d\textquotesingle{}aquest nivell. \mbox{\Hypertarget{class_min_i_max_paralel_ac54b0161513744384fb8e4d46c783570}\label{class_min_i_max_paralel_ac54b0161513744384fb8e4d46c783570}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!profunditatTotalIA@{profunditatTotalIA}}
+\index{profunditatTotalIA@{profunditatTotalIA}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{profunditatTotalIA}{profunditatTotalIA}}
+{\footnotesize\ttfamily int Min\+I\+Max\+Paralel.\+profunditat\+Total\+IA = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+Profunditat màxima a la que la IA calcularà la millor jugada. \mbox{\Hypertarget{class_min_i_max_paralel_af130c1021e3b411bfd2dcd0cdf646b2a}\label{class_min_i_max_paralel_af130c1021e3b411bfd2dcd0cdf646b2a}} 
+\index{MinIMaxParalel@{MinIMaxParalel}!tauler@{tauler}}
+\index{tauler@{tauler}!MinIMaxParalel@{MinIMaxParalel}}
+\doxysubsubsection{\texorpdfstring{tauler}{tauler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Min\+I\+Max\+Paralel.\+tauler\hspace{0.3cm}{\ttfamily [private]}}
+
+Referencia al tauler a partir del qual s\textquotesingle{}ha de calcular l\textquotesingle{}algorisme. 
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_min_i_max_paralel_8java}{Min\+I\+Max\+Paralel.\+java}}\end{DoxyCompactItemize}

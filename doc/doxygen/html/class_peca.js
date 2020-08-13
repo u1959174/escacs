@@ -1,0 +1,27 @@
+var class_peca =
+[
+    [ "Peca", "class_peca.html#ae9c50c4918942b8ebab7adb5de0af9ab", null ],
+    [ "canviarDePosicio", "class_peca.html#a6ef827f08225018d5ab5eaf51b100144", null ],
+    [ "canviarPrespectiva", "class_peca.html#a75978dc6ff5134f88c9c626ebc453d2d", null ],
+    [ "color", "class_peca.html#a45c65218591e7766399e03574525d7f4", null ],
+    [ "compareTo", "class_peca.html#a9c987ce22439d06cbf363eeddf022167", null ],
+    [ "deepCopy", "class_peca.html#aea21bc011b1dfeecd8517f8c53c23da6", null ],
+    [ "desfer", "class_peca.html#a6237fed647e8bbd2c41908d677e8d2e8", null ],
+    [ "equals", "class_peca.html#a99426c7afa74a35249c3a5c021e91e2e", null ],
+    [ "hasPromocionat", "class_peca.html#a71a49c294e8f0fb03899cd2cb398da5d", null ],
+    [ "initTauler", "class_peca.html#a6f376fd4a5a162c7edeff3ca0ca3df50", null ],
+    [ "moure", "class_peca.html#af72dff6fb9fd4dc7165eeedc40384b80", null ],
+    [ "onEstic", "class_peca.html#a45fe6a849e21dc4beee42e18f8ba1a7b", null ],
+    [ "possiblesMoviments", "class_peca.html#ac9d9ef8d2e45d241a1779e903d531b0a", null ],
+    [ "potAnar", "class_peca.html#a47d0d2099a7a895574164db97d33c243", null ],
+    [ "promocionada", "class_peca.html#a93284347eb2379105a4463498f18fae5", null ],
+    [ "quieta", "class_peca.html#a0c6266384a0b399ccff418d52df59ea2", null ],
+    [ "tipus", "class_peca.html#a3b34a3bfa792d42d1cc82384328eece6", null ],
+    [ "toString", "class_peca.html#a11565c29623525d7f65e3493a6ff0b6d", null ],
+    [ "color", "class_peca.html#a08fcb45fa90faa1b7f017eb7c3958b9d", null ],
+    [ "moguda", "class_peca.html#a7dadc7ead0feaba63e5091cd9920a46e", null ],
+    [ "posicio", "class_peca.html#a77a6f53c2100f028faef83a6e46b4d9d", null ],
+    [ "promocionada", "class_peca.html#a55716d1cd606713d59c076c9d4ea8775", null ],
+    [ "tauler", "class_peca.html#a5857bfa5e0807aef7263a4ef14a79e7b", null ],
+    [ "tipusPeca", "class_peca.html#a968694ad378099d2a76336b56dc8249d", null ]
+];

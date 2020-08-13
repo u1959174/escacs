@@ -1,0 +1,232 @@
+\hypertarget{interface_moviment}{}\doxysection{Referència de la Classe Moviment}
+\label{interface_moviment}\index{Moviment@{Moviment}}
+
+
+Interfície d\textquotesingle{}un \mbox{\hyperlink{interface_moviment}{Moviment}} d\textquotesingle{}un \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}.  
+
+
+Diagrama d\textquotesingle{}Herència per a Moviment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_moviment}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{interface_moviment_a3abb68f0684eb7005abbc3de06a9130e}{es\+Moviment}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti, boolean primer, \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} peca\+\_\+final, boolean peca\+\_\+mig, boolean exacte)
+\begin{DoxyCompactList}\small\item\em Comprova si un desplaçament és el \mbox{\hyperlink{interface_moviment}{Moviment}}. \end{DoxyCompactList}\item 
+default Integer \mbox{\hyperlink{interface_moviment_aeabfb5074e36e25754a23ef8a51ad6bc}{traduir\+Parametre}} (String param)
+\begin{DoxyCompactList}\small\item\em Tradueix els paràmetres perquè puguin ser interpretats. \end{DoxyCompactList}\item 
+default boolean \mbox{\hyperlink{interface_moviment_aa6389b2649cc2e229a92be25564cbc72}{es\+Enter}} (String entrada)
+\begin{DoxyCompactList}\small\item\em Comprova si una string és un nombre enter. \end{DoxyCompactList}\item 
+default boolean \mbox{\hyperlink{interface_moviment_ad08e73f8425f01bc220f47d2681f4989}{mateix\+Vector}} (\mbox{\hyperlink{interface_moviment}{Moviment}} mov)
+\begin{DoxyCompactList}\small\item\em Comprova si un \mbox{\hyperlink{interface_moviment}{Moviment}} té el mateix vector de desplaçament que un altre. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_moviment_aa11bb0c771e4be8571289a962bebf699}{diguemA}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre A. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{interface_moviment_ae4894ae266575c53390205fc3abbc900}{diguemB}} ()
+\begin{DoxyCompactList}\small\item\em Traducció del paràmetre B. \end{DoxyCompactList}\item 
+Integer \mbox{\hyperlink{interface_moviment_a6588478cb741e56193ffb19b9726c08a}{diguem\+Saltar}} ()
+\begin{DoxyCompactList}\small\item\em Diu el valor de saltar. \end{DoxyCompactList}\item 
+default boolean \mbox{\hyperlink{interface_moviment_ad45b3c7d7ebc4b1ecf50e2853ffccc0c}{conte}} (String a, String b)
+\begin{DoxyCompactList}\small\item\em Indica si un paràmetre conté a un altre. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interface_moviment_ad5a855ea234d8abc00995b64f7dab7b0}{es\+Enroc}} ()
+\begin{DoxyCompactList}\small\item\em Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Interfície d\textquotesingle{}un \mbox{\hyperlink{interface_moviment}{Moviment}} d\textquotesingle{}un \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}. 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{interface_moviment_ad45b3c7d7ebc4b1ecf50e2853ffccc0c}\label{interface_moviment_ad45b3c7d7ebc4b1ecf50e2853ffccc0c}} 
+\index{Moviment@{Moviment}!conte@{conte}}
+\index{conte@{conte}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{conte()}{conte()}}
+{\footnotesize\ttfamily default boolean Moviment.\+conte (\begin{DoxyParamCaption}\item[{String}]{a,  }\item[{String}]{b }\end{DoxyParamCaption})}
+
+
+
+Indica si un paràmetre conté a un altre. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em a} & Component A$\vert$B d\textquotesingle{}un moviment. \\
+\hline
+{\em b} & Component A$\vert$B d\textquotesingle{}un moviment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondició}
+a i b han de ser tots dos component A o component B. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+Cert si a conté b. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_moviment_aa11bb0c771e4be8571289a962bebf699}\label{interface_moviment_aa11bb0c771e4be8571289a962bebf699}} 
+\index{Moviment@{Moviment}!diguemA@{diguemA}}
+\index{diguemA@{diguemA}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{diguemA()}{diguemA()}}
+{\footnotesize\ttfamily String Moviment.\+diguemA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre A. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre A traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_moviment_rectilini_aa39d4e0b4fb96f7f83ae7453be6a2179}{Moviment\+Rectilini}}, \mbox{\hyperlink{class_moviment_diagonal_a5ec833b802ec4136dc5aaa18279980fc}{Moviment\+Diagonal}}, \mbox{\hyperlink{class_moviment_combinat_ac5a9f04b4340eb003f3f0c2d5c276cd4}{Moviment\+Combinat}} i \mbox{\hyperlink{class_moviment_especial_a793e4e6b559500bf95bc2330591543ab}{Moviment\+Especial}}.
+
+\mbox{\Hypertarget{interface_moviment_ae4894ae266575c53390205fc3abbc900}\label{interface_moviment_ae4894ae266575c53390205fc3abbc900}} 
+\index{Moviment@{Moviment}!diguemB@{diguemB}}
+\index{diguemB@{diguemB}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{diguemB()}{diguemB()}}
+{\footnotesize\ttfamily String Moviment.\+diguemB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Traducció del paràmetre B. 
+
+\begin{DoxyReturn}{Retorna}
+El valor del paràmetre B traduit. Null si no el té. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_moviment_rectilini_a84fecf9785089fbd0771414fdaf31c6b}{Moviment\+Rectilini}}, \mbox{\hyperlink{class_moviment_diagonal_aee3acd20d0f1f1f73e1c2583b176d5ab}{Moviment\+Diagonal}}, \mbox{\hyperlink{class_moviment_combinat_ab9831c71df0b767f4168b7c3c2838656}{Moviment\+Combinat}} i \mbox{\hyperlink{class_moviment_especial_a7199eea7bce035df35b7c84b375a904a}{Moviment\+Especial}}.
+
+\mbox{\Hypertarget{interface_moviment_a6588478cb741e56193ffb19b9726c08a}\label{interface_moviment_a6588478cb741e56193ffb19b9726c08a}} 
+\index{Moviment@{Moviment}!diguemSaltar@{diguemSaltar}}
+\index{diguemSaltar@{diguemSaltar}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{diguemSaltar()}{diguemSaltar()}}
+{\footnotesize\ttfamily Integer Moviment.\+diguem\+Saltar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu el valor de saltar. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l\textquotesingle{}atribut. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_moviment_combinat_ac18119035fbb14c29f782bc70479ba84}{Moviment\+Combinat}}, \mbox{\hyperlink{class_moviment_especial_abba5c46b90a2d10ccbf6e65b36f8bfd3}{Moviment\+Especial}}, \mbox{\hyperlink{class_moviment_diagonal_a0a92a47ababac4a2a1b28d983ec2ce03}{Moviment\+Diagonal}} i \mbox{\hyperlink{class_moviment_rectilini_a8e4e42a10220f4d58c08d7c1c299bfa3}{Moviment\+Rectilini}}.
+
+\mbox{\Hypertarget{interface_moviment_ad5a855ea234d8abc00995b64f7dab7b0}\label{interface_moviment_ad5a855ea234d8abc00995b64f7dab7b0}} 
+\index{Moviment@{Moviment}!esEnroc@{esEnroc}}
+\index{esEnroc@{esEnroc}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{esEnroc()}{esEnroc()}}
+{\footnotesize\ttfamily boolean Moviment.\+es\+Enroc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Diu si el \mbox{\hyperlink{interface_moviment}{Moviment}} és de tipus enroc. 
+
+\begin{DoxyReturn}{Retorna}
+Cert si el \mbox{\hyperlink{interface_moviment}{Moviment}} és enroc, fals altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_moviment_diagonal_a9ac8ea29ef5a8b52298b01e706942c2d}{Moviment\+Diagonal}}, \mbox{\hyperlink{class_moviment_rectilini_a0431d239b11f73c3b210c8868fada6da}{Moviment\+Rectilini}}, \mbox{\hyperlink{class_moviment_combinat_ad611d957030eb856cfca3dbe7ef4d2cd}{Moviment\+Combinat}} i \mbox{\hyperlink{class_moviment_especial_a56d6256100230dab753e0a78d8609a2e}{Moviment\+Especial}}.
+
+\mbox{\Hypertarget{interface_moviment_aa6389b2649cc2e229a92be25564cbc72}\label{interface_moviment_aa6389b2649cc2e229a92be25564cbc72}} 
+\index{Moviment@{Moviment}!esEnter@{esEnter}}
+\index{esEnter@{esEnter}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{esEnter()}{esEnter()}}
+{\footnotesize\ttfamily default boolean Moviment.\+es\+Enter (\begin{DoxyParamCaption}\item[{String}]{entrada }\end{DoxyParamCaption})}
+
+
+
+Comprova si una string és un nombre enter. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em entrada} & String d\textquotesingle{}entrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna cert si entrada és enter, fals altrament. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_moviment_a3abb68f0684eb7005abbc3de06a9130e}\label{interface_moviment_a3abb68f0684eb7005abbc3de06a9130e}} 
+\index{Moviment@{Moviment}!esMoviment@{esMoviment}}
+\index{esMoviment@{esMoviment}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{esMoviment()}{esMoviment()}}
+{\footnotesize\ttfamily boolean Moviment.\+es\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti,  }\item[{boolean}]{primer,  }\item[{\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}}]{peca\+\_\+final,  }\item[{boolean}]{peca\+\_\+mig,  }\item[{boolean}]{exacte }\end{DoxyParamCaption})}
+
+
+
+Comprova si un desplaçament és el \mbox{\hyperlink{interface_moviment}{Moviment}}. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em origen} & Posició d\textquotesingle{}origen. \\
+\hline
+{\em desti} & Posició destí. \\
+\hline
+{\em primer} & Indica si el el moviment és el primer de la partida. \\
+\hline
+{\em peca\+\_\+final} & Referència al tipus de peça de la posició destí. \\
+\hline
+{\em peca\+\_\+mig} & Indica si hi ha alguna peça en la trajectòria. \\
+\hline
+{\em exacte} & Demanar si la distància ha de ser exacte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna cert si amb origen-\/desti és compleix el moviment, fals altrament. 
+\end{DoxyReturn}
+
+
+Reimplementat a \mbox{\hyperlink{class_moviment_rectilini_a53e85fd3c14da58235de44da825b57ce}{Moviment\+Rectilini}}, \mbox{\hyperlink{class_moviment_diagonal_a459151fcdc867b172826b59c9a791cfc}{Moviment\+Diagonal}}, \mbox{\hyperlink{class_moviment_especial_af866470e13623bc9aa5fba5a9c5ef850}{Moviment\+Especial}} i \mbox{\hyperlink{class_moviment_combinat_a39fec0626db9f751aab5fec9b5a907ef}{Moviment\+Combinat}}.
+
+\mbox{\Hypertarget{interface_moviment_ad08e73f8425f01bc220f47d2681f4989}\label{interface_moviment_ad08e73f8425f01bc220f47d2681f4989}} 
+\index{Moviment@{Moviment}!mateixVector@{mateixVector}}
+\index{mateixVector@{mateixVector}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{mateixVector()}{mateixVector()}}
+{\footnotesize\ttfamily default boolean Moviment.\+mateix\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_moviment}{Moviment}}}]{mov }\end{DoxyParamCaption})}
+
+
+
+Comprova si un \mbox{\hyperlink{interface_moviment}{Moviment}} té el mateix vector de desplaçament que un altre. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em mov} & \mbox{\hyperlink{interface_moviment}{Moviment}} amb el que es vol comparar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Cert si el vector de desplaçament és igual. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+serveix per diferenciar els vectors combinats dels diagonals i rectilinis en temps de càrrega 
+\end{DoxyNote}
+\mbox{\Hypertarget{interface_moviment_aeabfb5074e36e25754a23ef8a51ad6bc}\label{interface_moviment_aeabfb5074e36e25754a23ef8a51ad6bc}} 
+\index{Moviment@{Moviment}!traduirParametre@{traduirParametre}}
+\index{traduirParametre@{traduirParametre}!Moviment@{Moviment}}
+\doxysubsubsection{\texorpdfstring{traduirParametre()}{traduirParametre()}}
+{\footnotesize\ttfamily default Integer Moviment.\+traduir\+Parametre (\begin{DoxyParamCaption}\item[{String}]{param }\end{DoxyParamCaption})}
+
+
+
+Tradueix els paràmetres perquè puguin ser interpretats. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em param} & Coordenada A o B del moviment a configuració. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Retorna param en format int. 
+\end{DoxyReturn}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_moviment_8java}{Moviment.\+java}}\end{DoxyCompactItemize}

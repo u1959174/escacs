@@ -1,0 +1,501 @@
+\hypertarget{class_joc_grafic}{}\doxysection{Referència de la Classe Joc\+Grafic}
+\label{class_joc_grafic}\index{JocGrafic@{JocGrafic}}
+
+
+Classe que gestiona la interfície gràfica del programa.  
+
+
+Diagrama d\textquotesingle{}Herència per a Joc\+Grafic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_joc_grafic}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_joc_grafic_a1f9c24483b500f7d30a6f872fad5dc8c}{init}} ()  throws Exception 
+\item 
+void \mbox{\hyperlink{class_joc_grafic_a31e96276c380fb14aecc1d0c4233a3e0}{start}} (Stage primary\+Stage)
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_joc_grafic_a66bea3650f478e925a607138723f0c50}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Mètode d\textquotesingle{}entrada al programa. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a244a42ee2f988e1c1143225cca70584d}{guardar\+Partida}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{class_joc_grafic_acd98ba5366218a1458b4b410033fc19f}{pot\+Desfer}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{class_joc_grafic_a44fc2e29559e590f93c9f40313224e22}{pot\+Refer}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a041439300aade2deae0f571f0222e7f6}{desfer\+Jugada}} (int num\+Jugades)  throws Illegal\+Argument\+Exception
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_aa0b596f2f1e24bf74da625bbd0b36bd7}{refer\+Jugada}} (int num\+Jugades)  throws Illegal\+Argument\+Exception
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{class_joc_grafic_ac821689ba5eb9ebb24daa4595f29a043}{promocionar}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static Array\+List$<$ \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} $>$ \mbox{\hyperlink{class_joc_grafic_a606c36721db5ee16b3ce018d2cb98788}{tipus\+Disponibles}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_joc_grafic_a9267f5a044c27aec957c676a1061c027}{obtenir\+Tauler}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static Parent \mbox{\hyperlink{class_joc_grafic_a8b09f1aad390d4552e6ddd33720fd058}{crear\+Contingut}} ()
+\begin{DoxyCompactList}\small\item\em Genera el contingut, rajoles i peces, a representar. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_peca_grafica}{Peca\+Grafica}} \mbox{\hyperlink{class_joc_grafic_ae5204c437380d7fd2eee65e3953f013f}{crea\+Peca}} (\mbox{\hyperlink{class_peca}{Peca}} peca, int x, int y)
+\begin{DoxyCompactList}\small\item\em Crea la peca a representar. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_joc_grafic_a1f2c929efc125502ad678cad975f28a6}{pos\+Tauler}} (double pixel)
+\item 
+static boolean \mbox{\hyperlink{class_joc_grafic_a8a6afbd41df35fa47b8c4bbd06f1e622}{aplica\+Moviment}} (\mbox{\hyperlink{class_posicio}{Posicio}} origen, \mbox{\hyperlink{class_posicio}{Posicio}} desti)
+\begin{DoxyCompactList}\small\item\em Aplica el moviment d\textquotesingle{}una peca. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{class_joc_grafic_ab69220727200947d0a973e613956980f}{demanar\+Altres}} (\mbox{\hyperlink{interface_jugador}{Jugador}} jugador)
+\begin{DoxyCompactList}\small\item\em Demana les opcions i actualitza el tauler grafic. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_joc_grafic_ae90bdf63297b078818bc05d68f3bdb35}{invertirY}} (int n)
+\begin{DoxyCompactList}\small\item\em Inversió de coordenada en l\textquotesingle{}eix de les Y. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_aa2962d57c380b4e15ef1a5bfdafe6d64}{mostrar\+Estat\+Consola}} ()
+\begin{DoxyCompactList}\small\item\em Mostra l\textquotesingle{}estat de la partida grafica per consola. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a9ea54fce851677d0fd36becb46f9a4b0}{actualitzar\+Tauler\+Grafic}} ()
+\begin{DoxyCompactList}\small\item\em Torna a generar el tauler gràfic. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a772fbafe58f0fbe0edb60ddf874f02b2}{carregar\+Coneixement}} (String ruta\+Coneixement)  throws I\+O\+Exception, Excepcio\+G 
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a2622ca1f2166b9c52d03e1e12027b4f7}{nova\+Partida}} (String ruta\+Fitxer\+Config)  throws I\+O\+Exception, Excepcio\+G 
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a025ead5832d890bb122d029d336b1c65}{carregar\+Partida}} (String ruta\+Fitxer\+Jugades)  throws I\+O\+Exception, Excepcio\+G 
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a14e6b8a1681d181541defea21b2aca95}{demanar\+Jugadors}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static boolean \mbox{\hyperlink{class_joc_grafic_ac4f5ddbe5ebed4a28bbb822b810a5d50}{gestor\+Partida\+Acabada}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_joc_grafic_a5220a1aed103e9eec13ab03e198171a7}{inicialitzar\+Dades}} ()
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static Group \mbox{\hyperlink{class_joc_grafic_ad080ade24c08a6a688b8eb8c9a5861d7}{rajoles}} = new Group()
+\begin{DoxyCompactList}\small\item\em El conjunt de rajoles que s\textquotesingle{}han de representar. \end{DoxyCompactList}\item 
+static Group \mbox{\hyperlink{class_joc_grafic_ad5ada246dd7b99dac505c3c0017dc848}{peces}} = new Group()
+\begin{DoxyCompactList}\small\item\em El conjunt de peces que s\textquotesingle{}han de representar. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_joc_grafic_a255ba2aa8c00b33e540f1431c55c121a}{costat\+Rajola}}
+\begin{DoxyCompactList}\small\item\em El nombre de pixels que fa cada rajola de costat. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_tauler}{Tauler}} \mbox{\hyperlink{class_joc_grafic_aae0dd7902c5c9baae78186a584036386}{tauler\+\_\+actual}}
+\begin{DoxyCompactList}\small\item\em El tauler actual que s\textquotesingle{}ha de representar. \end{DoxyCompactList}\item 
+static Stage \mbox{\hyperlink{class_joc_grafic_a13e514e791512ac594ca59bbbbe49842}{escenari}}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}escenari actual. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_partida}{Partida}} \mbox{\hyperlink{class_joc_grafic_ab720cd10ed53d0bdaa8771ff3f0a7f0b}{partida}}
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{interface_jugador}{Jugador}} \mbox{\hyperlink{class_joc_grafic_a7f600af4426b40dee1629f730795a2ad}{jugador\+Blanques}}
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{interface_jugador}{Jugador}} \mbox{\hyperlink{class_joc_grafic_a11c8ecc8b02ad207c6a4c0d43a379015}{jugador\+Negres}}
+\begin{DoxyCompactList}\small\item\em Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe que gestiona la interfície gràfica del programa. 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_joc_grafic_a9ea54fce851677d0fd36becb46f9a4b0}\label{class_joc_grafic_a9ea54fce851677d0fd36becb46f9a4b0}} 
+\index{JocGrafic@{JocGrafic}!actualitzarTaulerGrafic@{actualitzarTaulerGrafic}}
+\index{actualitzarTaulerGrafic@{actualitzarTaulerGrafic}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{actualitzarTaulerGrafic()}{actualitzarTaulerGrafic()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+actualitzar\+Tauler\+Grafic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Torna a generar el tauler gràfic. 
+
+\mbox{\Hypertarget{class_joc_grafic_a8a6afbd41df35fa47b8c4bbd06f1e622}\label{class_joc_grafic_a8a6afbd41df35fa47b8c4bbd06f1e622}} 
+\index{JocGrafic@{JocGrafic}!aplicaMoviment@{aplicaMoviment}}
+\index{aplicaMoviment@{aplicaMoviment}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{aplicaMoviment()}{aplicaMoviment()}}
+{\footnotesize\ttfamily static boolean Joc\+Grafic.\+aplica\+Moviment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{origen,  }\item[{\mbox{\hyperlink{class_posicio}{Posicio}}}]{desti }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Aplica el moviment d\textquotesingle{}una peca. 
+
+\begin{DoxyNote}{Nota}
+En el cas de que el jugador actual sigui una \mbox{\hyperlink{class_c_p_u}{C\+PU}}, farà el seu moviment. 
+
+Si origen == desti s\textquotesingle{}obre el menu d\textquotesingle{}opcions extra per consola. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Retorna}
+Cert si s\textquotesingle{}ha fet un moviment, fals altrament. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paràmetres}
+{\em origen} & \mbox{\hyperlink{class_posicio}{Posicio}} d\textquotesingle{}origen. \\
+\hline
+{\em desti} & \mbox{\hyperlink{class_posicio}{Posicio}} de desti. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_joc_grafic_a772fbafe58f0fbe0edb60ddf874f02b2}\label{class_joc_grafic_a772fbafe58f0fbe0edb60ddf874f02b2}} 
+\index{JocGrafic@{JocGrafic}!carregarConeixement@{carregarConeixement}}
+\index{carregarConeixement@{carregarConeixement}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{carregarConeixement()}{carregarConeixement()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+carregar\+Coneixement (\begin{DoxyParamCaption}\item[{String}]{ruta\+Coneixement }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a025ead5832d890bb122d029d336b1c65}\label{class_joc_grafic_a025ead5832d890bb122d029d336b1c65}} 
+\index{JocGrafic@{JocGrafic}!carregarPartida@{carregarPartida}}
+\index{carregarPartida@{carregarPartida}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{carregarPartida()}{carregarPartida()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+carregar\+Partida (\begin{DoxyParamCaption}\item[{String}]{ruta\+Fitxer\+Jugades }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_ae5204c437380d7fd2eee65e3953f013f}\label{class_joc_grafic_ae5204c437380d7fd2eee65e3953f013f}} 
+\index{JocGrafic@{JocGrafic}!creaPeca@{creaPeca}}
+\index{creaPeca@{creaPeca}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{creaPeca()}{creaPeca()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_peca_grafica}{Peca\+Grafica}} Joc\+Grafic.\+crea\+Peca (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{peca,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Crea la peca a representar. 
+
+\begin{DoxyPrecond}{Precondició}
+fons1.\+png i fons2.\+png existents. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+La \mbox{\hyperlink{class_peca_grafica}{Peca\+Grafica}} amb les coordenades i peca real corresponents amb els gestors d\textquotesingle{}esdeveniments. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca} & \mbox{\hyperlink{class_peca}{Peca}} real a representar. \\
+\hline
+{\em x} & Coordenada x de la peca. \\
+\hline
+{\em y} & Coordenada y de la peca. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_joc_grafic_a8b09f1aad390d4552e6ddd33720fd058}\label{class_joc_grafic_a8b09f1aad390d4552e6ddd33720fd058}} 
+\index{JocGrafic@{JocGrafic}!crearContingut@{crearContingut}}
+\index{crearContingut@{crearContingut}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{crearContingut()}{crearContingut()}}
+{\footnotesize\ttfamily static Parent Joc\+Grafic.\+crear\+Contingut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Genera el contingut, rajoles i peces, a representar. 
+
+\begin{DoxyPrecond}{Precondició}
+fons1.\+png i fons2.\+png existents. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+El contingut amb les rajoles i peces segons el tauler actual. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_grafic_ab69220727200947d0a973e613956980f}\label{class_joc_grafic_ab69220727200947d0a973e613956980f}} 
+\index{JocGrafic@{JocGrafic}!demanarAltres@{demanarAltres}}
+\index{demanarAltres@{demanarAltres}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{demanarAltres()}{demanarAltres()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_jugada}{Jugada}} Joc\+Grafic.\+demanar\+Altres (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_jugador}{Jugador}}}]{jugador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Demana les opcions i actualitza el tauler grafic. 
+
+\begin{DoxyNote}{Nota}
+Es pot acabar l\textquotesingle{}execució si s\textquotesingle{}ha acabat la partida. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Paràmetres}
+{\em jugador} & El jugador que demana les opcions. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+La jugada que s\textquotesingle{}ha fet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_grafic_a14e6b8a1681d181541defea21b2aca95}\label{class_joc_grafic_a14e6b8a1681d181541defea21b2aca95}} 
+\index{JocGrafic@{JocGrafic}!demanarJugadors@{demanarJugadors}}
+\index{demanarJugadors@{demanarJugadors}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{demanarJugadors()}{demanarJugadors()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+demanar\+Jugadors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a041439300aade2deae0f571f0222e7f6}\label{class_joc_grafic_a041439300aade2deae0f571f0222e7f6}} 
+\index{JocGrafic@{JocGrafic}!desferJugada@{desferJugada}}
+\index{desferJugada@{desferJugada}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{desferJugada()}{desferJugada()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+desfer\+Jugada (\begin{DoxyParamCaption}\item[{int}]{num\+Jugades }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_ac4f5ddbe5ebed4a28bbb822b810a5d50}\label{class_joc_grafic_ac4f5ddbe5ebed4a28bbb822b810a5d50}} 
+\index{JocGrafic@{JocGrafic}!gestorPartidaAcabada@{gestorPartidaAcabada}}
+\index{gestorPartidaAcabada@{gestorPartidaAcabada}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{gestorPartidaAcabada()}{gestorPartidaAcabada()}}
+{\footnotesize\ttfamily static boolean Joc\+Grafic.\+gestor\+Partida\+Acabada (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a244a42ee2f988e1c1143225cca70584d}\label{class_joc_grafic_a244a42ee2f988e1c1143225cca70584d}} 
+\index{JocGrafic@{JocGrafic}!guardarPartida@{guardarPartida}}
+\index{guardarPartida@{guardarPartida}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{guardarPartida()}{guardarPartida()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+guardar\+Partida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a5220a1aed103e9eec13ab03e198171a7}\label{class_joc_grafic_a5220a1aed103e9eec13ab03e198171a7}} 
+\index{JocGrafic@{JocGrafic}!inicialitzarDades@{inicialitzarDades}}
+\index{inicialitzarDades@{inicialitzarDades}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{inicialitzarDades()}{inicialitzarDades()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+inicialitzar\+Dades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a1f9c24483b500f7d30a6f872fad5dc8c}\label{class_joc_grafic_a1f9c24483b500f7d30a6f872fad5dc8c}} 
+\index{JocGrafic@{JocGrafic}!init@{init}}
+\index{init@{init}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Joc\+Grafic.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Exception}
+
+\mbox{\Hypertarget{class_joc_grafic_ae90bdf63297b078818bc05d68f3bdb35}\label{class_joc_grafic_ae90bdf63297b078818bc05d68f3bdb35}} 
+\index{JocGrafic@{JocGrafic}!invertirY@{invertirY}}
+\index{invertirY@{invertirY}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{invertirY()}{invertirY()}}
+{\footnotesize\ttfamily static int Joc\+Grafic.\+invertirY (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Inversió de coordenada en l\textquotesingle{}eix de les Y. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em n} & Nombre a invertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+El nombre entrat invertit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_joc_grafic_a66bea3650f478e925a607138723f0c50}\label{class_joc_grafic_a66bea3650f478e925a607138723f0c50}} 
+\index{JocGrafic@{JocGrafic}!main@{main}}
+\index{main@{main}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Mètode d\textquotesingle{}entrada al programa. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em args} & Arguments passats per paràmetre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha executat el programa en mode gràfic. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_joc_grafic_aa2962d57c380b4e15ef1a5bfdafe6d64}\label{class_joc_grafic_aa2962d57c380b4e15ef1a5bfdafe6d64}} 
+\index{JocGrafic@{JocGrafic}!mostrarEstatConsola@{mostrarEstatConsola}}
+\index{mostrarEstatConsola@{mostrarEstatConsola}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{mostrarEstatConsola()}{mostrarEstatConsola()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+mostrar\+Estat\+Consola (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Mostra l\textquotesingle{}estat de la partida grafica per consola. 
+
+\mbox{\Hypertarget{class_joc_grafic_a2622ca1f2166b9c52d03e1e12027b4f7}\label{class_joc_grafic_a2622ca1f2166b9c52d03e1e12027b4f7}} 
+\index{JocGrafic@{JocGrafic}!novaPartida@{novaPartida}}
+\index{novaPartida@{novaPartida}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{novaPartida()}{novaPartida()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+nova\+Partida (\begin{DoxyParamCaption}\item[{String}]{ruta\+Fitxer\+Config }\end{DoxyParamCaption}) throws I\+O\+Exception, \mbox{\hyperlink{class_excepcio_g}{ExcepcioG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a9267f5a044c27aec957c676a1061c027}\label{class_joc_grafic_a9267f5a044c27aec957c676a1061c027}} 
+\index{JocGrafic@{JocGrafic}!obtenirTauler@{obtenirTauler}}
+\index{obtenirTauler@{obtenirTauler}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{obtenirTauler()}{obtenirTauler()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tauler}{Tauler}} Joc\+Grafic.\+obtenir\+Tauler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a1f2c929efc125502ad678cad975f28a6}\label{class_joc_grafic_a1f2c929efc125502ad678cad975f28a6}} 
+\index{JocGrafic@{JocGrafic}!posTauler@{posTauler}}
+\index{posTauler@{posTauler}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{posTauler()}{posTauler()}}
+{\footnotesize\ttfamily static int Joc\+Grafic.\+pos\+Tauler (\begin{DoxyParamCaption}\item[{double}]{pixel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{DoxyReturn}{Retorna}
+Fila o columna corresponent a pixel. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paràmetres}
+{\em pixel} & Pixel d\textquotesingle{}entrada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_joc_grafic_acd98ba5366218a1458b4b410033fc19f}\label{class_joc_grafic_acd98ba5366218a1458b4b410033fc19f}} 
+\index{JocGrafic@{JocGrafic}!potDesfer@{potDesfer}}
+\index{potDesfer@{potDesfer}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{potDesfer()}{potDesfer()}}
+{\footnotesize\ttfamily static boolean Joc\+Grafic.\+pot\+Desfer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a44fc2e29559e590f93c9f40313224e22}\label{class_joc_grafic_a44fc2e29559e590f93c9f40313224e22}} 
+\index{JocGrafic@{JocGrafic}!potRefer@{potRefer}}
+\index{potRefer@{potRefer}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{potRefer()}{potRefer()}}
+{\footnotesize\ttfamily static boolean Joc\+Grafic.\+pot\+Refer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_ac821689ba5eb9ebb24daa4595f29a043}\label{class_joc_grafic_ac821689ba5eb9ebb24daa4595f29a043}} 
+\index{JocGrafic@{JocGrafic}!promocionar@{promocionar}}
+\index{promocionar@{promocionar}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{promocionar()}{promocionar()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Joc\+Grafic.\+promocionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_aa0b596f2f1e24bf74da625bbd0b36bd7}\label{class_joc_grafic_aa0b596f2f1e24bf74da625bbd0b36bd7}} 
+\index{JocGrafic@{JocGrafic}!referJugada@{referJugada}}
+\index{referJugada@{referJugada}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{referJugada()}{referJugada()}}
+{\footnotesize\ttfamily static void Joc\+Grafic.\+refer\+Jugada (\begin{DoxyParamCaption}\item[{int}]{num\+Jugades }\end{DoxyParamCaption}) throws Illegal\+Argument\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a31e96276c380fb14aecc1d0c4233a3e0}\label{class_joc_grafic_a31e96276c380fb14aecc1d0c4233a3e0}} 
+\index{JocGrafic@{JocGrafic}!start@{start}}
+\index{start@{start}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Joc\+Grafic.\+start (\begin{DoxyParamCaption}\item[{Stage}]{primary\+Stage }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_joc_grafic_a606c36721db5ee16b3ce018d2cb98788}\label{class_joc_grafic_a606c36721db5ee16b3ce018d2cb98788}} 
+\index{JocGrafic@{JocGrafic}!tipusDisponibles@{tipusDisponibles}}
+\index{tipusDisponibles@{tipusDisponibles}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{tipusDisponibles()}{tipusDisponibles()}}
+{\footnotesize\ttfamily static Array\+List$<$\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}}$>$ Joc\+Grafic.\+tipus\+Disponibles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_joc_grafic_a255ba2aa8c00b33e540f1431c55c121a}\label{class_joc_grafic_a255ba2aa8c00b33e540f1431c55c121a}} 
+\index{JocGrafic@{JocGrafic}!costatRajola@{costatRajola}}
+\index{costatRajola@{costatRajola}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{costatRajola}{costatRajola}}
+{\footnotesize\ttfamily int Joc\+Grafic.\+costat\+Rajola\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+El nombre de pixels que fa cada rajola de costat. 
+
+\mbox{\Hypertarget{class_joc_grafic_a13e514e791512ac594ca59bbbbe49842}\label{class_joc_grafic_a13e514e791512ac594ca59bbbbe49842}} 
+\index{JocGrafic@{JocGrafic}!escenari@{escenari}}
+\index{escenari@{escenari}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{escenari}{escenari}}
+{\footnotesize\ttfamily Stage Joc\+Grafic.\+escenari\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+L\textquotesingle{}escenari actual. 
+
+\mbox{\Hypertarget{class_joc_grafic_a7f600af4426b40dee1629f730795a2ad}\label{class_joc_grafic_a7f600af4426b40dee1629f730795a2ad}} 
+\index{JocGrafic@{JocGrafic}!jugadorBlanques@{jugadorBlanques}}
+\index{jugadorBlanques@{jugadorBlanques}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{jugadorBlanques}{jugadorBlanques}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_jugador}{Jugador}} Joc\+Grafic.\+jugador\+Blanques\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_a11c8ecc8b02ad207c6a4c0d43a379015}\label{class_joc_grafic_a11c8ecc8b02ad207c6a4c0d43a379015}} 
+\index{JocGrafic@{JocGrafic}!jugadorNegres@{jugadorNegres}}
+\index{jugadorNegres@{jugadorNegres}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{jugadorNegres}{jugadorNegres}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_jugador}{Jugador}} Joc\+Grafic.\+jugador\+Negres\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_ab720cd10ed53d0bdaa8771ff3f0a7f0b}\label{class_joc_grafic_ab720cd10ed53d0bdaa8771ff3f0a7f0b}} 
+\index{JocGrafic@{JocGrafic}!partida@{partida}}
+\index{partida@{partida}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{partida}{partida}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_partida}{Partida}} Joc\+Grafic.\+partida\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Adaptacio de \mbox{\hyperlink{class_joc_text}{Joc\+Text}}, es un placeholder per despres fer els menus corresponents en grafic. Per la documentacio buscar-\/ho a \mbox{\hyperlink{class_joc_text}{Joc\+Text}}. 
+
+\mbox{\Hypertarget{class_joc_grafic_ad5ada246dd7b99dac505c3c0017dc848}\label{class_joc_grafic_ad5ada246dd7b99dac505c3c0017dc848}} 
+\index{JocGrafic@{JocGrafic}!peces@{peces}}
+\index{peces@{peces}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{peces}{peces}}
+{\footnotesize\ttfamily Group Joc\+Grafic.\+peces = new Group()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+El conjunt de peces que s\textquotesingle{}han de representar. 
+
+\mbox{\Hypertarget{class_joc_grafic_ad080ade24c08a6a688b8eb8c9a5861d7}\label{class_joc_grafic_ad080ade24c08a6a688b8eb8c9a5861d7}} 
+\index{JocGrafic@{JocGrafic}!rajoles@{rajoles}}
+\index{rajoles@{rajoles}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{rajoles}{rajoles}}
+{\footnotesize\ttfamily Group Joc\+Grafic.\+rajoles = new Group()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+El conjunt de rajoles que s\textquotesingle{}han de representar. 
+
+\mbox{\Hypertarget{class_joc_grafic_aae0dd7902c5c9baae78186a584036386}\label{class_joc_grafic_aae0dd7902c5c9baae78186a584036386}} 
+\index{JocGrafic@{JocGrafic}!tauler\_actual@{tauler\_actual}}
+\index{tauler\_actual@{tauler\_actual}!JocGrafic@{JocGrafic}}
+\doxysubsubsection{\texorpdfstring{tauler\_actual}{tauler\_actual}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tauler}{Tauler}} Joc\+Grafic.\+tauler\+\_\+actual\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+El tauler actual que s\textquotesingle{}ha de representar. 
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_joc_grafic_8java}{Joc\+Grafic.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,329 @@
+.TH "Posicio" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Posicio \- Classe que representa una posició d'un tauler d'escacs\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de Comparable< Posicio >\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBPosicio\fP (char \fBcolumna\fP, int \fBfila\fP)  throws IllegalArgumentException"
+.br
+.ti -1c
+.RI "\fBPosicio\fP (int \fBfila\fP, int \fBcolumna\fP)"
+.br
+.ti -1c
+.RI "\fBPosicio\fP (\fBPosicio\fP antiga, int despFila, int despColumna)"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBcanviPrespectiva\fP (int files)"
+.br
+.ti -1c
+.RI "int \fBcolumna\fP ()"
+.br
+.ti -1c
+.RI "int \fBcompareColumna\fP (\fBPosicio\fP o)"
+.br
+.ti -1c
+.RI "int \fBcompareFila\fP (\fBPosicio\fP o)"
+.br
+.ti -1c
+.RI "int \fBcompareTo\fP (\fBPosicio\fP o)"
+.br
+.ti -1c
+.RI "boolean \fBequals\fP (Object o)"
+.br
+.ti -1c
+.RI "int \fBfila\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBmovimentDiagonal\fP (\fBPosicio\fP posFinal)"
+.br
+.ti -1c
+.RI "boolean \fBmovimentRectilini\fP (\fBPosicio\fP posFinal)"
+.br
+.ti -1c
+.RI "void \fBswap\fP (\fBPosicio\fP o)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "int \fBcolumna\fP"
+.br
+.ti -1c
+.RI "int \fBfila\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe que representa una posició d'un tauler d'escacs\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Posicio\&.Posicio (char columna, int fila) throws IllegalArgumentException"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea una posició a partir de les seva notació algebraica\&. Més info: https://www.ajedrez365.com/2007/10/la-notacin-de-las-partidas-de-ajedrez.html 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfila\fP Enter que representa la fila\&. 
+.br
+\fIcolumna\fP Caràcter que representa la columna de la posició\&. 
+.RE
+.PP
+
+.SS "Posicio\&.Posicio (int fila, int columna)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea una posició a partir de les seves coordenades fila i columna\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfila\fP Fila en format enter 
+.br
+\fIcolumna\fP Columna en format enter 
+.RE
+.PP
+
+.SS "Posicio\&.Posicio (\fBPosicio\fP antiga, int despFila, int despColumna)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea una nova Posició a partir d'una altre i un desplaçament\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIantiga\fP Posició antiga/original a partir de la qual es crea la nova 
+.br
+\fIdespFila\fP Desplaçament de files\&. 
+.br
+\fIdespColumna\fP Desplaçament de columnes\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Els desplaçaments poden ser negatius per indicar que es redueix el valor de la coordenada a la nova Posició\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "\fBPosicio\fP Posicio\&.canviPrespectiva (int files)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIfiles\fP Nombre de files del tauler\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha retornat una copia d'aquesta \fBPosicio\fP però canviada de prespectiva\&. Es garanteix que l'estat d'aquesta \fBPosicio\fP no variarà\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+Canviar de prespectiva vol dir que s'aplica un eix de simetria horitzontal\&. 
+.RE
+.PP
+
+.SS "int Posicio\&.columna ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+La columna de la posició\&. 
+.RE
+.PP
+
+.SS "int Posicio\&.compareColumna (\fBPosicio\fP o)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIo\fP \fBPosicio\fP amb la que es compararà\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un enter positiu, negatiu, o 0, en funció de si la columna d'aquest objecte és més gran, més petit o igual al passat per paràmetre 'o'\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+No confondre amb el compareTo\&. Aquest mètode només compara la columna dels objectes aixi doncs: a5 < h5 i a2 == a3 (retorna 0)\&. 
+.RE
+.PP
+
+.SS "int Posicio\&.compareFila (\fBPosicio\fP o)"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIo\fP \fBPosicio\fP amb la que es compararà\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un enter positiu, negatiu, o 0, en funció de si la fila d'aquest objecte és més gran, més petit o igual al passat per paràmetre 'o'\&. 
+.RE
+.PP
+\fBNota\fP
+.RS 4
+No confondre amb el compareTo\&. Aquest mètode només compara la fila dels objectes aixi doncs: a5 == h5(retorna 0) i a2 < a3\&. 
+.RE
+.PP
+
+.SS "int Posicio\&.compareTo (\fBPosicio\fP o)"
+
+.PP
+\fBNota\fP
+.RS 4
+La comparació es fa primer en funcio de la fila i en cas de ser iguals en funció de la columna\&. 
+.PP
+La ordenació, per tant, és de dalt a baix i de dreta a esquerra\&. 
+.PP
+Exemples a1 < a8, b5 > a5, h3 == h3 (retorna 0) 
+.RE
+.PP
+\fBMireu també\fP
+.RS 4
+Comparable\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIo\fP \fBPosicio\fP amb la que es compararà 
+.RE
+.PP
+
+.SS "boolean Posicio\&.equals (Object o)"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+: Compara la fila i la columna entre this i o\&. Si son iguals retorna true, altrament false\&. 
+.RE
+.PP
+
+.SS "int Posicio\&.fila ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+La fila de la posició\&. 
+.RE
+.PP
+
+.SS "boolean Posicio\&.movimentDiagonal (\fBPosicio\fP posFinal)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+posInicial i posFinal ! null 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposInicial\fP Posició inicial a partir de la que es fa el càlcul\&. 
+.br
+\fIposFinal\fP Posició final a partir de la que es fa el càlcul\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Si el desplaçament entre posInicial i posFinal és diagonal 
+.RE
+.PP
+
+.SS "boolean Posicio\&.movimentRectilini (\fBPosicio\fP posFinal)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+posInicial i posFinal ! null 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIposInicial\fP Posició inicial a partir de la que es fa el càlcul\&. 
+.br
+\fIposFinal\fP Posició final a partir de la que es fa el càlcul\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Si el desplaçament entre posInicial i posFinal és rectilini 
+.RE
+.PP
+
+.SS "void Posicio\&.swap (\fBPosicio\fP o)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+o != null\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIo\fP \fBPosicio\fP amb la que es canviarà\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'han intercanviat els valors entre this i o\&. 
+.RE
+.PP
+
+.SS "String Posicio\&.toString ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+La representació algebraica de la posició\&. Ex 'a3' en format string\&. 
+.br
+ 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "int Posicio\&.columna\fC [private]\fP"
+Coordenades de la \fBPosicio\fP 
+.SS "int Posicio\&.fila\fC [private]\fP"
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

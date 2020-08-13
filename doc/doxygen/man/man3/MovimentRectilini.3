@@ -1,0 +1,286 @@
+.TH "MovimentRectilini" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MovimentRectilini \- Implementació de \fBMoviment\fP per \fBMovimentRectilini\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de \fBMoviment\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "Integer \fBdiguemSaltar\fP ()"
+.br
+.RI "Diu el valor de saltar\&. "
+.ti -1c
+.RI "boolean \fBdiguemHoritzontal\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBdiguemInicial\fP ()"
+.br
+.ti -1c
+.RI "int \fBdiguemMatar\fP ()"
+.br
+.ti -1c
+.RI "\fBMovimentRectilini\fP (String a, String b, String c, String d, boolean \fBinicial\fP)  throws IllegalArgumentException "
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "boolean \fBesMoviment\fP (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+.br
+.RI "Comprova si un desplaçament és el \fBMoviment\fP\&. "
+.ti -1c
+.RI "boolean \fBequals\fP (\fBMovimentRectilini\fP mov)"
+.br
+.ti -1c
+.RI "String \fBdiguemA\fP ()"
+.br
+.RI "Traducció del paràmetre A\&. "
+.ti -1c
+.RI "String \fBdiguemB\fP ()"
+.br
+.RI "Traducció del paràmetre B\&. "
+.ti -1c
+.RI "boolean \fBesEnroc\fP ()"
+.br
+.RI "Diu si el \fBMoviment\fP és de tipus enroc\&. "
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBtraduirAoB\fP (String s)"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBinicial\fP"
+.br
+.RI "Indica si el moviment és exclusivament inicial\&. "
+.ti -1c
+.RI "int \fBdistancia\fP"
+.br
+.RI "Indica el límit de dstància del moviment, 0 si és infinit\&. "
+.ti -1c
+.RI "int \fBsentit\fP"
+.br
+.RI "Indica la direcció el sentit del moviment\&. 1 positiu, -1 negatiu i 0 en ambdos sentits\&. "
+.ti -1c
+.RI "boolean \fBhoritzontal\fP"
+.br
+.RI "Cert si el moviment és horitzontal, fals si és vertical\&. "
+.ti -1c
+.RI "int \fBsaltar\fP"
+.br
+.RI "0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades "
+.ti -1c
+.RI "int \fBmatar\fP"
+.br
+.RI "0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment "
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Implementació de \fBMoviment\fP per \fBMovimentRectilini\fP\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "MovimentRectilini\&.MovimentRectilini (String a, String b, String c, String d, boolean inicial) throws IllegalArgumentException"
+
+.PP
+Constructor\&. 
+.PP
+\fBPrecondició\fP
+.RS 4
+c i d són enters 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIa\fP Component A\&. 
+.br
+\fIb\fP Component B\&. 
+.br
+\fIc\fP Component C\&. 
+.br
+\fId\fP Component D\&. 
+.br
+\fIinicial\fP Indica si el moviment és inicial\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea un moviment de tipus rectilini\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP quan no es compleix la pre\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "String MovimentRectilini\&.diguemA ()"
+
+.PP
+Traducció del paràmetre A\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre A traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "String MovimentRectilini\&.diguemB ()"
+
+.PP
+Traducció del paràmetre B\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre B traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentRectilini\&.diguemHoritzontal ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si és horitzontal, fals altrament\&. 
+.RE
+.PP
+
+.SS "boolean MovimentRectilini\&.diguemInicial ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el moviment és inicial, fals altrament\&. 
+.RE
+.PP
+
+.SS "int MovimentRectilini\&.diguemMatar ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna matar\&. 0 si no pot, 1 si pot i 2 si ha\&. 
+.RE
+.PP
+
+.SS "Integer MovimentRectilini\&.diguemSaltar ()"
+
+.PP
+Diu el valor de saltar\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l'atribut\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentRectilini\&.equals (\fBMovimentRectilini\fP mov)"
+
+.SS "boolean MovimentRectilini\&.esEnroc ()"
+
+.PP
+Diu si el \fBMoviment\fP és de tipus enroc\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el \fBMoviment\fP és enroc, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentRectilini\&.esMoviment (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+
+.PP
+Comprova si un desplaçament és el \fBMoviment\fP\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP Posició d'origen\&. 
+.br
+\fIdesti\fP Posició destí\&. 
+.br
+\fIprimer\fP Indica si el el moviment és el primer de la partida\&. 
+.br
+\fIpeca_final\fP Referència al tipus de peça de la posició destí\&. 
+.br
+\fIpeca_mig\fP Indica si hi ha alguna peça en la trajectòria\&. 
+.br
+\fIexacte\fP Demanar si la distància ha de ser exacte\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna cert si amb origen-desti és compleix el moviment, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentRectilini\&.traduirAoB (String s)\fC [private]\fP"
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "int MovimentRectilini\&.distancia\fC [private]\fP"
+
+.PP
+Indica el límit de dstància del moviment, 0 si és infinit\&. 
+.SS "boolean MovimentRectilini\&.horitzontal\fC [private]\fP"
+
+.PP
+Cert si el moviment és horitzontal, fals si és vertical\&. 
+.SS "boolean MovimentRectilini\&.inicial\fC [private]\fP"
+
+.PP
+Indica si el moviment és exclusivament inicial\&. 
+.SS "int MovimentRectilini\&.matar\fC [private]\fP"
+
+.PP
+0 si no pot matar la peça, 1 si pot, 2 ha de matar per fer el moviment 
+.SS "int MovimentRectilini\&.saltar\fC [private]\fP"
+
+.PP
+0 si no pot saltar peces, 1 si pot, 2 mata les peces saltades 
+.SS "int MovimentRectilini\&.sentit\fC [private]\fP"
+
+.PP
+Indica la direcció el sentit del moviment\&. 1 positiu, -1 negatiu i 0 en ambdos sentits\&. 
+.PP
+\fBNota\fP
+.RS 4
+També pot ser 0 si el moviment és d'una distància determinada\&. 
+.RE
+.PP
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

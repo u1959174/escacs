@@ -1,0 +1,1660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Escacs: Referència de la Classe Tauler</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="reiB.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Escacs
+   &#160;<span id="projectnumber">v3</span>
+   </div>
+   <div id="projectbrief">Joc d&#39;Escacs IA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_tauler.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Mètodes públics</a> &#124;
+<a href="#pac-attribs">Atributs de Paquet</a> &#124;
+<a href="#pri-methods">Mètodes Privats</a> &#124;
+<a href="#pri-attribs">Atributs Privats</a> &#124;
+<a href="class_tauler-members.html">Llista de tots els membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Referència de la Classe Tauler</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe que representa un tauler d'<a class="el" href="class_escacs.html" title="Classe d&#39;entrada al programa. Pregunta en quin mode es vol executar el joc: la versio gràfica o text/...">Escacs</a>. Contenidor de Caselles. Conté alguns mètodes de suport relacionats amb el tauler.  
+ <a href="class_tauler.html#details">Més...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Mètodes públics</h2></td></tr>
+<tr class="memitem:a57081367230c4308c407028df10b3b7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a57081367230c4308c407028df10b3b7d">Tauler</a> (int <a class="el" href="class_tauler.html#a7b9ca4f7b4b0f828db35b23a439ff467">files</a>, int <a class="el" href="class_tauler.html#a484a0b6941bfaa378ae27790016519d8">columnes</a>)</td></tr>
+<tr class="separator:a57081367230c4308c407028df10b3b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027176876223ca4e703f20a8dd975522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a027176876223ca4e703f20a8dd975522">afegirPeca</a> (<a class="el" href="class_posicio.html">Posicio</a> pos, <a class="el" href="class_peca.html">Peca</a> peca)</td></tr>
+<tr class="separator:a027176876223ca4e703f20a8dd975522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137e944c6f34f17f138d98c666a31561"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="class_posicio.html">Posicio</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a137e944c6f34f17f138d98c666a31561">calcularEnrroc</a> (<a class="el" href="class_posicio.html">Posicio</a> posInicialA, <a class="el" href="class_posicio.html">Posicio</a> posInicialB)</td></tr>
+<tr class="separator:a137e944c6f34f17f138d98c666a31561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6a4fdd3e1c49bd0abf5cb165d65bde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#aab6a4fdd3e1c49bd0abf5cb165d65bde">canviarPerspectiva</a> ()</td></tr>
+<tr class="separator:aab6a4fdd3e1c49bd0abf5cb165d65bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83013a8d97831b278431305dea132f7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tauler.html">Tauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a83013a8d97831b278431305dea132f7a">deepCopy</a> ()</td></tr>
+<tr class="separator:a83013a8d97831b278431305dea132f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8912aa8474c11e2425b8c6a54dd8882b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pair.html">Pair</a>&lt; Integer, Integer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a8912aa8474c11e2425b8c6a54dd8882b">dimensions</a> ()</td></tr>
+<tr class="separator:a8912aa8474c11e2425b8c6a54dd8882b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263b1121064bd079c0000e946d0dd8aa"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a263b1121064bd079c0000e946d0dd8aa">dinsTauler</a> (<a class="el" href="class_posicio.html">Posicio</a> pos)</td></tr>
+<tr class="separator:a263b1121064bd079c0000e946d0dd8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae349247a3e51ac2c9fae204d00225f68"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_peca.html">Peca</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#ae349247a3e51ac2c9fae204d00225f68">donamPeces</a> (<a class="el" href="enum_color.html">Color</a> colorPeces)</td></tr>
+<tr class="separator:ae349247a3e51ac2c9fae204d00225f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8569be227afaeefb92179f39aed44774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a8569be227afaeefb92179f39aed44774">eliminarPeca</a> (<a class="el" href="class_posicio.html">Posicio</a> pos)</td></tr>
+<tr class="separator:a8569be227afaeefb92179f39aed44774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ed5247780b47ff1ff5f9bb1e68335e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#af1ed5247780b47ff1ff5f9bb1e68335e">esFinal</a> (<a class="el" href="class_posicio.html">Posicio</a> posicioAComprovar, <a class="el" href="enum_color.html">Color</a> color)</td></tr>
+<tr class="separator:af1ed5247780b47ff1ff5f9bb1e68335e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41220c09c617a3000265418d1ab2097"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enum_estat_tauler.html">EstatTauler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#ae41220c09c617a3000265418d1ab2097">estat</a> (<a class="el" href="enum_color.html">Color</a> torn)</td></tr>
+<tr class="separator:ae41220c09c617a3000265418d1ab2097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769d6521e685275ad008e0bec3c39a30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a769d6521e685275ad008e0bec3c39a30">evaluarTauler</a> ()</td></tr>
+<tr class="memdesc:a769d6521e685275ad008e0bec3c39a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evalua aquest tauler indicant la superioritat d'un jugador en vers l'altre. El valor absolut indica la superioritat i el signe a favor de quin jugador és aquesta. Positiu-&gt;Blanques, Negatiu-&gt;Negres.  <a href="class_tauler.html#a769d6521e685275ad008e0bec3c39a30">Més...</a><br /></td></tr>
+<tr class="separator:a769d6521e685275ad008e0bec3c39a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c4f071cfb8b992678bf6e41ea89c23"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="class_peca.html">Peca</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#ab6c4f071cfb8b992678bf6e41ea89c23">pecesAlMig</a> (<a class="el" href="class_posicio.html">Posicio</a> posInicial, <a class="el" href="class_posicio.html">Posicio</a> posFinal, boolean filaPrimer, boolean incloureExtrems)</td></tr>
+<tr class="separator:ab6c4f071cfb8b992678bf6e41ea89c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbdfb759857ae4fa94f3a8a0d86de2a7"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="class_peca.html">Peca</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#abbdfb759857ae4fa94f3a8a0d86de2a7">pecesAlMigColorConcret</a> (<a class="el" href="class_posicio.html">Posicio</a> posInicial, <a class="el" href="class_posicio.html">Posicio</a> posFinal, boolean filaPrimer, <a class="el" href="enum_color.html">Color</a> colorAComprovar)</td></tr>
+<tr class="separator:abbdfb759857ae4fa94f3a8a0d86de2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f81d33470a6a9e2d305b1f157df5eb1"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_peca.html">Peca</a>, <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a6f81d33470a6a9e2d305b1f157df5eb1">possiblesMovimentsJugador</a> (<a class="el" href="enum_color.html">Color</a> colorJugador)</td></tr>
+<tr class="separator:a6f81d33470a6a9e2d305b1f157df5eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70c17a5d0601fd35cb944ca66ff4e50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_peca.html">Peca</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#af70c17a5d0601fd35cb944ca66ff4e50">tensPeca</a> (<a class="el" href="class_posicio.html">Posicio</a> pos)</td></tr>
+<tr class="separator:af70c17a5d0601fd35cb944ca66ff4e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc9eac98f175247fc448dcd1adcea97"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#accc9eac98f175247fc448dcd1adcea97">toString</a> ()</td></tr>
+<tr class="separator:accc9eac98f175247fc448dcd1adcea97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-attribs"></a>
+Atributs de Paquet</h2></td></tr>
+<tr class="memitem:a103c29cb97bc9ac5c0bf973046f429b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a103c29cb97bc9ac5c0bf973046f429b9">else</a></td></tr>
+<tr class="separator:a103c29cb97bc9ac5c0bf973046f429b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Mètodes Privats</h2></td></tr>
+<tr class="memitem:a41bfa8f4e3b745723d90275aacfd8272"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a41bfa8f4e3b745723d90275aacfd8272">actualitzarAmenaces</a> (<a class="el" href="enum_color.html">Color</a> peces)</td></tr>
+<tr class="separator:a41bfa8f4e3b745723d90275aacfd8272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203d322d5b85e1babebe4830d6f080cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a203d322d5b85e1babebe4830d6f080cc">afegirIndex</a> (<a class="el" href="class_peca.html">Peca</a> peca)</td></tr>
+<tr class="separator:a203d322d5b85e1babebe4830d6f080cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67cc5ef0706cd4c73d2a1cf2f97c8ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#aa67cc5ef0706cd4c73d2a1cf2f97c8ab">borrarIndex</a> (<a class="el" href="class_peca.html">Peca</a> pecaAEliminar)</td></tr>
+<tr class="separator:aa67cc5ef0706cd4c73d2a1cf2f97c8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f40216ff94e59ebc23b82a98564ca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#ad6f40216ff94e59ebc23b82a98564ca9">buscarPeca</a> (String nomPeca, <a class="el" href="enum_color.html">Color</a> color)</td></tr>
+<tr class="separator:ad6f40216ff94e59ebc23b82a98564ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f765b236e89faff1474c12fdc1d649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a47f765b236e89faff1474c12fdc1d649">calcularPosicioCanviPrespectiva</a> (<a class="el" href="class_peca.html">Peca</a> pecaAct)</td></tr>
+<tr class="separator:a47f765b236e89faff1474c12fdc1d649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7112d0eff5be417123c0fa6aeeb56a9"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_posicio.html">Posicio</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#ae7112d0eff5be417123c0fa6aeeb56a9">casellesEntrePosicions</a> (<a class="el" href="class_posicio.html">Posicio</a> posInicial, <a class="el" href="class_posicio.html">Posicio</a> posFinal, boolean filaPrimer)</td></tr>
+<tr class="separator:ae7112d0eff5be417123c0fa6aeeb56a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271c2a667206c87d5f6092912e318e75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a271c2a667206c87d5f6092912e318e75">casellesEntrePosicionsDiagonals</a> (Collection&lt; <a class="el" href="class_posicio.html">Posicio</a> &gt; res, <a class="el" href="class_posicio.html">Posicio</a> posInicial, <a class="el" href="class_posicio.html">Posicio</a> posFinal)</td></tr>
+<tr class="separator:a271c2a667206c87d5f6092912e318e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351f47779e1279c18fb9d082d79c1bb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a351f47779e1279c18fb9d082d79c1bb9">casellesEntrePosicionsRectilinies</a> (Collection&lt; <a class="el" href="class_posicio.html">Posicio</a> &gt; res, <a class="el" href="class_posicio.html">Posicio</a> posInicial, <a class="el" href="class_posicio.html">Posicio</a> posFinal)</td></tr>
+<tr class="separator:a351f47779e1279c18fb9d082d79c1bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b92da08cdbd2f753a6e86b2d76dc2b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a46b92da08cdbd2f753a6e86b2d76dc2b">hiHaEscac</a> (<a class="el" href="enum_color.html">Color</a> colorRei)</td></tr>
+<tr class="separator:a46b92da08cdbd2f753a6e86b2d76dc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0b57ceee06fd4d770af51dcd8f7624"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a2c0b57ceee06fd4d770af51dcd8f7624">hiHaEscacIMat</a> (<a class="el" href="enum_color.html">Color</a> colorRei)</td></tr>
+<tr class="separator:a2c0b57ceee06fd4d770af51dcd8f7624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95e905872e2b7238ae7df7c41048362"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#aa95e905872e2b7238ae7df7c41048362">hiHaJugadaQueEvitaMat</a> (<a class="el" href="enum_color.html">Color</a> colorRei)</td></tr>
+<tr class="separator:aa95e905872e2b7238ae7df7c41048362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8633397585331cccbe9615b140e4a24d"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a8633397585331cccbe9615b140e4a24d">hiHaMovimentValid</a> (<a class="el" href="enum_color.html">Color</a> torn)</td></tr>
+<tr class="separator:a8633397585331cccbe9615b140e4a24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45862370f91eafb4f25322936ff7d2ab"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a45862370f91eafb4f25322936ff7d2ab">hiHaTaulesPerOfegat</a> (<a class="el" href="enum_color.html">Color</a> torn)</td></tr>
+<tr class="separator:a45862370f91eafb4f25322936ff7d2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dadba9c40cdf8c6146c10fa5f7a2509"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_peca.html">Peca</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a2dadba9c40cdf8c6146c10fa5f7a2509">pecesAtacants</a> (<a class="el" href="class_posicio.html">Posicio</a> objectiu, <a class="el" href="enum_color.html">Color</a> colorAmenaca)</td></tr>
+<tr class="separator:a2dadba9c40cdf8c6146c10fa5f7a2509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b989c0279854bd05c4dae089c010bc6"><td class="memItemLeft" align="right" valign="top">Collection&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a0b989c0279854bd05c4dae089c010bc6">possiblesMovimentsValids</a> (<a class="el" href="class_peca.html">Peca</a> peca)</td></tr>
+<tr class="separator:a0b989c0279854bd05c4dae089c010bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9f8de7454bd25a93fdca15dc72d3ad"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a6e9f8de7454bd25a93fdca15dc72d3ad">reiTeMovimentSenseEscac</a> (<a class="el" href="class_posicio.html">Posicio</a> posRei)</td></tr>
+<tr class="separator:a6e9f8de7454bd25a93fdca15dc72d3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4083b16d780e762e10aacadbc9f9e1d3"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a4083b16d780e762e10aacadbc9f9e1d3">simularMoviment</a> (<a class="el" href="class_posicio.html">Posicio</a> peca, <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt; moviment)</td></tr>
+<tr class="separator:a4083b16d780e762e10aacadbc9f9e1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52536736acb27f8c59a593f02499582"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#ab52536736acb27f8c59a593f02499582">valorarPosicioRei</a> (<a class="el" href="class_posicio.html">Posicio</a> posRei)</td></tr>
+<tr class="memdesc:ab52536736acb27f8c59a593f02499582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donada la columna on està el rei, calcula el valor que té tenir-lo en aquesta posició. Es valor molt més tenir-lo als extrems del tauler.  <a href="class_tauler.html#ab52536736acb27f8c59a593f02499582">Més...</a><br /></td></tr>
+<tr class="separator:ab52536736acb27f8c59a593f02499582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atributs Privats</h2></td></tr>
+<tr class="memitem:a8a08bc8e2c49b7add0502d87c05585e9"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_peca.html">Peca</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a8a08bc8e2c49b7add0502d87c05585e9">atacantsAlReiBlanc</a></td></tr>
+<tr class="separator:a8a08bc8e2c49b7add0502d87c05585e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e1477c0d834db60194c27933ce5563"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; <a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_peca.html">Peca</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a05e1477c0d834db60194c27933ce5563">atacantsAlReiNegre</a></td></tr>
+<tr class="separator:a05e1477c0d834db60194c27933ce5563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d62ed0613ef4450a7f38fd34ef6247"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; ArrayList&lt; <a class="el" href="class_casella.html">Casella</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a05d62ed0613ef4450a7f38fd34ef6247">caselles</a></td></tr>
+<tr class="separator:a05d62ed0613ef4450a7f38fd34ef6247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484a0b6941bfaa378ae27790016519d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a484a0b6941bfaa378ae27790016519d8">columnes</a></td></tr>
+<tr class="separator:a484a0b6941bfaa378ae27790016519d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b9ca4f7b4b0f828db35b23a439ff467"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a7b9ca4f7b4b0f828db35b23a439ff467">files</a></td></tr>
+<tr class="separator:a7b9ca4f7b4b0f828db35b23a439ff467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857f29bc07298cebf4d72467c89bad02"><td class="memItemLeft" align="right" valign="top">HashMap&lt; String, List&lt; <a class="el" href="class_peca.html">Peca</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a857f29bc07298cebf4d72467c89bad02">indexBlanques</a></td></tr>
+<tr class="separator:a857f29bc07298cebf4d72467c89bad02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e95ff5dfd61fdfd5c14cf1c9bf50b03"><td class="memItemLeft" align="right" valign="top">HashMap&lt; String, List&lt; <a class="el" href="class_peca.html">Peca</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a6e95ff5dfd61fdfd5c14cf1c9bf50b03">indexNegres</a></td></tr>
+<tr class="separator:a6e95ff5dfd61fdfd5c14cf1c9bf50b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f77c6752c10bf587b5fe98a9a6a26c0"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; <a class="el" href="class_posicio.html">Posicio</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a0f77c6752c10bf587b5fe98a9a6a26c0">taulerAmenacesBlanques</a></td></tr>
+<tr class="separator:a0f77c6752c10bf587b5fe98a9a6a26c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7917d0e6c026da0c7ffa03ec482385"><td class="memItemLeft" align="right" valign="top">ArrayList&lt; <a class="el" href="class_posicio.html">Posicio</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tauler.html#a5b7917d0e6c026da0c7ffa03ec482385">taulerAmenacesNegres</a></td></tr>
+<tr class="separator:a5b7917d0e6c026da0c7ffa03ec482385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripció Detallada</h2>
+<div class="textblock"><p>Classe que representa un tauler d'<a class="el" href="class_escacs.html" title="Classe d&#39;entrada al programa. Pregunta en quin mode es vol executar el joc: la versio gràfica o text/...">Escacs</a>. Contenidor de Caselles. Conté alguns mètodes de suport relacionats amb el tauler. </p>
+<dl class="section author"><dt>Autor</dt><dd>Martí Madrenys Masferrer </dd>
+<dd>
+u1953866 </dd></dl>
+</div><h2 class="groupheader">Documentació del Constructor i el Destructor</h2>
+<a id="a57081367230c4308c407028df10b3b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57081367230c4308c407028df10b3b7d">&#9670;&nbsp;</a></span>Tauler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Tauler.Tauler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>files</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>columnes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section post"><dt>Postcondició</dt><dd>Crea el tauler a partir del nombre de files i columnes que ha de tenir. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">files</td><td>Files del tauler </td></tr>
+    <tr><td class="paramname">columnes</td><td>Columnes del tauler </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentació de les Funcions Membre</h2>
+<a id="a41bfa8f4e3b745723d90275aacfd8272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41bfa8f4e3b745723d90275aacfd8272">&#9670;&nbsp;</a></span>actualitzarAmenaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tauler.actualitzarAmenaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>peces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>el rei rival està al tauler. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha actualitzat el conjunt de posicions amenaçades per les peces del <a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> peces i s'ha actualitzat el conjunt de peces que ataquen al rei rival. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peces</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> de les peces de les quals s'han d'actualitzar les posicions amenaçades. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a203d322d5b85e1babebe4830d6f080cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203d322d5b85e1babebe4830d6f080cc">&#9670;&nbsp;</a></span>afegirIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tauler.afegirIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_peca.html">Peca</a>&#160;</td>
+          <td class="paramname"><em>peca</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd><a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> != null. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha afegit la peca als índexs. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peca</td><td><a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> a afegir als índexs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a027176876223ca4e703f20a8dd975522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027176876223ca4e703f20a8dd975522">&#9670;&nbsp;</a></span>afegirPeca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tauler.afegirPeca </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_peca.html">Peca</a>&#160;</td>
+          <td class="paramname"><em>peca</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>La <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> pos existeix al tauler. No pot haver-hi al tauler cap referència a la mateixa peça que es vol afegir. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha afegit la peça del tauler. Si ja hi havia cap peça a aquella <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> s'ha sobreescrit. La peça afegida sap a quin tauler està i a quina posició d'aquest tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> on s'afegirà la peça. </td></tr>
+    <tr><td class="paramname">peca</td><td>peça que s'afegira. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa67cc5ef0706cd4c73d2a1cf2f97c8ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67cc5ef0706cd4c73d2a1cf2f97c8ab">&#9670;&nbsp;</a></span>borrarIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tauler.borrarIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_peca.html">Peca</a>&#160;</td>
+          <td class="paramname"><em>pecaAEliminar</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha borrat la <a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> dels índexs </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pecaAEliminar</td><td><a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> a eliminar dels índexs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad6f40216ff94e59ebc23b82a98564ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f40216ff94e59ebc23b82a98564ca9">&#9670;&nbsp;</a></span>buscarPeca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_posicio.html">Posicio</a> Tauler.buscarPeca </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>nomPeca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomPeca</td><td>Nom de la peça a buscar </td></tr>
+    <tr><td class="paramname">color</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> de la peça a buscar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>La primera posicio trobada d'una casella que conté una peça de nom "nomPeca". Si no es troba retorna null; </dd></dl>
+
+</div>
+</div>
+<a id="a137e944c6f34f17f138d98c666a31561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a137e944c6f34f17f138d98c666a31561">&#9670;&nbsp;</a></span>calcularEnrroc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_posicio.html">Posicio</a>,<a class="el" href="class_posicio.html">Posicio</a>&gt; Tauler.calcularEnrroc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posInicialA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posInicialB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>posInicialA i posInicialB són dues posicions diferents que fan referencia a dues Peces diferents al tauler. Les dues peces estan en aquest tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posInicialA</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> actual/inicial de la peça A de l'enrroc. </td></tr>
+    <tr><td class="paramname">posInicialB</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> actual/inicial de la peça B de l'enrroc. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un pair de Posicions amb les posicions de destí que hauríen de prendre les peces després d'un teoric enrroc. Si l'enrroc no és vàlid segons els moviements dels tipus es retorna null. First-&gt;posFinalA, Second-&gt;posFinalB. </dd></dl>
+
+</div>
+</div>
+<a id="a47f765b236e89faff1474c12fdc1d649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f765b236e89faff1474c12fdc1d649">&#9670;&nbsp;</a></span>calcularPosicioCanviPrespectiva()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_posicio.html">Posicio</a> Tauler.calcularPosicioCanviPrespectiva </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_peca.html">Peca</a>&#160;</td>
+          <td class="paramname"><em>pecaAct</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pecaAct</td><td><a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> sobre la que s'aplicarà el calcul de la nova posició </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>La posicio a la que hauria d'anar la pecaAct si aquesta es canvies de prespectiva tenint en compte les dimensions d'aquest tauler. </dd></dl>
+
+</div>
+</div>
+<a id="aab6a4fdd3e1c49bd0abf5cb165d65bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6a4fdd3e1c49bd0abf5cb165d65bde">&#9670;&nbsp;</a></span>canviarPerspectiva()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tauler.html">Tauler</a> Tauler.canviarPerspectiva </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Retorna</dt><dd>Una copia profunda d'aquest tauler s'hi ha aplicat un eix de simetria horitzontal. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>No es té en compte que el rei i la reina estan a la mateixa columna. </dd></dl>
+
+</div>
+</div>
+<a id="ae7112d0eff5be417123c0fa6aeeb56a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7112d0eff5be417123c0fa6aeeb56a9">&#9670;&nbsp;</a></span>casellesEntrePosicions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_posicio.html">Posicio</a>&gt; Tauler.casellesEntrePosicions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posFinal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>filaPrimer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posInicial</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> inicial del moviment </td></tr>
+    <tr><td class="paramname">posFinal</td><td>Posicion final del moviment </td></tr>
+    <tr><td class="paramname">filaPrimer</td><td>En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>El conjunt de caselles entre les dues posicions(inicial i final incloses). </dd></dl>
+
+</div>
+</div>
+<a id="a271c2a667206c87d5f6092912e318e75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271c2a667206c87d5f6092912e318e75">&#9670;&nbsp;</a></span>casellesEntrePosicionsDiagonals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tauler.casellesEntrePosicionsDiagonals </td>
+          <td>(</td>
+          <td class="paramtype">Collection&lt; <a class="el" href="class_posicio.html">Posicio</a> &gt;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posFinal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>El desplaçament ha de ser diagonal. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'actualitza res amb les caselles que hi ha en el rang diagonal (posInicial, posFinal] </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td>Conjunt de posicions del tauler que hi ha entre les dues posicions inicial i final </td></tr>
+    <tr><td class="paramname">posInicial</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> inicial del moviment </td></tr>
+    <tr><td class="paramname">posFinal</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> final del moviment </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a351f47779e1279c18fb9d082d79c1bb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351f47779e1279c18fb9d082d79c1bb9">&#9670;&nbsp;</a></span>casellesEntrePosicionsRectilinies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tauler.casellesEntrePosicionsRectilinies </td>
+          <td>(</td>
+          <td class="paramtype">Collection&lt; <a class="el" href="class_posicio.html">Posicio</a> &gt;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posFinal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>El desplaçament ha de ser rectilini. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'actualitza res amb les caselles que hi ha en el rang rectilini (posInicial, posFinal]. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">res</td><td>Conjunt de posicions del tauler que hi ha entre les dues posicions inicial i final. </td></tr>
+    <tr><td class="paramname">posInicial</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> inicial del moviment. </td></tr>
+    <tr><td class="paramname">posFinal</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> final del moviment. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a83013a8d97831b278431305dea132f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83013a8d97831b278431305dea132f7a">&#9670;&nbsp;</a></span>deepCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_tauler.html">Tauler</a> Tauler.deepCopy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>original != null. </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>Una ref a una copia del tauler. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>Respecte les estructures internes només s'en copien els índexs. Les altres es recalculen cada cop que es pregunta l'estat del tauler i per tant, no cal. </dd></dl>
+
+</div>
+</div>
+<a id="a8912aa8474c11e2425b8c6a54dd8882b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8912aa8474c11e2425b8c6a54dd8882b">&#9670;&nbsp;</a></span>dimensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pair.html">Pair</a>&lt;Integer,Integer&gt; Tauler.dimensions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>: S'ha inicialitzat el <a class="el" href="class_tauler.html" title="Classe que representa un tauler d&#39;Escacs. Contenidor de Caselles. Conté alguns mètodes de suport rela...">Tauler</a> </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>: Un pair amb les dimensions first-&gt;columnes, seccond-&gt;files. </dd></dl>
+
+</div>
+</div>
+<a id="a263b1121064bd079c0000e946d0dd8aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263b1121064bd079c0000e946d0dd8aa">&#9670;&nbsp;</a></span>dinsTauler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.dinsTauler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Posició que es comprova. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un booleaà que serà true si pos es dins el tauler i false altrament </dd></dl>
+
+</div>
+</div>
+<a id="ae349247a3e51ac2c9fae204d00225f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae349247a3e51ac2c9fae204d00225f68">&#9670;&nbsp;</a></span>donamPeces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_peca.html">Peca</a>&gt; Tauler.donamPeces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>colorPeces</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorPeces</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> de les peces que es consulten. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Una coleccio de totes les peces del colorPeces que conté el tauler. </dd></dl>
+
+</div>
+</div>
+<a id="a8569be227afaeefb92179f39aed44774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8569be227afaeefb92179f39aed44774">&#9670;&nbsp;</a></span>eliminarPeca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Tauler.eliminarPeca </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>La <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> existeix al tauler. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha eliminat la peça del tauler. Si no hi havia cap peça en aquella <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> no s'ha modificat. La peça ja no sap on es. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> on s'eliminarà la peça. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1ed5247780b47ff1ff5f9bb1e68335e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ed5247780b47ff1ff5f9bb1e68335e">&#9670;&nbsp;</a></span>esFinal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.esFinal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posicioAComprovar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posicioAComprovar</td><td>Posició que es comprovarà. </td></tr>
+    <tr><td class="paramname">color</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> que s'agafarà de referència a la comprovació. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>un booleà que indicarà si la posició està al la última fila del tauler tenint en compte la prespectiva de cada jugador. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>Prespectiva: En la prespectiva de les negres l'última fila serà 0 mentre que per les blanques l'última serà la més gran. </dd></dl>
+
+</div>
+</div>
+<a id="ae41220c09c617a3000265418d1ab2097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae41220c09c617a3000265418d1ab2097">&#9670;&nbsp;</a></span>estat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enum_estat_tauler.html">EstatTauler</a> Tauler.estat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>torn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>torn El color torn ha de ser el de l'últim jugador que ha fet una jugada. Aquesta jugada ha d'haver sigut ja aplicada al tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torn</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> del jugador que ACABA de fer el torn. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un <a class="el" href="enum_estat_tauler.html" title="Ennum amb els possibles estats del Tauler en un momemnt determinat de la partida.">EstatTauler</a> amb la informació de l'estat del tauler. Fent referència a qui acaba de jugar. Per exemple si tenim un escac, aquest l'ha provocat el jugador de color "torn". </dd></dl>
+
+</div>
+</div>
+<a id="a769d6521e685275ad008e0bec3c39a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769d6521e685275ad008e0bec3c39a30">&#9670;&nbsp;</a></span>evaluarTauler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Tauler.evaluarTauler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Evalua aquest tauler indicant la superioritat d'un jugador en vers l'altre. El valor absolut indica la superioritat i el signe a favor de quin jugador és aquesta. Positiu-&gt;Blanques, Negatiu-&gt;Negres. </p>
+<dl class="section post"><dt>Postcondició</dt><dd>Es garanteix que l'estat del tauler no ha canviat. S'ha retornat el valor de l'evaluació. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>Per fer aquesta evaluació s'han utilitzat diversos factors com la protecció del rei, el control del centre i desenvolupament així com les peces restants i el seu valor. </dd></dl>
+
+</div>
+</div>
+<a id="a46b92da08cdbd2f753a6e86b2d76dc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46b92da08cdbd2f753a6e86b2d76dc2b">&#9670;&nbsp;</a></span>hiHaEscac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.hiHaEscac </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>colorRei</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>Hi ha el rei del colorRei al tauler. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha actualitzat el conjunt de posicions amenaçades pel rival de colorRei i s'ha retornat un booleà en funció de si el Rei de colorRei està en escac. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorRei</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> color del rei que podria estar amenaçat. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un booleà que diu si el rei de colorRei està en escac. </dd></dl>
+
+</div>
+</div>
+<a id="a2c0b57ceee06fd4d770af51dcd8f7624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0b57ceee06fd4d770af51dcd8f7624">&#9670;&nbsp;</a></span>hiHaEscacIMat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.hiHaEscacIMat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>colorRei</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>Hi ha el rei del color colorRei al tauler. S'ha comprovat que el rei colorRei està en escac. </dd></dl>
+<dl class="section post"><dt>Postcondició</dt><dd>S'ha retornat un booleà en funció de si el Rei de colorRei està en escac i mat. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorRei</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> color del rei que podria estar en mat. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un booleà que diu si el rei de colorRei està en escac i mat. </dd></dl>
+<dl class="section version"><dt>Versió</dt><dd>1. </dd></dl>
+
+</div>
+</div>
+<a id="aa95e905872e2b7238ae7df7c41048362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95e905872e2b7238ae7df7c41048362">&#9670;&nbsp;</a></span>hiHaJugadaQueEvitaMat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.hiHaJugadaQueEvitaMat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>colorRei</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>el Rei de colorRei està en escac i està al tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorRei</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> del rei que esta en escac. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un booleà que diu si s'ha trobat, o no, una jugada que evitaria el mat. </dd></dl>
+
+</div>
+</div>
+<a id="a8633397585331cccbe9615b140e4a24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8633397585331cccbe9615b140e4a24d">&#9670;&nbsp;</a></span>hiHaMovimentValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.hiHaMovimentValid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>torn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torn</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> de qui té el torn i pot estar ofegat. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true si alguna peça de color torn pot fer algún movment vàlid. Altrament false. </dd></dl>
+
+</div>
+</div>
+<a id="a45862370f91eafb4f25322936ff7d2ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45862370f91eafb4f25322936ff7d2ab">&#9670;&nbsp;</a></span>hiHaTaulesPerOfegat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.hiHaTaulesPerOfegat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>torn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>Hi ha el rei del color contrari al color torn al tauler. S'han comprobat que no hi ha escac al rival de torn. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torn</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> del jugador que ha fet la última jugada i que podria provocar l'afogat. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un booleà que serà true si el jugador que no té el torn, està afogat. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>Com diu el "@param torn", cal que la jugada que hauria de provocar l'ofegat s'hagi fet ja per comprovar si ara el rei rival ha quedat ofegat. </dd></dl>
+
+</div>
+</div>
+<a id="ab6c4f071cfb8b992678bf6e41ea89c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c4f071cfb8b992678bf6e41ea89c23">&#9670;&nbsp;</a></span>pecesAlMig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_posicio.html">Posicio</a>,<a class="el" href="class_peca.html">Peca</a>&gt; &gt; Tauler.pecesAlMig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posFinal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>filaPrimer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>incloureExtrems</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>posInicial i posFinal != null i dins el tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posInicial</td><td>Posició inicial a partir de la que es fa el càlcul. </td></tr>
+    <tr><td class="paramname">posFinal</td><td>Posició final a partir de la que es fa el càlcul. </td></tr>
+    <tr><td class="paramname">filaPrimer</td><td>En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no. Altrament no es fa servir i es pot deixar qualsevol valor booleà. </td></tr>
+    <tr><td class="paramname">incloureExtrems</td><td>Si és true s'inclouran a la consulta les posicions Inicial i Final, altrament aquestes no es comprovaran </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Una colecció de <a class="el" href="class_pair.html" title="Classe Contenidora de dos objectes genèrics.">Pair</a> de totes les posicions entre posInicial i posFinal(incloses o no en funcio del parametre incloureExtrems) que estiguin ocupades per una <a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> juntament amb aquesta última. First -&gt;<a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a>, Second -&gt; <a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> </dd></dl>
+
+</div>
+</div>
+<a id="abbdfb759857ae4fa94f3a8a0d86de2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbdfb759857ae4fa94f3a8a0d86de2a7">&#9670;&nbsp;</a></span>pecesAlMigColorConcret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_posicio.html">Posicio</a>,<a class="el" href="class_peca.html">Peca</a>&gt; &gt; Tauler.pecesAlMigColorConcret </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posInicial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posFinal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>filaPrimer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>colorAComprovar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>posInicial i posFinal != null i dins el tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posInicial</td><td>Posició inicial a partir de la que es fa el càlcul. </td></tr>
+    <tr><td class="paramname">posFinal</td><td>Posició final a partir de la que es fa el càlcul. </td></tr>
+    <tr><td class="paramname">filaPrimer</td><td>En els casos en que el moviment sigui combinat, indica si el desplaçament es comença per la fila o no. Altrament no es fa servir i es pot deixar qualsevol valor booleà. </td></tr>
+    <tr><td class="paramname">colorAComprovar</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> que han de tenir les peces. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Una colecció de <a class="el" href="class_pair.html" title="Classe Contenidora de dos objectes genèrics.">Pair</a> de totes les posicions entre posInicial i posFinal(posInicial i posFinal incloses) que estiguin ocupades per una <a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> del colorAComprovar juntament amb aquesta última. First -&gt;<a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a>, Second -&gt; <a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>No conforndre amb PecesAlMig() que no té en compte el color. </dd></dl>
+
+</div>
+</div>
+<a id="a2dadba9c40cdf8c6146c10fa5f7a2509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dadba9c40cdf8c6146c10fa5f7a2509">&#9670;&nbsp;</a></span>pecesAtacants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_peca.html">Peca</a>&gt; Tauler.pecesAtacants </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>objectiu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>colorAmenaca</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorAmenaca</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> de les peces que amenacen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Una col·lecció de Peces de colorAmenaca que poden matar a una <a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> a la <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> objectiu </dd></dl>
+
+</div>
+</div>
+<a id="a6f81d33470a6a9e2d305b1f157df5eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f81d33470a6a9e2d305b1f157df5eb1">&#9670;&nbsp;</a></span>possiblesMovimentsJugador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_peca.html">Peca</a>,<a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_posicio.html">Posicio</a>,<a class="el" href="interface_moviment.html">Moviment</a>&gt; &gt; &gt; Tauler.possiblesMovimentsJugador </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enum_color.html">Color</a>&#160;</td>
+          <td class="paramname"><em>colorJugador</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorJugador</td><td><a class="el" href="enum_color.html" title="Color d&#39;una peça que pot ser blanca o negra. Adicionalment s&#39;hi afegeix un element neutre(capColor).">Color</a> del jugador que ha de moure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un conjunt de moviments que pot fer el jugador i que poden no ser vàlids si deixen el rei en escac. El conjunt de moviments s'interpreta com first-&gt;peça que mou, Second-&gt;moviment que fa on second.first és el destí del moviment i second.second és el moviment aplicat per anar-hi. </dd></dl>
+<dl class="section note"><dt>Nota</dt><dd>No confondre amb <a class="el" href="class_tauler.html#a0b989c0279854bd05c4dae089c010bc6">possiblesMovimentsValids(Peca)</a> que si que assegura la validesa total de cada moviment </dd></dl>
+
+</div>
+</div>
+<a id="a0b989c0279854bd05c4dae089c010bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b989c0279854bd05c4dae089c010bc6">&#9670;&nbsp;</a></span>possiblesMovimentsValids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Collection&lt;<a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_posicio.html">Posicio</a>,<a class="el" href="interface_moviment.html">Moviment</a>&gt; &gt; Tauler.possiblesMovimentsValids </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_peca.html">Peca</a>&#160;</td>
+          <td class="paramname"><em>peca</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd><a class="el" href="class_peca.html" title="Classe que representa una Peca dels escacs.">Peca</a> està al tauler i coneix la seva posicio. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peca</td><td>Peça que es vol comprovar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un conjunt de posicions de possibles desplaçaments VALIDS(legal segons les regles dels escacs ) que pot fer la peça a posPeca en l'estat actual del tauler. </dd></dl>
+
+</div>
+</div>
+<a id="a6e9f8de7454bd25a93fdca15dc72d3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9f8de7454bd25a93fdca15dc72d3ad">&#9670;&nbsp;</a></span>reiTeMovimentSenseEscac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.reiTeMovimentSenseEscac </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posRei</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>posRei és una Posició que fa referència a una casella que conté un Rei amenaçat. El tauler d'amenaces del rival està actualitzat. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posRei</td><td>Posició del rei amenaçat. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un booleà que ens informa si el rei que està en escac té algun moviment valid que evités l'escac. </dd></dl>
+
+</div>
+</div>
+<a id="a4083b16d780e762e10aacadbc9f9e1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4083b16d780e762e10aacadbc9f9e1d3">&#9670;&nbsp;</a></span>simularMoviment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean Tauler.simularMoviment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>peca</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pair.html">Pair</a>&lt; <a class="el" href="class_posicio.html">Posicio</a>, <a class="el" href="interface_moviment.html">Moviment</a> &gt;&#160;</td>
+          <td class="paramname"><em>moviment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peca</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> de le peça que farà el moviment </td></tr>
+    <tr><td class="paramname">moviment</td><td>Conjunt de <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> desti i <a class="el" href="interface_moviment.html" title="Interfície d&#39;un Moviment d&#39;un TipusPeca.">Moviment</a> a aplicar a la simulacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Un booleà que determina si el moviment és o no vàlid. </dd></dl>
+
+</div>
+</div>
+<a id="af70c17a5d0601fd35cb944ca66ff4e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af70c17a5d0601fd35cb944ca66ff4e50">&#9670;&nbsp;</a></span>tensPeca()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_peca.html">Peca</a> Tauler.tensPeca </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section pre"><dt>Precondició</dt><dd>La <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> existeix al tauler. </dd></dl>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> on es fa la consulta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>La peça a la <a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> demanada. Si no hi ha peça es retorna null. </dd></dl>
+
+</div>
+</div>
+<a id="accc9eac98f175247fc448dcd1adcea97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc9eac98f175247fc448dcd1adcea97">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String Tauler.toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section post"><dt>Postcondició</dt><dd>: Mostra tot el tauler en un format comprensible. Es mostren les files i columnes així com la representació de cada peça al tauler. </dd></dl>
+
+</div>
+</div>
+<a id="ab52536736acb27f8c59a593f02499582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52536736acb27f8c59a593f02499582">&#9670;&nbsp;</a></span>valorarPosicioRei()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Tauler.valorarPosicioRei </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_posicio.html">Posicio</a>&#160;</td>
+          <td class="paramname"><em>posRei</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Donada la columna on està el rei, calcula el valor que té tenir-lo en aquesta posició. Es valor molt més tenir-lo als extrems del tauler. </p>
+<dl class="params"><dt>Paràmetres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">posRei</td><td><a class="el" href="class_posicio.html" title="Classe que representa una posició d&#39;un tauler d&#39;escacs.">Posicio</a> on està el rei. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>El valor que té tenir el rei en aquesta posició. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentació de les Dades Membre</h2>
+<a id="a8a08bc8e2c49b7add0502d87c05585e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a08bc8e2c49b7add0502d87c05585e9">&#9670;&nbsp;</a></span>atacantsAlReiBlanc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_peca.html">Peca</a>,<a class="el" href="interface_moviment.html">Moviment</a>&gt; &gt; Tauler.atacantsAlReiBlanc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Conjunt de parells de peces que en un estat del tauler(que pot no ser l'actual) amenacen al rei Blanc i el moviment que ho permet. </p>
+
+</div>
+</div>
+<a id="a05e1477c0d834db60194c27933ce5563"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e1477c0d834db60194c27933ce5563">&#9670;&nbsp;</a></span>atacantsAlReiNegre</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="class_pair.html">Pair</a>&lt;<a class="el" href="class_peca.html">Peca</a>,<a class="el" href="interface_moviment.html">Moviment</a>&gt; &gt; Tauler.atacantsAlReiNegre</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Conjunt de parells de peces que en un estat del tauler(que pot no ser l'actual) amenacen al rei Negre i el moviment que ho permet. </p>
+
+</div>
+</div>
+<a id="a05d62ed0613ef4450a7f38fd34ef6247"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d62ed0613ef4450a7f38fd34ef6247">&#9670;&nbsp;</a></span>caselles</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;ArrayList&lt;<a class="el" href="class_casella.html">Casella</a>&gt; &gt; Tauler.caselles</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Caselles del tauler en format matriu. L'acces és caselles[fila][columna] La posició 0 del contenidor no es fa servir. </p>
+
+</div>
+</div>
+<a id="a484a0b6941bfaa378ae27790016519d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484a0b6941bfaa378ae27790016519d8">&#9670;&nbsp;</a></span>columnes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Tauler.columnes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nombre de columnes del tauler </p>
+
+</div>
+</div>
+<a id="a103c29cb97bc9ac5c0bf973046f429b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103c29cb97bc9ac5c0bf973046f429b9">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Tauler.else</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">{</div>
+<div class="line">            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 1; i &lt; difFiles; i++) {</div>
+<div class="line">                res.add(<span class="keyword">new</span> <a class="code" href="class_posicio.html">Posicio</a>(filaMesBaixa.fila()+i,filaMesBaixa.columna()+i));</div>
+<div class="line">            }</div>
+<div class="line">            res.add(posFinal)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7b9ca4f7b4b0f828db35b23a439ff467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b9ca4f7b4b0f828db35b23a439ff467">&#9670;&nbsp;</a></span>files</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Tauler.files</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nombre de files del tauler </p>
+
+</div>
+</div>
+<a id="a857f29bc07298cebf4d72467c89bad02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a857f29bc07298cebf4d72467c89bad02">&#9670;&nbsp;</a></span>indexBlanques</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashMap&lt;String,List&lt;<a class="el" href="class_peca.html">Peca</a>&gt; &gt; Tauler.indexBlanques</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index de les peces de color blanc. La clau és el nom del tipus de la peça ex "REI" i el valor és una llista de les peces d'aquell color i tipus. </p>
+
+</div>
+</div>
+<a id="a6e95ff5dfd61fdfd5c14cf1c9bf50b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e95ff5dfd61fdfd5c14cf1c9bf50b03">&#9670;&nbsp;</a></span>indexNegres</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HashMap&lt;String,List&lt;<a class="el" href="class_peca.html">Peca</a>&gt; &gt; Tauler.indexNegres</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index de les peces de color negre. La clau és el nom del tipus de la peça ex "REI" i el valor és una llista de les peces d'aquell color i tipus. </p>
+
+</div>
+</div>
+<a id="a0f77c6752c10bf587b5fe98a9a6a26c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f77c6752c10bf587b5fe98a9a6a26c0">&#9670;&nbsp;</a></span>taulerAmenacesBlanques</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="class_posicio.html">Posicio</a>&gt; Tauler.taulerAmenacesBlanques</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Conjunt de posicions amenaçades per les peces blanques. Pot no estar actualitzat. </p>
+
+</div>
+</div>
+<a id="a5b7917d0e6c026da0c7ffa03ec482385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7917d0e6c026da0c7ffa03ec482385">&#9670;&nbsp;</a></span>taulerAmenacesNegres</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ArrayList&lt;<a class="el" href="class_posicio.html">Posicio</a>&gt; Tauler.taulerAmenacesNegres</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Conjunt de posicions amenaçades per les peces negres. Pot no estar actualitzat. </p>
+
+</div>
+</div>
+<hr/>La documentació d'aquesta classe es va generar a partir del següent fitxer:<ul>
+<li>src/<a class="el" href="_tauler_8java.html">Tauler.java</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_posicio_html"><div class="ttname"><a href="class_posicio.html">Posicio</a></div><div class="ttdoc">Classe que representa una posició d'un tauler d'escacs.</div><div class="ttdef"><b>Definition:</b> Posicio.java:12</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_tauler.html">Tauler</a></li>
+    <li class="footer">Generat per
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

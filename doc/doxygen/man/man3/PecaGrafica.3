@@ -1,0 +1,203 @@
+.TH "PecaGrafica" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PecaGrafica \- Peça gràfica que s'utilitza per la interfície gràfica\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de ImageView\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBPeca\fP \fBpeca\fP ()"
+.br
+.ti -1c
+.RI "double \fBoldX\fP ()"
+.br
+.ti -1c
+.RI "double \fBoldY\fP ()"
+.br
+.ti -1c
+.RI "\fBPecaGrafica\fP (\fBPeca\fP \fBpeca\fP, int \fBpixels\fP, int x, int y)"
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "void \fBmove\fP (int x, int y)"
+.br
+.ti -1c
+.RI "void \fBabortMove\fP ()"
+.br
+.in -1c
+.SS "Atributs de Paquet"
+
+.in +1c
+.ti -1c
+.RI "double \fBmouseY\fP"
+.br
+.ti -1c
+.RI "double \fBoldY\fP"
+.br
+.in -1c
+.SS "Mètodes Privats"
+
+.in +1c
+.ti -1c
+.RI "Image \fBgeneraIcona\fP ()  throws URISyntaxException "
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "int \fBpixels\fP"
+.br
+.RI "Costat de la peca\&. "
+.ti -1c
+.RI "\fBPeca\fP \fBpeca\fP"
+.br
+.RI "\fBPeca\fP representada\&. "
+.ti -1c
+.RI "double \fBmouseX\fP"
+.br
+.RI "Coordenades del cursor\&. "
+.ti -1c
+.RI "double \fBoldX\fP"
+.br
+.RI "Coordenades antigues\&. "
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Peça gràfica que s'utilitza per la interfície gràfica\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "PecaGrafica\&.PecaGrafica (\fBPeca\fP peca, int pixels, int x, int y)"
+
+.PP
+Constructor\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIpeca\fP \fBPeca\fP que es representara\&. 
+.br
+\fIpixels\fP Amplada de la icona\&. 
+.br
+\fIx\fP Coordenada x de la peca\&. 
+.br
+\fIy\fP Coordenada y de la peca\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "void PecaGrafica\&.abortMove ()"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+Mou la peca a la coordenada antiga\&. 
+.RE
+.PP
+
+.SS "Image PecaGrafica\&.generaIcona () throws URISyntaxException\fC [private]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+La icona que es visualitza per pantalla\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIURISyntaxException\fP Quan no s'ha trobat la imatge\&. 
+.RE
+.PP
+
+.SS "void PecaGrafica\&.move (int x, int y)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+x > 0 i y > 0\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIx\fP Coordenada x de on es vol moure\&. 
+.br
+\fIy\fP Coordenada y de on es vol moure\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Mou la peca a les coordenades indicades\&. 
+.RE
+.PP
+
+.SS "double PecaGrafica\&.oldX ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la antiga coordenada X\&. 
+.RE
+.PP
+
+.SS "double PecaGrafica\&.oldY ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la antiga coordenada Y\&. 
+.RE
+.PP
+
+.SS "\fBPeca\fP PecaGrafica\&.peca ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna la peca representada\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "double PecaGrafica\&.mouseX\fC [private]\fP"
+
+.PP
+Coordenades del cursor\&. 
+.SS "double PecaGrafica\&.mouseY\fC [package]\fP"
+
+.SS "double PecaGrafica\&.oldX\fC [private]\fP"
+
+.PP
+Coordenades antigues\&. 
+.SS "double PecaGrafica\&.oldY\fC [package]\fP"
+
+.SS "\fBPeca\fP PecaGrafica\&.peca\fC [private]\fP"
+
+.PP
+\fBPeca\fP representada\&. 
+.SS "int PecaGrafica\&.pixels\fC [private]\fP"
+
+.PP
+Costat de la peca\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

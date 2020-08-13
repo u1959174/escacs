@@ -1,0 +1,390 @@
+.TH "Jugada" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Jugada \- Conte tota la informacio de una \fBJugada\fP i part de les dades de una partida\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBJugada\fP ()"
+.br
+.ti -1c
+.RI "\fBJugada\fP (\fBPosicio\fP \fBorigen\fP, \fBPosicio\fP \fBdesti\fP, \fBColor\fP \fBtirador\fP)"
+.br
+.ti -1c
+.RI "\fBJugada\fP (\fBPosicio\fP \fBorigen\fP, \fBPosicio\fP \fBdesti\fP, \fBPeca\fP \fBpecaOrigen\fP, \fBPeca\fP \fBpecaDesti\fP)"
+.br
+.ti -1c
+.RI "\fBJugada\fP (\fBResultatJugada\fP resultat, \fBColor\fP \fBtirador\fP)"
+.br
+.ti -1c
+.RI "void \fBafegirResultatJugada\fP (\fBResultatJugada\fP res)"
+.br
+.ti -1c
+.RI "void \fBcanviTauler\fP (\fBTauler\fP \fBt\fP)"
+.br
+.ti -1c
+.RI "void \fBfinalitzarJugada\fP (\fBTauler\fP \fBt\fP, boolean partidaAcabada, \fBResultatPartida\fP \fBresultatFinal\fP, \fBContadors\fP \fBcontador\fP, \fBPeca\fP \fBpecaPromocionada\fP, \fBColor\fP \fBguanyador\fP)"
+.br
+.ti -1c
+.RI "boolean \fBobtenirAcabada\fP ()"
+.br
+.ti -1c
+.RI "\fBContadors\fP \fBobtenirContadors\fP ()"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBobtenirDesti\fP ()"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBobtenirGuanyador\fP ()"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBobtenirOrigen\fP ()"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBobtenirPecaDesti\fP ()"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBobtenirPecaOrigen\fP ()"
+.br
+.ti -1c
+.RI "\fBTipusPeca\fP \fBobtenirPecaPromocionada\fP ()"
+.br
+.ti -1c
+.RI "\fBResultatPartida\fP \fBobtenirResultatPartida\fP ()"
+.br
+.ti -1c
+.RI "Collection< \fBResultatJugada\fP > \fBobtenirResultatsJugada\fP ()"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBobtenirTauler\fP ()"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBobtenirTirador\fP ()"
+.br
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBacabada\fP"
+.br
+.ti -1c
+.RI "\fBContadors\fP \fBcontador\fP"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBdesti\fP"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBguanyador\fP"
+.br
+.ti -1c
+.RI "\fBPosicio\fP \fBorigen\fP"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBpecaDesti\fP"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBpecaOrigen\fP"
+.br
+.ti -1c
+.RI "\fBPeca\fP \fBpecaPromocionada\fP"
+.br
+.ti -1c
+.RI "\fBResultatPartida\fP \fBresultatFinal\fP"
+.br
+.ti -1c
+.RI "Queue< \fBResultatJugada\fP > \fBresultatsJugada\fP"
+.br
+.ti -1c
+.RI "\fBTauler\fP \fBt\fP"
+.br
+.ti -1c
+.RI "\fBColor\fP \fBtirador\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Conte tota la informacio de una \fBJugada\fP i part de les dades de una partida\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Eloi Quintana Ferrer 
+.PP
+u1963141 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "Jugada\&.Jugada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+@Post constructor 
+.RE
+.PP
+
+.SS "Jugada\&.Jugada (\fBPosicio\fP origen, \fBPosicio\fP desti, \fBColor\fP tirador)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+origen != null, desti != null, tirador != null, 
+.PP
+origen i desti dins el tauler @Post S'han guardat les variables d'entrada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP Posició d'origen de la peça\&. 
+.br
+\fIdesti\fP Posició de desti de la peça\&. 
+.br
+\fItirador\fP Tirador de la jugada\&. 
+.RE
+.PP
+
+.SS "Jugada\&.Jugada (\fBPosicio\fP origen, \fBPosicio\fP desti, \fBPeca\fP pecaOrigen, \fBPeca\fP pecaDesti)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+origen != null, desti != null, pecaOrigen != null, 
+.PP
+origen i desti dins el tauler @Post S'han guardat les variables d'entrada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP Posició d'origen de la peça\&. 
+.br
+\fIdesti\fP Posició de desti de la peça\&. 
+.br
+\fIpecaOrigen\fP Peça de l'origen\&. 
+.br
+\fIpecaDesti\fP Peça del desti (posible peça del rival elimanada)\&. 
+.br
+\fIresultat\fP Resultat de la jugada\&. 
+.br
+\fIeliminades\fP Peces que s'han eliminat\&. 
+.RE
+.PP
+
+.SS "Jugada\&.Jugada (\fBResultatJugada\fP resultat, \fBColor\fP tirador)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+resultat != null @Post S'han guardat les variables d'entrada\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIresultat\fP Resultat de la \fBJugada\fP\&. 
+.br
+\fItirador\fP color del jugador que realitza la jugada 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "void Jugada\&.afegirResultatJugada (\fBResultatJugada\fP res)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+res != null @Post s'ha afegit a la llista el resultat de la jugada 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIt\fP \fBTauler\fP referenciat\&. 
+.RE
+.PP
+
+.SS "void Jugada\&.canviTauler (\fBTauler\fP t)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+t != null @Post S'ha substituit la referencia de tauler amb la d'entrada 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIt\fP \fBTauler\fP referenciat\&. 
+.RE
+.PP
+
+.SS "void Jugada\&.finalitzarJugada (\fBTauler\fP t, boolean partidaAcabada, \fBResultatPartida\fP resultatFinal, \fBContadors\fP contador, \fBPeca\fP pecaPromocionada, \fBColor\fP guanyador)"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'han assignat els parametrs d'entrada a les corresponents varialbes/referencies\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIt\fP \fBTauler\fP referenciat\&. 
+.br
+\fIpartidaAcabada\fP true si la partida es acabada, false altrament\&. 
+.br
+\fIresultatFinal\fP resultat de la partida 
+.br
+\fIcontador\fP contadors de innacció i escac continu\&. 
+.RE
+.PP
+
+.SS "boolean Jugada\&.obtenirAcabada ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+True si la partida esta acabada, false sino\&. 
+.RE
+.PP
+
+.SS "\fBContadors\fP Jugada\&.obtenirContadors ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+\fBContadors\fP de la partida\&. 
+.RE
+.PP
+
+.SS "\fBPosicio\fP Jugada\&.obtenirDesti ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+\fBPosicio\fP de desti 
+.RE
+.PP
+
+.SS "\fBColor\fP Jugada\&.obtenirGuanyador ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+retorna el color del guanyador 
+.RE
+.PP
+
+.SS "\fBPosicio\fP Jugada\&.obtenirOrigen ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+\fBPosicio\fP d'origen 
+.RE
+.PP
+
+.SS "\fBPeca\fP Jugada\&.obtenirPecaDesti ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+peca de desti 
+.RE
+.PP
+
+.SS "\fBPeca\fP Jugada\&.obtenirPecaOrigen ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+peca d'origen 
+.RE
+.PP
+
+.SS "\fBTipusPeca\fP Jugada\&.obtenirPecaPromocionada ()"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+- @Post S'ha retornat el tipus de peca promocionada\&. 
+.RE
+.PP
+
+.SS "\fBResultatPartida\fP Jugada\&.obtenirResultatPartida ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+el resultat final de la partida 
+.RE
+.PP
+
+.SS "Collection<\fBResultatJugada\fP> Jugada\&.obtenirResultatsJugada ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+\fBPosicio\fP d'origen 
+.RE
+.PP
+
+.SS "\fBTauler\fP Jugada\&.obtenirTauler ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+\fBTauler\fP una vegada aplicada la jugada\&. 
+.RE
+.PP
+
+.SS "\fBColor\fP Jugada\&.obtenirTirador ()"
+
+.PP
+\fBRetorna\fP
+.RS 4
+\fBColor\fP del Tirador 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "boolean Jugada\&.acabada\fC [private]\fP"
+Indica si la partida esta acabada o no\&. 
+.SS "\fBContadors\fP Jugada\&.contador\fC [private]\fP"
+Cotnadors de escacs i inaccio per a cada color\&. 
+.SS "\fBPosicio\fP Jugada\&.desti\fC [private]\fP"
+Posició de desti de la peça\&. 
+.SS "\fBColor\fP Jugada\&.guanyador\fC [private]\fP"
+\fBColor\fP del guanyador de la partida 
+.SS "\fBPosicio\fP Jugada\&.origen\fC [private]\fP"
+Posició d'origen de la peça\&. 
+.SS "\fBPeca\fP Jugada\&.pecaDesti\fC [private]\fP"
+Peça del desti (posible peça del rival elimanada)\&. 
+.SS "\fBPeca\fP Jugada\&.pecaOrigen\fC [private]\fP"
+Peça de l'origen\&. 
+.SS "\fBPeca\fP Jugada\&.pecaPromocionada\fC [private]\fP"
+Peça que s'ha promocionat si escau 
+.SS "\fBResultatPartida\fP Jugada\&.resultatFinal\fC [private]\fP"
+Indica el resultat final de la partida\&. 
+.SS "Queue<\fBResultatJugada\fP> Jugada\&.resultatsJugada\fC [private]\fP"
+Llista de resultats de la jugada en questio\&. 
+.SS "\fBTauler\fP Jugada\&.t\fC [private]\fP"
+Guarda la classe \fBTauler\fP que s'esta utilitzant actualment\&. 
+.SS "\fBColor\fP Jugada\&.tirador\fC [private]\fP"
+El que realitza la jugada\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

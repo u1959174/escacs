@@ -1,0 +1,358 @@
+.TH "JocText" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+JocText \- Classe controladora del joc en mode text/terminal\&. Controla el flux de la partida a traves del motor i s'encarrega de demanar els moviments als jugadors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String[] args)"
+.br
+.RI "Entrada el programa quan s'executa el mode text/terminal\&. "
+.ti -1c
+.RI "static void \fBdesferJugada\fP (int numJugades)  throws IllegalArgumentException"
+.br
+.ti -1c
+.RI "static void \fBguardarPartida\fP ()"
+.br
+.ti -1c
+.RI "static \fBTauler\fP \fBobtenirTauler\fP ()"
+.br
+.ti -1c
+.RI "static boolean \fBpotDesfer\fP ()"
+.br
+.ti -1c
+.RI "static boolean \fBpotRefer\fP ()"
+.br
+.ti -1c
+.RI "static \fBTipusPeca\fP \fBpromocionar\fP ()"
+.br
+.ti -1c
+.RI "static void \fBreferJugada\fP (int numJugades)  throws IllegalArgumentException"
+.br
+.ti -1c
+.RI "static ArrayList< \fBTipusPeca\fP > \fBtipusDisponibles\fP ()"
+.br
+.in -1c
+.SS "Mètodes Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static void \fBcarregarConeixement\fP (String rutaConeixement)"
+.br
+.ti -1c
+.RI "static void \fBcarregarPartida\fP (String rutaFitxerJugades)  throws IOException, ExcepcioG "
+.br
+.ti -1c
+.RI "static void \fBdemanarJugadors\fP ()"
+.br
+.RI "Es demana quins jugadors jugaran la partida, els seus noms i qui els controla\&. "
+.ti -1c
+.RI "static void \fBferPartida\fP ()"
+.br
+.RI "Controlador del joc\&. Va preguntant als jugadors a cada torn què volen fer i va ordenant al motor les seves peticions\&. "
+.ti -1c
+.RI "static boolean \fBgestorPartidaAcabada\fP ()"
+.br
+.RI "Fa la gestió del les opcions que es poden triar quan una partida està acabada\&. "
+.ti -1c
+.RI "static void \fBinicialitzarDades\fP ()"
+.br
+.ti -1c
+.RI "static void \fBnovaPartida\fP (String rutaFitxerConfig)  throws IOException, ExcepcioG "
+.br
+.in -1c
+.SS "Atributs Privats Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static \fBJugador\fP \fBjugadorBlanques\fP"
+.br
+.ti -1c
+.RI "static \fBJugador\fP \fBjugadorNegres\fP"
+.br
+.ti -1c
+.RI "static \fBPartida\fP \fBpartida\fP"
+.br
+.ti -1c
+.RI "static \fBColor\fP \fBtorn\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Classe controladora del joc en mode text/terminal\&. Controla el flux de la partida a traves del motor i s'encarrega de demanar els moviments als jugadors\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "static void JocText\&.carregarConeixement (String rutaConeixement)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIrutaFitxerConeixement\fP Ruta al fitxer de coneixement que es vol carregar\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha carregat el coneixement a la IA si no ho ha hagut errors al buscar i carregar els fitxers\&. Si hi ha hagut errors s'ha informat\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.carregarPartida (String rutaFitxerJugades) throws IOException, \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+rutaFitxerJugades és la ruta d'un fitxer de regles en el format especificat en l'enunciat del projecte i extensió JSON\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIrutaFitxerJugades\fP fitxer de jugades\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fI\fBExcepcioG\fP\fP Quan el fitxer està en un estat incorrecte\&. 
+.br
+\fIIOException\fP Quan hi ha algun error al obrir el fitxer, per exemple que no es troba o no tenim els permisos\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+carrega la partida\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.demanarJugadors ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Es demana quins jugadors jugaran la partida, els seus noms i qui els controla\&. 
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha demanat quin tipus de jugador controlarà cada jugador\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.desferJugada (int numJugades) throws IllegalArgumentException\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Es poden desfer numJugades\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInumJugades\fP Numero de jugades que es volen desfer\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'han desfet numJugades\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP quan numJugades no és un número vàlid de jugades a desfer\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.ferPartida ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Controlador del joc\&. Va preguntant als jugadors a cada torn què volen fer i va ordenant al motor les seves peticions\&. 
+.PP
+\fBPostcondició\fP
+.RS 4
+La partida s'ha acabat\&. 
+.RE
+.PP
+
+.SS "static boolean JocText\&.gestorPartidaAcabada ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Fa la gestió del les opcions que es poden triar quan una partida està acabada\&. 
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha gestionat una partida que ha finalitzat\&. L'usuari ha tingut l'opcio de defer jugades, guardar i sortir\&. En el cas de que continuar sigui una opció vàlida, també s'ha ofert aquesta opció\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que serà true quan el jugador ha desfet jugades i, per tant vol continuar amb la partida\&. Altrament false\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.guardarPartida ()\fC [static]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha guardat la \fBPartida\fP segons el format especificat als requeriments a la ruta escollida\&. També s'ha donat l'opcio de cancelar el guardat\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.inicialitzarDades ()\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPostcondició\fP
+.RS 4
+S'han demanat al jugador les dades per començar la partida i aquestes s'han carregat\&. 
+.RE
+.PP
+\fBVersió\fP
+.RS 4
+2\&. S'afegeix l'opció de sortir del programa\&. 
+.PP
+3\&. S'afegeix l'opcio de carregar coneixament\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.main (String[] args)\fC [static]\fP"
+
+.PP
+Entrada el programa quan s'executa el mode text/terminal\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIargs\fP Arguments del programa\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.novaPartida (String rutaFitxerConfig) throws IOException, \fBExcepcioG\fP\fC [static]\fP, \fC [private]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+rutaFitxerConfig és la ruta d'un fitxer de regles en el format especificat en l'enunciat del projecte i extensió JSON\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIrutaFitxerConfig\fP fitxer de configuració\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fI\fBExcepcioG\fP\fP Quan el fitxer està en un estat incorrecte\&. 
+.br
+\fIIOException\fP Quan hi ha algun error al obrir el fitxer, per exemple que no es troba o no tenim els permisos\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+inicialitza la partida\&. 
+.RE
+.PP
+
+.SS "static \fBTauler\fP JocText\&.obtenirTauler ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+El tauler actual sobre el que es fa la partida 
+.RE
+.PP
+
+.SS "static boolean JocText\&.potDesfer ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si es poden o no desfer jugades en aquest estat de la partida\&. 
+.RE
+.PP
+
+.SS "static boolean JocText\&.potRefer ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un booleà que indica si es poden o no refer jugades en aquest estat de la partida\&. 
+.RE
+.PP
+
+.SS "static \fBTipusPeca\fP JocText\&.promocionar ()\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Hi ha alguna peça promocionable del jugador amb torn\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'ha preguntat al jugador amb torn a quina peça es vol promocionar\&. S'ha retornat el tipusPeca el qual el jugador ha escollit per fer la promoció\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El \fBTipusPeca\fP que ha triat el jugador que podria promocionar\&. Es garanteix que el tipus retornat no serà el REI\&. 
+.RE
+.PP
+
+.SS "static void JocText\&.referJugada (int numJugades) throws IllegalArgumentException\fC [static]\fP"
+
+.PP
+\fBPrecondició\fP
+.RS 4
+Es poden refer numJugades\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fInumJugades\fP Numero de jugades que es volen refer\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+S'han refet numJugades\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP quan numJugades no és un número vàlid de jugades a refer\&. 
+.RE
+.PP
+
+.SS "static ArrayList<\fBTipusPeca\fP> JocText\&.tipusDisponibles ()\fC [static]\fP"
+
+.PP
+\fBRetorna\fP
+.RS 4
+Un conjunt de \fBTipusPeca\fP amb tots els \fBTipusPeca\fP en aquesta partida\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "\fBJugador\fP JocText\&.jugadorBlanques\fC [static]\fP, \fC [private]\fP"
+\fBJugador\fP que controla les peces blanques\&. 
+.SS "\fBJugador\fP JocText\&.jugadorNegres\fC [static]\fP, \fC [private]\fP"
+\fBJugador\fP que controla les peces negres\&. 
+.SS "\fBPartida\fP JocText\&.partida\fC [static]\fP, \fC [private]\fP"
+\fBPartida\fP del Joc, motor del joc\&. 
+.SS "\fBColor\fP JocText\&.torn\fC [static]\fP, \fC [private]\fP"
+\fBColor\fP del jugador que té el torn\&. 
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

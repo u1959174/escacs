@@ -1,0 +1,217 @@
+\hypertarget{class_peca_grafica}{}\doxysection{Referència de la Classe Peca\+Grafica}
+\label{class_peca_grafica}\index{PecaGrafica@{PecaGrafica}}
+
+
+Peça gràfica que s\textquotesingle{}utilitza per la interfície gràfica.  
+
+
+Diagrama d\textquotesingle{}Herència per a Peca\+Grafica\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_peca_grafica}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_peca_grafica_a62bc30d81e56b67660f5403376bf5e4b}{peca}} ()
+\item 
+double \mbox{\hyperlink{class_peca_grafica_a1f327f256aa2ac2f356f0dc47ec8db6f}{oldX}} ()
+\item 
+double \mbox{\hyperlink{class_peca_grafica_a2904b78701e090a0cce05f0b5d9e43ee}{oldY}} ()
+\item 
+\mbox{\hyperlink{class_peca_grafica_a3e25e25691b3bf771b7c362374ca2e18}{Peca\+Grafica}} (\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_peca_grafica_a040d5240ad4ccf26484dcffbfcf0488c}{peca}}, int \mbox{\hyperlink{class_peca_grafica_a41db2695ba0294adf60545eb2989797a}{pixels}}, int x, int y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_peca_grafica_ad27a9f9382b464f1e4586949df6051d7}{move}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_peca_grafica_ae0195be825f2fb06a80ecc3e3e75ed3d}{abort\+Move}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs de Paquet}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_peca_grafica_aae6e97f9cdcd53456ac6a5367050f77c}{mouseY}}
+\item 
+double \mbox{\hyperlink{class_peca_grafica_a3bae34a76d73bee8740301a015d8b6a6}{oldY}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+Image \mbox{\hyperlink{class_peca_grafica_ace04a0bd170fbacab66c6289fed41b7a}{genera\+Icona}} ()  throws U\+R\+I\+Syntax\+Exception 
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_peca_grafica_a41db2695ba0294adf60545eb2989797a}{pixels}}
+\begin{DoxyCompactList}\small\item\em Costat de la peca. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_peca}{Peca}} \mbox{\hyperlink{class_peca_grafica_a040d5240ad4ccf26484dcffbfcf0488c}{peca}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_peca}{Peca}} representada. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_peca_grafica_a472bf95aa82410231517787e4ddb4378}{mouseX}}
+\begin{DoxyCompactList}\small\item\em Coordenades del cursor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_peca_grafica_ac5f64d8879e5972847a3d0a71c9ef38f}{oldX}}
+\begin{DoxyCompactList}\small\item\em Coordenades antigues. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Peça gràfica que s\textquotesingle{}utilitza per la interfície gràfica. 
+
+\begin{DoxyAuthor}{Autor}
+Marc Cosgaya Capel 
+
+u1959174 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_peca_grafica_a3e25e25691b3bf771b7c362374ca2e18}\label{class_peca_grafica_a3e25e25691b3bf771b7c362374ca2e18}} 
+\index{PecaGrafica@{PecaGrafica}!PecaGrafica@{PecaGrafica}}
+\index{PecaGrafica@{PecaGrafica}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{PecaGrafica()}{PecaGrafica()}}
+{\footnotesize\ttfamily Peca\+Grafica.\+Peca\+Grafica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_peca}{Peca}}}]{peca,  }\item[{int}]{pixels,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em peca} & \mbox{\hyperlink{class_peca}{Peca}} que es representara. \\
+\hline
+{\em pixels} & Amplada de la icona. \\
+\hline
+{\em x} & Coordenada x de la peca. \\
+\hline
+{\em y} & Coordenada y de la peca. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_peca_grafica_ae0195be825f2fb06a80ecc3e3e75ed3d}\label{class_peca_grafica_ae0195be825f2fb06a80ecc3e3e75ed3d}} 
+\index{PecaGrafica@{PecaGrafica}!abortMove@{abortMove}}
+\index{abortMove@{abortMove}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{abortMove()}{abortMove()}}
+{\footnotesize\ttfamily void Peca\+Grafica.\+abort\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+Mou la peca a la coordenada antiga. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_peca_grafica_ace04a0bd170fbacab66c6289fed41b7a}\label{class_peca_grafica_ace04a0bd170fbacab66c6289fed41b7a}} 
+\index{PecaGrafica@{PecaGrafica}!generaIcona@{generaIcona}}
+\index{generaIcona@{generaIcona}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{generaIcona()}{generaIcona()}}
+{\footnotesize\ttfamily Image Peca\+Grafica.\+genera\+Icona (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws U\+R\+I\+Syntax\+Exception\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyReturn}{Retorna}
+La icona que es visualitza per pantalla. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepcions}
+{\em U\+R\+I\+Syntax\+Exception} & Quan no s\textquotesingle{}ha trobat la imatge. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_peca_grafica_ad27a9f9382b464f1e4586949df6051d7}\label{class_peca_grafica_ad27a9f9382b464f1e4586949df6051d7}} 
+\index{PecaGrafica@{PecaGrafica}!move@{move}}
+\index{move@{move}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Peca\+Grafica.\+move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+x $>$ 0 i y $>$ 0. 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em x} & Coordenada x de on es vol moure. \\
+\hline
+{\em y} & Coordenada y de on es vol moure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+Mou la peca a les coordenades indicades. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_peca_grafica_a1f327f256aa2ac2f356f0dc47ec8db6f}\label{class_peca_grafica_a1f327f256aa2ac2f356f0dc47ec8db6f}} 
+\index{PecaGrafica@{PecaGrafica}!oldX@{oldX}}
+\index{oldX@{oldX}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{oldX()}{oldX()}}
+{\footnotesize\ttfamily double Peca\+Grafica.\+oldX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna la antiga coordenada X. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_grafica_a2904b78701e090a0cce05f0b5d9e43ee}\label{class_peca_grafica_a2904b78701e090a0cce05f0b5d9e43ee}} 
+\index{PecaGrafica@{PecaGrafica}!oldY@{oldY}}
+\index{oldY@{oldY}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{oldY()}{oldY()}}
+{\footnotesize\ttfamily double Peca\+Grafica.\+oldY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna la antiga coordenada Y. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_peca_grafica_a62bc30d81e56b67660f5403376bf5e4b}\label{class_peca_grafica_a62bc30d81e56b67660f5403376bf5e4b}} 
+\index{PecaGrafica@{PecaGrafica}!peca@{peca}}
+\index{peca@{peca}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{peca()}{peca()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Peca\+Grafica.\+peca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+Retorna la peca representada. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentació de les Dades Membre}
+\mbox{\Hypertarget{class_peca_grafica_a472bf95aa82410231517787e4ddb4378}\label{class_peca_grafica_a472bf95aa82410231517787e4ddb4378}} 
+\index{PecaGrafica@{PecaGrafica}!mouseX@{mouseX}}
+\index{mouseX@{mouseX}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{mouseX}{mouseX}}
+{\footnotesize\ttfamily double Peca\+Grafica.\+mouseX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coordenades del cursor. 
+
+\mbox{\Hypertarget{class_peca_grafica_aae6e97f9cdcd53456ac6a5367050f77c}\label{class_peca_grafica_aae6e97f9cdcd53456ac6a5367050f77c}} 
+\index{PecaGrafica@{PecaGrafica}!mouseY@{mouseY}}
+\index{mouseY@{mouseY}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{mouseY}{mouseY}}
+{\footnotesize\ttfamily double Peca\+Grafica.\+mouseY\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_peca_grafica_ac5f64d8879e5972847a3d0a71c9ef38f}\label{class_peca_grafica_ac5f64d8879e5972847a3d0a71c9ef38f}} 
+\index{PecaGrafica@{PecaGrafica}!oldX@{oldX}}
+\index{oldX@{oldX}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{oldX}{oldX}}
+{\footnotesize\ttfamily double Peca\+Grafica.\+oldX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coordenades antigues. 
+
+\mbox{\Hypertarget{class_peca_grafica_a3bae34a76d73bee8740301a015d8b6a6}\label{class_peca_grafica_a3bae34a76d73bee8740301a015d8b6a6}} 
+\index{PecaGrafica@{PecaGrafica}!oldY@{oldY}}
+\index{oldY@{oldY}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{oldY}{oldY}}
+{\footnotesize\ttfamily double Peca\+Grafica.\+oldY\hspace{0.3cm}{\ttfamily [package]}}
+
+\mbox{\Hypertarget{class_peca_grafica_a040d5240ad4ccf26484dcffbfcf0488c}\label{class_peca_grafica_a040d5240ad4ccf26484dcffbfcf0488c}} 
+\index{PecaGrafica@{PecaGrafica}!peca@{peca}}
+\index{peca@{peca}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{peca}{peca}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_peca}{Peca}} Peca\+Grafica.\+peca\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_peca}{Peca}} representada. 
+
+\mbox{\Hypertarget{class_peca_grafica_a41db2695ba0294adf60545eb2989797a}\label{class_peca_grafica_a41db2695ba0294adf60545eb2989797a}} 
+\index{PecaGrafica@{PecaGrafica}!pixels@{pixels}}
+\index{pixels@{pixels}!PecaGrafica@{PecaGrafica}}
+\doxysubsubsection{\texorpdfstring{pixels}{pixels}}
+{\footnotesize\ttfamily int Peca\+Grafica.\+pixels\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Costat de la peca. 
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_peca_grafica_8java}{Peca\+Grafica.\+java}}\end{DoxyCompactItemize}

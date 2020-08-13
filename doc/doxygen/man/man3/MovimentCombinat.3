@@ -1,0 +1,197 @@
+.TH "MovimentCombinat" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MovimentCombinat \- Implementació de \fBMoviment\fP per \fBMovimentCombinat\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Hereta de \fBMoviment\fP\&.
+.SS "Mètodes públics"
+
+.in +1c
+.ti -1c
+.RI "\fBMovimentCombinat\fP (String a, String b, String c, boolean inicial)  throws IllegalArgumentException "
+.br
+.RI "Constructor\&. "
+.ti -1c
+.RI "boolean \fBesMoviment\fP (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+.br
+.RI "Comprova si un desplaçament és el \fBMoviment\fP\&. "
+.ti -1c
+.RI "boolean \fBequals\fP (\fBMovimentCombinat\fP mov)"
+.br
+.ti -1c
+.RI "String \fBdiguemA\fP ()"
+.br
+.RI "Traducció del paràmetre A\&. "
+.ti -1c
+.RI "String \fBdiguemB\fP ()"
+.br
+.RI "Traducció del paràmetre B\&. "
+.ti -1c
+.RI "Integer \fBdiguemSaltar\fP ()"
+.br
+.RI "Diu el valor de saltar\&. "
+.ti -1c
+.RI "boolean \fBesEnroc\fP ()"
+.br
+.RI "Diu si el \fBMoviment\fP és de tipus enroc\&. "
+.in -1c
+.SS "Atributs Privats"
+
+.in +1c
+.ti -1c
+.RI "\fBMovimentRectilini\fP \fBmoviment_horitzontal\fP"
+.br
+.RI "\fBMoviment\fP combinat d'una peça\&. "
+.ti -1c
+.RI "\fBMovimentRectilini\fP \fBmoviment_vertical\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Implementació de \fBMoviment\fP per \fBMovimentCombinat\fP\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Marc Cosgaya Capel 
+.PP
+u1959174 
+.RE
+.PP
+
+.SH "Documentació del Constructor i el Destructor"
+.PP 
+.SS "MovimentCombinat\&.MovimentCombinat (String a, String b, String c, boolean inicial) throws IllegalArgumentException"
+
+.PP
+Constructor\&. 
+.PP
+\fBPrecondició\fP
+.RS 4
+c és enter\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIa\fP Component A\&. 
+.br
+\fIb\fP Component B\&. 
+.br
+\fIc\fP Component C\&. 
+.br
+\fIinicial\fP Indica si el moviment és inicial\&. 
+.RE
+.PP
+\fBPostcondició\fP
+.RS 4
+Crea un moviment de tipus combinat\&. 
+.RE
+.PP
+\fBExcepcions\fP
+.RS 4
+\fIIllegalArgumentException\fP Quan no es compleix la pre\&. 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "String MovimentCombinat\&.diguemA ()"
+
+.PP
+Traducció del paràmetre A\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre A traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "String MovimentCombinat\&.diguemB ()"
+
+.PP
+Traducció del paràmetre B\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+El valor del paràmetre B traduit\&. Null si no el té\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "Integer MovimentCombinat\&.diguemSaltar ()"
+
+.PP
+Diu el valor de saltar\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna 0 si no pot saltar, 1 si pot, 2 si mata saltant, null si no té l'atribut\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentCombinat\&.equals (\fBMovimentCombinat\fP mov)"
+
+.SS "boolean MovimentCombinat\&.esEnroc ()"
+
+.PP
+Diu si el \fBMoviment\fP és de tipus enroc\&. 
+.PP
+\fBRetorna\fP
+.RS 4
+Cert si el \fBMoviment\fP és enroc, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SS "boolean MovimentCombinat\&.esMoviment (\fBPosicio\fP origen, \fBPosicio\fP desti, boolean primer, \fBTipusPeca\fP peca_final, boolean peca_mig, boolean exacte)"
+
+.PP
+Comprova si un desplaçament és el \fBMoviment\fP\&. 
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIorigen\fP Posició d'origen\&. 
+.br
+\fIdesti\fP Posició destí\&. 
+.br
+\fIprimer\fP Indica si el el moviment és el primer de la partida\&. 
+.br
+\fIpeca_final\fP Referència al tipus de peça de la posició destí\&. 
+.br
+\fIpeca_mig\fP Indica si hi ha alguna peça en la trajectòria\&. 
+.br
+\fIexacte\fP Demanar si la distància ha de ser exacte\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+Retorna cert si amb origen-desti és compleix el moviment, fals altrament\&. 
+.RE
+.PP
+
+.PP
+Reimplementat de \fBMoviment\fP\&.
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "\fBMovimentRectilini\fP MovimentCombinat\&.moviment_horitzontal\fC [private]\fP"
+
+.PP
+\fBMoviment\fP combinat d'una peça\&. \fBMoviment\fP Rectilini horitzontal/vertical que fa\&. 
+.SS "\fBMovimentRectilini\fP MovimentCombinat\&.moviment_vertical\fC [private]\fP"
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

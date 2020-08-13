@@ -1,0 +1,64 @@
+.TH "EstatTauler" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EstatTauler \- Ennum amb els possibles estats del \fBTauler\fP en un momemnt determinat de la partida\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Atributs Públics"
+
+.in +1c
+.ti -1c
+.RI "\fBtoString\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+Ennum amb els possibles estats del \fBTauler\fP en un momemnt determinat de la partida\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "EstatTauler\&.toString"
+\fBValor inicial:\fP
+.PP
+.nf
+=() {
+          return "S'ha posat en escac i mat al rival\&.";
+        }
+    },
+    ESCAC_SIMPLE {
+        @Override
+        public String toString() {
+          return "S'ha posat en escac al rival\&.";
+        }
+      },
+    NORMALITAT {
+        @Override
+        public String toString() {
+          return "L'estat actual del tauler no presenta cap anomalia\&.";
+        }
+      },
+    OFEGAT {
+        @Override
+        public String toString() {
+          return "S'ha ofegat al rival\&.";
+        }
+      }
+.fi
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.

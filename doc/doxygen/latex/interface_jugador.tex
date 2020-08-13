@@ -1,0 +1,93 @@
+\hypertarget{interface_jugador}{}\doxysection{Referència de la Interfície Jugador}
+\label{interface_jugador}\index{Jugador@{Jugador}}
+Diagrama d\textquotesingle{}Herència per a Jugador\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_jugador}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jugada}{Jugada}} \mbox{\hyperlink{interface_jugador_abc782ec5dd8d62f265c6683b798e7311}{jugar}} (boolean mode\+Text)
+\item 
+void \mbox{\hyperlink{interface_jugador_a9a40261ca4b4785423c5aacdcd9319dc}{preguntar\+Taules}} ()
+\item 
+\mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} \mbox{\hyperlink{interface_jugador_a6898dae2a8347e3137e706aed77d9278}{promocionar}} ()
+\item 
+String \mbox{\hyperlink{interface_jugador_a69e46d6ddf4397e9325d4cdec5bb4253}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{interface_jugador_abc782ec5dd8d62f265c6683b798e7311}\label{interface_jugador_abc782ec5dd8d62f265c6683b798e7311}} 
+\index{Jugador@{Jugador}!jugar@{jugar}}
+\index{jugar@{jugar}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{jugar()}{jugar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugada}{Jugada}} Jugador.\+jugar (\begin{DoxyParamCaption}\item[{boolean}]{mode\+Text }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Paràmetres}
+{\em mode\+Text} & Indica si el jugador juga en mode text. En aquest cas el jugador té opcions diferents a mode text. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha demanat al jugador quina jugada vol fer i s\textquotesingle{}ha retornat una jugada que conté la seva desició. 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Retorna}
+La \mbox{\hyperlink{class_jugada}{Jugada}} que s\textquotesingle{}ha fet. Null si en mode grafic s\textquotesingle{}ha demanat sortir. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Nota}
+La \mbox{\hyperlink{class_jugada}{Jugada}} pot contenir un moviment, pot contenir una desició diferent de moure una peça com per exemple\+: petició de taules o rendició. També pot contenir una desició buida indicant que s\textquotesingle{}han desfet o refet jugades i pot ser null en cas que en mode grafic s\textquotesingle{}hagi sortit del menú. 
+\end{DoxyNote}
+
+
+Implementat a \mbox{\hyperlink{class_c_p_u_aff729c30a92fafa53f538f7fc35bae60}{C\+PU}} i \mbox{\hyperlink{class_huma_a781d0a9cb4ad8af9a000423e00ddfdf1}{Huma}}.
+
+\mbox{\Hypertarget{interface_jugador_a9a40261ca4b4785423c5aacdcd9319dc}\label{interface_jugador_a9a40261ca4b4785423c5aacdcd9319dc}} 
+\index{Jugador@{Jugador}!preguntarTaules@{preguntarTaules}}
+\index{preguntarTaules@{preguntarTaules}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{preguntarTaules()}{preguntarTaules()}}
+{\footnotesize\ttfamily void Jugador.\+preguntar\+Taules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPostcond}{Postcondició}
+El jugador sap que li han demanat taules. 
+\end{DoxyPostcond}
+
+
+Implementat a \mbox{\hyperlink{class_huma_a6221b711f977ee1baca1d36759cb3770}{Huma}} i \mbox{\hyperlink{class_c_p_u_aac6f483e5b02f661514ee3c36add8fc4}{C\+PU}}.
+
+\mbox{\Hypertarget{interface_jugador_a6898dae2a8347e3137e706aed77d9278}\label{interface_jugador_a6898dae2a8347e3137e706aed77d9278}} 
+\index{Jugador@{Jugador}!promocionar@{promocionar}}
+\index{promocionar@{promocionar}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{promocionar()}{promocionar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} Jugador.\+promocionar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondició}
+Hi ha alguna peca a promocionar. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Retorna}
+Retorna la peca a la que es desitja promocionar. Es garanteix que el \mbox{\hyperlink{class_tipus_peca}{Tipus\+Peca}} retornat no serà el tipus R\+EI. 
+\end{DoxyReturn}
+
+
+Implementat a \mbox{\hyperlink{class_huma_af85e43309241343d9c7dfa2c469c4f9a}{Huma}} i \mbox{\hyperlink{class_c_p_u_af37ae59955f52bc664bc2a2d16dd5f6f}{C\+PU}}.
+
+\mbox{\Hypertarget{interface_jugador_a69e46d6ddf4397e9325d4cdec5bb4253}\label{interface_jugador_a69e46d6ddf4397e9325d4cdec5bb4253}} 
+\index{Jugador@{Jugador}!toString@{toString}}
+\index{toString@{toString}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Jugador.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Retorna}
+El nom del \mbox{\hyperlink{interface_jugador}{Jugador}}. 
+\end{DoxyReturn}
+
+
+Implementat a \mbox{\hyperlink{class_huma_a1fbcdca8f998d75953bb65386abc2f1a}{Huma}} i \mbox{\hyperlink{class_c_p_u_a27bf52c9f2742f842818d3698c17049d}{C\+PU}}.
+
+
+
+La documentació d\textquotesingle{}aquesta interfície es va generar a partir del següent fitxer\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_jugador_8java}{Jugador.\+java}}\end{DoxyCompactItemize}

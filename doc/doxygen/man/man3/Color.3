@@ -1,0 +1,109 @@
+.TH "Color" 3 "Dl Jun 1 2020" "Version v3" "Escacs" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Color \- \fBColor\fP d'una peça que pot ser blanca o negra\&. Adicionalment s'hi afegeix un element neutre(capColor)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Mètodes Públics Estàtics"
+
+.in +1c
+.ti -1c
+.RI "static \fBColor\fP \fBcanviaColor\fP (\fBColor\fP actual)"
+.br
+.RI "Donat un color et retorna el color contrari\&. "
+.ti -1c
+.RI "static \fBColor\fP \fBobtenirColor\fP (String colorEnString)"
+.br
+.RI "Transforma un String al color que representa\&. "
+.in -1c
+.SS "Atributs Públics"
+
+.in +1c
+.ti -1c
+.RI "\fBtoString\fP"
+.br
+.in -1c
+.SH "Descripció Detallada"
+.PP 
+\fBColor\fP d'una peça que pot ser blanca o negra\&. Adicionalment s'hi afegeix un element neutre(capColor)\&. 
+
+
+.PP
+\fBAutor\fP
+.RS 4
+Martí Madrenys Masferrer 
+.PP
+u1953866 
+.RE
+.PP
+
+.SH "Documentació de les Funcions Membre"
+.PP 
+.SS "static \fBColor\fP Color\&.canviaColor (\fBColor\fP actual)\fC [static]\fP"
+
+.PP
+Donat un color et retorna el color contrari\&. 
+.PP
+\fBPrecondició\fP
+.RS 4
+El color actual no pot ser el neutre\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIactual\fP \fBColor\fP actual\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El color oposat a l'actual\&. 
+.RE
+.PP
+
+.SS "static \fBColor\fP Color\&.obtenirColor (String colorEnString)\fC [static]\fP"
+
+.PP
+Transforma un String al color que representa\&. 
+.PP
+\fBPrecondició\fP
+.RS 4
+colorEnString Conté la representació en format string d'un possible valor d'aquest ennum\&. No pot ser el color neutre\&. 
+.RE
+.PP
+\fBParàmetres\fP
+.RS 4
+\fIcolorEnString\fP String que conte el nom del color\&. 
+.RE
+.PP
+\fBRetorna\fP
+.RS 4
+El \fBColor\fP al que correspon colorEnString\&. 
+.RE
+.PP
+
+.SH "Documentació de les Dades Membre"
+.PP 
+.SS "Color\&.toString"
+\fBValor inicial:\fP
+.PP
+.nf
+=() {
+              return "Blanques";
+            }
+          },
+    capColor,
+    Negres {
+            @Override
+            public String toString() {
+              return "Negres";
+            }
+          }
+.fi
+
+
+.SH "Autor"
+.PP 
+Generat automàticament per Doxygen per a Escacs a partir del codi font\&.
